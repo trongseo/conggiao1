@@ -34,6 +34,6 @@ define("SMTP_INCLUDED",1);
 //define("DB_PASSWORD","123456");
 
 define("DB_HOST","localhost");
-define("DB_NAME","1thuvienconggiao");
+define("DB_NAME","thuvienconggiao");
 define("DB_USERNAME","root");
-define("DB_PASSWORD","123456");
+define("DB_PASSWORD","");
