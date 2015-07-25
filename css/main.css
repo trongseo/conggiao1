@@ -710,7 +710,7 @@ height:83px;
 	border-bottom:1px solid #333;
 }
 .cateleft-hight-lv{
-	background: url('../images/ic_plus_dai_muc.png') no-repeat right top;
+	background: url('/images/ic_plus_dai_muc.png') no-repeat right top;
 }
 .cateleft-hight-lv:hover{
 	background: url('../images/ic_subtract_dai_muc.png') no-repeat right top;
