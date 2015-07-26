@@ -212,7 +212,9 @@ class SiteController extends CController {
                 $hsTable["code_active"]=$guidactive;
                 CommonDB::runSQL($queryUpdate,$hsTable);
                 $mail = new JPhpMailer;
-                $mail->sendMailSmtp( $frommail,$email,"info", $email,"[Thu vien cong giao]Lay mat khau" , "noidung".$guidactive);
+                $linkActive = WEB_URL.'/lay-lai-mat-khau/'.$guidactive;
+                $contentLink="Vào đây để <a href='".$linkActive."' >Đổi mật khẩu mới</a>. hoặc ".$linkActive;
+                $mail->sendMailSmtp( $frommail,$email,"info", $email,"[Thu vien cong giao]Lay mat khau" , $contentLink);
                // SendMail($frommail,$email,"[Thu vien cong giao]","Mat khau cua ban la:".$guidactive,$fromfullname="info");
                 echo "1";Yii::app()->end();
             }else{

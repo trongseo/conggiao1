@@ -23,7 +23,7 @@ define("SMTP_USERNAME","info@kinhtanphuc.com");
 define("SMTP_PASSWORD","123456");
 define("SMTP_INCLUDED",1);
 define ("ITEM_PER_PAGE", serialize (array (10,20,50)));
-
+define ("WEB_URL", "http://googleg9.com:8111");
 //define("DB_HOST","localhost");
 //define("DB_NAME","kinhtanp_db");
 //define("DB_USERNAME","kinhtanp_db");
