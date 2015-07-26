@@ -22,6 +22,7 @@ define("ADMIN_EMAIL","info@kinhtanphuc.com");
 define("SMTP_USERNAME","info@kinhtanphuc.com");
 define("SMTP_PASSWORD","123456");
 define("SMTP_INCLUDED",1);
+define ("ITEM_PER_PAGE", serialize (array (10,20,50)));
 
 //define("DB_HOST","localhost");
 //define("DB_NAME","kinhtanp_db");
@@ -34,6 +35,6 @@ define("SMTP_INCLUDED",1);
 //define("DB_PASSWORD","123456");
 
 define("DB_HOST","localhost");
-define("DB_NAME","thuvienconggiao");
+define("DB_NAME","1thuvienconggiao");
 define("DB_USERNAME","root");
-define("DB_PASSWORD","");
+define("DB_PASSWORD","123456");

@@ -11,17 +11,17 @@
     $comboData1 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=1 AND parent_id='.$value['id'].' ORDER BY NAME',[]);
     ?>
     <li class="item<?php echo $value["id"]?>">
-        <a><?php echo $value["name"]?> <i class="fa fa-plus-square"></i></a>
+        <a class="aitem<?php echo $value["id"]?>" href="javascript:void(0);" myid="<?php echo $value["id"]?>"><?php echo $value["name"]?> <i class="fa fa-plus-square"></i></a>
         <ul class="cute">
     <?php foreach($comboData1 as $value1):?>
-            <li class="subitem1"><a class="trung"> <?php echo $value1["name"]?>  <i class="fa fa-plus-square"></i></a>
+            <li class="subitem1"><a class="trung" href="javascript:void(0);" myid="<?php echo $value1["id"]?>" > <?php echo $value1["name"]?>  <i class="fa fa-plus-square"></i></a>
 
                 <?php
                 $comboData2 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=2 AND parent_id='.$value1['id'].' ORDER BY NAME',[]);
                 ?>  <ul class="cute">
         <?php foreach($comboData2 as $value2):?>
 
-                    <li class="subitem1 sublittle"><a class="tieu">  <?php echo $value2["name"]?> </a></li>
+                    <li class="subitem1 sublittle"><a class="tieu" href="javascript:void(0);" myid="<?php echo $value2["id"]?>" >  <?php echo $value2["name"]?> </a></li>
 
 
         <?php endforeach?>
@@ -44,6 +44,11 @@
          <i class="fa fa-minus-square"></i>*/
         var menu_ul = $('.menu1 > li > ul'),
             menu_a  = $('.menu1 > li > a');
+        var tieu_muc =$('.tieu');
+        tieu_muc.click(function(e) {
+
+            LoadContent($(this).attr('myid'),2);
+        });
         menu_ul.hide();
         menu_a.click(function(e) {
             e.preventDefault();
@@ -59,6 +64,8 @@
                 $(this).next().stop(true,true).slideUp('normal');
                 $(this).find( "i" ).removeClass('fa-minus-square').addClass('fa-plus-square');
             }
+
+            LoadContent($(this).attr('myid'),0);
         });
         /*<i class="fa fa-plus-square"></i>
          <i class="fa fa-minus-square"></i>*/
@@ -78,6 +85,7 @@
                 $(this).next().stop(true,true).slideUp('normal');
                 $(this).find( "i" ).removeClass('fa-minus-square').addClass('fa-plus-square');
             }
+            LoadContent($(this).attr('myid'),1);
 
         });
 

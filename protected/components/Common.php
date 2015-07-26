@@ -11,6 +11,54 @@ class Common {
 
         return  isset($_REQUEST[$key])?$_REQUEST[$key]:"";
     }
+public static function getPagging($totalPage,$pageSize,$page,$itemCount){
+        $end_page = $totalPage;
+        $totalpage=$totalPage;
+        $currentpage =$page;
+        $first = "";
+        $prev = "";
+        $next = "  ";
+        $end = " ";
+        $inpage = "<select id='comboPage' style='width: 40%'> ";
+        if ($totalPage == 1) return "";
+        if ($totalPage >= 2)
+        {
+            $first = "";
+            $end = "";
+            //totalpage = totalpage - 1;
+            $link = "";
+            for ($i = 1; $i <= $totalpage; $i++)
+            {
+                if ($i != $currentpage)
+                {
+                    $link = $link."<option value='".$i."'  >Trang ".$i." của $totalPage </option>";
+                }
+                else
+                    $link = $link."<option value='".$i."'  >Trang ".$i." của $totalPage</option>";
+
+            }
+            $inpage=$inpage.$link." </select>";
+            if ($currentpage != $totalpage)//next
+            {
+                $showPage = $currentpage + 1;
+                $next = "<a href='javascript:void()'>".$showPage."</a>  ";
+            }
+            if ($currentpage != 1)//back
+            {
+                $showPage = $currentpage -1;
+                $prev = "<a href='javascript:void()'>".$showPage."</a>  ";
+            }
+            if ($currentpage == 1)//back
+            {
+                $showPage = $currentpage -1;
+                $prev = "<a href='javascript:void();'>".$showPage."</a>  ";
+            }
+        }
+        //return  $first.$prev.$inpage.$next.$end;
+        //return  $prev.$inpage.$next;
+    return  $inpage;
+    }
+
 
     public static function menuMultiLevel($data, $models, $link, $tag = null, $tagSub = null) {
         $rowsize = count($data);
