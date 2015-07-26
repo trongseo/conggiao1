@@ -132,12 +132,125 @@ class SiteController extends CController {
     }
     //phuong
     public function actionRegister() {
+
+        $email= Common::getPara("email");
+        $isCheckEmail= Common::getPara("ischeck");
+        if($isCheckEmail!=""){
+            $query="Select * from tbl_users where email=:email";
+            $hsTable["email"]=$email;
+            $data = CommonDB::GetAll($query,$hsTable);
+            if(count($data)>0){
+                echo "0";Yii::app()->end();
+                return;
+            }
+            echo "1";Yii::app()->end();
+            return;
+        }
+
+        $btnsave= Common::getPara("password");
+
+        //regist
+        if($btnsave!=""){
+            $query1="Select * from tbl_users where email=:email";
+            $hsTable1["email"]=$email;
+            $data = CommonDB::GetAll($query1,$hsTable1);
+            if(count($data)>0){
+                echo "0";Yii::app()->end();
+                return;
+            }
+            $queryIn="insert into tbl_users(display_name,birthday,sex,email,password)
+             values(:display_name,:birthday,:sex,:email,:password)";
+            $hsTable["display_name"]=Common::getPara("display_name");
+            $hsTable["birthday"]=Common::converDDMMYYToYYYYMMDDPara(Common::getPara("birthday"));
+            $hsTable["sex"]= Common::getPara("sex");
+            $hsTable["email"]= Common::getPara("email");
+            $hsTable["password"]= md5( Common::getPara("password"));
+            CommonDB::runSQL($queryIn,$hsTable);
+            echo "1";Yii::app()->end();
+            return;
+        }
         $c="";//$c = TblConfig::model()->find();
         $this->render('register',array('c'=>$c));
     }
     public function actionLogin() {
+        $password= Common::getPara("password");
+        //regist
+        if($password!=""){
+            $email= Common::getPara("email");
+            $passwordmd = md5($password);
+            $hsTable["email"]= $email;
+            $hsTable["password"]= $passwordmd;
+            $dataTable = CommonDB::GetAll("Select * from tbl_users where email=:email and password=:password",$hsTable);
+            if(count($dataTable)>0){
+                $arrInfo=$dataTable[0];
+                Yii::app()->session['id_user'] = $arrInfo['id'];
+                Yii::app()->session['email'] = $arrInfo['email'];
+                Yii::app()->session['display_name'] = $arrInfo['display_name'];
+                echo "1";Yii::app()->end();
+            }else{
+                echo "Đăng nhập không thành công!Vui lòng đăng nhập lại.";
+                Yii::app()->end();
+            }
+            return;
+        }
         $c="";//$c = TblConfig::model()->find();
         $this->render('login',array('c'=>$c));
+    }
+
+    public function actionGetPassword() {
+        $check = TblConfig::model()->find();
+
+        $email= Common::getPara("email");
+        //regist
+        if($email!=""){
+            $hsTable["email"]= $email;
+            $dataTable = CommonDB::GetAll("Select * from tbl_users where email=:email",$hsTable);
+            if(count($dataTable)>0){
+                $frommail=ADMIN_EMAIL;
+                 $guidactive =  Common::guid();
+                $queryUpdate = "Update tbl_users set code_active=:code_active where  email=:email";
+                $hsTable["code_active"]=$guidactive;
+                CommonDB::runSQL($queryUpdate,$hsTable);
+                $mail = new JPhpMailer;
+                $mail->sendMailSmtp( $frommail,$email,"info", $email,"[Thu vien cong giao]Lay mat khau" , "noidung".$guidactive);
+               // SendMail($frommail,$email,"[Thu vien cong giao]","Mat khau cua ban la:".$guidactive,$fromfullname="info");
+                echo "1";Yii::app()->end();
+            }else{
+                echo "Email không tồn tại.";
+                Yii::app()->end();
+            }
+            return;
+        }
+
+        $this->render('get_password',array('page'=>$check));
+    }
+    public function actionChangeForgetPass($code_active) {
+      $issubmit =  Common::getPara('issubmit');
+        if($issubmit=="1"){
+            $hsTable["code_active"]=Common::getPara("code_active");
+            $dataTable = CommonDB::GetAll("Select * from tbl_users where code_active=:code_active",$hsTable);
+            if(count($dataTable)==0){
+                echo "Mã đổi mật khẩu bị sai!";Yii::app()->end();
+                return;
+            }
+
+            $queryUpdate = "Update tbl_users set password=:password where  code_active=:code_active";
+            $hsTable["password"]= Common::getPara('password');
+            echo "1";Yii::app()->end();
+            return;
+        }
+        $check = TblConfig::model()->find();
+        $hsTable["code_active"]=$code_active;
+        $dataTable = CommonDB::GetAll("Select * from tbl_users where code_active=:code_active",$hsTable);
+        if(count($dataTable)==0){
+            $this->redirect('/');
+            return;
+        }
+        $this->render('change_forget_pass',array('code_active'=>$code_active));
+    }
+    public function actionWelcome() {
+        $check = TblConfig::model()->find();
+        $this->render('welcome',array('page'=>$check));
     }
     public function actionAboutUs() {
        $check = TblConfig::model()->find();

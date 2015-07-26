@@ -9,8 +9,22 @@ class Common {
     }
     public static function getPara($key){
 
-        return  isset($_REQUEST[$key])?$_REQUEST[$key]:"";
+        return  trim(isset($_REQUEST[$key])?$_REQUEST[$key]:"") ;
     }
+    public static function converDDMMYYToYYYYMMDDPara($originalDate){
+//        $d="05/Feb/2010:14:00:01";
+//        $dr= date_create_from_format('d/M/Y:H:i:s', $d);
+//        echo $dr->format('Y-m-d H:i:s');
+
+//23/01/2015
+       $arrDate =  explode('/',$originalDate);
+        $day = $arrDate[0];
+        $month = $arrDate[1];
+        $yyyy = $arrDate[2];
+        return $yyyy.'-'.$month.'-'.$day;
+
+    }
+
 public static function getPagging($totalPage,$pageSize,$page,$itemCount){
         $end_page = $totalPage;
         $totalpage=$totalPage;

@@ -17,6 +17,7 @@ return array(
     'import' => array(
         'application.models.*',
         'application.components.*',
+        'application.extensions.PHPMailer.*',
     ),
     'modules' => array(
         'default', 'about', 'products', 'services', 'news', 'video', 'contact', 'search', 'admin', 'administrator', 'agent',
@@ -104,7 +105,7 @@ return array(
 //
 //			),
 //		),
-
+    //    quen-mat-khau GetPassword
         'urlManager'=>array(
             'urlFormat'=>'path',
             'showScriptName' => false,
@@ -129,7 +130,10 @@ return array(
                 'lien-he'=>'Site/Contact',
                 'chi-tiet/<id:>'=>'Site/Detail/id/<id>',
                 'dang-nhap'=>'Site/Login',
+                'quen-mat-khau'=>'Site/GetPassword',
+                'lay-lai-mat-khau/<code_active:>'=>'Site/ChangeForgetPass/code_active/<code_active>',
                 'dang-ky'=>'Site/Register',
+                'welcome'=>'Site/Welcome',
                 '<strid:>'=>'Site/Error',
                 '<controller:\w+>/<id:\d+>'=>'<controller>/view',
                 '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',

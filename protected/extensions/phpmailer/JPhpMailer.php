@@ -34,8 +34,8 @@ class JPhpMailer extends PHPMailer {
         $this->Host = 'smtp.gmail.com';
         $this->Port = 465;
         $this->SMTPAuth = true;
-        $this->Username = 'sender@dos.vn';
-        $this->Password = 'fdbhbibbonploilc';
+        $this->Username = 'nvtrong999@gmail.com';
+        $this->Password = 'tinhgia!1';
         $this->Subject = $subject;
         $this->AltBody = 'To view the message, please use an HTML compatible email viewer!';
         $this->MsgHTML($content);
@@ -48,5 +48,28 @@ class JPhpMailer extends PHPMailer {
         //$this->AddBCC($address);
         $this->Send();
     }
+    public function sendMailSmtpOld($from, $to, $namefrom, $nameto, $subject, $content, $type = 0, $addreplyto = '', $reply_name = '') {
+        $this->IsSMTP();
+        $this->IsHTML(true);
+        $this->SMTPSecure = 'tls';
+        $this->Host = 'smtp.gmail.com';
+        $this->Port = 587;
+        $this->SMTPAuth = true;
+        $this->Username = $from;
+        $this->Password = "tinhgia!11";
+        $this->Subject = $subject;
+        $this->AltBody = 'To view the message, please use an HTML compatible email viewer!';
+        $this->MsgHTML($content);
+        $this->AddAddress($to, $nameto);
+        if ($type == 1) {
+            $this->AddReplyTo($addreplyto, $reply_name);
+        }else{
+            $this->SetFrom($from, $namefrom);
+        }
+        //$this->AddBCC($address);
+        $this->Send();
+    }
+
+
 
 }

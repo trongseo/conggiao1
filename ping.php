@@ -212,7 +212,7 @@ function smtpmail($mail_to, $subject, $message, $headers='',$smtp_host, $smtp_us
 
     return TRUE;
 }
-function SendMail($frommail,$tomail,$subject,$message,$fromfullname="Sindre Design")
+function SendMail1($frommail,$tomail,$subject,$message,$fromfullname="Sindre Design")
 {
 
 
@@ -232,6 +232,6 @@ function SendMail($frommail,$tomail,$subject,$message,$fromfullname="Sindre Desi
 
 //Test send mail
 //function SendMail($frommail,$tomail,$subject,$message,$fromfullname="Sindre Design")
-SendMail("info@kinhtanphuc.com","trongtayninh@gmail.com","tieu de mail","Noi dung email");
+SendMail1("info@kinhtanphuc.com","trongtayninh@gmail.com","tieu de mail","Noi dung email");
 
 ?>

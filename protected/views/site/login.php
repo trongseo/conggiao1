@@ -1,3 +1,4 @@
+<form id="registration-form" method="post" onsubmit="return validateForm();"  action="/dang-nhap">
 <div class="row">
     <div class="arrow">
         <h4>Đăng nhập</h4>
@@ -34,14 +35,14 @@
                             </span>
                         </div>
                         <div class="form-group form-actions">
-                            <span style="float: left;"><a>Quên mật khẩu</a></span>
+                            <span style="float: left;"><a href="/quen-mat-khau">Quên mật khẩu</a></span>
                             <span style="float: right;">* Thông tin bắt buộc nhập</span>                            
                         </div>
                         <div class="clear1"></div>
                         <div class="form-group form-actions">
                             <div class="col-xs-12 col-md-8" style="text-align: right;">
                                 <div class="row">
-                                    <button type="button" class="btn btn-green btn-epub" id="btn_login" onclick="actionLogin();">
+                                    <button type="submit" class="btn btn-green btn-epub" id="btn_login" onclick="actionLogin();">
                                         Đăng nhập
                                     </button>
                                     <a class="btn btn-green btn-epub" href="<?php echo Yii::app()->baseUrl.'/dang-ky'?>">
@@ -76,3 +77,92 @@
         </div>
     </div>
 </div>
+</form>
+<script src="http://malsup.github.com/jquery.form.js"></script>
+
+<script type="text/JavaScript">
+
+    function validateURL(url) {
+        var reurl = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
+        return re.test(url);
+    }
+
+    function checkSamePass( objid, objid1){
+        var title = $("#"+objid).val();
+        var title1 = $("#"+objid1).val();
+        var reVal=true;
+        if (title!=title1) {
+            alert("Vui lòng nhập nội dung mật khẩu giống nhau !");
+            $("#"+objid).focus();
+            reVal=false;
+
+        }
+        return reVal;
+    }
+
+    function checkEmpty( objid, textval){
+        var title = $("#"+objid).val();
+        var reVal=true;
+        if (title=="" || title==null) {
+            alert("Vui lòng nhập nội dung "+textval+" !");
+            $("#"+objid).focus();
+            reVal=false;
+
+        }
+        return reVal;
+    }
+
+    function validateForm()
+    {
+
+       var resO =  checkEmpty("email","[Email]");
+        if(resO==false){
+            return false;
+        }
+        var email = $("#email").val();
+        if ((/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) { } else {
+            alert("Email chưa chính xác!");
+            $("#email").focus();
+            return false;
+        }
+        resO =  checkEmpty("password","[Mật khẩu]");
+        if(resO==false){
+            return false;
+        }
+
+        return true;
+    }
+    $(document).ready(function()
+    {
+        $('#email').focus();
+        var options = {
+            beforeSend: function()
+            {
+            },
+            uploadProgress: function(event, position, total, percentComplete)
+            {
+
+            },
+            success: function(responseText, statusText, xhr, $form)
+            {
+               if(responseText=="1"){
+                   window.location='/welcome';
+               }else{
+                   alert(responseText); $('#email').focus();
+
+               }
+
+            },
+            complete: function(response)
+            {
+
+               // window.location='/thu-vien';
+            },
+            error: function()
+            {
+            }
+        };
+        $("#registration-form").ajaxForm(options);
+    });
+
+</script>
