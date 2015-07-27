@@ -86,18 +86,34 @@ class SiteController extends CController {
         $this->renderPartial('_sublibary');
     }
     public function actionSubLibaryTieuMuc() {
-
         $parent_id= (isset($_GET['myid']) ? $_GET['myid'] : "");
-        $page = (isset($_GET['page']) ? $_GET['page'] : 1);
-        $pageSize = (isset($_GET['pagesize']) ? $_GET['pagesize'] : 3);
+        if(Common::getPara("from")=="order"){
+            $parent_id = Common::getSession("parent_id");
+        }else{
+            Common::setSession("parent_id",$parent_id);
+        }
+       // from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
+        $gotopage = Common::getPara("gotopage");
+        $orderbyid = Common::getPara("orderbyid");
+        $perpageshow = Common::getPara("perpageshow");
+
+        $page = ($gotopage!="") ? $gotopage : 1;
+        $pageSize = ($perpageshow!="") ? $perpageshow : 3;
+        $arrView["gotopage"]=$gotopage;
+        $arrView["orderbyid"]=$orderbyid;
+        $arrView["perpageshow"]=$perpageshow;
 
         $query1 = Yii::app()->db->createCommand() //this query contains all the data
             ->select(array('*'))
             ->from(array('tbl_book'))
             ->where('delete_logic_flg =0 and parent_id=:parent_id')
-            ->order(' book_name')
             ->limit($pageSize,  ($page-1) * $pageSize); // the trick is here!
-
+        if ($orderbyid==0){
+            $query1=   $query1->order('book_name ');
+        }else
+            if ($orderbyid==1){
+                $query1=  $query1->order('viewer_count ');
+            }
         $query1->bindParam(':parent_id',  $parent_id, PDO::PARAM_STR);
         $dataItem= $query1->queryAll();
 
@@ -105,17 +121,18 @@ class SiteController extends CController {
             ->select(' count(id) as count ')
             ->from(array('tbl_book'))
             ->where(' delete_logic_flg =0  and parent_id=:parent_id');
+
         $item_count->bindParam(':parent_id',   $parent_id, PDO::PARAM_STR);
        $itemCount= $item_count->queryScalar(); // do not LIMIT it, this must count all items!
 
-        $totalPage = $itemCount / $pageSize;
+        $totalPage = ceil($itemCount / $pageSize);//(int) ($itemCount / $pageSize);
 
         //add the last page, ugly
-        if ($pageSize % $pageSize != 0) $totalPage++;
+       // if ($pageSize % $pageSize != 0) $totalPage++;
 
         $dataPage =array('totalPage'=>$totalPage,'pageSize'=>$pageSize,'itemCount'=>$itemCount,'page'=>$page);
 
-        $this->renderPartial('_sublibary_tieumuc',array('dataItem'=>$dataItem,'arrDataPage'=>$dataPage));
+        $this->renderPartial('_sublibary_tieumuc',array('dataItem'=>$dataItem,'arrDataPage'=>$dataPage,'arrView'=>$arrView));
     }
     //phuong
     public function actionLibaryHight() {
@@ -196,7 +213,10 @@ class SiteController extends CController {
         $c="";//$c = TblConfig::model()->find();
         $this->render('login',array('c'=>$c));
     }
-
+    public function actionLogout() {
+        Yii::app()->session->destroy();
+        $this->redirect('/');
+    }
     public function actionGetPassword() {
         $check = TblConfig::model()->find();
 

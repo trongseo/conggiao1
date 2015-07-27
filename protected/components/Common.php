@@ -11,6 +11,16 @@ class Common {
 
         return  trim(isset($_REQUEST[$key])?$_REQUEST[$key]:"") ;
     }
+    public static function getSession($key){
+       if(isset(Yii::app()->session[$key]))
+           return Yii::app()->session[$key];
+        return "";
+    }
+    public static function setSession($key,$valueadd){
+
+          Yii::app()->session[$key]=$valueadd;
+
+    }
     public static function converDDMMYYToYYYYMMDDPara($originalDate){
 //        $d="05/Feb/2010:14:00:01";
 //        $dr= date_create_from_format('d/M/Y:H:i:s', $d);
@@ -48,7 +58,7 @@ public static function getPagging($totalPage,$pageSize,$page,$itemCount){
                     $link = $link."<option value='".$i."'  >Trang ".$i." của $totalPage </option>";
                 }
                 else
-                    $link = $link."<option value='".$i."'  >Trang ".$i." của $totalPage</option>";
+                    $link = $link."<option selected value='".$i."'  >Trang ".$i." của $totalPage</option>";
 
             }
             $inpage=$inpage.$link." </select>";

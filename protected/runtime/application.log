@@ -20437,3 +20437,230 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/css/bootstrap.css.map
 ---
+2015/07/27 21:42:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:48:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:53:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:53:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:54:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:54:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:54:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Admin/Logout".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('Admin/Logout')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/logout
+HTTP_REFERER=http://localhost:8111/welcome
+---
+2015/07/27 21:54:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:57:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Admin/Logout".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('Admin/Logout')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/logout
+HTTP_REFERER=http://localhost:8111/welcome
+---
+2015/07/27 21:57:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 21:57:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 22:25:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 22:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 22:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 22:27:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 22:28:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 22:51:15 [error] [php] Division by zero (D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php:121)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibaryTieuMuc?mylevel=2&myid=22
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (121)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/07/27 22:52:21 [error] [php] Division by zero (D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php:121)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibaryTieuMuc?mylevel=2&myid=22
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (121)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/07/27 22:52:29 [error] [php] Division by zero (D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php:121)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibaryTieuMuc?mylevel=2&myid=22
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (121)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/07/27 22:54:39 [error] [php] Undefined index: myid (D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_tieumuc.php:7)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php(128): SiteController->renderPartial()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\actions\CInlineAction.php(49): SiteController->actionSubLibaryTieuMuc()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#7 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibaryTieuMuc?from=order&gotopage=2&orderbyid=0&perpageshow=20
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_tieumuc.php (7)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (128)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/07/27 22:56:17 [error] [php] Undefined index: myid (D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_tieumuc.php:7)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(869): SiteController->renderFile()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php(128): SiteController->renderPartial()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\actions\CInlineAction.php(49): SiteController->actionSubLibaryTieuMuc()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#6 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#7 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#8 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibaryTieuMuc?from=order&gotopage=2&orderbyid=0&perpageshow=20
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_tieumuc.php (7)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (128)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/07/27 23:23:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/07/27 23:23:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---

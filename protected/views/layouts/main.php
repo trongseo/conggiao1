@@ -40,14 +40,27 @@
                     <span style="font-size:34px;font-weight: bold;color: #D5904D;">Việt Nam</span>
                 </div>
             </div>
-            <div class="logo-login">
-                <a class="register" href="<?php echo Yii::app()->baseUrl.'/dang-ky'?>">
-                    <img src="<?php echo Yii::app()->baseUrl.'/images/ic_register.png'?>" /> Đăng ký
-                </a>
-                <a class="login" href="<?php echo Yii::app()->baseUrl.'/dang-nhap'?>" style="margin-left: 10px;">
-                    <img src="<?php echo Yii::app()->baseUrl.'/images/ic_login.png'?>" /> Đăng nhập
-                </a>
+            <div class="logo-login1">
+                <?php if(isset(Yii::app()->session['id_user'])): ?>
+                    <?php echo Yii::app()->session['display_name']; ?>
+                <a class="register1" href="<?php echo Yii::app()->baseUrl.'/update-account'?>">Thông tin tài khoản </a>
+                   <a class="register2" href="<?php echo Yii::app()->baseUrl.'/update-password'?>" > Đổi mật khẩu</a>
+                    <a class="register3" href="<?php echo Yii::app()->baseUrl.'/dang-xuat'?>"> Thoát </a>
+                <?php else: ?>
+                    <a class="register" href="<?php echo Yii::app()->baseUrl.'/dang-ky'?>">
+                        <img src="<?php echo Yii::app()->baseUrl.'/images/ic_register.png'?>" />Đăng ký
+                    </a>
+                    <a class="login" href="<?php echo Yii::app()->baseUrl.'/dang-nhap'?>" style="margin-left: 10px;">
+                        <img src="<?php echo Yii::app()->baseUrl.'/images/ic_login.png'?>" /> Đăng nhập
+                    </a>
+                <?php endif; ?>
+
+
+
             </div>
+<!--            Yii::app()->session['id_user'] = $arrInfo['id'];-->
+<!--            Yii::app()->session['email'] = $arrInfo['email'];-->
+<!--            Yii::app()->session['display_name'] = $arrInfo['display_name'];-->
             <div class="clear"></div>
         </div>
         <div class="col-md-12">
@@ -57,15 +70,24 @@
                         <a href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu" style="width: 13%;">
                             <img src="<?php echo Yii::app()->baseUrl.'/images/ic_home.png'?>" />
                         </a>
+
+
+
                         <a href="<?php echo Yii::app()->baseUrl.'/thu-vien'?>" class="menu" style="width: 29%;">
                             Thư viện
                         </a>
+
+                        <?php if(isset(Yii::app()->session['id_user'])): ?>
+                            <a href="<?php echo Yii::app()->baseUrl.'/tham-khao'?>" class="menu" style="width: 29%;">
+                                Tủ sách
+                            </a>
+                        <?php else: ?>
+
+                        <?php endif; ?>
                         <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu" style="width: 29%;">
                             Giới thiệu
                         </a>
-                        <a href="<?php echo Yii::app()->baseUrl.'/tham-khao'?>" class="menu" style="width: 29%;">
-                            Tham Khảo
-                        </a>
+
                     </div>
                 </div>
                 <div class="col-md-4 menu-search">

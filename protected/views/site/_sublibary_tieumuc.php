@@ -4,9 +4,9 @@
         <div class="arrow">
             <h4>
                 <?php
-                if($_REQUEST["myid"]!="0")
+                if(Common::getSession("parent_id")!="0")
                 {
-                    echo CommonDB::GetDataRow("tbl_index","id=".$_REQUEST["myid"]." and type=".$_REQUEST["mylevel"])["name"] ;
+                    echo CommonDB::GetDataRow("tbl_index","id=".Common::getSession("parent_id"))["name"] ;
                 }else{
                     echo "Tất Cả" ;
                 }
@@ -22,15 +22,34 @@
     </div>
     <div class="col-md-12" style="height: 80px;">
         <div class="row">
+
+
+            <?php $ORDER_BY_KEY = unserialize (ORDER_BY_KEY); ?>
+            <?php $ORDER_BY = unserialize (ORDER_BY); ?>
+
+            <select id="comboOrderBy" style="width: 30%">
+            <?php for($i = 0;$i<count($ORDER_BY);$i++):?>
+                <?php
+                $strselected1 ="";
+                $keyShow = $ORDER_BY_KEY[$i];
+                $valueShow = $ORDER_BY[$i];
+                if($keyShow== $arrView['orderbyid']){
+                    $strselected1 ="selected";
+                }
+                ?>
+                <option <?php echo $strselected1; ?>  value="<?php echo$keyShow; ?>">
+                    <?php echo $valueShow; ?></option>
+            <?php endfor;?>
+            </select>
             <table>
                 <tr><td style="width: 50px"> Hiển thị</td><td style="width: 80px"><select id="comboPerPage" style="width: 30%">
 
                             <?php $ITEM_PER_PAGE = unserialize (ITEM_PER_PAGE); ?>
                             <?php for($i = 0;$i<count($ITEM_PER_PAGE);$i++):?>
-                                selected="selected"
+
                                 <?php
                                 $strselected ="";
-                                if($ITEM_PER_PAGE[$i]==20){
+                                if($ITEM_PER_PAGE[$i]==$arrView['perpageshow']){
                                     $strselected ="selected";
                                 } ?>
                                 <option <?php echo $strselected; ?>  value="<?php echo $ITEM_PER_PAGE[$i]; ?>">
@@ -40,14 +59,13 @@
                     // $dataPage =array('totalPage'=>$totalPage,'pageSize'=>$pageSize,'itemCount'=>$itemCount,'page'=>$page);
 
                     $totalPage= $arrDataPage['totalPage'];
+
                     $pageSize= $arrDataPage['pageSize'];
                     $page= $arrDataPage['page'];
                     $itemCount= $arrDataPage['itemCount'];
                     // var_dump($arrDataPage);
-                   // echo(   Common::getPagging($totalPage,$pageSize,$page,$itemCount));
+                   echo(   Common::getPagging($totalPage,$pageSize,$page,$itemCount));
                     ?>
-
-                        <select id="comboPage1" style="width: 50%"> <option value="1">Trang 1 của 2</option><option value="2">Trang 2 của 2 </option> </select>
 
 
 
@@ -74,10 +92,38 @@
                     minimumResultsForSearch: Infinity
                 }); $("#comboPage").select2({
                     minimumResultsForSearch: Infinity
-                });$("#comboPage1").select2({
-                    minimumResultsForSearch: Infinity
+                });
+
+                $( "#comboOrderBy" ).change(function() {
+                    showOrderBy(0);
+                });
+                $( "#comboPage" ).change(function() {
+                    showOrderBy(1);
+                });
+                $( "#comboPerPage" ).change(function() {
+                    showOrderBy(0);
                 });
             });
+
+            function showOrderBy(isPage){
+              var  gotopage =$( "#comboPage").val();
+                var  perpageshow =$( "#comboPerPage").val();
+                var  orderbyid =$( "#comboOrderBy").val();
+                if(isPage==0){
+                    gotopage=1;
+                }
+                $.ajax({
+                    type:"POST",
+                    url:'/Site/SubLibaryTieuMuc?from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
+                    data:{},
+                    success:function(result){
+                        $("#divcontent").empty().append(result);
+                    }
+                });
+
+            }
+
+
         </script>
 
 

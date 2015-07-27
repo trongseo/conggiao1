@@ -1,3 +1,7 @@
+<script type="text/javascript" src="/js/datetime/lib/jquery.timepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="/js/datetime/lib/jquery.timepicker.css" />
+<script type="text/javascript" src="/js/datetime/lib/bootstrap-datepicker.js"></script>
+<link rel="stylesheet" type="text/css" href="/js/datetime/lib/bootstrap-datepicker.css" />
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/dang-ky">
 <div class="row">
     <div class="arrow">
@@ -130,6 +134,12 @@
 
             });
         });
+
+
+    $('#birthday').datepicker({
+        'format': 'dd/mm/yyyy',
+        'autoclose': true
+    });
     function validateForm()
     {
         // Validate Title
