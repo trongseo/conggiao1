@@ -20664,3 +20664,63 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/css/bootstrap.css.map
 ---
+2015/07/28 14:16:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Libary')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/thu-vien
+---
+2015/07/28 14:16:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Error')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/28 14:16:31 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/28 14:16:32 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Error')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/favicon.ico
+---
