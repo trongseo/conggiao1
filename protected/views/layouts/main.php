@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-md-4 menu-search">
                     <div class="row searchbox">
-                        <input type="text" placeholder="Nhập từ khóa tìm kiếm" />
+                        <input type="text" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
                     </div>
                 </div>
                 <div class="col-md-3 menu-search">
@@ -100,7 +100,7 @@
 
                     <div class="row">
                         <select id="fabric">
-                            <option>Xem tất cả sách</option>
+                            <option value="0">Xem tất cả sách</option>
                             <?php  $comboData=$this->comboData;
 
                             ?>
@@ -115,7 +115,7 @@
                     </div>
                 </div>
                 <div class="col-md-1 menu right">
-                    <div class="row">
+                    <div class="row" id="divsearch">
                         Tìm kiếm
                     </div>
                 </div>
@@ -187,6 +187,15 @@
 <script>
     $(document).ready(function() {
         $("#fabric").select2();
+
+        $( "#divsearch" ).click(function() {
+            if($('#txtKeySearch').val().length==0){
+                alert("Vui lòng nhập nội dung cần tìm!");
+                return;
+            }
+            var daimucid = $('#fabric').val();
+           window.location='/thu-vien/'+daimucid+'-'+$('#txtKeySearch').val();
+        });
     });
     function LoadSLide(){
         $.ajax({
