@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\flot-data.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\lib\bootstrap-datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\lib\bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\lib\glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\lib\jquery.timepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\lib\jquery.timepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\lib\screenshot.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\lib\site.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\lib\site.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\morris-data.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\project\111anhDuong\thuvien1\codeconggiao\111doc\timepicker\js\sb-admin-2.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/cache/5ec59560e3100dc55ccc49771a6181c6.bin" afterPath="$PROJECT_DIR$/protected/runtime/cache/5ec59560e3100dc55ccc49771a6181c6.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Common.php" afterPath="$PROJECT_DIR$/protected/components/Common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DB_CONFIG.php" afterPath="$PROJECT_DIR$/DB_CONFIG.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/register.php" afterPath="$PROJECT_DIR$/protected/views/site/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="" />
     <ignored path="codeconggiao.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
