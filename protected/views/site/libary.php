@@ -25,7 +25,7 @@ var FROM_TIEUMUC='tieumuc';
         LoadContent(0,0);
     });
 function LoadContentSearch(daimuc,keysearch){
-   var  urlGet = '/Site/SubLibaryTieuMuc?daimuc='+daimuc+'&keysearch='+keysearch;
+   var  urlGet = '/Site/SubLibaryTieuMucSearch?daimuc='+daimuc+'&keysearch='+keysearch;
     $.ajax({
         type:"POST",
         url:urlGet,

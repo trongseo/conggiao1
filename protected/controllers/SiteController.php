@@ -90,20 +90,25 @@ class SiteController extends CController {
         $this->render('libary',array('arrSearch'=>$arrSearch));
     }
     public function actionSubLibaryTieuMucSearch() {
-//
-//        select * from `tbl_book`
-//where parent_id in (
-//
-//            SELECT id FROM tbl_index
-//WHERE parent_id in (SELECT id FROM tbl_index
-//WHERE parent_id=1 ) and type=2 )
-//
-//
+//and parent_id in('.$subQuery.')
+$subQuery=" and parent_id in (
+            SELECT id FROM tbl_index
+WHERE parent_id in (SELECT id FROM tbl_index
+WHERE parent_id=:parent_id ) and type=2 )" ;
+
+
         $parent_id=Common::getPara("daimuc");
+
+        $keysearch=Common::getPara("keysearch");
         if(Common::getPara("from")=="order"){
             $parent_id = Common::getSession("parent_id");
+            $keysearch= Common::getSession("book_name");
         }else{
             Common::setSession("parent_id",$parent_id);
+            Common::setSession("book_name",$keysearch);
+        }
+        if($parent_id==0){
+            $subQuery='';
         }
         // from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
         $gotopage = Common::getPara("gotopage");
@@ -119,8 +124,9 @@ class SiteController extends CController {
         $query1 = Yii::app()->db->createCommand() //this query contains all the data
             ->select(array('*'))
             ->from(array('tbl_book'))
-            ->where('delete_logic_flg =0 and parent_id=:parent_id')
+            ->where("delete_logic_flg =0 and book_name like :book_name ".$subQuery)
             ->limit($pageSize,  ($page-1) * $pageSize); // the trick is here!
+
         if ($orderbyid==0){
             $query1=   $query1->order('book_name ');
         }else
@@ -131,6 +137,8 @@ class SiteController extends CController {
         if($parent_id!=0){
             $query1->bindParam(':parent_id',  $parent_id, PDO::PARAM_STR);
         }
+        $keyword = "%".$keysearch."%";
+        $query1->bindParam(':book_name',  $keyword, PDO::PARAM_STR);
 
         $dataItem= $query1->queryAll();
 
@@ -144,7 +152,7 @@ class SiteController extends CController {
         $totalPage = ceil($itemCount / $pageSize);
 
         $dataPage =array('totalPage'=>$totalPage,'pageSize'=>$pageSize,'itemCount'=>$itemCount,'page'=>$page);
-        $this->renderPartial('_sublibary_tieumuc',array('dataItem'=>$dataItem,'arrDataPage'=>$dataPage,'arrView'=>$arrView));
+        $this->renderPartial('_sublibary_tieumuc_search',array('dataItem'=>$dataItem,'arrDataPage'=>$dataPage,'arrView'=>$arrView));
     }
 
     public function actionSubLibary() {

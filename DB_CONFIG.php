@@ -36,12 +36,12 @@ define ("WEB_URL", "http://googleg9.com:8111");
 //define("DB_USERNAME","root");
 //define("DB_PASSWORD","123456");
 
-//define("DB_HOST","localhost");
-//define("DB_NAME","1thuvienconggiao");
-//define("DB_USERNAME","root");
-//define("DB_PASSWORD","123456");
-
 define("DB_HOST","localhost");
-define("DB_NAME","thuvienconggiao");
+define("DB_NAME","1thuvienconggiao");
 define("DB_USERNAME","root");
-define("DB_PASSWORD","");
+define("DB_PASSWORD","123456");
+
+//define("DB_HOST","localhost");
+//define("DB_NAME","thuvienconggiao");
+//define("DB_USERNAME","root");
+//define("DB_PASSWORD","");
