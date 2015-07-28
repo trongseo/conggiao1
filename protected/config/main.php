@@ -124,6 +124,7 @@ return array(
                 'huong-dan'=>'Site/Guide',
                 'cau-hoi-thuong-gap'=>'Site/Question',
                 'thu-vien'=>'Site/Libary',
+                'thu-vien/<key_search:>'=>'Site/LibarySearch/key_search/<key_search>',
                 'thu-vien-dai-muc'=>'Site/LibaryHight',
                 'thu-vien-trung-muc'=>'Site/LibaryNormal',
                 'thu-vien-tieu-muc'=>'Site/LibarySlow',

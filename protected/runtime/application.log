@@ -20724,3 +20724,1317 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/07/28 14:18:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/28 14:18:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Error')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/28 14:19:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/28 14:19:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Error')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/28 14:19:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/28 14:19:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Error')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/28 14:20:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/28 14:20:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Error')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/28 14:20:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/28 14:20:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Error')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/28 14:20:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/07/28 14:20:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\Github\conggiaoooo\conggiao3\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\Github\conggiaoooo\conggiao3\framework\base\CModule.php(103): CModule->getComponent('db')
+#4 D:\Github\conggiaoooo\conggiao3\protected\components\CommonDB.php(41): CModule->__get('db')
+#5 D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php(9): CommonDB::GetAll('SELECT * FROM t...', Array)
+#6 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(281): SiteController->init()
+#7 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Error')
+#8 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#10 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/07/28 14:20:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/layout/favicon.ico".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('images/layout/f...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/layout/favicon.ico
+---
+2015/07/28 14:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a21.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a21.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a21.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b21.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b21.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b21.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:20:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/loading.gif".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/loading.gif')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/loading.gif
+HTTP_REFERER=http://localhost:5555/
+---
+2015/07/28 14:21:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:21:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:21:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:21:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:21:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:21:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:22:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:23:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:23:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:23:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:23:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:23:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:23:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:26:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:26:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:26:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:37:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/layout/favicon.ico".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('images/layout/f...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/layout/favicon.ico
+HTTP_REFERER=http://localhost:5555/
+---
+2015/07/28 14:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:37:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:37:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:37:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:37:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:37:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:37:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:38:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/tieu-muc-title-bottom.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/tieu-muc-ti...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/tieu-muc-title-bottom.png
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:40:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:40:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:40:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:40:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:41:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:41:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:41:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "thu-vien/df".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('thu-vien/df')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/thu-vien/df
+HTTP_REFERER=http://localhost:5555/thu-vien
+---
+2015/07/28 14:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "thu-vien/sách giáo dục".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('thu-vien/s\xC3\xA1ch ...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/thu-vien/s%C3%A1ch%20gi%C3%A1o%20d%E1%BB%A5c
+HTTP_REFERER=http://localhost:5555/thu-vien/df
+---
+2015/07/28 14:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:45:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Github\conggiaoooo\conggiao3\framework\web\CController.php:336
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(282): CController->run('Libary')
+#4 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Libary/key...')
+#5 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#7 {main}
+REQUEST_URI=/thu-vien/s%C3%A1ch%20gi%C3%A1o%20d%E1%BB%A5c
+HTTP_REFERER=http://localhost:5555/thu-vien/df
+---
+2015/07/28 14:45:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:45:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Github\conggiaoooo\conggiao3\framework\web\CController.php:336
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(282): CController->run('Libary')
+#4 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Libary/key...')
+#5 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#7 {main}
+REQUEST_URI=/thu-vien/s%C3%A1ch%20gi%C3%A1o%20d%E1%BB%A5c
+HTTP_REFERER=http://localhost:5555/thu-vien/df
+---
+2015/07/28 14:45:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:45:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:45:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:45:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:46:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\Github\conggiaoooo\conggiao3\framework\web\CController.php:336
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(282): CController->run('Libary')
+#4 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('Site/Libary')
+#5 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#7 {main}
+REQUEST_URI=/thu-vien/
+---
+2015/07/28 14:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:46:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:46:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:46:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:46:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:46:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:46:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 14:47:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien/asd
+---
+2015/07/28 15:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:00:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien/
+---
+2015/07/28 15:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:00:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:00:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien/aasdfd
+---
+2015/07/28 15:00:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:00:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:04:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien/aasdfd
+---
+2015/07/28 15:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:04:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:04:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien/1-sss
+---
+2015/07/28 15:04:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:04:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien/Xem%20t%E1%BA%A5t%20c%E1%BA%A3%20s%C3%A1ch-ss
+---
+2015/07/28 15:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:05:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/
+---
+2015/07/28 15:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a21.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a21.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a21.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/loading.gif".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/loading.gif')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/loading.gif
+HTTP_REFERER=http://localhost:5555/
+---
+2015/07/28 15:05:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b21.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b21.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b21.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:05:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:05:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:05:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+HTTP_REFERER=http://localhost:5555/thu-vien/0-asdf
+---
+2015/07/28 15:05:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:28:26 [error] [php] Undefined offset: 1 (D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php:87)
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(286): SiteController->runAction()
+#3 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(282): SiteController->run()
+#5 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Github\conggiaoooo\conggiao3\index.php(17): CWebApplication->run()
+REQUEST_URI=/thu-vien/ss
+in D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php (87)
+in D:\Github\conggiaoooo\conggiao3\index.php (17)
+2015/07/28 15:28:28 [error] [php] Undefined offset: 1 (D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php:87)
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(286): SiteController->runAction()
+#3 D:\Github\conggiaoooo\conggiao3\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(282): SiteController->run()
+#5 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#7 D:\Github\conggiaoooo\conggiao3\index.php(17): CWebApplication->run()
+REQUEST_URI=/thu-vien/ss
+in D:\Github\conggiaoooo\conggiao3\protected\controllers\SiteController.php (87)
+in D:\Github\conggiaoooo\conggiao3\index.php (17)
+2015/07/28 15:28:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:28:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:28:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:28:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:28:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 15:28:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 16:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/icon-search.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/icon-search...')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/icon-search.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 16:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/a03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/a03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/a03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---
+2015/07/28 16:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "img/b03.png".' in D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\Github\conggiaoooo\conggiao3\framework\web\CWebApplication.php(141): CWebApplication->runController('img/b03.png')
+#1 D:\Github\conggiaoooo\conggiao3\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\Github\conggiaoooo\conggiao3\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/img/b03.png
+HTTP_REFERER=http://localhost:5555/css/main.css
+---

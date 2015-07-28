@@ -74,18 +74,86 @@ class SiteController extends CController {
 
         $this->renderPartial('_slide_product');
     }
-
     public function actionLibary() {
+
         $c="";//$c = TblConfig::model()->find();
         $this->layout = "";
         $this->render('libary',array('c'=>$c));
+    }
+    public function actionLibarySearch($key_search) {
+
+        $arrSearch = explode('-',$key_search);
+        $daimucId =$arrSearch[0];
+        $keySearch =$arrSearch[1];
+        $c="";//$c = TblConfig::model()->find();
+        $this->layout = "";
+        $this->render('libary',array('arrSearch'=>$arrSearch));
+    }
+    public function actionSubLibaryTieuMucSearch() {
+//
+//        select * from `tbl_book`
+//where parent_id in (
+//
+//            SELECT id FROM tbl_index
+//WHERE parent_id in (SELECT id FROM tbl_index
+//WHERE parent_id=1 ) and type=2 )
+//
+//
+        $parent_id=Common::getPara("daimuc");
+        if(Common::getPara("from")=="order"){
+            $parent_id = Common::getSession("parent_id");
+        }else{
+            Common::setSession("parent_id",$parent_id);
+        }
+        // from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
+        $gotopage = Common::getPara("gotopage");
+        $orderbyid = Common::getPara("orderbyid");
+        $perpageshow = Common::getPara("perpageshow");
+
+        $page = ($gotopage!="") ? $gotopage : 1;
+        $pageSize = ($perpageshow!="") ? $perpageshow : 3;
+        $arrView["gotopage"]=$gotopage;
+        $arrView["orderbyid"]=$orderbyid;
+        $arrView["perpageshow"]=$perpageshow;
+
+        $query1 = Yii::app()->db->createCommand() //this query contains all the data
+            ->select(array('*'))
+            ->from(array('tbl_book'))
+            ->where('delete_logic_flg =0 and parent_id=:parent_id')
+            ->limit($pageSize,  ($page-1) * $pageSize); // the trick is here!
+        if ($orderbyid==0){
+            $query1=   $query1->order('book_name ');
+        }else
+            if ($orderbyid==1){
+                $query1=  $query1->order('viewer_count ');
+            }
+
+        if($parent_id!=0){
+            $query1->bindParam(':parent_id',  $parent_id, PDO::PARAM_STR);
+        }
+
+        $dataItem= $query1->queryAll();
+
+        $item_count = Yii::app()->db->createCommand() // this query get the total number of items,
+            ->select(' count(id) as count ')
+            ->from(array('tbl_book'))
+            ->where(' delete_logic_flg =0  and parent_id=:parent_id');
+
+        $item_count->bindParam(':parent_id',   $parent_id, PDO::PARAM_STR);
+        $itemCount= $item_count->queryScalar();
+        $totalPage = ceil($itemCount / $pageSize);
+
+        $dataPage =array('totalPage'=>$totalPage,'pageSize'=>$pageSize,'itemCount'=>$itemCount,'page'=>$page);
+        $this->renderPartial('_sublibary_tieumuc',array('dataItem'=>$dataItem,'arrDataPage'=>$dataPage,'arrView'=>$arrView));
     }
 
     public function actionSubLibary() {
 
         $this->renderPartial('_sublibary');
     }
+
     public function actionSubLibaryTieuMuc() {
+
         $parent_id= (isset($_GET['myid']) ? $_GET['myid'] : "");
         if(Common::getPara("from")=="order"){
             $parent_id = Common::getSession("parent_id");
@@ -123,15 +191,10 @@ class SiteController extends CController {
             ->where(' delete_logic_flg =0  and parent_id=:parent_id');
 
         $item_count->bindParam(':parent_id',   $parent_id, PDO::PARAM_STR);
-       $itemCount= $item_count->queryScalar(); // do not LIMIT it, this must count all items!
-
-        $totalPage = ceil($itemCount / $pageSize);//(int) ($itemCount / $pageSize);
-
-        //add the last page, ugly
-       // if ($pageSize % $pageSize != 0) $totalPage++;
+       $itemCount= $item_count->queryScalar();
+        $totalPage = ceil($itemCount / $pageSize);
 
         $dataPage =array('totalPage'=>$totalPage,'pageSize'=>$pageSize,'itemCount'=>$itemCount,'page'=>$page);
-
         $this->renderPartial('_sublibary_tieumuc',array('dataItem'=>$dataItem,'arrDataPage'=>$dataPage,'arrView'=>$arrView));
     }
     //phuong
