@@ -40,12 +40,17 @@
                     <span style="font-size:34px;font-weight: bold;color: #D5904D;">Việt Nam</span>
                 </div>
             </div>
-            <div class="logo-login1">
+            <div class="logo-login" >
                 <?php if(isset(Yii::app()->session['id_user'])): ?>
                     <?php echo Yii::app()->session['display_name']; ?>
                 <a class="register1" href="<?php echo Yii::app()->baseUrl.'/update-account'?>">Thông tin tài khoản </a>
                    <a class="register2" href="<?php echo Yii::app()->baseUrl.'/update-password'?>" > Đổi mật khẩu</a>
                     <a class="register3" href="<?php echo Yii::app()->baseUrl.'/dang-xuat'?>"> Thoát </a>
+					<style>
+					.logo-login{
+						margin-top:-43px;
+					}
+					</style>
                 <?php else: ?>
                     <a class="register" href="<?php echo Yii::app()->baseUrl.'/dang-ky'?>">
                         <img src="<?php echo Yii::app()->baseUrl.'/images/ic_register.png'?>" />Đăng ký
