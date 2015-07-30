@@ -116,7 +116,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $perpageshow = Common::getPara("perpageshow");
 
         $page = ($gotopage!="") ? $gotopage : 1;
-        $pageSize = ($perpageshow!="") ? $perpageshow : 3;
+        $pageSize = ($perpageshow!="") ? $perpageshow : 1;
         $arrView["gotopage"]=$gotopage;
         $arrView["orderbyid"]=$orderbyid;
         $arrView["perpageshow"]=$perpageshow;
@@ -135,7 +135,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
             }
 
         if($parent_id!=0){
-            $query1->bindParam(':parent_id',  $parent_id, PDO::PARAM_STR);
+            $query1->bindParam(':parent_id',  $parent_id, PDO::PARAM_INT);
         }
         $keyword = "%".$keysearch."%";
         $query1->bindParam(':book_name',  $keyword, PDO::PARAM_STR);
@@ -145,9 +145,14 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $item_count = Yii::app()->db->createCommand() // this query get the total number of items,
             ->select(' count(id) as count ')
             ->from(array('tbl_book'))
-            ->where(' delete_logic_flg =0  and parent_id=:parent_id');
+            ->where(' delete_logic_flg =0  and book_name like :book_name '.$subQuery);
 
-        $item_count->bindParam(':parent_id',   $parent_id, PDO::PARAM_STR);
+        if($parent_id!=0){
+            $item_count->bindParam(':parent_id',  $parent_id,  PDO::PARAM_INT);
+        }
+        $keyword = "%".$keysearch."%";
+        $item_count->bindParam(':book_name',  $keyword, PDO::PARAM_STR);
+
         $itemCount= $item_count->queryScalar();
         $totalPage = ceil($itemCount / $pageSize);
 

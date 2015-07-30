@@ -60,7 +60,7 @@
                     $pageSize= $arrDataPage['pageSize'];
                     $page= $arrDataPage['page'];
                     $itemCount= $arrDataPage['itemCount'];
-                    // var_dump($arrDataPage);
+
                    echo(   Common::getPagging($totalPage,$pageSize,$page,$itemCount));
                     ?>
 
@@ -111,7 +111,7 @@
                 }
                 $.ajax({
                     type:"POST",
-                    url:'/Site/SubLibaryTieuMuc?from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
+                    url:'/Site/SubLibaryTieuMucSearch?from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
                     data:{},
                     success:function(result){
                         $("#divcontent").empty().append(result);

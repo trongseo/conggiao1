@@ -16,7 +16,7 @@ ol,ul{list-style:none;}
 body{
     line-height: 20px;
     height:100%;
-	 background: url('../images/bg_layer_1.jpg') ;
+	 background: url('../images/background_new.jpg') ;
 	 
 }
 a{
@@ -93,13 +93,6 @@ a{
     /*border:1px solid #EAC18D;*/
     box-shadow: -1px 3px 9px 2px #A9A8A5;
 }
-.container-wp-fullwidth{
-    
-    margin:0 auto;
-    background: url('../images/bg.png') ;
-    /*border:1px solid #EAC18D;*/
-    box-shadow: -1px 3px 9px 2px #A9A8A5;
-}
 .container-content{
    background: url('../images/bg-all.png');
     border: 1px solid #FCE0BB;    
@@ -163,6 +156,7 @@ a{
     text-align: center;
     border-left: 1px #F3CB90 solid;
     margin-bottom: 3px;
+	
 }
 .menu:hover{
     background: #5A2D0C;
@@ -175,6 +169,7 @@ a{
     background: url(../img/icon-search.png) no-repeat #fff;
     border-top: 1px solid #C48B56;
     border-bottom: 1px solid #C48B56;
+	height: 39px;
 }
 .menu-search input{
     padding: 8px 10px 9px 10px;
@@ -251,6 +246,12 @@ a{
 }
 .footer-wp .items-6:hover,.footer-wp .active-6{
     background: url('../images/ic_question_on.png') no-repeat scroll 0 0;
+}
+.footer-wp .items-7{
+    background: url('../images/ic_laptop.png') no-repeat scroll 0 0;
+}
+.footer-wp .items-7:hover,.footer-wp .active-7{
+    background: url('../images/ic_laptop_on.png') no-repeat scroll 0 0;
 }
 .box-login{
     background: #FAE5C8 none repeat scroll 0 0;
@@ -367,7 +368,7 @@ table{
     position: absolute;
     cursor: pointer;
     display: block;
-    background: url('../img/a21.png') center center no-repeat;
+    background: url('/img/a21.png') center center no-repeat;
     overflow: hidden;
 }
 
@@ -580,11 +581,9 @@ ul {
 	background: #be7339;
 	color:#fff;
 }
-/**menu left**/
 .menu1 > li > a:hover, .menu1 > li > a.active {
 	background: #be7339;
 	color: #5A421E;
-	
 }
 .menu1 ul.kid-menu li a{
 	border-bottom: none;
@@ -676,48 +675,23 @@ height:83px;
     height: 36px;
     opacity: 0.8;
 }
-
-.footer-wp .items-7{
-    background: url('../images/ic_laptop.png') no-repeat scroll 0 0;
+.slider-home-container{
+	
+	  background: url(../images/shadow.png) bottom center no-repeat;
+	  width:100%;
+	  height:286px;
 }
-.footer-wp .items-7:hover,.footer-wp .active-6{
-    background: url('../images/ic_laptop_on.png') no-repeat scroll 0 0;
+.slide-left-container{
+	margin: 1px 2px 1px -15px;
 }
-.menu-hight-pluss{
-	background: url('../images/ic_plus_dai_muc.png') no-repeat right top;
-	width:16px;
-	height:16px;
-	float:right;
-}
-.menu-hight-pluss-active{
-	background: url('../images/ic_subtract_dai_muc.png') no-repeat right top;
-	width:16px;
-	height:16px;
-	float:right;
-}.menu-normal-pluss{
-	background: url('../images/ic_plus_trung_muc.png') no-repeat right top;
-	width:16px;
-	height:16px;
-	float:right;
-}
-.menu-normal-pluss-active{
-	background: url('../images/ic_subtract_trung_muc.png') no-repeat right top;
-	width:16px;
-	height:16px;
-	float:right;
-}
-.footer-wp h4{
-	border-bottom:1px solid #333;
-}
-.cateleft-hight-lv{
-	background: url('/images/ic_plus_dai_muc.png') no-repeat right top;
-}
-.cateleft-hight-lv:hover{
-	background: url('../images/ic_subtract_dai_muc.png') no-repeat right top;
-}
-#slider-shadow{
-background: transparent url("/images/shadow.png") no-repeat scroll center bottom;
-height: 300px;
-width: 100%;
-margin-bottom: -20px;
+.slide-right-container{
+	margin: 1px -12px 1px 0px;
+	position:relative;
+	
+}.slide-right-content{
+	margin: 1px 2px 1px -15px;
+	position: absolute;
+	left: 33%;
+	top: 69%;
+	width: 161px;
 }

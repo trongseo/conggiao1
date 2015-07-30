@@ -87,7 +87,9 @@
                                 Tủ sách
                             </a>
                         <?php else: ?>
-
+                            <a href="javascript:alert('Vui lòng đăng nhập!')" class="menu" style="width: 29%;">
+                                Tủ sách
+                            </a>
                         <?php endif; ?>
                         <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu" style="width: 29%;">
                             Giới thiệu

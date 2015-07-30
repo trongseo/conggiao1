@@ -41,13 +41,17 @@ div.container-box-book-preview {
     background-color: #f1f1f1;
 }
 .box {
-    position:relative;
-    border:1px solid #9BA1A5;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
+    /*position:relative;*/
+    /*border:1px solid #9BA1A5;*/
+    /*-webkit-border-radius: 8px;*/
+    /*-moz-border-radius: 8px;*/
+    /*border-radius: 8px;*/
     /*margin:0 0 8px 0;*/
-    padding: 5px 0;
+    /*padding: 5px 0;*/
+    padding: 9px;
+    background: url(../images/bg-slider.png);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 1px #333;
 
 }
 .box .corner, .box .corner-featured, .box .corner-featured-typeWhite {
@@ -499,11 +503,11 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     /*background:url(../images/preview-img-new2.png) no-repeat left bottom*/
 }
 .Border-BottomH3 {
-    background: url(http://www.ybook.vn/themes/newclassic/images/shadows.png) no-repeat scroll 80% 100% transparent;
+    background: url(/images/line_shadow.png) no-repeat scroll 80% 100% transparent;
     clear: both;
     height: 11px;
     margin: 0 auto;
-    width: 751px;
+
 }
 #sliderNewYorkTimes{
     left: 34px !important;
