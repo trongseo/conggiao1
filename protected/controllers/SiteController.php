@@ -2,6 +2,7 @@
 
 class SiteController extends CController {
     public $comboData = 'value';
+    public $ID_BOOK="";
     function init() {
         parent::init();
         $main_type = 0;
@@ -371,10 +372,12 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $c="";//$c = TblConfig::model()->find();
         $this->render('contact',array('c'=>$c,'type'=>$type));
     }
+
     public function actionDetail($id){
         $this->layout = "main_detail";
+        $this->ID_BOOK=$id;
         $c = TblConfig::model()->find();
-        $this->render('detail',array('c'=>$c));
+        $this->render('detail',array('id'=>$id,'c'=>$c));
     }
 
     public function actionLoadCapcha(){
@@ -382,11 +385,15 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
     }
     public function actionLoadInfo(){
         $id = $_POST['id'];
+       $idbook = Common::getPara('ID_BOOK');
+       //var_dump($idbook);exit();
+        $arrBook = CommonDB::GetDataRow('tbl_book','delete_logic_flg=0 AND active=1 AND id='.$idbook);
         if($id == 0){
             $this->renderPartial('_readbook');
         }
         if($id == 1){
-            $this->renderPartial('_info');
+
+            $this->renderPartial('_info',array('arrBook'=>$arrBook));
         }
         if($id == 2){
             $this->renderPartial('_comment');

@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 return array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'KINHTANPHUC.COM',
+    'name' => 'THƯ VIỆN CÔNG GIÁO',
     'defaultController' => 'site',
    // 'theme' => 'admin-green',
     'theme' => 'admin-template',

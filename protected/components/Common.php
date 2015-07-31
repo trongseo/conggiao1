@@ -34,7 +34,19 @@ class Common {
         return $yyyy.'-'.$month.'-'.$day;
 
     }
+    public static function converYYYYMMDDtoDaymonyyyyPara($originalDate){
+//        $d="05/Feb/2010:14:00:01";
+//        $dr= date_create_from_format('d/M/Y:H:i:s', $d);
+//        echo $dr->format('Y-m-d H:i:s');
 
+//23/01/2015
+        $arrDate =  explode('-',$originalDate);
+        $yyyy = $arrDate[0];
+        $month = $arrDate[1];
+        $day = $arrDate[2];
+        return $day.'/'.$month.'/'.$yyyy;
+
+    }
 public static function getPagging($totalPage,$pageSize,$page,$itemCount){
         $end_page = $totalPage;
         $totalpage=$totalPage;

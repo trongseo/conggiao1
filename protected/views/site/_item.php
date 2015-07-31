@@ -16,6 +16,8 @@
 		$active3 = 'active-item';
 	}
 ?>
+
+
 <div onclick="LoadInfo(0);" class="item-book <?php echo $active0?>">
 	Đọc sách
 </div>

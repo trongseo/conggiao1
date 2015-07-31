@@ -1,6 +1,7 @@
 <?php
     $c = TblConfig::model()->find();
 ?>
+  
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -120,6 +121,7 @@
         </div>
     </body>
     <script>
+	var ID_BOOK='<?php echo $this->ID_BOOK; ?>';
         $(document).ready(function() {
             $("#fabric").select2();
             $(".item-book").click(function(){
@@ -160,9 +162,10 @@
             })
         }
         function LoadInfo(id){
+			
             $.ajax({
                 type:"POST",
-                url:'<?php echo Yii::app()->baseUrl ?>/Site/LoadInfo',
+                url:'<?php echo Yii::app()->baseUrl ?>/Site/LoadInfo?ID_BOOK='+ID_BOOK,
                 data:{id:id},
                 success:function(result){
                     $("#content-wp").empty().append(result);
