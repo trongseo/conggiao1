@@ -352,8 +352,8 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $this->render('welcome',array('page'=>$check));
     }
     public function actionAboutUs() {
-       $check = TblConfig::model()->find();
-        $this->render('about',array('page'=>$check));
+       $check = array('aaa'=>123,'bb'=>array('dd','kkk')); $check2 = TblConfig::model()->find();
+        $this->render('about',array('page1'=>$check,'page'=>$check2));
     }
     public function actionContact() {
         $type = 0;
@@ -384,8 +384,42 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $this->renderPartial('_capcha');
     }
     public function actionLoadInfo(){
+        //comment udpate
+        $txtComment = Common::getPara('txtComment');
+        if($txtComment!=""){
+echo $txtComment;
+            $queryUpdate = " insert into `tbl_comment`
+            (
+             `user_id`,
+             `comment_date`,
+             `content`,
+             `active`,
+             `book_id`,
+             `admin_id_check`,
+             `is_check`)
+values (
+        :user_id,
+        :comment_date,
+        :content,
+        :active,
+        :book_id,
+        :admin_id_check,
+        :is_check);";
+           // $date = new DateTime('now', new DateTimeZone('Asia/Bangkok'));
+            date_default_timezone_set('Asia/Bangkok');
+            $hsTable['user_id']=Yii::app()->session['id_user'];
+            $hsTable['comment_date']=Common::getCurrentDateYYYYDDMM();
+            $hsTable['content']=$txtComment;
+            $hsTable['active']=0;
+            $hsTable['book_id']= Common::getSession('idbook');
+            $hsTable['admin_id_check']=0;
+            $hsTable['is_check']=0;
+           CommonDB::runSQL($queryUpdate,$hsTable);
+            echo "1";Yii::app()->end();
+        }
         $id = $_POST['id'];
        $idbook = Common::getPara('ID_BOOK');
+        Common::setSession('idbook',$idbook);
        //var_dump($idbook);exit();
         $arrBook = CommonDB::GetDataRow('tbl_book','delete_logic_flg=0 AND active=1 AND id='.$idbook);
         if($id == 0){

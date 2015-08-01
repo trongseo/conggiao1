@@ -16,6 +16,10 @@ class Common {
            return Yii::app()->session[$key];
         return "";
     }
+    public static function getCurrentDateYYYYDDMM(){
+        date_default_timezone_set('Asia/Bangkok');
+        return date('Y-m-d H:m:i');
+    }
     public static function setSession($key,$valueadd){
 
           Yii::app()->session[$key]=$valueadd;
