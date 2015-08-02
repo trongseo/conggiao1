@@ -334,7 +334,8 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
             }
 
             $queryUpdate = "Update tbl_users set password=:password where  code_active=:code_active";
-            $hsTable["password"]= Common::getPara('password');
+            $hsTable["password"]=md5( Common::getPara('password'));
+            CommonDB::runSQL($queryUpdate,$hsTable);
             echo "1";Yii::app()->end();
             return;
         }
@@ -383,44 +384,15 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
     public function actionLoadCapcha(){
         $this->renderPartial('_capcha');
     }
+
     public function actionLoadInfo(){
         //comment udpate
-        $txtComment = Common::getPara('txtComment');
-        if($txtComment!=""){
-echo $txtComment;
-            $queryUpdate = " insert into `tbl_comment`
-            (
-             `user_id`,
-             `comment_date`,
-             `content`,
-             `active`,
-             `book_id`,
-             `admin_id_check`,
-             `is_check`)
-values (
-        :user_id,
-        :comment_date,
-        :content,
-        :active,
-        :book_id,
-        :admin_id_check,
-        :is_check);";
-           // $date = new DateTime('now', new DateTimeZone('Asia/Bangkok'));
-            date_default_timezone_set('Asia/Bangkok');
-            $hsTable['user_id']=Yii::app()->session['id_user'];
-            $hsTable['comment_date']=Common::getCurrentDateYYYYDDMM();
-            $hsTable['content']=$txtComment;
-            $hsTable['active']=0;
-            $hsTable['book_id']= Common::getSession('idbook');
-            $hsTable['admin_id_check']=0;
-            $hsTable['is_check']=0;
-           CommonDB::runSQL($queryUpdate,$hsTable);
-            echo "1";Yii::app()->end();
-        }
+      // $this->LoadInfoCommentUpdate();
+        $readBook = new ClsReadBook();
+        $readBook->InsertComment();
         $id = $_POST['id'];
        $idbook = Common::getPara('ID_BOOK');
         Common::setSession('idbook',$idbook);
-       //var_dump($idbook);exit();
         $arrBook = CommonDB::GetDataRow('tbl_book','delete_logic_flg=0 AND active=1 AND id='.$idbook);
         if($id == 0){
             $this->renderPartial('_readbook');
@@ -430,11 +402,31 @@ values (
             $this->renderPartial('_info',array('arrBook'=>$arrBook));
         }
         if($id == 2){
-            $this->renderPartial('_comment');
+            $dataPage= $readBook->LoadComment($idbook);
+            $this->renderPartial('_comment',array('dataPage'=>$dataPage));
         }
         if($id == 3){
             $this->renderPartial('_book');
         }
+    }
+    public function actionAddBook(){
+
+        $idbook = Common::getPara('ID_BOOK');
+        $hsTable["book_id"]=$idbook;
+        $hsTable["user_id"]= Common::getSession(USER_ID);
+        $hsTable["create_date"]= Common::getCurrentDateYYYYDDMMNotime();
+        $query ="INSERT INTO `tbl_bookcase`
+            (
+             `book_id`,
+             `user_id`,
+             `create_date`)
+VALUES (
+        :book_id,
+        :user_id,
+        :create_date); ";
+        CommonDB::runSQL($query,$hsTable);
+        echo "1";
+        Yii::app()->end();
     }
     public function actionLoadItem(){
         $id = $_POST['id'];

@@ -20,6 +20,10 @@ class Common {
         date_default_timezone_set('Asia/Bangkok');
         return date('Y-m-d H:m:i');
     }
+    public static function getCurrentDateYYYYDDMMNotime(){
+        date_default_timezone_set('Asia/Bangkok');
+        return date('Y-m-d');
+    }
     public static function setSession($key,$valueadd){
 
           Yii::app()->session[$key]=$valueadd;
@@ -38,6 +42,28 @@ class Common {
         return $yyyy.'-'.$month.'-'.$day;
 
     }
+    public static function truncate($string,$length=100,$append="&hellip;") {
+        $string = trim($string);
+
+        if(strlen($string) > $length) {
+            $string = wordwrap($string, $length);
+            $string = explode("\n", $string, 2);
+            $string = $string[0] . $append;
+        }
+
+        return $string;
+    }
+    public static function formatDateShowDDMMYYYYHHmmss($originalDate){
+        $phpdate = strtotime( $originalDate );
+        $mysqldate = date( 'd-m-Y H:i:s', $phpdate );
+        return $mysqldate;
+    }
+    public static function formatDateShowDDMMYYYY($originalDate){
+        $phpdate = strtotime( $originalDate );
+        $mysqldate = date( 'd/m/Y', $phpdate );
+        return $mysqldate;
+    }
+
     public static function converYYYYMMDDtoDaymonyyyyPara($originalDate){
 //        $d="05/Feb/2010:14:00:01";
 //        $dr= date_create_from_format('d/M/Y:H:i:s', $d);

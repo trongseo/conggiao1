@@ -123,6 +123,18 @@ class CommonDB {
         CommonDB::setPara($command,$hashTable);
         $command->execute();
     }
+    public static   function runUpdate($tableName,$hashColum,$whereNoAnd){
+        $sqlUpdate = "Update ".$tableName." Set ";
+        $listUpdateColumn ="";
+        foreach($hashColum as $key=>$value){
+            $vald=$key.'=:'.$key;
+            $listUpdateColumn.=$vald.',';
+        }
+        $listUpdateColumn=rtrim($string, ",");
+        $sqlUpdate .= $listUpdateColumn;
+        $sqlUpdate .=" WHERE 1=1 and ".$whereNoAnd;
+       CommonDB::runSQL($sqlUpdate,$hashColum);
+    }
     public static   function runSQLInsert($tableName,$guid){
         $command = Yii::app()->db->createCommand("insert into ".$tableName."(".$tableName."_guid)  values('".$guid."')");
         $command->execute();

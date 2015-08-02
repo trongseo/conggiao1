@@ -13,10 +13,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <link rel="shortcut icon" href="<?php echo Yii::app()->baseUrl?>/images/layout/favicon.ico"  />
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/bootstrap.css" type="text/css"/>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+    <link href="/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/main.css" type="text/css"/>
     <script src="<?php echo Yii::app()->baseUrl?>/js/jquery-1.9.1.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+    <script src="/css/select2.min.js"></script>
     <script type="text/javascript" language="javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.bt.min.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/jssor.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/jssor.slider.js"></script>
@@ -131,7 +131,7 @@
         <div class="col-md-12" >
             <div class="row" id="slide-warp"></div>
         </div>
-        <div class="clear1"></div>
+
         <div class="col-md-12">
             <?php echo $content?>
         </div>

@@ -1638,6 +1638,254 @@ Hai con người tưởng chừng như hoàn hảo ấy lại có một qu
 </div>
 </div>
 
+<div class="content-box" style="float: right;">
+<div class="book-container-box container-box-book-preview box clearfix">
+<div class="arrow-home" style="margin-left: 5px">
+    <h4>Tham khảo</h4>
+</div>
+<div class="arrow-slide-right"></div>
+<div class="clear"></div>
+<div class="Border-BottomH3"></div>
+<div class="preview-box clearfix">
+    <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
+        <ul>
+            <li>
+                <div id="img-block">
+                    <a href="goi-sach-in/6599/cung-bac-tinh-yeu.html" class="preview-img">
+                        <div class="main-imgintro">
+                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="preview-text">
+                    <span class="book-title">Cung bậc tình yêu</span> <span class="author">Sylvia Day</span> <span class="preview">Bộ tiểu thuyết CROSSFIRE gồm 3 tập: CHẠM MỞ - SOI CHIẾU - HÒA QUYỆN, thuộc thể loại tiểu thuyết tình cảm dành cho người trưởng thành.
+Nhân vật chính là Gideon Cross, người đàn ông đẹp trai, giàu có, quyền lực bậc nhất New York, và Eva Tramell, cô tiểu thư tóc vàng xinh đẹp, thông minh, con nhà dòng dõi.
+Hai con người tưởng chừng như hoàn hảo ấy lại có một quá khứ đau đớn vì bị lạm dụng tình dục từ chính những người gần gũi. Họ đã phải trải qua nhiều thử thách để dần dà hiểu biết tâm hồn nhau để rồi đi đến một kết thúc viên mãn.</span>
+                </div>
+                <span class="dots">...</span>
+
+            </li>
+            <li>
+                <div id="img-block">
+                    <a href="goi-sach-in/6599/cung-bac-tinh-yeu.html" class="preview-img">
+                        <div class="main-imgintro">
+                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="preview-text">
+                    <span class="book-title">Cung bậc tình yêu</span> <span class="author">Sylvia Day</span> <span class="preview">Bộ tiểu thuyết CROSSFIRE gồm 3 tập: CHẠM MỞ - SOI CHIẾU - HÒA QUYỆN, thuộc thể loại tiểu thuyết tình cảm dành cho người trưởng thành.
+Nhân vật chính là Gideon Cross, người đàn ông đẹp trai, giàu có, quyền lực bậc nhất New York, và Eva Tramell, cô tiểu thư tóc vàng xinh đẹp, thông minh, con nhà dòng dõi.
+Hai con người tưởng chừng như hoàn hảo ấy lại có một quá khứ đau đớn vì bị lạm dụng tình dục từ chính những người gần gũi. Họ đã phải trải qua nhiều thử thách để dần dà hiểu biết tâm hồn nhau để rồi đi đến một kết thúc viên mãn.</span>
+                </div>
+                <span class="dots">...</span>
+
+            </li>
+            <li>
+                <div id="img-block">
+                    <a href="goi-sach-in/6599/cung-bac-tinh-yeu.html" class="preview-img">
+                        <div class="main-imgintro">
+                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="preview-text">
+                    <span class="book-title">Cung bậc tình yêu</span> <span class="author">Sylvia Day</span> <span class="preview">Bộ tiểu thuyết CROSSFIRE gồm 3 tập: CHẠM MỞ - SOI CHIẾU - HÒA QUYỆN, thuộc thể loại tiểu thuyết tình cảm dành cho người trưởng thành.
+Nhân vật chính là Gideon Cross, người đàn ông đẹp trai, giàu có, quyền lực bậc nhất New York, và Eva Tramell, cô tiểu thư tóc vàng xinh đẹp, thông minh, con nhà dòng dõi.
+Hai con người tưởng chừng như hoàn hảo ấy lại có một quá khứ đau đớn vì bị lạm dụng tình dục từ chính những người gần gũi. Họ đã phải trải qua nhiều thử thách để dần dà hiểu biết tâm hồn nhau để rồi đi đến một kết thúc viên mãn.</span>
+                </div>
+                <span class="dots">...</span>
+
+            </li>
+            <li>
+                <div id="img-block">
+                    <a href="goi-sach-in/6599/cung-bac-tinh-yeu.html" class="preview-img">
+                        <div class="main-imgintro">
+                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="preview-text">
+                    <span class="book-title">Cung bậc tình yêu</span> <span class="author">Sylvia Day</span> <span class="preview">Bộ tiểu thuyết CROSSFIRE gồm 3 tập: CHẠM MỞ - SOI CHIẾU - HÒA QUYỆN, thuộc thể loại tiểu thuyết tình cảm dành cho người trưởng thành.
+Nhân vật chính là Gideon Cross, người đàn ông đẹp trai, giàu có, quyền lực bậc nhất New York, và Eva Tramell, cô tiểu thư tóc vàng xinh đẹp, thông minh, con nhà dòng dõi.
+Hai con người tưởng chừng như hoàn hảo ấy lại có một quá khứ đau đớn vì bị lạm dụng tình dục từ chính những người gần gũi. Họ đã phải trải qua nhiều thử thách để dần dà hiểu biết tâm hồn nhau để rồi đi đến một kết thúc viên mãn.</span>
+                </div>
+                <span class="dots">...</span>
+
+            </li>
+            <li>
+                <div id="img-block">
+                    <a href="goi-sach-in/6599/cung-bac-tinh-yeu.html" class="preview-img">
+                        <div class="main-imgintro">
+                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="preview-text">
+                    <span class="book-title">Cung bậc tình yêu</span> <span class="author">Sylvia Day</span> <span class="preview">Bộ tiểu thuyết CROSSFIRE gồm 3 tập: CHẠM MỞ - SOI CHIẾU - HÒA QUYỆN, thuộc thể loại tiểu thuyết tình cảm dành cho người trưởng thành.
+Nhân vật chính là Gideon Cross, người đàn ông đẹp trai, giàu có, quyền lực bậc nhất New York, và Eva Tramell, cô tiểu thư tóc vàng xinh đẹp, thông minh, con nhà dòng dõi.
+Hai con người tưởng chừng như hoàn hảo ấy lại có một quá khứ đau đớn vì bị lạm dụng tình dục từ chính những người gần gũi. Họ đã phải trải qua nhiều thử thách để dần dà hiểu biết tâm hồn nhau để rồi đi đến một kết thúc viên mãn.</span>
+                </div>
+                <span class="dots">...</span>
+
+            </li>
+            <li>
+                <div id="img-block">
+                    <a href="goi-sach-in/6599/cung-bac-tinh-yeu.html" class="preview-img">
+                        <div class="main-imgintro">
+                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="preview-text">
+                    <span class="book-title">Cung bậc tình yêu</span> <span class="author">Sylvia Day</span> <span class="preview">Bộ tiểu thuyết CROSSFIRE gồm 3 tập: CHẠM MỞ - SOI CHIẾU - HÒA QUYỆN, thuộc thể loại tiểu thuyết tình cảm dành cho người trưởng thành.
+Nhân vật chính là Gideon Cross, người đàn ông đẹp trai, giàu có, quyền lực bậc nhất New York, và Eva Tramell, cô tiểu thư tóc vàng xinh đẹp, thông minh, con nhà dòng dõi.
+Hai con người tưởng chừng như hoàn hảo ấy lại có một quá khứ đau đớn vì bị lạm dụng tình dục từ chính những người gần gũi. Họ đã phải trải qua nhiều thử thách để dần dà hiểu biết tâm hồn nhau để rồi đi đến một kết thúc viên mãn.</span>
+                </div>
+                <span class="dots">...</span>
+
+            </li>
+            <li>
+                <div id="img-block">
+                    <a href="goi-sach-in/6599/cung-bac-tinh-yeu.html" class="preview-img">
+                        <div class="main-imgintro">
+                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="preview-text">
+                    <span class="book-title">Cung bậc tình yêu</span> <span class="author">Sylvia Day</span> <span class="preview">Bộ tiểu thuyết CROSSFIRE gồm 3 tập: CHẠM MỞ - SOI CHIẾU - HÒA QUYỆN, thuộc thể loại tiểu thuyết tình cảm dành cho người trưởng thành.
+Nhân vật chính là Gideon Cross, người đàn ông đẹp trai, giàu có, quyền lực bậc nhất New York, và Eva Tramell, cô tiểu thư tóc vàng xinh đẹp, thông minh, con nhà dòng dõi.
+Hai con người tưởng chừng như hoàn hảo ấy lại có một quá khứ đau đớn vì bị lạm dụng tình dục từ chính những người gần gũi. Họ đã phải trải qua nhiều thử thách để dần dà hiểu biết tâm hồn nhau để rồi đi đến một kết thúc viên mãn.</span>
+                </div>
+                <span class="dots">...</span>
+
+            </li>
+
+            <li>
+                <div id="img-block">
+                    <a href="goi-sach-in/6599/cung-bac-tinh-yeu.html" class="preview-img">
+                        <div class="main-imgintro">
+                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
+
+                        </div>
+
+                    </a>
+                </div>
+                <div class="preview-text">
+                    <span class="book-title">Cung bậc tình yêu</span> <span class="author">Sylvia Day</span> <span class="preview">Bộ tiểu thuyết CROSSFIRE gồm 3 tập: CHẠM MỞ - SOI CHIẾU - HÒA QUYỆN, thuộc thể loại tiểu thuyết tình cảm dành cho người trưởng thành.
+Nhân vật chính là Gideon Cross, người đàn ông đẹp trai, giàu có, quyền lực bậc nhất New York, và Eva Tramell, cô tiểu thư tóc vàng xinh đẹp, thông minh, con nhà dòng dõi.
+Hai con người tưởng chừng như hoàn hảo ấy lại có một quá khứ đau đớn vì bị lạm dụng tình dục từ chính những người gần gũi. Họ đã phải trải qua nhiều thử thách để dần dà hiểu biết tâm hồn nhau để rồi đi đến một kết thúc viên mãn.</span>
+                </div>
+                <span class="dots">...</span>
+
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="slider-box">
+    <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
+    <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
+        <ul>
+            <li class="slider-item">
+                <div id="img-block">
+                    <a class="book-picture-shadow" href="goi-sach-in/6595/nhung-y-tuong-kinh-doanh-tuyet-hay.html">
+                        <div class="imgintro">
+                            <img alt="Những ý tưởng kinh doanh tuyệt hay" src="scroll/uploads/books/img-6595-1429253696.jpg" class="img-hover-action book-css3-shadow" />
+                        </div>
+
+                    </a>
+                </div>
+            </li>
+            <li class="slider-item">
+                <div id="img-block">
+                    <a class="book-picture-shadow" href="goi-sach-in/2507/be-chuan-bi-vao-lop-1.html">
+                        <div class="imgintro">
+                            <img alt="Bé chuẩn bị vào lớp 1" src="scroll/uploads/books/img-2507-1369895451.jpg" class="img-hover-action book-css3-shadow" />
+                        </div>
+
+                    </a>
+                </div>
+            </li>
+            <li class="slider-item">
+                <div id="img-block">
+                    <a class="book-picture-shadow" href="goi-sach-in/2507/be-chuan-bi-vao-lop-1.html">
+                        <div class="imgintro">
+                            <img alt="Bé chuẩn bị vào lớp 1" src="scroll/uploads/books/img-2507-1369895451.jpg" class="img-hover-action book-css3-shadow" />
+                        </div>
+
+                    </a>
+                </div>
+            </li>
+            <li class="slider-item">
+                <div id="img-block">
+                    <a class="book-picture-shadow" href="goi-sach-in/2507/be-chuan-bi-vao-lop-1.html">
+                        <div class="imgintro">
+                            <img alt="Bé chuẩn bị vào lớp 1" src="scroll/uploads/books/img-2507-1369895451.jpg" class="img-hover-action book-css3-shadow" />
+                        </div>
+
+                    </a>
+                </div>
+            </li>
+            <li class="slider-item">
+                <div id="img-block">
+                    <a class="book-picture-shadow" href="goi-sach-in/6595/nhung-y-tuong-kinh-doanh-tuyet-hay.html">
+                        <div class="imgintro">
+                            <img alt="Những ý tưởng kinh doanh tuyệt hay" src="scroll/uploads/books/img-6595-1429253696.jpg" class="img-hover-action book-css3-shadow" />
+                        </div>
+
+                    </a>
+                </div>
+            </li>
+            <li class="slider-item">
+                <div id="img-block">
+                    <a class="book-picture-shadow" href="goi-sach-in/2507/be-chuan-bi-vao-lop-1.html">
+                        <div class="imgintro">
+                            <img alt="Bé chuẩn bị vào lớp 1" src="scroll/uploads/books/img-2507-1369895451.jpg" class="img-hover-action book-css3-shadow" />
+                        </div>
+
+                    </a>
+                </div>
+            </li>
+            <li class="slider-item">
+                <div id="img-block">
+                    <a class="book-picture-shadow" href="goi-sach-in/6595/nhung-y-tuong-kinh-doanh-tuyet-hay.html">
+                        <div class="imgintro">
+                            <img alt="Những ý tưởng kinh doanh tuyệt hay" src="scroll/uploads/books/img-6595-1429253696.jpg" class="img-hover-action book-css3-shadow" />
+                        </div>
+
+                    </a>
+                </div>
+            </li>
+            <li class="slider-item">
+                <div id="img-block">
+                    <a class="book-picture-shadow" href="goi-sach-in/2507/be-chuan-bi-vao-lop-1.html">
+                        <div class="imgintro">
+                            <img alt="Bé chuẩn bị vào lớp 1" src="scroll/uploads/books/img-2507-1369895451.jpg" class="img-hover-action book-css3-shadow" />
+                        </div>
+
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</div>
 
 <script type="text/javascript">
     /*<![CDATA[*/

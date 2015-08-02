@@ -8,20 +8,21 @@
 
 <?php foreach($comboData as $value):?>
     <?php
+
     $comboData1 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=1 AND parent_id='.$value['id'].' ORDER BY NAME',[]);
     ?>
     <li class="item<?php echo $value["id"]?>">
-        <a class="aitem<?php echo $value["id"]?>" href="javascript:void(0);" myid="<?php echo $value["id"]?>"><?php echo $value["name"]?> <i class="fa fa-plus-square"></i></a>
+        <a class="aitem<?php echo $value["id"]?>" title="<?php echo $value["name"]?>" href="javascript:void(0);" myid="<?php echo $value["id"]?>"><?php echo Common::truncate($value["name"],22,'.') ;?> <i class="fa fa-plus-square"></i></a>
         <ul class="cute">
     <?php foreach($comboData1 as $value1):?>
-            <li class="subitem1"><a class="trung" href="javascript:void(0);" myid="<?php echo $value1["id"]?>" > <?php echo $value1["name"]?>  <i class="fa fa-plus-square"></i></a>
+            <li class="subitem1"><a class="trung" href="javascript:void(0);" myid="<?php echo $value1["id"]?>" > <?php echo Common::truncate($value1["name"],22,'.');?>  <i class="fa fa-plus-square"></i></a>
 
                 <?php
                 $comboData2 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=2 AND parent_id='.$value1['id'].' ORDER BY NAME',[]);
                 ?>  <ul class="cute">
         <?php foreach($comboData2 as $value2):?>
 
-                    <li class="subitem1 sublittle"><a class="tieu" href="javascript:void(0);" myid="<?php echo $value2["id"]?>" >  <?php echo $value2["name"]?> </a></li>
+                    <li class="subitem1 sublittle"><a class="tieu" href="javascript:void(0);" myid="<?php echo $value2["id"]?>" >  <?php echo Common::truncate($value2["name"],22,'.')?> </a></li>
 
 
         <?php endforeach?>

@@ -547,9 +547,9 @@ ul {
 	list-style: none;
 }
 .menu1 > li > a {
-	width: 100%;
+	width: 148px;
 	line-height: 2.5em;
-	text-indent: 1.2em;
+	text-indent: 1px;
 	display: block;
 	position: relative;
 	color: #be682f;
@@ -561,6 +561,7 @@ ul {
 	margin: 2px 0px;
 	border: 1px solid #be682f;
 	border-radius: 3px;
+	font-size:12px; text-overflow: ellipsis;display:inline-block;
 }
 .menu1 > li > a img{
 	vertical-align: baseline;
@@ -574,7 +575,7 @@ ul {
 	text-decoration:none;
 	border-bottom: 1px solid #ddd;
 	line-height: 2.5em;
-	text-indent: 1.2em;
+	text-indent: 4px;
 	background: #be7339;
 }
 .menu1 ul li a:hover{

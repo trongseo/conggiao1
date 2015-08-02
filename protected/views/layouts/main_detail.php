@@ -21,7 +21,7 @@
         <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/jssor.slider.js"></script>
         <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl?>/css/admin/plugins/font-awesome/css/font-awesome.min.css">
-        <script src="http://malsup.github.com/jquery.form.js"></script>
+        <script src="/js/jquery.form.js"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -50,7 +50,7 @@
                     </div>
                    
 					 <div class="logo-login">
-                        <a class="register" href="<?php echo Yii::app()->baseUrl.'/them-vao-tu-sach'?>">
+                        <a class="register" href="javascript:AddBookToMe()">
                             <img src="<?php echo Yii::app()->baseUrl.'/images/bookstore.png'?>" /> Thêm vào tủ sách
                         </a>
                         
@@ -161,6 +161,16 @@
                 }
             })
         }
+    function AddBookToMe(){
+        $.ajax({
+            type:"POST",
+            url:'<?php echo Yii::app()->baseUrl ?>/Site/AddBook?ID_BOOK='+ID_BOOK,
+            data:{},
+            success:function(result){
+               alert('Đã thêm vào tủ sách của bạn thành công!');
+            }
+        })
+    }
         function LoadInfo(id){
 			
             $.ajax({

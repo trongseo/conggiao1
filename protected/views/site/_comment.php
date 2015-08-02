@@ -1,30 +1,23 @@
 <div class="row">
     <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/Site/LoadInfo">
-        <table style="width: 100%;padding-right: 5px;padding-left: 5px">
-            <tbody><tr>
-                <td class="auto-style2" rowspan="2" style=" width: 114px;background-color: #fff;text-align: center;vertical-align: middle"><img src="/images/logo.png"></td>
-                <td  rowspan="2" style=" width: 14px;">&nbsp;</td>
-                <td style=" background-color: #fff;">aaaaaaaaaaaaa</td>
-            </tr>
-            <tr>
-                <td style="padding-right:5px;background-color: #fff;">asddfsdfsd
-                </td>
-            </tr>
+        <?php $dataItem=$dataPage["dataItem"]; ?>
+        <?php foreach($dataItem as $value):?>
 
-            </tbody></table>
-        <br/>
-        <table style="width: 100%;padding-right: 5px;padding-left: 5px">
-            <tbody><tr>
-                <td class="auto-style2" rowspan="2" style=" width: 114px;background-color: #fff;text-align: center;vertical-align: middle"><img src="/images/logo.png"></td>
-                <td  rowspan="2" style=" width: 14px;">&nbsp;</td>
-                <td style=" background-color: #fff;">aaaaaaaaaaaaa</td>
-            </tr>
-            <tr>
-                <td style="padding-right:5px;background-color: #fff;">asddfsdfsd
-                </td>
-            </tr>
+            <table style="width: 100%;padding-right: 5px;padding-left: 5px">
+                <tbody><tr>
+                    <td class="auto-style2" rowspan="2" style=" width: 114px;background-color: #fff;text-align: center;vertical-align: middle"><img src="/images/logo.png"></td>
+                    <td  rowspan="2" style=" width: 14px;">&nbsp;</td>
+                    <td style=" background-color: #fff;">  <?php echo $value["display_name"]?>(<?php echo Common::formatDateShowDDMMYYYY($value['comment_date']) ?>)</td>
+                </tr>
+                <tr>
+                    <td style="padding-right:5px;background-color: #fff;">  <?php echo nl2br($value["content"])?>
+                    </td>
+                </tr>
 
-            </tbody></table>
+                </tbody></table>
+            <br/>
+        <?php endforeach?>
+
         <br/>
     <table class="auto-style1" style="width: 100%;background-color: #a6e1ec;padding-right: 5px;padding-left: 5px">
         <tr>
