@@ -2,7 +2,7 @@
     $this->pageTitle = $page->title;
     Yii::app()->clientScript->registerMetaTag($page->description, 'description');
     Yii::app()->clientScript->registerMetaTag($page->keyword, 'keywords');
-var_dump($page1);
+
 ?>
 <div class="row">
     <div class="main-login col-xs-12 col-sm-12 col-md-12">

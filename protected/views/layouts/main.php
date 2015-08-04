@@ -43,12 +43,12 @@
             <div class="logo-login" >
                 <?php if(isset(Yii::app()->session['id_user'])): ?>
                     <?php echo Yii::app()->session['display_name']; ?>
-                <a class="register1" href="<?php echo Yii::app()->baseUrl.'/update-account'?>">Thông tin tài khoản </a>
+                <a class="register1" href="<?php echo Yii::app()->baseUrl.'/update-account'?>"> Tài khoản </a>
                    <a class="register2" href="<?php echo Yii::app()->baseUrl.'/update-password'?>" > Đổi mật khẩu</a>
                     <a class="register3" href="<?php echo Yii::app()->baseUrl.'/dang-xuat'?>"> Thoát </a>
 					<style>
-					.logo-login{
-						margin-top:-43px;
+					.logso-login{
+						margin-top:-3px;
 					}
 					</style>
                 <?php else: ?>
@@ -83,7 +83,7 @@
                         </a>
 
                         <?php if(isset(Yii::app()->session['id_user'])): ?>
-                            <a href="<?php echo Yii::app()->baseUrl.'/tham-khao'?>" class="menu" style="width: 29%;">
+                            <a href="<?php echo Yii::app()->baseUrl.'/tu-sach'?>" class="menu" style="width: 29%;">
                                 Tủ sách
                             </a>
                         <?php else: ?>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="col-md-4 menu-search">
                     <div class="row searchbox">
-                        <input type="text" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
+                        <input type="text" value="<?php echo $this->textSearch?>" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
                     </div>
                 </div>
                 <div class="col-md-3 menu-search">
@@ -110,13 +110,17 @@
                             <option value="0">Xem tất cả sách</option>
                             <?php  $comboData=$this->comboData;
 
+									
                             ?>
 
                             <?php foreach($comboData as $value):?>
                                 <?php
-
+								$selecttedd="";
+									if($this->comboSelect==$value["id"]){
+										$selecttedd="selected";
+									}
                                 ?>
-                                <option value="<?php echo $value["id"]?>"><?php echo $value["name"]?></option>
+                                <option value="<?php echo $value["id"]?>" <?php echo $selecttedd?> ><?php echo $value["name"]?></option>
                             <?php endforeach?>
                         </select>
                     </div>

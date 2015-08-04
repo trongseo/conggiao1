@@ -121,6 +121,7 @@ return array(
                 'gioi-thieu'=>'Site/AboutUs',
                 'contact'=>'Site/Contact',
                 'thong-tin-tai-khoan'=>'Site/AccountInfo',
+				'tu-sach'=>'Site/TuSach',
                 'huong-dan'=>'Site/Guide',
                 'cau-hoi-thuong-gap'=>'Site/Question',
                 'thu-vien'=>'Site/Libary',

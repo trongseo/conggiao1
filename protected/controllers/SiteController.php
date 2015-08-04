@@ -2,6 +2,8 @@
 
 class SiteController extends CController {
     public $comboData = 'value';
+    public $comboSelect = '';
+    public $textSearch = '';
     public $ID_BOOK="";
     function init() {
         parent::init();
@@ -86,6 +88,8 @@ class SiteController extends CController {
         $arrSearch = explode('-',$key_search);
         $daimucId =$arrSearch[0];
         $keySearch =$arrSearch[1];
+        $this->comboSelect=$daimucId;
+        $this->textSearch=$keySearch;
         $c="";//$c = TblConfig::model()->find();
         $this->layout = "";
         $this->render('libary',array('arrSearch'=>$arrSearch));
@@ -395,6 +399,23 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         Common::setSession('idbook',$idbook);
         $arrBook = CommonDB::GetDataRow('tbl_book','delete_logic_flg=0 AND active=1 AND id='.$idbook);
         if($id == 0){
+            $userId =Common::getSession(USER_ID);
+            $deleteQuery =" delete from tbl_tusach where book_id=$idbook  and user_id=$userId ";
+            CommonDB::runSQL($deleteQuery,[]);
+
+            $query ="INSERT INTO `tbl_tusach`
+            (
+             `book_id`,
+             `user_id`,
+             `date_read`)
+VALUES (
+        :book_id,
+        :user_id,
+        :create_date); ";
+            $hsTable["book_id"]= $idbook;
+            $hsTable["user_id"]= $userId;
+            $hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
+            CommonDB::runSQL($query,$hsTable);
             $this->renderPartial('_readbook');
         }
         if($id == 1){
@@ -409,12 +430,27 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
             $this->renderPartial('_book');
         }
     }
+    public function actionRemoveBook(){
+        $idbook = Common::getPara('ID_BOOK');
+        $userId =Common::getSession(USER_ID);
+        $deleteQuery =" delete from tbl_bookcase where book_id=$idbook and user_id=$userId ";
+        CommonDB::runSQL($deleteQuery,[]);
+        echo "1";
+        Yii::app()->end();
+    }
+
     public function actionAddBook(){
 
         $idbook = Common::getPara('ID_BOOK');
         $hsTable["book_id"]=$idbook;
         $hsTable["user_id"]= Common::getSession(USER_ID);
+        $userId =Common::getSession(USER_ID);
         $hsTable["create_date"]= Common::getCurrentDateYYYYDDMMNotime();
+        $deleteQuery =" delete from tbl_bookcase where book_id=$idbook and user_id=$userId ";
+        CommonDB::runSQL($deleteQuery,[]);
+        $deleteQuery =" delete from tbl_tusach where book_id=$idbook  and user_id=$userId ";
+        CommonDB::runSQL($deleteQuery,[]);
+
         $query ="INSERT INTO `tbl_bookcase`
             (
              `book_id`,
@@ -425,6 +461,19 @@ VALUES (
         :user_id,
         :create_date); ";
         CommonDB::runSQL($query,$hsTable);
+
+        $query ="INSERT INTO `tbl_tusach`
+            (
+             `book_id`,
+             `user_id`,
+             `date_read`)
+VALUES (
+        :book_id,
+        :user_id,
+        :create_date); ";
+        $hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
+        CommonDB::runSQL($query,$hsTable);
+
         echo "1";
         Yii::app()->end();
     }
@@ -435,6 +484,13 @@ VALUES (
     public function actionAccountInfo(){
         $this->render('account');
     }
+    public function actionTuSach(){
+        $clsBook = new ClsReadBook();
+        $arrBook= $clsBook->LoadBookRead();
+
+        $this->render('tu_sach',array('dataPage'=>$arrBook));
+    }
+
     public function actionGuide(){
         $this->render('guide');
     }
