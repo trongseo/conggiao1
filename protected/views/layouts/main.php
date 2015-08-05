@@ -22,6 +22,7 @@
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/jssor.slider.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl?>/css/admin/plugins/font-awesome/css/font-awesome.min.css">
+    <script src="/js/jquery.form.js"></script>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -43,7 +44,7 @@
             <div class="logo-login" >
                 <?php if(isset(Yii::app()->session['id_user'])): ?>
                     <?php echo Yii::app()->session['display_name']; ?>
-                <a class="register1" href="<?php echo Yii::app()->baseUrl.'/update-account'?>"> Tài khoản </a>
+                <a class="register1" href="<?php echo Yii::app()->baseUrl.'/thong-tin-tai-khoan'?>"> Tài khoản </a>
                    <a class="register2" href="<?php echo Yii::app()->baseUrl.'/update-password'?>" > Đổi mật khẩu</a>
                     <a class="register3" href="<?php echo Yii::app()->baseUrl.'/dang-xuat'?>"> Thoát </a>
 					<style>

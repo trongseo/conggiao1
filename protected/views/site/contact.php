@@ -1,13 +1,5 @@
 <?php
-    $this->pageTitle = $c->title;
-    Yii::app()->clientScript->registerMetaTag($c->description, 'description');
-    Yii::app()->clientScript->registerMetaTag($c->keyword, 'keywords');
-    if($type == 1){
-        echo '<div class="alert alert-success">
-            <strong>Thông báo!</strong>
-            Bạn đã gửi yêu cầu thành công
-            </div>';
-    }
+
 ?>
 <div class="row box-login">
     <div class="arrow">
@@ -54,7 +46,7 @@
 	</div>
 </div>
 <div class="col-xs-18 col-sm-12 col-md-6 p-item" style="border-left:1px solid #5A2D0C">
-    <form id="form_contact" class="form-horizontal" method="POST" action="<?php echo Yii::app()->baseUrl.'/contact';?>" role="form" enctype="multipart/form-data">
+    <form id="form_contact"  onsubmit="return isSend();"  class="form-horizontal" method="POST" action="<?php echo Yii::app()->baseUrl.'/contact';?>" role="form" enctype="multipart/form-data">
         <div class="form-group">           
             <label class="col-sm-12 control-label" style="text-align:center;padding:20px;" for="form-field-1">
 				Quý khách vui lòng điền đầy đủ thông tin dưới đây</br>
@@ -103,20 +95,20 @@
             </div>
             <div class="clear"></div>
         </div>
-        <div class="form-group">
-            <label class="col-sm-4 control-label" for="form-field-1">Mã Captcha </label>
-            <div class="col-sm-2" id="frm-capcha">
-				
-				 <img class="" style="100%" u="image" src="<?php echo Yii::app()->baseUrl?>/img/capcha.png" />
-		   </div>
-            <div class="clear"></div>
-        </div>
-        <div class="form-group">           
-            <div class="col-sm-6" id="frm-capcha">
-                <input id="captcha" name="captcha" value="" class="form-control" type="text" placeholder="* Nhập mã captcha">
-            </div>
-            <div class="clear"></div>
-        </div>
+<!--        <div class="form-group">-->
+<!--            <label class="col-sm-4 control-label" for="form-field-1">Mã Captcha </label>-->
+<!--            <div class="col-sm-2" id="frm-capcha">-->
+<!--				-->
+<!--				 <img class="" style="100%" u="image" src="--><?php //echo Yii::app()->baseUrl?><!--/img/capcha.png" />-->
+<!--		   </div>-->
+<!--            <div class="clear"></div>-->
+<!--        </div>-->
+<!--        <div class="form-group">           -->
+<!--            <div class="col-sm-6" id="frm-capcha">-->
+<!--                <input id="captcha" name="captcha" value="" class="form-control" type="text" placeholder="* Nhập mã captcha">-->
+<!--            </div>-->
+<!--            <div class="clear"></div>-->
+<!--        </div>-->
        <div class="form-group" >
 			<label  class="col-sm-1 control-label" for="form-field-1"></label>
             <label style="border-top:1px solid #BE7339; text-align: left; color:#AE7418" class="col-sm-11 control-label" for="form-field-1">* Thông tin bắt buộc nhập.</label>
@@ -127,7 +119,7 @@
 	   
             <label class="col-sm-4 control-label" for="form-field-1">  </label>
             <div class="col-sm-8">
-                <input class="btn btn-red" type="button" onclick="isSend();return false;" value="Gửi" style="float:right;background-color: #be7339;color: #fff;width: 100px;">
+                <input class="btn btn-red" type="submit" value="Gửi" style="float:right;background-color: #be7339;color: #fff;width: 100px;">
             </div>
             <div class="clear"></div>
         </div>
@@ -136,7 +128,7 @@
 
 <script>
     jQuery(document).ready(function() {
-        LoadCapcha();
+        //LoadCapcha();
         $("#phone").keyup(function(e) {
             var value = $("#phone").val();
             value = value.replace(/[^0-9]+/g, '');
@@ -287,38 +279,65 @@
             $("#content").focus();
             return false;
         }
-        if(captcha == ""){
-            $('#captcha').bt('Vui lòng nhập captcha',{
-                trigger: 'none',
-                clickAnywhereToClose : false,
-                positions: ['top'],
-                fill: 'rgba(33, 33, 33, .8)',
-                spikeLength: 10,
-                spikeGirth: 10,
-
-                cssStyles: {color: '#FFF', fontSize: '11px',textAlign:'justify',width:'auto'}
-            });
-            $("#captcha").btOn();
-            $("#captcha").focus();
-            return false;
-        }
+//        if(captcha == ""){
+//            $('#captcha').bt('Vui lòng nhập captcha',{
+//                trigger: 'none',
+//                clickAnywhereToClose : false,
+//                positions: ['top'],
+//                fill: 'rgba(33, 33, 33, .8)',
+//                spikeLength: 10,
+//                spikeGirth: 10,
+//
+//                cssStyles: {color: '#FFF', fontSize: '11px',textAlign:'justify',width:'auto'}
+//            });
+//            $("#captcha").btOn();
+//            $("#captcha").focus();
+//            return false;
+//        }
         var ctc = $("#ctc").val();
-        LoadCapcha();
-        if(captcha != ctc){
-            $('#captcha').bt('captcha không đúng',{
-                trigger: 'none',
-                clickAnywhereToClose : false,
-                positions: ['top'],
-                fill: 'rgba(33, 33, 33, .8)',
-                spikeLength: 10,
-                spikeGirth: 10,
+        //LoadCapcha();
+//        if(captcha != ctc){
+//            $('#captcha').bt('captcha không đúng',{
+//                trigger: 'none',
+//                clickAnywhereToClose : false,
+//                positions: ['top'],
+//                fill: 'rgba(33, 33, 33, .8)',
+//                spikeLength: 10,
+//                spikeGirth: 10,
+//
+//                cssStyles: {color: '#FFF', fontSize: '11px',textAlign:'justify',width:'auto'}
+//            });
+//            $("#captcha").btOn();
+//            $("#captcha").focus();
+//            return false;
+//        }
+       // $("#form_contact").submit();
 
-                cssStyles: {color: '#FFF', fontSize: '11px',textAlign:'justify',width:'auto'}
-            });
-            $("#captcha").btOn();
-            $("#captcha").focus();
-            return false;
-        }
-        $("#form_contact").submit();
     }
+    $(document).ready(function()
+    {
+        $('#display_name').focus();
+        var options = {
+            beforeSend: function()
+            {
+            },
+            uploadProgress: function(event, position, total, percentComplete)
+            {
+
+            },
+            success: function()
+            {
+                alert("Thông tin liên hệ đã gửi thành công!Chúng tôi sẽ trả lời trong thời gian sớm nhất!");
+                window.location='/';
+            },
+            complete: function(response)
+            {
+
+            },
+            error: function()
+            {
+            }
+        };
+        $("#form_contact").ajaxForm(options);
+    });
 </script>

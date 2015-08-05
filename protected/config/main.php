@@ -133,6 +133,7 @@ return array(
                 'chi-tiet/<id:>'=>'Site/Detail/id/<id>',
                 'dang-nhap'=>'Site/Login',
                 'dang-xuat'=>'Site/Logout',
+				'update-password'=>'Site/UpdatePassword',
                 'quen-mat-khau'=>'Site/GetPassword',
                 'lay-lai-mat-khau/<code_active:>'=>'Site/ChangeForgetPass/code_active/<code_active>',
                 'dang-ky'=>'Site/Register',

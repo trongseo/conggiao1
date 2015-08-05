@@ -3,6 +3,7 @@ $_SESSION['count'] = time();
 $image;
 ?>
 
+
 <?php
 function create_image()
 {
@@ -37,15 +38,16 @@ $images = glob("*.png");
 // 		@unlink($image_to_delete);
 // 	}
 // }
-// function display()
+ function display()
 {
-?>
-<img src="<?php echo Yii::app()->baseUrl."/images/".$_SESSION['count'] ?>.png"> <a onclick="LoadCapcha();return false;" style="padding-left:20px;"><i class="fa fa-history"></i> refresh</a>
-<input type="hidden" id="ctc" value="<?php echo $_SESSION['captcha_string']?>" />
+?><div style="display:inline-block"> 
+<img  onclick="LoadCapcha();return false;"  src="<?php echo Yii::app()->baseUrl."/images/".$_SESSION['count'] ?>.png" width="150"></div>
+
 <?php
 }
 imagepng($image, "images/" . $_SESSION['count'] . ".png");
 }
 create_image();
-display();
+display();//echo $_SESSION['captcha_string'];
 ?>
+<input type='hidden' id='ctc' name='ctc' value='<?php  echo $_SESSION['captcha_string'];?>' />

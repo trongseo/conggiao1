@@ -362,18 +362,32 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
     }
     public function actionContact() {
         $type = 0;
-        if(isset($_POST['name'])){
-            $data = new Contact();
-            $data->name = $_POST['name'];
-            $data->phone = $_POST['phone'];
-            $data->email = $_POST['email'];
-            $data->address = $_POST['address'];
-            $data->title = $_POST['title'];
-            $data->content = $_POST['content'];
-            $data->created_date = date("Y-m-d H:i:s");
-            $data->save();
-            $type = 1;
+        if(Common::getPara("name")!=""){
+            $sqlin="INSERT INTO `tbl_contact`
+            (
+             `name`,
+             `phone`,
+             `email`,
+             `title`,
+             `content`,
+             `create_date`)
+VALUES (:name,
+             :phone,
+             :email,
+             :title,
+             :content,
+             :create_date
+             );";
+            $hsPara["name"]=$_POST['name']; ;
+            $hsPara["phone"]=$_POST['phone']; ;
+            $hsPara["email"]=$_POST['email']; ;
+            $hsPara["title"]=$_POST['title']; ;
+            $hsPara["content"]=$_POST['content']; ;
+            $hsPara["create_date"]= date("Y-m-d H:i:s");
+            CommonDB::runSQL($sqlin,$hsPara);
         }
+
+
         $c="";//$c = TblConfig::model()->find();
         $this->render('contact',array('c'=>$c,'type'=>$type));
     }
@@ -481,8 +495,36 @@ VALUES (
         $id = $_POST['id'];
         $this->renderPartial('_item',array('id'=>$id));
     }
+
+    public function actionUpdatePassword(){
+        //update-password
+        $password =Common::getPara("password");
+        if($password!=""){
+            $queryIn="update   tbl_users  set password=:password
+                where id=".Common::getSession(USER_ID);
+            $hsTable["password"]= md5( Common::getPara("password"));
+            CommonDB::runSQL($queryIn,$hsTable);
+            echo "1";
+            Yii::app()->end();
+        }
+        $this->render('change_password',array('dataUser'=>1));
+    }
     public function actionAccountInfo(){
-        $this->render('account');
+        $displayName =Common::getPara("display_name");
+        if($displayName!=""){
+            $queryIn="update   tbl_users  set display_name=:display_name,birthday=:birthday,sex=:sex
+                where id=".Common::getSession(USER_ID);
+            $hsTable["display_name"]=Common::getPara("display_name");
+            $hsTable["birthday"]=Common::converDDMMYYToYYYYMMDDPara(Common::getPara("birthday"));
+            $hsTable["sex"]= Common::getPara("sex");
+            CommonDB::runSQL($queryIn,$hsTable);
+            echo "1";
+            Yii::app()->end();
+        }
+
+
+        $dataUser = CommonDB::GetDataRowKeyInt("tbl_users",Common::getSession(USER_ID));
+        $this->render('account',array('dataUser'=>$dataUser));
     }
     public function actionTuSach(){
         $clsBook = new ClsReadBook();
