@@ -1,25 +1,12 @@
 
 <div class="row">
     <div class="arrow">
-        <h4><?php
-            if($_REQUEST["myid"]!="0")
-            {
-                echo CommonDB::GetDataRow("tbl_index","id=".$_REQUEST["myid"]." and type=".$_REQUEST["mylevel"])["name"] ;
-            }else{
-                echo "Tất Cả" ;
-            }
+       <?php
            $cateId= $_REQUEST["myid"];
             $mylevel =$_REQUEST["mylevel"];
-
-            $subQuery=" and parent_id in (
-            SELECT id FROM tbl_index
-WHERE parent_id in (SELECT id FROM tbl_index
-WHERE parent_id=$cateId ) and type=2 )" ;
-            if($cateId==0){
-                $subQuery="";
-            }
-
-            ?></h4>
+                $cateName = CommonDB::GetAll("Select * from tbl_index where id=".$cateId,[])[0]["name"] ;
+            ?> <h4><?php echo $cateName;?>
+        </h4>
     </div>
     <div class="arrow-right"></div>
     <div class="clear"></div>
@@ -29,16 +16,10 @@ WHERE parent_id=$cateId ) and type=2 )" ;
 </div>
 <?php
 
-// 0:sắp phát hành; 1: mới phát hành; 2: là bình thuờng
-//SELECT * FROM tbl_book WHERE book_type=1 AND delete_logic_flg=0
-//        good_book_flg
-$queryNew ="SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 ".$subQuery;
-$queryPrepare ="SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0 ".$subQuery;
-$queryGood ="SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0 ".$subQuery;
 
-$dataNewBook = CommonDB::GetAll($queryNew,[]);
-$dataPrepareBook = CommonDB::GetAll($queryPrepare,[]);
-$dataGoodBook = CommonDB::GetAll($queryGood,[]);
+
+$TrungmucQuery="SELECT * FROM tbl_index WHERE  parent_id=$cateId AND TYPE=2";
+$dataCate = CommonDB::GetAll($TrungmucQuery,[]);
 ?>
 
 <script type="text/javascript" src="scroll/assets/73ff6cfc/jquery.slides.min.js"></script>
@@ -555,11 +536,16 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
 
-
+<?php foreach($dataCate as $valueCate):?>
+    <?php
+    $parent_id = $valueCate['id'];
+    $queryNew ="SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0  and parent_id=".$parent_id;
+    $dataNewBook = CommonDB::GetAll($queryNew,[]);
+    ?>
 <div class="content-box" style="float: right;">
     <div class="book-container-box container-box-book-preview box clearfix">
         <div class="arrow-home" style="margin-left: 5px">
-            <h4>Sách mới đưa vào thư viện</h4>
+            <h4><?php echo $valueCate["name"]?></h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
         <div class="clear"></div>
@@ -611,123 +597,9 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         </div>
     </div>
 </div>
+    <div class="clear1"></div>
+<?php endforeach?>
 
-<div class="clear1"></div>
-<div class="content-box" style="float: right;">
-    <div class="book-container-box container-box-book-preview box clearfix">
-        <div class="arrow-home" style="margin-left: 5px">
-            <h4>Sách sắp đưa vào thư viện</h4>
-        </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataPrepareBook) ?> quyển sách)</div>
-        <div class="clear"></div>
-        <div class="Border-BottomH3"></div>
-        <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
-                <ul>
-                    <?php foreach($dataPrepareBook as $value):?>
-                        <li>
-                            <div id="img-block">
-                                <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>"  class="preview-img">
-                                    <div class="main-imgintro">
-                                        <img alt="<?php echo $value["book_name"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
-
-                                    </div>
-
-                                </a>
-                            </div>
-                            <div class="preview-text">
-                                <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
-                    <?php echo $value["introduction"]?>
-                </span>
-                            </div>
-                            <span class="dots">...</span>
-
-                        </li>
-                    <?php endforeach?>
-                </ul>
-            </div>
-        </div>
-        <div class="slider-box">
-            <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
-            <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
-                <ul>
-                    <?php foreach($dataPrepareBook as $value):?>
-                        <li class="slider-item">
-                            <div id="img-block">
-                                <a class="book-picture-shadow" target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" >
-                                    <div class="imgintro">
-                                        <img alt="<?php echo $value["book_name"]?>" WIDTH="67" height="100" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
-                                    </div>
-
-                                </a>
-                            </div>
-                        </li>
-                    <?php endforeach?>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="clear1"></div>
-
-<div class="content-box" style="float: right;">
-    <div class="book-container-box container-box-book-preview box clearfix">
-        <div class="arrow-home" style="margin-left: 5px">
-            <h4>Sách hay nên đọc</h4>
-        </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataGoodBook) ?> quyển sách)</div>
-        <div class="clear"></div>
-        <div class="Border-BottomH3"></div>
-        <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
-                <ul>
-                    <?php foreach($dataGoodBook as $value):?>
-                        <li>
-                            <div id="img-block">
-                                <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>"  class="preview-img">
-                                    <div class="main-imgintro">
-                                        <img alt="<?php echo $value["book_name"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
-
-                                    </div>
-
-                                </a>
-                            </div>
-                            <div class="preview-text">
-                                <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
-                    <?php echo $value["introduction"]?>
-                </span>
-                            </div>
-                            <span class="dots">...</span>
-
-                        </li>
-                    <?php endforeach?>
-                </ul>
-            </div>
-        </div>
-        <div class="slider-box">
-            <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
-            <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
-                <ul>
-                    <?php foreach($dataGoodBook as $value):?>
-                        <li class="slider-item">
-                            <div id="img-block">
-                                <a class="book-picture-shadow" target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" >
-                                    <div class="imgintro">
-                                        <img alt="<?php echo $value["book_name"]?>" WIDTH="67" height="100" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
-                                    </div>
-
-                                </a>
-                            </div>
-                        </li>
-                    <?php endforeach?>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="clear1"></div>
 
 <script type="text/javascript">
     /*<![CDATA[*/

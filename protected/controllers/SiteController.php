@@ -167,7 +167,14 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
 
     public function actionSubLibary() {
 
-        $this->renderPartial('_sublibary');
+        $cateId= $_REQUEST["myid"];
+        $mylevel =$_REQUEST["mylevel"];
+        if($mylevel==1){
+            $this->renderPartial('_sublibary_trungmuc');
+        }else{
+            $this->renderPartial('_sublibary');
+        }
+
     }
 
     public function actionSubLibaryTieuMuc() {
@@ -432,6 +439,7 @@ VALUES (
             CommonDB::runSQL($query,$hsTable);
             $this->renderPartial('_readbook');
         }
+        $_SESSION["pdf"] = $arrBook['download_file_link'];
         if($id == 1){
 
             $this->renderPartial('_info',array('arrBook'=>$arrBook));

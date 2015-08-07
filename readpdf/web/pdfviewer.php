@@ -93,12 +93,13 @@ See https://github.com/adobe-type-tools/cmap-resources
     <script src="password_prompt.js"></script>
     <script src="pdf_document_properties.js"></script>
 <!--#endif-->
-
+      <?php session_start(); ?>
 <!--#if !MINIFIED -->
     <script src="debugger.js"></script>
     <script src="viewer.js"></script>
       <script >
-      DEFAULT_URL = '/uploads/hi.pdf';
+      DEFAULT_URL = 'D:/AN/'+'<?php echo $_SESSION["pdf"] ?>';
+      DEFAULT_URL='http://googleg9.com:8222/uploads/bookFile/binhphaptontu.pdf';
       $(document).ready(function() {
           $( "#openFile" ).remove();  $( "#download" ).remove();
       });

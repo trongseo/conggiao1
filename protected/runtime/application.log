@@ -28440,3 +28440,662 @@ Stack trace:
 REQUEST_URI=/readpdf/web/locale/locale.properties
 HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
 ---
+2015/08/07 18:34:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 18:35:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 18:40:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 19:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 19:58:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 19:58:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 19:58:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 20:00:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:00:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 20:00:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js?_=1438873145952
+HTTP_REFERER=http://localhost:8111/chi-tiet/5
+---
+2015/08/07 20:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/main.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/main.min.js?_=1438873145953
+HTTP_REFERER=http://localhost:8111/chi-tiet/5
+---
+2015/08/07 20:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/uploads/books/img-6595-1429253696.jpg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/uploads/books/img-6595-1429253696.jpg
+HTTP_REFERER=http://localhost:8111/chi-tiet/5
+---
+2015/08/07 20:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/uploads/books/img-6599-1429254522.jpg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/uploads/books/img-6599-1429254522.jpg
+HTTP_REFERER=http://localhost:8111/chi-tiet/5
+---
+2015/08/07 20:01:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 20:04:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 20:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:08:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:09:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:10:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:13:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:14:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 20:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:22:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 20:23:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 20:24:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:27:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:33:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:42:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:43:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:43:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:49:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 20:49:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 21:19:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 21:37:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 21:40:42 [error] [php] Missing argument 2 for CommonDB::GetAll(), called in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php on line 9 and defined (D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php:31)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(869): SiteController->renderFile()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php(173): SiteController->renderPartial()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\actions\CInlineAction.php(49): SiteController->actionSubLibary()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibary?mylevel=1&myid=43
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (31)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php (9)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (173)
+2015/08/07 21:40:46 [error] [php] Missing argument 2 for CommonDB::GetAll(), called in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php on line 9 and defined (D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php:31)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(869): SiteController->renderFile()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php(173): SiteController->renderPartial()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\actions\CInlineAction.php(49): SiteController->actionSubLibary()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibary?mylevel=1&myid=43
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (31)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php (9)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (173)
+2015/08/07 21:40:46 [error] [php] Missing argument 2 for CommonDB::GetAll(), called in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php on line 9 and defined (D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php:31)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(869): SiteController->renderFile()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php(173): SiteController->renderPartial()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\actions\CInlineAction.php(49): SiteController->actionSubLibary()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibary?mylevel=1&myid=43
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (31)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php (9)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (173)
+2015/08/07 21:40:48 [error] [php] Missing argument 2 for CommonDB::GetAll(), called in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php on line 9 and defined (D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php:31)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(869): SiteController->renderFile()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php(173): SiteController->renderPartial()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\actions\CInlineAction.php(49): SiteController->actionSubLibary()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibary?mylevel=1&myid=43
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (31)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php (9)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (173)
+2015/08/07 21:40:54 [error] [php] Missing argument 2 for CommonDB::GetAll(), called in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php on line 9 and defined (D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php:31)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(869): SiteController->renderFile()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php(173): SiteController->renderPartial()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\actions\CInlineAction.php(49): SiteController->actionSubLibary()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibary?mylevel=1&myid=43
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (31)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php (9)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (173)
+2015/08/07 21:41:02 [error] [php] Missing argument 2 for CommonDB::GetAll(), called in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php on line 9 and defined (D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php:31)
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(869): SiteController->renderFile()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php(173): SiteController->renderPartial()
+#3 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\actions\CInlineAction.php(49): SiteController->actionSubLibary()
+#4 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CWebApplication->run()
+REQUEST_URI=/Site/SubLibary?mylevel=1&myid=43
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (31)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_sublibary_trungmuc.php (9)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (173)
+2015/08/07 21:41:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 21:53:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 21:53:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js?_=1438959202348
+HTTP_REFERER=http://localhost:8111/chi-tiet/9
+---
+2015/08/07 21:53:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/main.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/main.min.js?_=1438959202349
+HTTP_REFERER=http://localhost:8111/chi-tiet/9
+---
+2015/08/07 21:53:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 21:54:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 21:56:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 21:57:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 21:57:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploads/Binh phap Ton Tu.pdf".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('uploads/Binh ph...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/uploads/Binh%20phap%20Ton%20Tu.pdf
+HTTP_REFERER=http://localhost:8111/readpdf/src/worker_loader.js
+---
+2015/08/07 21:59:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 22:00:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 22:01:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 22:01:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js?_=1438959661399
+HTTP_REFERER=http://localhost:8111/chi-tiet/10
+---
+2015/08/07 22:01:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/main.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/main.min.js?_=1438959661400
+HTTP_REFERER=http://localhost:8111/chi-tiet/10
+---
+2015/08/07 22:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js?_=1438959661401
+HTTP_REFERER=http://localhost:8111/chi-tiet/10
+---
+2015/08/07 22:01:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/main.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/main.min.js?_=1438959661402
+HTTP_REFERER=http://localhost:8111/chi-tiet/10
+---
+2015/08/07 22:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 22:14:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 22:14:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admintvcg/uploads/bookFile/binhphaptontu.pdf".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('admintvcg/uploa...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/admintvcg/uploads/bookFile/binhphaptontu.pdf
+HTTP_REFERER=http://localhost:8111/readpdf/src/worker_loader.js
+---
+2015/08/07 22:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js?_=1438959661403
+HTTP_REFERER=http://localhost:8111/chi-tiet/10
+---
+2015/08/07 22:14:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/main.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/main.min.js?_=1438959661404
+HTTP_REFERER=http://localhost:8111/chi-tiet/10
+---
+2015/08/07 22:14:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 22:14:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admintvcg/uploads/bookFile/binhphaptontu.pdf".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('admintvcg/uploa...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/admintvcg/uploads/bookFile/binhphaptontu.pdf
+HTTP_REFERER=http://localhost:8111/readpdf/src/worker_loader.js
+---
+2015/08/07 22:16:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 22:17:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/07 22:33:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 22:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 22:33:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/07 22:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
