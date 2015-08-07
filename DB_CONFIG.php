@@ -27,6 +27,7 @@ define ("ORDER_BY", serialize (array ("Tiều đề A-Z","Lượt xem")));
 define ("ORDER_BY_KEY", serialize (array ("0","1")));
 define ("WEB_URL", "http://googleg9.com:8111");
 define ("PATH_DOWNLOAD", "http://googleg9.com:8111/");
+define ("PATH_IMAGE", "http://googleg9.com:8222/uploads/bookImage/");
 
 //session const
 define ("ID_BOOK", "idbook");
