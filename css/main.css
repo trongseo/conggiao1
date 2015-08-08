@@ -147,6 +147,16 @@ a{
 .click_active{
     background:#C0703D;
 }
+.headings1
+{
+    display:inline-block;
+    border-bottom:2px solid rgb(125, 76, 51);
+}
+.linUnder
+{
+    display:inline-block;
+    border-bottom:1px solid rgb(125, 76, 51);
+}
 .menu{
     padding: 9px 10px 10px 10px;
     float: left;
@@ -160,6 +170,9 @@ a{
 }
 .menu:hover{
     background: #5A2D0C;
+}
+.activeMenu{
+   background: #5A2D0C;
 }
 .menu:last-child{
     margin-right: 0px;
@@ -256,7 +269,7 @@ a{
 .box-login{
     background: #FAE5C8 none repeat scroll 0 0;
     border-radius: 5px;
-    padding: 15px;
+    padding: 15px;box-shadow: 1px 1px 8px 1px #333;
 }
 .btn-epub{
     background: #BE7339;
@@ -521,6 +534,13 @@ line-height: 13px;
 	float:right;
 	width: 96%;
 }
+.box404slide{
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px 1px #333;
+}
+.boxborder{box-shadow: 1px 1px 8px 1px #333;}
 .row.box-slide{
 padding: 9px;
   background-color: #fff;
@@ -603,6 +623,9 @@ background: url('../images/bg.png');
   color: #DB9527;
   font-size: 14px;
   font-weight: bold;
+}
+.iconactive{
+	background: url('../img/faq-active.png') no-repeat ;
 }
 .guide-icon:active{
 	background: url('../img/faq-active.png') no-repeat left center 100%;

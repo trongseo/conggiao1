@@ -33,10 +33,11 @@
 <div class="container-wp">
     <div class="col-md-12">
         <div class="col-md-12 container-content head-content">
+		
             <div class="logo">
-                <a href="<?php echo Yii::app()->baseUrl.'/' ?>"><img src="<?php echo Yii::app()->baseUrl.'/images/logo.png'?>" /></a>
+                <a  href="<?php echo Yii::app()->baseUrl.'/' ?>"><img src="<?php echo Yii::app()->baseUrl.'/images/logo.png'?>" /></a>
                 <div style="float: left;position: relative;top:20px;padding-left: 20px;">
-                    <span style="font-size:34px;font-weight: bold;color: #D5904D;">Thư Viện</span>
+                    <span  style="font-size:34px;font-weight: bold;color: #D5904D;">Thư Viện</span>
                     <span style="font-size:34px;font-weight: bold;color: #492E14;">Công Giáo</span>
                     <span style="font-size:34px;font-weight: bold;color: #D5904D;">Việt Nam</span>
                 </div>
@@ -73,18 +74,18 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="row">
-                        <a href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu" style="width: 13%;">
+                        <a  href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu home" style="width: 13%;">
                             <img src="<?php echo Yii::app()->baseUrl.'/images/ic_home.png'?>" />
                         </a>
 
 
 
-                        <a href="<?php echo Yii::app()->baseUrl.'/thu-vien'?>" class="menu" style="width: 29%;">
+                        <a  href="<?php echo Yii::app()->baseUrl.'/thu-vien'?>" class="menu thuvien" style="width: 29%;">
                             Thư viện
                         </a>
 
                         <?php if(isset(Yii::app()->session['id_user'])): ?>
-                            <a href="<?php echo Yii::app()->baseUrl.'/tu-sach'?>" class="menu" style="width: 29%;">
+                            <a    href="<?php echo Yii::app()->baseUrl.'/tu-sach'?>" class="menu tusach" style="width: 29%;">
                                 Tủ sách
                             </a>
                         <?php else: ?>
@@ -92,7 +93,7 @@
                                 Tủ sách
                             </a>
                         <?php endif; ?>
-                        <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu" style="width: 29%;">
+                        <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu gioithieu" style="width: 29%;">
                             Giới thiệu
                         </a>
 
@@ -146,7 +147,7 @@
         <div class="col-md-12 footer-wp">
             <div class="row">
                 <div class="col-md-4 form-group">
-                    <h4>Thông tin</h4>
+                    <h4 class="headings1">Thông tin</h4>
 
                     <a href="<?php echo Yii::app()->baseUrl.'/dieu-khoan-su-dung'?>">
                         <div class="items items-1">
@@ -160,7 +161,7 @@
                     </a>
                 </div>
                 <div class="col-md-4 form-group">
-                    <h4>Phần mềm đọc sách</h4>
+                    <h4 class="headings1">Phần mềm đọc sách</h4>
                     <a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-pc'?>">
                         <div class="items items-7">
                             Ứng dụng cho PC
@@ -178,7 +179,7 @@
                     </a>
                 </div>
                 <div class="col-md-4 form-group">
-                    <h4>Hỗ trợ</h4>
+                    <h4 class="headings1">Hỗ trợ</h4>
                     <a href="<?php echo Yii::app()->baseUrl.'/huong-dan'?>">
                         <div class="items items-5">
                             Hướng dẫn
@@ -198,6 +199,9 @@
 </body>
 <script>
     $(document).ready(function() {
+		var curPage ='<?php echo $this->curPage; ?>';
+        if(curPage!='')
+		 $("."+curPage).addClass('activeMenu');
         $("#fabric").select2();
 
         $( "#divsearch" ).click(function() {

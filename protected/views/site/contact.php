@@ -12,7 +12,17 @@
 	<div class="col-md-6 contact-left">
 	
 	<div class="form-group">
-		<label class="col-sm-12 control-label" style="font-weight:bold;" for="form-field-1"> Thư Viện Công Giáo Việt Nam </label>
+
+
+
+        <p style="font-size: 16px;padding-left:15px">
+
+            <span style="color: #D5904D;font-weight: bold;">Thư Viện</span>
+            <span style="color: #492E14;font-weight: bold;">Công Giáo</span>
+            <span style="color: #D5904D;font-weight: bold;">Việt Nam</span>
+
+        </p>
+
 		<div class="col-sm-12">
 			 <img class="boximg" style="100%" u="image" src="<?php echo Yii::app()->baseUrl?>/img/lienhe.png" />
 		</div>
@@ -20,30 +30,15 @@
 			 
 		</div>
 	</div>
+
 	<div class="form-group">
-		<label class="col-sm-3 control-label" style="text-align:right" for="form-field-1">Địa chỉ:</label>
-		<div class="col-sm-9">
-			 Số 70, Nguyễn Trãi, Phường 2, Quận 5, TP.Hồ Chí Minh
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-3 control-label" style="text-align:right" for="form-field-1">Email:</label>
-		<div class="col-sm-9">
+		<label class="col-sm-3 control-label" style="text-align:left;width: 45px" for="form-field-1">Email:</label>
+		<div class="col-sm-9" style="text-align:left">
 			thuvienconggiaovietnam@gmail.com
 		</div>
 	</div>
-	<div class="form-group">
-		<label class="col-sm-3 control-label" style="text-align:right" for="form-field-1">Điện thoại:</label>
-		<div class="col-sm-9">
-			083 8369945
-		</div>
-	</div>
-	<div class="form-group">
-		<label class="col-sm-3 control-label" style="text-align:right" for="form-field-1">Mobile:</label>
-		<div class="col-sm-9">
-			0913896099
-		</div>
-	</div>
+
+
 </div>
 <div class="col-xs-18 col-sm-12 col-md-6 p-item" style="border-left:1px solid #5A2D0C">
     <form id="form_contact"  onsubmit="return isSend();"  class="form-horizontal" method="POST" action="<?php echo Yii::app()->baseUrl.'/contact';?>" role="form" enctype="multipart/form-data">

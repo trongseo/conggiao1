@@ -5,6 +5,7 @@ class SiteController extends CController {
     public $comboSelect = '';
     public $textSearch = '';
     public $ID_BOOK="";
+    public $curPage="";
     function init() {
         parent::init();
         $main_type = 0;
@@ -24,7 +25,8 @@ class SiteController extends CController {
     }
 
     public function actionIndex() {
-
+        //background: #5A2D0C;
+$this->curPage="home";
          $this->render('index',array('c'=>''));
     }
 
@@ -78,7 +80,7 @@ class SiteController extends CController {
         $this->renderPartial('_slide_product');
     }
     public function actionLibary() {
-
+        $this->curPage="thuvien";
         $c="";//$c = TblConfig::model()->find();
         $this->layout = "";
         $this->render('libary',array('c'=>$c));
@@ -166,7 +168,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
     }
 
     public function actionSubLibary() {
-
+        $this->curPage="thuvien";
         $cateId= $_REQUEST["myid"];
         $mylevel =$_REQUEST["mylevel"];
        // if($mylevel==1){
@@ -237,7 +239,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
     }
     //phuong
     public function actionRegister() {
-
+        //dang-ky
         $email= Common::getPara("email");
         $isCheckEmail= Common::getPara("ischeck");
         if($isCheckEmail!=""){
@@ -306,6 +308,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $this->redirect('/');
     }
     public function actionGetPassword() {
+        //quen-mat-khau
         $check = TblConfig::model()->find();
 
         $email= Common::getPara("email");
@@ -365,6 +368,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
     }
     public function actionAboutUs() {
        $check = array('aaa'=>123,'bb'=>array('dd','kkk')); $check2 = TblConfig::model()->find();
+        $this->curPage="gioithieu";
         $this->render('about',array('page1'=>$check,'page'=>$check2));
     }
     public function actionContact() {
@@ -537,14 +541,16 @@ VALUES (
     public function actionTuSach(){
         $clsBook = new ClsReadBook();
         $arrBook= $clsBook->LoadBookRead();
-
+        $this->curPage="tusach";
         $this->render('tu_sach',array('dataPage'=>$arrBook));
     }
 
     public function actionGuide(){
+        //huong-dan
         $this->render('guide');
     }
     public function actionQuestion(){
+        //cau-hoi-thuong-gap
         $this->render('question');
     }
 

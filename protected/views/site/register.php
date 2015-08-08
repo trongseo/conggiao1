@@ -12,7 +12,7 @@
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>
     <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-        <div class="box-login">
+        <div class="box-login boxborder">
             <p>
                 <span style="color:#D5A16F;">Chào mừng bạn đến với </span>
                 <span style="color: #D5904D;font-weight: bold;">Thư Viện</span>
@@ -28,27 +28,7 @@
                         <input type="text" class="form-control" id="display_name" name="display_name" placeholder="* Tên hiển thị">
                     </span>
                 </div>
-                <div class="form-group">	   
-                    <label class="col-md-2 control-label" for="form-field-1">
-                        <div class="row">
-                            Ngày sinh *
-                        </div>
-                    </label>
-                    <div class="col-md-8">
-                        <input type="text" class="form-control" id="birthday" name="birthday" placeholder="">
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="form-group">	   
-                        <label class="col-md-2 control-label" for="form-field-1">Giới tính * </label>
-                        <div class="radio-pading col-md-2 radio-inline ">
-                          <label><input type="radio" value="0"  name="optradio">Nam</label>
-                        </div>
-                        <div class="col-md-2  radio-inline">
-                          <label><input type="radio" value="1" checked name="optradio">Nữ</label>
-                        </div>
-                        <div class="clear"></div>
-                </div>
+
                 <div class="form-group">
                     <span class="input-icon">
                         <input type="text" class="form-control" id="email" name="email" placeholder="* Địa chỉ email">
@@ -64,13 +44,34 @@
                         <input type="password" class="form-control password" id="re-password" name="re-password" placeholder="* Nhập lại mật khẩu">
                     </span>
                 </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="form-field-1">
+                        <div class="row" style="margin-top:5px">
+                            Ngày sinh *
+                        </div>
+                    </label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="birthday" name="birthday" placeholder="">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="form-field-1">Giới tính * </label>
+                    <div class="radio-pading col-md-2 radio-inline ">
+                        <label><input type="radio" value="0"  name="optradio">Nam</label>
+                    </div>
+                    <div class="col-md-2  radio-inline">
+                        <label><input type="radio" value="1" checked name="optradio">Nữ</label>
+                    </div>
+                    <div class="clear"></div>
+                </div>
                <div class="form-group" >
 					
 					<label style="border-top: 1px solid #EDBE99; text-align: left; color:#AE7418" class="col-sm-12 control-label" for="form-field-1">* Thông tin bắt buộc nhập.</label>
 
-                   <label style="border-top: 1px solid #EDBE99; text-align: left; color:#AE7418" class="col-sm-12 control-label" for="form-field-1">Nhấn vào nút [Đăng ký] tức là đã đồng ý với
-                       <a target="_blank" href="/dieu-khoan-su-dung">điều khoản sử dụng</a>
-                       điều khoản sử dụng của chúng tôi </label>
+                   <label style="width: 500px;color:#AE7418" class="col-sm-12 control-label" for="form-field-1">Bằng cách nhấp vào nút Đăng ký, bạn sẽ đồng ý với các
+                       <a class="linUnder" target="_blank" href="/dieu-khoan-su-dung"><i>điều khoản sử dụng</i></a>
+                       của chúng tôi </label>
                    <button type="submit" class="btn btn-green pull-right btn-epub" value="Đăng ký"  id="btnsave" name="btnsave"  >
                        Đăng ký
                    </button>

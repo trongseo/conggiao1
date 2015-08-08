@@ -1,25 +1,25 @@
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/dang-nhap">
 <div class="row">
     <div class="arrow">
-        <h4>Đăng nhập</h4>
+        <h4><b>Đăng nhập</b></h4>
     </div>
     <div class="arrow-right"></div>
-    <div class="clear"></div>
+    <div class="clear" style="padding-top:2px"  ></div>
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>
     <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
         <div class="row">
-            <div class="box-login">
+            <div class="box-login boxborder">
                 <p>
-                    <span style="color:#D5A16F;">Chào mừng bạn đến với </span>
+                    <span style="color:#D5A16F;"><i>Chào mừng bạn đến với</i> </span>
                     <span style="color: #D5904D;font-weight: bold;">Thư Viện</span>
-                    <span style="color: #492E14;font-weight: bold;">Công Giáo</span>
+                    <span style="color:#5A2E0B;font-weight: bold;">Công Giáo</span>
                     <span style="color: #D5904D;font-weight: bold;">Việt Nam</span>
                     <br/>
                 </p>
                 <div class="clear1"></div>
                 <fieldset>
-                    <div class="col-md-12" style="background-color: #B8A28B;height: 1px;"></div>
+                    <div class="col-md-12" style=""></div>
                     <div class="clear1"></div>
                     <div class="col-md-12 col-sm-12 col-xs-12">
 <!--                        <span style="float: left;"><h4 >Đăng nhập</h4></span> <span style="float: right;">(* Thông tin bắt buộc nhập)</span>
@@ -35,8 +35,8 @@
                             </span>
                         </div>
                         <div class="form-group form-actions">
-                            <span style="float: left;"><a href="/quen-mat-khau">Quên mật khẩu</a></span>
-                            <span style="float: right;">* Thông tin bắt buộc nhập</span>                            
+                            <span style="float: left;"><a href="/quen-mat-khau" class="linUnder">Quên mật khẩu</a></span>
+                            <span style="float: right;"><b>* Thông tin bắt buộc nhập </b></span>
                         </div>
                         <div class="clear1"></div>
                         <div class="form-group form-actions">
@@ -46,7 +46,7 @@
                                         Đăng nhập
                                     </button>
                                     <a class="btn btn-green btn-epub" href="<?php echo Yii::app()->baseUrl.'/dang-ky'?>">
-                                        Tạo tài khoản
+                                       Đăng ký
                                     </a>
                                 </div>
                             </div>                 

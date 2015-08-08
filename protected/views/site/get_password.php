@@ -4,38 +4,41 @@
         <h4>QUÊN MẬT KHẨU</h4>
     </div>
     <div class="arrow-right"></div>
-    <div class="clear"></div>
+    <div class="clear" style="padding-top:2px"></div>
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>
     <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
         <div class="row">
-            <div class="box-login">
-                <p>
-                    <span style="color:#D5A16F;">Lấy lại mật khẩu </span>
+            <div class="box-login boxborder">
 
-                    <br/>
-                </p>
-                <div class="clear1"></div>
+
                 <fieldset>
-                    <div class="col-md-12" style="background-color: #B8A28B;height: 1px;"></div>
+                    <div class="col-md-12" style=""></div>
                     <div class="clear1"></div>
                     <div class="col-md-12 col-sm-12 col-xs-12">
-<!--                        <span style="float: left;"><h4 >Đăng nhập</h4></span> <span style="float: right;">(* Thông tin bắt buộc nhập)</span>
-                        <div class="clear1"></div>-->
-                        <div class="form-group form-actions">
+                        <p>
+                            <span style="color:#D5A16F;">1)Nhập địa chỉ email của bạn </span>
+
+                            <br/>
+                        </p><div class="clear1"></div>
+                        <div class="form-group form-actions" style="margin-bottom:5px">
                             <span class="input-icon">
                                 <input type="text" class="form-control" id="email" name="email" placeholder="* Địa chỉ email">
                             </span>
                         </div>
+                        <p>
+                            <span style="color:#D5A16F;">2)Sau khi nhấn nút "Lấy mật khẩu", bạn kiểm tra email để nhận mật khẩu </span>
 
+                            <br/>
+                        </p><div class="clear1"></div>
                         <div class="form-group form-actions">
 
-                            <span style="float: right;">* Thông tin bắt buộc nhập</span>                            
+                            <span style="float: left;">* Thông tin bắt buộc nhập</span>
                         </div>
                         <div class="clear1"></div>
                         <div class="form-group form-actions">
                             <div class="col-xs-12 col-md-8" style="text-align: right;">
-                                <div class="row">
+                                <div class="row" style="margin-right:0;margin-left: 0" >
                                     <button type="submit" class="btn btn-green btn-epub" id="btn_login" >
                                        Lấy mật khẩu
                                     </button>
@@ -70,7 +73,7 @@
     </div>
 </div>
 </form>
-<script src="http://malsup.github.com/jquery.form.js"></script>
+
 
 <script type="text/JavaScript">
 
@@ -174,7 +177,7 @@
             {
             }
         };
-        $("#registration-form").ajaxForm(options);
+       $("#registration-form").ajaxForm(options);
     });
 
 </script>
