@@ -18,6 +18,11 @@ WHERE parent_id=$cateId ) and type=2 )" ;
             if($cateId==0){
                 $subQuery="";
             }
+            if($mylevel==1){
+                $subQuery=" and parent_id in (
+                    SELECT id FROM tbl_index
+                        WHERE parent_id =$cateId  )" ;
+            }
 
             ?></h4>
     </div>

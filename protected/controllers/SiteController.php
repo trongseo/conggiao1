@@ -169,11 +169,11 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
 
         $cateId= $_REQUEST["myid"];
         $mylevel =$_REQUEST["mylevel"];
-        if($mylevel==1){
-            $this->renderPartial('_sublibary_trungmuc');
-        }else{
+       // if($mylevel==1){
+           // $this->renderPartial('_sublibary_trungmuc');
+      //  }else{
             $this->renderPartial('_sublibary');
-        }
+        //}
 
     }
 

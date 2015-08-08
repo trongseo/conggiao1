@@ -98,8 +98,8 @@ See https://github.com/adobe-type-tools/cmap-resources
     <script src="debugger.js"></script>
     <script src="viewer.js"></script>
       <script >
-      DEFAULT_URL = 'D:/AN/'+'<?php echo $_SESSION["pdf"] ?>';
-      DEFAULT_URL='http://googleg9.com:8222/uploads/bookFile/binhphaptontu.pdf';
+      DEFAULT_URL = '/uploads/<?php echo $_SESSION["pdf"] ?>';
+     // DEFAULT_URL='http://googleg9.com:8222/uploads/bookFile/binhphaptontu.pdf';
       $(document).ready(function() {
           $( "#openFile" ).remove();  $( "#download" ).remove();
       });

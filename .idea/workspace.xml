@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary_trungmuc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_readbook.php" afterPath="$PROJECT_DIR$/protected/views/site/_readbook.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_slide_product.php" afterPath="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_sublibary.php" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/about.php" afterPath="$PROJECT_DIR$/protected/views/site/about.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/readpdf/web/pdfviewer.php" afterPath="$PROJECT_DIR$/readpdf/web/pdfviewer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -36,16 +33,7 @@
       <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="441" column="7" selection-start="17173" selection-end="17190" vertical-scroll-proportion="-5.7058825" vertical-offset="7206" max-vertical-offset="9707">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/site/detail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
+            <state line="171" column="26" selection-start="6568" selection-end="6584" vertical-scroll-proportion="-4.7058825" vertical-offset="2667" max-vertical-offset="9707">
               <folding />
             </state>
           </provider>
@@ -63,7 +51,7 @@
       <file leaf-file-name="_sublibary.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="12" selection-start="73" selection-end="301" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="2839">
+            <state line="23" column="49" selection-start="795" selection-end="795" vertical-scroll-proportion="-5.0" vertical-offset="136" max-vertical-offset="2924">
               <folding>
                 <element signature="tag#style#0" expanded="false" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -74,19 +62,6 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sublibary_trungmuc.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary_trungmuc.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="19" selection-start="264" selection-end="264" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="11101">
-              <folding>
-                <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,16 +79,45 @@
       <file leaf-file-name="pdfviewer.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readpdf/web/pdfviewer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="80" selection-start="3852" selection-end="3852" vertical-scroll-proportion="-2.6666667" vertical-offset="1581" max-vertical-offset="7242">
+            <state line="105" column="0" selection-start="3967" selection-end="3967" vertical-scroll-proportion="-4.0" vertical-offset="1581" max-vertical-offset="7242">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_slide.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/_slide.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="89" selection-start="537" selection-end="537" vertical-scroll-proportion="-1.1764706" vertical-offset="25" max-vertical-offset="2023">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_slide_product.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="699" column="24" selection-start="22259" selection-end="22259" vertical-scroll-proportion="0.56395346" vertical-offset="11269" max-vertical-offset="16575">
+              <folding>
+                <element signature="e#19698#20860#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="about.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/about.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="21" selection-start="721" selection-end="721" vertical-scroll-proportion="0.7171904" vertical-offset="20" max-vertical-offset="2584">
+            <state line="24" column="21" selection-start="721" selection-end="721" vertical-scroll-proportion="-14.923077" vertical-offset="20" max-vertical-offset="2584">
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -178,25 +182,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_slide_product.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="944" column="0" selection-start="37140" selection-end="38812" vertical-scroll-proportion="-16.73077" vertical-offset="58" max-vertical-offset="612">
-              <folding>
-                <element signature="tag#style#0" expanded="false" />
-                <element signature="tag#div#0" expanded="false" />
-                <element signature="tag#div#1" expanded="false" />
-                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="tag#div#2" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-                <element signature="e#19676#20838#0" expanded="false" />
-                <element signature="tag#div#3" expanded="false" />
-                <element signature="tag#script#2" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -224,13 +209,13 @@
         <option value="$PROJECT_DIR$/protected/views/site/account.php" />
         <option value="$PROJECT_DIR$/protected/views/site/change_password.php" />
         <option value="$PROJECT_DIR$/DB_CONFIG.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/_sublibary.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_sublibary_trungmuc.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_readbook.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/readpdf/web/pdfviewer.php" />
         <option value="$PROJECT_DIR$/protected/views/site/about.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/_sublibary.php" />
+        <option value="$PROJECT_DIR$/readpdf/web/pdfviewer.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
       </list>
     </option>
   </component>
@@ -507,7 +492,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22954546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32575756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -534,35 +519,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/site/contact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="326" column="14" selection-start="11705" selection-end="11705" vertical-scroll-proportion="-78.31373" vertical-offset="1548" max-vertical-offset="5916">
-          <folding>
-            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#1;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#2;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#3;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#4;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#form#0;n#div#6;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#6;n#form#0;n#div#6;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#1;n#div#7;n#form#0;n#div#6;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#8;n#form#0;n#div#6;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/account.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="44" selection-start="9273" selection-end="9273" vertical-scroll-proportion="-3.1176472" vertical-offset="4669" max-vertical-offset="5185">
-          <folding>
-            <element signature="n#style#0;n#div#3;n#div#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/register.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3672">
@@ -588,40 +544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="19" selection-start="1069" selection-end="1079" vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="850">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="944" column="0" selection-start="37140" selection-end="38812" vertical-scroll-proportion="-16.73077" vertical-offset="58" max-vertical-offset="612">
-          <folding>
-            <element signature="tag#style#0" expanded="false" />
-            <element signature="tag#div#0" expanded="false" />
-            <element signature="tag#div#1" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="tag#div#2" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
-            <element signature="e#19676#20838#0" expanded="false" />
-            <element signature="tag#div#3" expanded="false" />
-            <element signature="tag#script#2" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="73" selection-end="301" vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="2839">
-          <folding>
-            <element signature="tag#style#0" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="tag#div#1" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="tag#div#3" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,23 +586,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="441" column="7" selection-start="17173" selection-end="17190" vertical-scroll-proportion="-5.7058825" vertical-offset="7206" max-vertical-offset="9707">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readpdf/web/pdfviewer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="80" selection-start="3852" selection-end="3852" vertical-scroll-proportion="-2.6666667" vertical-offset="1581" max-vertical-offset="7242">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/about.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="21" selection-start="721" selection-end="721" vertical-scroll-proportion="0.7171904" vertical-offset="20" max-vertical-offset="2584">
+        <state line="24" column="21" selection-start="721" selection-end="721" vertical-scroll-proportion="-14.923077" vertical-offset="20" max-vertical-offset="2584">
           <folding>
             <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -731,6 +639,60 @@
             <element signature="n#style#0;n#p#8;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#9;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#10;n#div#2;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="171" column="26" selection-start="6568" selection-end="6584" vertical-scroll-proportion="-4.7058825" vertical-offset="2667" max-vertical-offset="9707">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="49" selection-start="795" selection-end="795" vertical-scroll-proportion="-5.0" vertical-offset="136" max-vertical-offset="2924">
+          <folding>
+            <element signature="tag#style#0" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="tag#div#1" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="tag#div#3" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readpdf/web/pdfviewer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="0" selection-start="3967" selection-end="3967" vertical-scroll-proportion="-4.0" vertical-offset="1581" max-vertical-offset="7242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="580">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/_slide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="89" selection-start="537" selection-end="537" vertical-scroll-proportion="-1.1764706" vertical-offset="25" max-vertical-offset="2023">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="699" column="24" selection-start="22259" selection-end="22259" vertical-scroll-proportion="0.56395346" vertical-offset="11269" max-vertical-offset="16575">
+          <folding>
+            <element signature="e#19698#20860#0" expanded="false" />
           </folding>
         </state>
       </provider>

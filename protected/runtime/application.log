@@ -29099,3 +29099,181 @@ Stack trace:
 REQUEST_URI=/readpdf/web/locale/locale.properties
 HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
 ---
+2015/08/08 16:11:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/08 16:15:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/08 16:15:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/uploads/binhphaptontu.pdf".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/upl...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/uploads/binhphaptontu.pdf
+HTTP_REFERER=http://localhost:8111/readpdf/src/worker_loader.js
+---
+2015/08/08 16:15:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/08 16:16:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/08 16:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/jquery.slides.min.js?_=1439025402712
+HTTP_REFERER=http://localhost:8111/chi-tiet/10
+---
+2015/08/08 16:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "chi-tiet/scroll/assets/73ff6cfc/main.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('chi-tiet/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/chi-tiet/scroll/assets/73ff6cfc/main.min.js?_=1439025402713
+HTTP_REFERER=http://localhost:8111/chi-tiet/10
+---
+2015/08/08 16:16:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---
+2015/08/08 16:21:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/08 16:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-.jpg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-.jpg')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-.jpg
+HTTP_REFERER=http://localhost:8111/
+---
+2015/08/08 16:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-a.jpg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-a.jpg')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-a.jpg
+HTTP_REFERER=http://localhost:8111/
+---
+2015/08/08 16:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-al.jpg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-al.jp...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-al.jpg
+HTTP_REFERER=http://localhost:8111/
+---
+2015/08/08 16:40:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-all.jpg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-all.j...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-all.jpg
+HTTP_REFERER=http://localhost:8111/
+---
+2015/08/08 16:40:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-all.pg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-all.p...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-all.pg
+HTTP_REFERER=http://localhost:8111/
+---
+2015/08/08 16:40:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-all.ppg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-all.p...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-all.ppg
+HTTP_REFERER=http://localhost:8111/
+---
+2015/08/08 16:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-all.pnpg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-all.p...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-all.pnpg
+HTTP_REFERER=http://localhost:8111/
+---
+2015/08/08 16:40:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-all.pngpg".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-all.p...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-all.pngpg
+HTTP_REFERER=http://localhost:8111/
+---
+2015/08/08 16:40:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/bg-all.pngp".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('images/bg-all.p...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/bg-all.pngp
+HTTP_REFERER=http://localhost:8111/
+---
+2015/08/08 16:42:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/08 16:47:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "readpdf/web/locale/locale.properties".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('readpdf/web/loc...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/readpdf/web/locale/locale.properties
+HTTP_REFERER=http://localhost:8111/readpdf/web/pdfviewer.php
+---

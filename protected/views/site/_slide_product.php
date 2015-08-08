@@ -527,7 +527,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="content-box" style="float: right;">
 <div class="book-container-box container-box-book-preview box clearfix">
 <div class="arrow-home" style="margin-left: 5px">
-    <h4>Sách mới đưa vào thư viện</h4>
+    <h4><b>Sách mới đưa vào Thư Viện</b></h4>
 </div>
 <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
 <div class="clear"></div>
@@ -585,7 +585,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="content-box" style="float: right;">
     <div class="book-container-box container-box-book-preview box clearfix">
         <div class="arrow-home" style="margin-left: 5px">
-            <h4>Sách sắp đưa vào thư viện</h4>
+            <h4><b>Sách sắp đưa vào Thư Viện</b></h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataPrepareBook) ?> quyển sách)</div>
         <div class="clear"></div>
@@ -641,7 +641,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="content-box" style="float: right;">
     <div class="book-container-box container-box-book-preview box clearfix">
         <div class="arrow-home" style="margin-left: 5px">
-            <h4>Sách hay nên đọc</h4>
+            <h4><b> Sách hay nên đọc</b></h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataGoodBook) ?> quyển sách)</div>
         <div class="clear"></div>
@@ -697,7 +697,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="content-box" style="float: right;">
 <div class="book-container-box container-box-book-preview box clearfix">
 <div class="arrow-home" style="margin-left: 5px">
-    <h4>Tham khảo</h4>
+    <h4><b> Tham khảo<b></b></h4>
 </div>
 <div class="arrow-slide-right"></div>
 <div class="clear"></div>
