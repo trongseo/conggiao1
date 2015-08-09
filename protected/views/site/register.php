@@ -5,10 +5,10 @@
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/dang-ky">
 <div class="row">
     <div class="arrow">
-        <h4>Tạo tài khoản</h4>
+        <h4>Đăng ký</h4>
     </div>
     <div class="arrow-right"></div>
-    <div class="clear"></div>
+    <div class="clear" style="padding-top:2px" ></div>
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>
     <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
@@ -56,7 +56,12 @@
                     <div class="clear"></div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-2 control-label" for="form-field-1">Giới tính * </label>
+                    <label class="col-md-2 control-label" for="form-field-1">
+                        <div class="row" style="margin-top:5px">
+                            Giới tính *
+                        </div>
+                    </label>
+
                     <div class="radio-pading col-md-2 radio-inline ">
                         <label><input type="radio" value="0"  name="optradio">Nam</label>
                     </div>

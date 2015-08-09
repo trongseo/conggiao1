@@ -58,7 +58,7 @@
                 </div>
                 <div class="form-group ">
                     <label class="col-md-4 control-label" for="form-field-1">Mật khẩu </label>
-                    <label class="col-md-8 control-label" for="form-field-1"><a href="#"><i>Click vào đây để đổi mật khẩu </i></a></label>
+                    <label class="col-md-8 control-label" for="form-field-1"><a target="_blank" href="/update-password"><i>Click vào đây để đổi mật khẩu </i></a></label>
 					<div class="clear1"></div>
                 </div>              
 <!--                  <div class="form-group ">-->

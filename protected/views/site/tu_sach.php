@@ -1,3 +1,28 @@
+
+<style>
+    .btnborderdiv {
+        border: 2px solid rgb(89,46,11);
+        padding: 5px 10px;
+        background: rgb(89,46,11);
+        width: 150px;
+        height: 30;
+        color: wheat;
+        border-radius: 7px;
+    }
+    .colortext{
+        color:  rgb(186,113,55);
+    }
+    .read-book {
+        background: url('../images/ic_book.png') no-repeat scroll 0 0;
+        margin-left: 30px;
+        padding-left: 10px;
+        padding-right: 60px;
+        cursor: pointer;
+        color: #B27D47;
+    }
+
+</style>
+
 <div class="col-md-12">
 <div class="row">
 
@@ -21,17 +46,24 @@
                 <tr>
                     <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td style="text-align: left" valign="top"><a href="javascript:DeleteRead('<?php echo $value["id"]?>')">Xóa</a></td>
+                    <td style="text-align: left" valign="top"><a href="javascript:DeleteRead('<?php echo $value["id"]?>')"><img style="top:0px;float:right;" u="image" src="/img/ic_bin.PNG"></a></td>
                 </tr>
                 <tr>
-                    <td class="auto-style2"><img src="/images/item.jpg" width="150px" height="200px"></td>
+                    <td class="auto-style2" style="text-align: center"><img src="/images/item.jpg" width="150px" height="200px">
+                    <br/>
+                        <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>">
+                            <div class="read-book">
+                                Đọc
+                            </div>
+                        </a>
+                    </td>
                     <td valign="top" style="vertical-align:top">
                         <table class="auto-style1" style="vertical-align:top">
                             <tr>
-                                <td>Giới thiệu sách</td>
-                                <td>Thông tin chi tiết</td>
-                                <td>Đánh giá bình luận</td>
-                                <td>Sách liên quan</td>
+                                <td><div class="btnborderdiv"> Giới thiệu sách</div></td>
+                                <td style="display: none" class="colortext">Thông tin chi tiết</td>
+                                <td style="display: none" class="colortext">Đánh giá bình luận</td>
+                                <td  style="display: none"  class="colortext">Sách liên quan</td>
                             </tr>
                             <tr>
                                 <td colspan="4"><?php echo $value["book_name"]?></td>
@@ -41,7 +73,7 @@
                             </tr>
                         </table>
                     </td>
-                    <td  valign="top" style="vertical-align:top;width:180px" >&nbsp;Đã đọc <?php echo $value["date_read"]?> ngày trước&nbsp;</td>
+                    <td  valign="top" style="vertical-align:top;width:180px;padding-top:8px;color:#7a5231;font-size: 11px;font-weight: 600" >&nbsp;Đã đọc <?php echo $value["date_read"]?> ngày trước&nbsp;</td>
                 </tr>
             </table>
 

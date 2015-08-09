@@ -44,13 +44,14 @@ class Common {
     }
     public static function truncate($string,$length=100,$append="&hellip;") {
         $string = trim($string);
-
+        $string1= trim($string);
         if(strlen($string) > $length) {
             $string = wordwrap($string, $length);
             $string = explode("\n", $string, 2);
             $string = $string[0] . $append;
         }
 
+       $after = str_pad(substr($string1,0,$length), $length ,  str_repeat(' ', 40));
         return $string;
     }
     public static function formatDateShowDDMMYYYYHHmmss($originalDate){

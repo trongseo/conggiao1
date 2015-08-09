@@ -1,7 +1,7 @@
 
 <div class="row">
-    <div class="arrow">
-        <h4><?php
+
+        <h4 style="margin-left: 20px;margin-top:13px;color: #5a2e0b"><?php
             if($_REQUEST["myid"]!="0")
             {
                 echo CommonDB::GetDataRow("tbl_index","id=".$_REQUEST["myid"]." and type=".$_REQUEST["mylevel"])["name"] ;
@@ -25,10 +25,10 @@ WHERE parent_id=$cateId ) and type=2 )" ;
             }
 
             ?></h4>
-    </div>
-    <div class="arrow-right"></div>
+
+
     <div class="clear"></div>
-    <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
+
     <div class="clear1"></div>
 
 </div>
@@ -249,7 +249,7 @@ div.container-box-book-preview .preview-box div.slider ul li {
 }
 .slider .slider-item div {
     position:relative;
-    background:#fff
+    /*background:#fff*/
 }
 .slider .slider-item .link {
     line-height:20px;
@@ -548,13 +548,19 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 }
 .sliderNewYorkTimes{
     left: 34px !important;
-    width:410px !important;
+    width:345px !important;
 }
 .slider-shadow {
     background: transparent url("scroll/images/shadow.png") no-repeat scroll center bottom;
 
     width: 100%;
     margin-bottom: -20px;
+}
+.content-box{
+    width: 100%;
+}
+#divsearch{
+    color: #FCE4BE !important;  font-size: 14px;
 }
 </style>
 
