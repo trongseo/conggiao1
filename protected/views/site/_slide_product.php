@@ -183,7 +183,7 @@ div.container-box-book-preview .preview-box .author {
 }
 div.container-box-book-preview .preview-box div.slider {
     padding:0;
-    height:160px
+    height:190px
 }
 div.container-box-book-preview .preview-box div.slider ul li {
     width:545px
@@ -519,6 +519,23 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     width: 100%;
     margin-bottom: -20px;
 }
+.topright a{
+    float: right;
+    margin: 10px 2px -10px 1px;
+    font-style: italic;;
+    color: red !important;
+    font-weight: 400 !important;
+}
+.read-booknew {
+    background: url('/images/ic_book.png') no-repeat scroll 0 0;
+    padding-left: 30px;
+    cursor: pointer;
+    color: #B27D47;
+    clear: both;
+    margin-left: 20;
+    margin-top: 150;
+    position: absolute;
+}
 </style>
 
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
@@ -530,6 +547,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     <h4><b>Sách mới đưa vào Thư Viện</b></h4>
 </div>
 <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
+
 <div class="clear"></div>
 <div class="Border-BottomH3"></div>
 <div class="preview-box clearfix">
@@ -546,6 +564,10 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 
                 </a>
             </div>
+            <div class="read-booknew" onclick="openNewWindow('<?php echo $value["id"]?>')" >
+                Đọc
+            </div>
+
             <div class="preview-text">
                 <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
                     <?php echo $value["introduction"]?>
@@ -558,6 +580,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         </ul>
 </div>
 </div>
+
 <div class="slider-box">
 <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
 <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
@@ -572,12 +595,16 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 
                 </a>
             </div>
+            
         </li>
         <?php endforeach?>
         </ul>
 </div>
 </div>
+
+
 </div>
+
 </div>
 
 
@@ -603,6 +630,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                                     </div>
 
                                 </a>
+                            </div><div class="read-booknew" onclick="openNewWindow('<?php echo $value["id"]?>')" >
+                                Đọc
                             </div>
                             <div class="preview-text">
                                 <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
@@ -659,6 +688,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                                     </div>
 
                                 </a>
+                            </div> <div class="read-booknew" onclick="openNewWindow('<?php echo $value["id"]?>')" >
+                                Đọc
                             </div>
                             <div class="preview-text">
                                 <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
@@ -698,7 +729,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="book-container-box container-box-book-preview box clearfix">
 <div class="arrow-home" style="margin-left: 5px">
     <h4><b> Tham khảo<b></b></h4>
-</div>
+</div>  <div class="topright"><a href="/thu-vien" >Xem hết>>></a></div>
 <div class="arrow-slide-right"></div>
 <div class="clear"></div>
 <div class="Border-BottomH3"></div>
@@ -968,6 +999,9 @@ Hai con người tưởng chừng như hoàn hảo ấy lại có một qu
     $(document).ready(function(){
 
     });
+   function openNewWindow(openid){
+       window.open('/chi-tiet/'+openid,'_blank');
+    }
 //    jQuery(function($) {
 //        jQuery('#bookTab').tabs({'cache':true,'select':function(event, ui){var $panel = $(ui.panel); if($panel.is(":empty")){$("#ajax-loading").removeClass("hidden");}},'load':function(){$("#ajax-loading").addClass("hidden"); $(".tooltip").hide(); $(".atooltip[title]").tooltip({position: ['center', 'right']});}});
 //        jQuery('#ebookTab').tabs({'cache':true,'select':function(event, ui){var $panel = $(ui.panel); if($panel.is(":empty")){$("#ajax-loading").removeClass("hidden");}},'load':function(){$("#ajax-loading").addClass("hidden"); $(".tooltip").hide(); $(".atooltip[title]").tooltip({position: ['center', 'right']});}});
