@@ -37,7 +37,7 @@
                         </div>
                         <div class="clear1"></div>
                         <div class="form-group form-actions">
-                            <div class="col-xs-12 col-md-8" style="text-align: right;">
+                            <div class="col-xs-12 col-md-12" style="text-align: center;">
                                 <div class="row" style="margin-right:0;margin-left: 0" >
                                     <button type="submit" class="btn btn-green btn-epub" id="btn_login" >
                                        Lấy mật khẩu

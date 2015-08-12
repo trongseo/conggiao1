@@ -547,7 +547,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     <h4><b>Sách mới đưa vào Thư Viện</b></h4>
 </div>
 <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
-
+    <div class="topright"><a href="/thu-vien" >Xem hết>>></a></div>
 <div class="clear"></div>
 <div class="Border-BottomH3"></div>
 <div class="preview-box clearfix">
@@ -595,7 +595,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 
                 </a>
             </div>
-            
+
         </li>
         <?php endforeach?>
         </ul>
@@ -673,6 +673,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
             <h4><b> Sách hay nên đọc</b></h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataGoodBook) ?> quyển sách)</div>
+        <div class="topright"><a href="/thu-vien" >Xem hết>>></a></div>
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">

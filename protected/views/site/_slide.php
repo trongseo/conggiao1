@@ -90,7 +90,7 @@
             </script>
         </div>
         <div class="col-md-4 slide-right-container">
-            <img u="image" src="images/banner-right.png" style="width:328px;height:252px" />
+            <img u="image" src="images/banner-right.png" style="width:328px;height:254px" />
             <div class="slide-right-content">
                 <a href="/thu-vien">
                     <span style="font-size:17px;font-weight: bold;color: #D5904D;">Nhấn</span>
@@ -118,6 +118,7 @@
     .slide-right-container {
         margin: 1px -12px;
         position: relative;
+        margin-top:-1px;
     }
 
 </style>

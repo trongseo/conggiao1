@@ -24,7 +24,17 @@
 </style>
 
 <div class="col-md-12">
-<div class="row">
+    <?php
+    $isLogin=0;
+    $styleShow="display:none";
+    if(Common::getSession(USER_ID)!=""){
+        $isLogin=1; $styleShow="";
+    }
+    ?>
+    <?php if($isLogin==1): ?>
+
+
+<div class="row" style="<?php echo($styleShow) ?>">
 
 <div class=" col-md-12 col-md-12_note" id="divcontent">
 
@@ -89,6 +99,7 @@
 
 </div>
 </div>
+    <?php endif; ?>
       </div>
 <script>
 

@@ -5,7 +5,7 @@
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/update-password">
 <div class="row">
     <div class="arrow">
-        <h4>Đổi mật khẩu</h4>
+        <h4><b> Đổi mật khẩu</b></h4>
     </div>
     <div class="arrow-right"></div>
     <div class="clear" style="padding-top:2px"></div>
@@ -39,13 +39,15 @@
                 </div>
                <div class="form-group" >
 					
-					<label style="border-top: 1px solid #EDBE99; text-align: left; color:#AE7418" class="col-sm-12 control-label" for="form-field-1">* Thông tin bắt buộc nhập.</label>
+					<label style="border-top: 1px solid #EDBE99; text-align: left; color:#AE7418;font-weight: 500" class="col-sm-12 control-label" for="form-field-1">* Thông tin bắt buộc nhập.</label>
 
 
-                   <button type="submit" class="btn btn-green pull-right btn-epub" value="Đăng ký"  id="btnsave" name="btnsave"  >
-                      Đổi mật khẩu
-                   </button>
+
                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12" style="text-align:center">
+                    <button type="submit" class="btn btn-green  btn-epub" value="Đăng ký"  id="btnsave" name="btnsave"  >
+                        Đổi mật khẩu
+                    </button></div>
 			   <div class="form-actions">
 
                 </div>

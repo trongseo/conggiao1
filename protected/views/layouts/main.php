@@ -238,15 +238,11 @@
                             Thư viện
                         </a>
 
-                        <?php if(isset(Yii::app()->session['id_user'])): ?>
+
                             <a    href="<?php echo Yii::app()->baseUrl.'/tu-sach'?>" class="menu tusach" style="width: 29%;">
                                 Tủ sách
                             </a>
-                        <?php else: ?>
-                            <a href="javascript:alert('Vui lòng đăng nhập!')" class="menu" style="width: 29%;">
-                                Tủ sách
-                            </a>
-                        <?php endif; ?>
+
                         <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu gioithieu" style="width: 29%;">
                             Giới thiệu
                         </a>

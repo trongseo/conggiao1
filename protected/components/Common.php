@@ -86,7 +86,7 @@ public static function getPagging($totalPage,$pageSize,$page,$itemCount){
         $prev = "";
         $next = "  ";
         $end = " ";
-        $inpage = "<select id='comboPage' style='width: 40%'> ";
+        $inpage = "<select id='comboPage' style=' ' class='form-control combopage'> ";
         if ($totalPage == 1) return "";
         if ($totalPage >= 2)
         {

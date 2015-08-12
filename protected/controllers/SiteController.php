@@ -539,6 +539,11 @@ VALUES (
         $this->render('account',array('dataUser'=>$dataUser));
     }
     public function actionTuSach(){
+        if(Common::getSession(USER_ID)==""){
+            $this->curPage="tusach";
+            $this->render('tu_sach_no_login',array('dataPage'=>""));
+            return;
+        }
         $clsBook = new ClsReadBook();
         $arrBook= $clsBook->LoadBookRead();
         $this->curPage="tusach";
