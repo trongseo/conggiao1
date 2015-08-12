@@ -1,0 +1,262 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="en" />
+        <title>Thư Viện Công Giáo - Login Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="/epub/images/layout/favicon.ico"  />
+        <link rel="stylesheet" href="bootstrap.css" tppabs="http://dttstone.ca/epub/css/bootstrap.css" type="text/css"/>
+        <link href="select2.min.css" tppabs="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="main.css" tppabs="http://dttstone.ca/epub/css/main.css" type="text/css"/>
+        <script src="jquery-1.9.1.min.js" tppabs="http://dttstone.ca/epub/js/jquery-1.9.1.min.js"></script>        
+        <script src="select2.min.js" tppabs="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+        <script type="text/javascript" language="javascript" src="jquery.bt.min.js" tppabs="http://dttstone.ca/epub/js/jquery.bt.min.js"></script>
+        <script type="text/javascript" src="jssor.js" tppabs="http://dttstone.ca/epub/js/jssor.js"></script>
+        <script type="text/javascript" src="jssor.slider.js" tppabs="http://dttstone.ca/epub/js/jssor.slider.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js" tppabs="http://dttstone.ca/epub/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="font-awesome.min.css" tppabs="http://dttstone.ca/epub/css/admin/plugins/font-awesome/css/font-awesome.min.css">
+        
+    <!--[if lt IE 9]>
+      <script src="html5shiv.min.js" tppabs="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="respond.min.js" tppabs="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+        <div class="container-wp">
+            <div class="col-md-12">
+                <div class="col-md-12 container-content head-content">
+                    <div class="logo">
+                        <a href="index.htm" tppabs="http://dttstone.ca/epub/"><img src="logo.png" tppabs="http://dttstone.ca/epub/images/logo.png" /></a>
+                        <div style="float: left;position: relative;top:20px;padding-left: 20px;">
+                            <span style="font-size:34px;font-weight: bold;color: #D5904D;">Thư Viện</span>
+                            <span style="font-size:34px;font-weight: bold;color: #492E14;">Công Giáo</span>
+                            <span style="font-size:34px;font-weight: bold;color: #D5904D;">Việt Nam</span>
+                        </div>
+                    </div>
+                    <div class="logo-login">
+                        <a class="register" href="dang-ky.htm" tppabs="http://dttstone.ca/epub/dang-ky">
+                            <img src="ic_register.png" tppabs="http://dttstone.ca/epub/images/ic_register.png" /> Đăng ký
+                        </a>
+                        <a class="login" href="dang-nhap.htm" tppabs="http://dttstone.ca/epub/dang-nhap" style="margin-left: 10px;">
+                            <img src="ic_login.png" tppabs="http://dttstone.ca/epub/images/ic_login.png" /> Đăng nhập
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <a href="index.htm" tppabs="http://dttstone.ca/epub/" class="menu" style="width: 13%;">
+                                    <img src="ic_home.png" tppabs="http://dttstone.ca/epub/images/ic_home.png" />
+                                </a>
+                                <a href="thu-vien.htm" tppabs="http://dttstone.ca/epub/thu-vien" class="menu" style="width: 29%;">
+                                    Thư viện
+                                </a>
+                                <a href="gioi-thieu.htm" tppabs="http://dttstone.ca/epub/gioi-thieu" class="menu" style="width: 29%;">
+                                    Giới thiệu
+                                </a>
+                                <a href="tham-khao.htm" tppabs="http://dttstone.ca/epub/tham-khao" class="menu" style="width: 29%;">
+                                    Tham Khảo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 menu-search">
+                            <div class="row searchbox">
+                                <input type="text" placeholder="Nhập từ khóa tìm kiếm" />
+                            </div>							
+                        </div>
+                        <div class="col-md-3 menu-search">
+                            <div class="row">
+                                <select id="fabric">
+                                    <option>Xem tất cả sách</option>
+                                    <option>Kiến thức cơ bản</option>
+                                    <option>Thánh kinh</option>
+                                    <option>Tín lý</option>
+                                    <option>Luân lý và Tu đức</option>
+                                    <option>Ân sủng và Bí tích</option>
+                                    <option>Phụng vụ</option>
+                                    <option>Giáo sử - Giáo luật</option>
+                                    <option>Công đồng - Thông điệp - Văn kiện</option>
+                                    <option>Mục vụ</option>
+                                    <option>Giáo dục - Sư phạm</option>
+                                </select>
+                            </div>                                
+                        </div>
+                        <div class="col-md-1 menu right">
+                            <div class="row">
+                                Tìm kiếm
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row" id="slide-warp">
+					</div>
+                </div>
+                <div class="clear1"></div>
+                <div class="col-md-12">
+                    <div class="row">
+    <div class="arrow">
+        <h4>Đăng nhập</h4>
+    </div>
+    <div class="arrow-right"></div>
+    <div class="clear"></div>
+    <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
+    <div class="clear1"></div>
+    <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+        <div class="row">
+            <div class="box-login">
+                <p>
+                    <span style="color:#D5A16F;">Chào mừng bạn đến với </span>
+                    <span style="color: #D5904D;font-weight: bold;">Thư Viện</span>
+                    <span style="color: #492E14;font-weight: bold;">Công Giáo</span>
+                    <span style="color: #D5904D;font-weight: bold;">Việt Nam</span>
+                    <br/>
+                </p>
+                <div class="clear1"></div>
+                <fieldset>
+                    <div class="col-md-12" style="background-color: #B8A28B;height: 1px;"></div>
+                    <div class="clear1"></div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+<!--                        <span style="float: left;"><h4 >Đăng nhập</h4></span> <span style="float: right;">(* Thông tin bắt buộc nhập)</span>
+                        <div class="clear1"></div>-->
+                        <div class="form-group form-actions">
+                            <span class="input-icon">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="* Địa chỉ email">
+                            </span>
+                        </div>
+                        <div class="form-group form-actions">
+                            <span class="input-icon">
+                                <input type="password" class="form-control password" id="password" name="password" placeholder="* Mật khẩu">
+                            </span>
+                        </div>
+                        <div class="form-group form-actions">
+                            <span style="float: left;"><a>Quên mật khẩu</a></span>
+                            <span style="float: right;">* Thông tin bắt buộc nhập</span>                            
+                        </div>
+                        <div class="clear1"></div>
+                        <div class="form-group form-actions">
+                            <div class="col-xs-12 col-md-8" style="text-align: right;">
+                                <div class="row">
+                                    <button type="button" class="btn btn-green btn-epub" id="btn_login" onclick="actionLogin();">
+                                        Đăng nhập
+                                    </button>
+                                    <a class="btn btn-green btn-epub" href="dang-ky.htm" tppabs="http://dttstone.ca/epub/dang-ky">
+                                        Tạo tài khoản
+                                    </a>
+                                </div>
+                            </div>                 
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+<!--                    <div class="col-md-5 col-sm-6 col-xs-12">
+                        <h4>Kết nối đến</h4>
+                        <div class="clear1"></div>
+                        <div class="form-group form-actions">
+                            <div style="border: 1px solid #C9BBAA;border-radius: 5px;padding: 5px 30px;background: #fff;cursor: pointer;">
+                                <img src="/epub/images/google.jpg" />
+                            </div>
+                        </div>
+                        <div class="form-group form-actions">
+                            <div style="border: 1px solid #C9BBAA;border-radius: 5px;padding: 5px 30px;background: #fff;cursor: pointer;">
+                                <img src="/epub/images/facebook.jpg" />
+                            </div>
+                        </div>
+                        <div class="form-group form-actions">
+                            <div style="border: 1px solid #C9BBAA;border-radius: 5px;padding: 5px 30px;background: #fff;cursor: pointer;">
+                                <img src="/epub/images/twitter.jpg" />
+                            </div>
+                        </div>
+                    </div>       -->
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+            <div class="clear1"></div>
+            <div class="col-md-12">
+                <div class="col-md-12 footer-wp">
+                    <div class="row">
+                        <div class="col-md-4 form-group">
+                            <h4>Thông tin</h4>
+							
+							<a href="dieu-khoan-su-dung.htm" tppabs="http://dttstone.ca/epub/dieu-khoan-su-dung">
+								<div class="items items-1">
+									Điều khoản sử dụng
+								</div>
+							</a>
+							<a href="lien-he.htm" tppabs="http://dttstone.ca/epub/lien-he">
+								<div class="items items-2">
+									Liên hệ
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <h4>Phần mềm đọc sách</h4>
+							<a href="ung-dung-cho-pc.htm" tppabs="http://dttstone.ca/epub/ung-dung-cho-pc">
+								<div class="items items-7">
+									Ứng dụng cho PC
+								</div>
+							</a>
+							<a href="ung-dung-cho-ios.htm" tppabs="http://dttstone.ca/epub/ung-dung-cho-ios">
+								<div class="items items-3">
+									Ứng dụng cho IOS
+								</div>
+							</a>
+							<a href="ung-dung-cho-android.htm" tppabs="http://dttstone.ca/epub/ung-dung-cho-android">
+								<div class="items items-4">
+									Ừng dụng cho Android
+								</div>
+							</a>
+                        </div>
+                        <div class="col-md-4 form-group">
+                            <h4>Hỗ trợ</h4>
+							<a href="huong-dan.htm" tppabs="http://dttstone.ca/epub/huong-dan">
+								<div class="items items-5">
+									Hướng dẫn
+								</div>
+							</a>
+							<a href="cau-hoi-thuong-gap.htm" tppabs="http://dttstone.ca/epub/cau-hoi-thuong-gap">
+								<div class="items items-6">
+									Những câu hỏi thường gặp
+								</div>
+							</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function() {
+            $("#fabric").select2();
+        });
+        function LoadSLide(){
+            $.ajax({
+                type:"POST",
+                url:'/epub/Site/LoadSLide',
+                data:{},
+                success:function(result){
+                    $("#slide-warp").empty().append(result);
+                }
+            })
+        }
+        function LoadSLideProduct(){
+            $.ajax({
+                type:"POST",
+                url:'/epub/Site/LoadSLideProduct',
+                data:{},
+                success:function(result){
+                    $("#slide-product").empty().append(result);
+                }
+            })
+        }
+        
+    </script>
+</html>

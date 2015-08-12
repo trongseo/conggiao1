@@ -1,0 +1,127 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="language" content="en" />
+        <title>Thư Viện Công Giáo - Detail Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="shortcut icon" href="/epub/images/layout/favicon.ico"  />
+        <link rel="stylesheet" href="bootstrap.css" tppabs="http://dttstone.ca/epub/css/bootstrap.css" type="text/css"/>
+        <link href="select2.min.css" tppabs="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="main.css" tppabs="http://dttstone.ca/epub/css/main.css" type="text/css"/>
+        <script src="jquery-1.9.1.min.js" tppabs="http://dttstone.ca/epub/js/jquery-1.9.1.min.js"></script>        
+        <script src="select2.min.js" tppabs="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/js/select2.min.js"></script>
+        <script type="text/javascript" language="javascript" src="jquery.bt.min.js" tppabs="http://dttstone.ca/epub/js/jquery.bt.min.js"></script>
+        <script type="text/javascript" src="jssor.js" tppabs="http://dttstone.ca/epub/js/jssor.js"></script>
+        <script type="text/javascript" src="jssor.slider.js" tppabs="http://dttstone.ca/epub/js/jssor.slider.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js" tppabs="http://dttstone.ca/epub/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="font-awesome.min.css" tppabs="http://dttstone.ca/epub/css/admin/plugins/font-awesome/css/font-awesome.min.css">
+        
+    <!--[if lt IE 9]>
+      <script src="html5shiv.min.js" tppabs="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="respond.min.js" tppabs="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body style="background : #FFF !important;">
+        <div style="max-width:980px;margin: 0 auto;">
+			<div class="col-md-12 header-detail">
+				<div class="row logo-deatail">
+					<div style="float: left;position: relative;">
+					<a href="index.htm" tppabs="http://dttstone.ca/epub/">
+						<img src="logo.jpg.png" tppabs="http://dttstone.ca/epub/images/logo.jpg" height="35px"/>
+					</a>
+					</div>
+					<div style="float: left;position: relative;padding-left: 20px;">
+						<div alt="0" class="item-book active-item">
+							Đọc sách
+						</div>
+						<div alt="1" class="item-book ">
+							Thông tin sách
+						</div>
+						<div alt="2" class="item-book ">
+							Đánh giá & Bình luận
+						</div>
+						<div alt="3" class="item-book ">
+							Sách liên quan
+						</div>
+					</div>
+					 <div class="logo-login" style="top:0;">
+					<a class="register" href="them-vao-tu-sach.htm" tppabs="http://dttstone.ca/epub/them-vao-tu-sach">
+						<img height="20px" src="bookstore.png" tppabs="http://dttstone.ca/epub/images/bookstore.png" /> Thêm vào tủ sách
+					</a>
+					
+					</div>
+				</div>
+			   
+				 
+				<div class="clear"></div>
+			</div>
+			<div class="col-md-12">
+				<div class="row" id="slide-warp"></div>
+			</div>
+			<div class="clear1"></div>
+		</div>
+		<div style="max-width:980px;margin: 0 auto;">
+			<div style="margin:auto;width:100%;text-align:center;">
+				<img src="7_Doc_sach.png" width="100%" />
+			</div>
+			<script type="text/javascript">
+				$(document).ready(function() {
+						LoadInfo(0);
+					});
+			</script>                
+		</div>
+    </body>
+    <script>
+        $(document).ready(function() {
+            $("#fabric").select2();
+            $(".item-book").click(function(){
+                $(".item-book").removeClass('active-item');
+                $(this).addClass('active-item');
+                var id = $(this).attr('alt');
+                LoadInfo(id);
+            });
+        });
+        function LoadSLide(){
+            $.ajax({
+                type:"POST",
+                url:'/epub/Site/LoadSLide',
+                data:{},
+                success:function(result){
+                    $("#slide-warp").empty().append(result);
+                }
+            })
+        }
+        function LoadSLideProduct(){
+            $.ajax({
+                type:"POST",
+                url:'/epub/Site/LoadSLideProduct',
+                data:{},
+                success:function(result){
+                    $("#slide-product").empty().append(result);
+                }
+            })
+        }
+        function LoadItem(id){
+            $.ajax({
+                type:"POST",
+                url:'/epub/Site/LoadItem',
+                data:{id:id},
+                success:function(result){
+                    $("#item-book").empty().append(result);
+                }
+            })
+        }
+        function LoadInfo(id){
+            $.ajax({
+                type:"POST",
+                url:'/epub/Site/LoadInfo',
+                data:{id:id},
+                success:function(result){
+                    $("#content-wp").empty().append(result);
+                }
+            })
+        }
+    </script>
+</html>
