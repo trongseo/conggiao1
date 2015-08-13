@@ -212,7 +212,7 @@ div.container-box-book-preview .preview-box div.slider ul li {
 }
 .slider .slider-item div {
     position:relative;
-    background:#fff
+    /*background:#fff*/
 }
 .slider .slider-item .link {
     line-height:20px;
@@ -301,6 +301,12 @@ div.slider-box div.slider {
     padding:0 40px;
     background:url(http://www.ybook.vn/themes/newclassic/images/slider-box-bg.png);
     height:125px
+}
+div.slider-box div.slider {
+    padding: 0 40px;
+    background: rgb(216,190,158);
+    height: 125px;
+    padding-top: 10px;
 }
 /*div.slider-box div.slider .slider-item a.book-picture-shadow-ff-sf{*/
 /*background:url(../images/slider-item-sm-new.png) no-repeat left bottom;*/
@@ -513,6 +519,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     left: 34px !important;
     width: 600px !important;
 }
+
 .slider-shadow {
     background: transparent url("scroll/images/shadow.png") no-repeat scroll center bottom;
 

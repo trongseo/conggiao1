@@ -86,7 +86,7 @@ $comboData =$dataItem;
                 <?php $ORDER_BY = unserialize (ORDER_BY); ?>
 
 
-                <div class="col-md-5 "  style="width:180px"> <div class=" form-inline" style="width:180px">Sắp xếp:
+                <div class="col-md-5 "  style="width:190px"> <div class=" form-inline" style="width:190px">Sắp xếp:
                         <select id="comboOrderBy" class="form-control combopage"  >
                             <?php for($i = 0;$i<count($ORDER_BY);$i++):?>
                                 <?php

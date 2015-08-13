@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/components/Common.php" afterPath="$PROJECT_DIR$/protected/components/Common.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DB_CONFIG.php" afterPath="$PROJECT_DIR$/DB_CONFIG.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_info.php" afterPath="$PROJECT_DIR$/protected/views/site/_info.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_slide.php" afterPath="$PROJECT_DIR$/protected/views/site/_slide.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_slide_product.php" afterPath="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc_search.php" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc_search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main_detail.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main_detail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeconggiao.iws" />
@@ -36,37 +29,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_sublibary_tieumuc.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_sublibary_tieumuc.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="225" column="6" selection-start="9477" selection-end="9477" vertical-scroll-proportion="0.5717054" vertical-offset="3530" max-vertical-offset="4046">
+            <state line="98" column="106" selection-start="2882" selection-end="2882" vertical-scroll-proportion="-3.372549" vertical-offset="1494" max-vertical-offset="4216">
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_slide_product.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_slide_product.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="715" column="162" selection-start="22720" selection-end="22769" vertical-scroll-proportion="-6.3846154" vertical-offset="11989" max-vertical-offset="17493">
+            <state line="214" column="3" selection-start="4836" selection-end="4854" vertical-scroll-proportion="0.39922482" vertical-offset="3432" max-vertical-offset="17612">
               <folding />
             </state>
           </provider>
@@ -104,7 +97,7 @@
       <file leaf-file-name="_sublibary_tieumuc_search.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc_search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="14" selection-start="0" selection-end="9031" vertical-scroll-proportion="-2.0392158" vertical-offset="3228" max-vertical-offset="4046">
+            <state line="88" column="103" selection-start="2538" selection-end="2538" vertical-scroll-proportion="-4.0392156" vertical-offset="1290" max-vertical-offset="4046">
               <folding>
                 <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -115,7 +108,6 @@
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#5;n#div#0;n#!!top" expanded="true" />
@@ -191,7 +183,6 @@
         <option value="$PROJECT_DIR$/protected/views/site/tu_sach_no_login.php" />
         <option value="$PROJECT_DIR$/protected/views/site/get_password.php" />
         <option value="$PROJECT_DIR$/protected/views/site/change_password.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_slide.php" />
         <option value="$PROJECT_DIR$/DB_CONFIG.php" />
         <option value="$PROJECT_DIR$/protected/components/Common.php" />
@@ -200,6 +191,7 @@
         <option value="$PROJECT_DIR$/protected/views/layouts/main_detail.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc_search.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
       </list>
     </option>
   </component>
@@ -634,16 +626,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="715" column="162" selection-start="22720" selection-end="22769" vertical-scroll-proportion="-6.3846154" vertical-offset="11989" max-vertical-offset="17493">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc_search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="14" selection-start="0" selection-end="9031" vertical-scroll-proportion="-2.0392158" vertical-offset="3228" max-vertical-offset="4046">
+        <state line="88" column="103" selection-start="2538" selection-end="2538" vertical-scroll-proportion="-4.0392156" vertical-offset="1290" max-vertical-offset="4046">
           <folding>
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
@@ -654,7 +639,6 @@
             <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#div#0;n#!!top" expanded="true" />
@@ -668,26 +652,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="6" selection-start="9477" selection-end="9477" vertical-scroll-proportion="0.5717054" vertical-offset="3530" max-vertical-offset="4046">
+        <state line="98" column="106" selection-start="2882" selection-end="2882" vertical-scroll-proportion="-3.372549" vertical-offset="1494" max-vertical-offset="4216">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#h4#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="214" column="3" selection-start="4836" selection-end="4854" vertical-scroll-proportion="0.39922482" vertical-offset="3432" max-vertical-offset="17612">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -34264,3 +34264,87 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/css/bootstrap.css.map
 ---
+2015/08/13 22:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/13 22:45:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/13 22:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "thu-vien/scroll/assets/73ff6cfc/jquery.slides.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('thu-vien/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/thu-vien/scroll/assets/73ff6cfc/jquery.slides.min.js?_=1439481127629
+HTTP_REFERER=http://localhost:8111/thu-vien/0-a
+---
+2015/08/13 22:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "thu-vien/scroll/assets/73ff6cfc/main.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('thu-vien/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/thu-vien/scroll/assets/73ff6cfc/main.min.js?_=1439481127630
+HTTP_REFERER=http://localhost:8111/thu-vien/0-a
+---
+2015/08/13 22:53:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "thu-vien/scroll/assets/73ff6cfc/jquery.slides.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('thu-vien/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/thu-vien/scroll/assets/73ff6cfc/jquery.slides.min.js?_=1439481127631
+HTTP_REFERER=http://localhost:8111/thu-vien/0-a
+---
+2015/08/13 22:53:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "thu-vien/scroll/assets/73ff6cfc/main.min.js".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('thu-vien/scroll...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/thu-vien/scroll/assets/73ff6cfc/main.min.js?_=1439481127632
+HTTP_REFERER=http://localhost:8111/thu-vien/0-a
+---
+2015/08/13 22:55:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/13 22:56:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/13 23:03:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---
+2015/08/13 23:03:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.css.map".' in D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\project\111anhDuong\thuvien1\codeconggiao\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.c...')
+#1 D:\project\111anhDuong\thuvien1\codeconggiao\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 D:\project\111anhDuong\thuvien1\codeconggiao\index.php(17): CApplication->run()
+#3 {main}
+REQUEST_URI=/css/bootstrap.css.map
+---

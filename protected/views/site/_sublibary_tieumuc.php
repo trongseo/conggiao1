@@ -46,13 +46,27 @@
 $comboData =$dataItem;
 
 ?>
-<div class="col-md-12 ">
+<div class="col-md-12">
+
 
 
 
 
     <div class="row">
+        <div class="col-md-12" style="padding:0px 0px 0px 0px;display:inline;padding-top: 5px">
+            <h4>
+                <?php
+                if(Common::getSession("parent_id")!="0")
+                {
+                    echo CommonDB::GetDataRow("tbl_index","id=".Common::getSession("parent_id"))["name"] ;
+                }else{
 
+                }
+                $comboData =$dataItem;
+
+                ?> <span style="display:inline;font-style: italic" class="small">(Có <?php echo $arrDataPage['itemCount']; ?> cuốn sách)</span> </h4>
+
+        </div>
         <div class="clear"></div>
     </div>
     <?php if(count($comboData)==0):?>
@@ -71,11 +85,7 @@ $comboData =$dataItem;
 
     <?php else: ?>
 
-        <div class="row">
-            <div class="col-md-12 keyword " style=""  >
-                Sách nổi bật phù hợp với từ khóa <span style=" font-style: normal;">"
-                    <?php echo Common::getSession("book_name"); ?>"</span>
-            </div></div>
+
 
         <div class="row">
             <div class="col-md-12 borderpage" style="background:rgb(248, 226, 198);" >
@@ -86,7 +96,7 @@ $comboData =$dataItem;
                     <?php $ORDER_BY = unserialize (ORDER_BY); ?>
 
 
-                    <div class="col-md-5 "  style="width:180px"> <div class=" form-inline" style="width:180px">Sắp xếp:
+                    <div class="col-md-5 "  style="width:190px"> <div class=" form-inline" style="width:190px">Sắp xếp:
                             <select id="comboOrderBy" class="form-control combopage"  >
                                 <?php for($i = 0;$i<count($ORDER_BY);$i++):?>
                                     <?php
