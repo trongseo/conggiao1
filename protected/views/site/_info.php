@@ -106,12 +106,12 @@
                 </div>
                 <div class="col-md-4">
                 	<div class="form-group">
-	                	<div class="col-md-4">
+	                	<div class="col-md-5">
 	                		<div class="row">
 		                		Ngày phát hành:
 		                	</div>
 	                	</div>
-	                	<div class="col-md-8" style="text-align:left;">
+	                	<div class="col-md-7" style="text-align:left;">
 	                		<div class="row">
                                 <?php echo Common::converYYYYMMDDtoDaymonyyyyPara($arrBook['issue_date']) ; ?>
 		                	</div>

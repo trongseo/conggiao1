@@ -87,7 +87,7 @@ public static function getPagging($totalPage,$pageSize,$page,$itemCount){
         $next = "  ";
         $end = " ";
         $inpage = "<select id='comboPage' style=' ' class='form-control combopage'> ";
-        if ($totalPage == 1) return "";
+        if ($totalPage == 1) return $inpage."<option>Trang 1 của 1</option> </select>";
         if ($totalPage >= 2)
         {
             $first = "";

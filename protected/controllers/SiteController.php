@@ -131,7 +131,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $query1 = Yii::app()->db->createCommand() //this query contains all the data
             ->select(array('*'))
             ->from(array('tbl_book'))
-            ->where("delete_logic_flg =0 and book_name like :book_name ".$subQuery)
+            ->where("delete_logic_flg =0 and ( book_name like :book_name or author like :book_name or introduction like :book_name )".$subQuery)
             ->limit($pageSize,  ($page-1) * $pageSize); // the trick is here!
 
         if ($orderbyid==0){

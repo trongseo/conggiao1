@@ -22,7 +22,7 @@ define("ADMIN_EMAIL","info@kinhtanphuc.com");
 define("SMTP_USERNAME","info@kinhtanphuc.com");
 define("SMTP_PASSWORD","123456");
 define("SMTP_INCLUDED",1);
-define ("ITEM_PER_PAGE", serialize (array (1,2,5)));
+define ("ITEM_PER_PAGE", serialize (array (1,20,50)));
 define ("ORDER_BY", serialize (array ("Tiều đề A-Z","Lượt xem")));
 define ("ORDER_BY_KEY", serialize (array ("0","1")));
 define ("WEB_URL", "http://googleg9.com:8111");

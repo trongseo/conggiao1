@@ -60,6 +60,10 @@
             margin-top: 15px;
             margin-left: -10px;
         }
+        #divsearch {
+            color: #FCE4BE !important;
+            font-size: 14px;
+        }
         .home  {
             height: 37px;
         }

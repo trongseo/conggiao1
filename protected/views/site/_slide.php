@@ -90,8 +90,8 @@
             </script>
         </div>
         <div class="col-md-4 slide-right-container">
-            <img u="image" src="images/banner-right.png" style="width:328px;height:254px" />
-            <div class="slide-right-content">
+            <img u="image" src="images/thuvien.jpg" style="width:328px;height:254px" />
+            <div class="slide-right-content box" style="background-color: #DEE3F1;opacity:0.8;">
                 <a href="/thu-vien">
                     <span style="font-size:17px;font-weight: bold;color: #D5904D;">Nhấn</span>
                     <span style="font-size:14px;font-weight: bold;color: #5f2d08;">vào đây để vào</span>

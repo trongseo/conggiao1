@@ -70,49 +70,49 @@
                 <div class="col-md-12 footer-wp">
                     <div class="row">
                         <div class="col-md-4 form-group">
-                            <h4>Thông tin</h4>
-							
-							<a href="<?php echo Yii::app()->baseUrl.'/dieu-khoan-su-dung'?>">
-								<div class="items items-1">
-									Điều khoản sử dụng
-								</div>
-							</a>
-							<a href="<?php echo Yii::app()->baseUrl.'/lien-he'?>">
-								<div class="items items-2">
-									Liên hệ
-								</div>
-							</a>
+                            <h4 class="headings1">Thông tin</h4>
+
+                            <a href="<?php echo Yii::app()->baseUrl.'/dieu-khoan-su-dung'?>">
+                                <div class="items items-1">
+                                    Điều khoản sử dụng
+                                </div>
+                            </a>
+                            <a href="<?php echo Yii::app()->baseUrl.'/lien-he'?>">
+                                <div class="items items-2">
+                                    Liên hệ
+                                </div>
+                            </a>
                         </div>
                         <div class="col-md-4 form-group">
-                            <h4>Phần mềm đọc sách</h4>
-							<a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-pc'?>">
-								<div class="items items-7">
-									Ứng dụng cho PC
-								</div>
-							</a>
-							<a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-ios'?>">
-								<div class="items items-3">
-									Ứng dụng cho IOS
-								</div>
-							</a>
-							<a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-android'?>">
-								<div class="items items-4">
-									Ừng dụng cho Android
-								</div>
-							</a>
+                            <h4 class="headings1">Phần mềm đọc sách</h4>
+                            <a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-pc'?>">
+                                <div class="items items-7">
+                                    Ứng dụng cho PC
+                                </div>
+                            </a>
+                            <a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-ios'?>">
+                                <div class="items items-3">
+                                    Ứng dụng cho IOS
+                                </div>
+                            </a>
+                            <a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-android'?>">
+                                <div class="items items-4">
+                                    Ừng dụng cho Android
+                                </div>
+                            </a>
                         </div>
                         <div class="col-md-4 form-group">
-                            <h4>Hỗ trợ</h4>
-							<a href="<?php echo Yii::app()->baseUrl.'/huong-dan'?>">
-								<div class="items items-5">
-									Hướng dẫn
-								</div>
-							</a>
-							<a href="<?php echo Yii::app()->baseUrl.'/cau-hoi-thuong-gap'?>">
-								<div class="items items-6">
-									Những câu hỏi thường gặp
-								</div>
-							</a>
+                            <h4 class="headings1">Hỗ trợ</h4>
+                            <a href="<?php echo Yii::app()->baseUrl.'/huong-dan'?>">
+                                <div class="items items-5">
+                                    Hướng dẫn
+                                </div>
+                            </a>
+                            <a href="<?php echo Yii::app()->baseUrl.'/cau-hoi-thuong-gap'?>">
+                                <div class="items items-6">
+                                    Những câu hỏi thường gặp
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
