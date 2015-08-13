@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_slide_product.php" afterPath="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc_search.php" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc_search.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -59,8 +57,21 @@
       <file leaf-file-name="_slide_product.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="3" selection-start="4836" selection-end="4854" vertical-scroll-proportion="0.39922482" vertical-offset="3432" max-vertical-offset="17612">
-              <folding />
+            <state line="616" column="0" selection-start="16843" selection-end="16843" vertical-scroll-proportion="0.5387597" vertical-offset="9106" max-vertical-offset="10438">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="tag#div#0" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="tag#div#1" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="tag#div#2" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+                <element signature="tag#div#3" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -677,8 +688,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="3" selection-start="4836" selection-end="4854" vertical-scroll-proportion="0.39922482" vertical-offset="3432" max-vertical-offset="17612">
-          <folding />
+        <state line="616" column="0" selection-start="16843" selection-end="16843" vertical-scroll-proportion="0.5387597" vertical-offset="9106" max-vertical-offset="10438">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="tag#div#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="tag#div#1" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="tag#div#2" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+            <element signature="tag#div#3" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#3;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
