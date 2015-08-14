@@ -342,7 +342,7 @@ div.slider-box div.slider {
     z-index: 1;
 }
 .slider-button-right {
-    right:8px;
+    right:0px;
     top:50%;
     margin-top:-10px;
     background-position:right top

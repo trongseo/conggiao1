@@ -1,17 +1,18 @@
 
 <div class="row">
-    <div class="arrow">
+
+    <h4 style="margin-left: 20px;margin-top:13px;color: #5a2e0b">
        <?php
            $cateId= $_REQUEST["myid"];
             $mylevel =$_REQUEST["mylevel"];
                 $cateName = CommonDB::GetAll("Select * from tbl_index where id=".$cateId,[])[0]["name"] ;
-            ?> <h4><?php echo $cateName;?>
+            ?> <?php echo $cateName;?>
         </h4>
-    </div>
-    <div class="arrow-right"></div>
-    <div class="clear"></div>
-    <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
-    <div class="clear1"></div>
+
+
+        <div class="clear"></div>
+
+        <div class="clear1"></div>
 
 </div>
 <?php
@@ -41,7 +42,7 @@ fieldset, img {
     z-index:1
 }
 .content-box {
-    width:825px;
+    width:100%;
     padding-bottom: 15px;
 
 }
@@ -539,7 +540,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <?php foreach($dataCate as $valueCate):?>
     <?php
     $parent_id = $valueCate['id'];
-    $queryNew ="SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0  and parent_id=".$parent_id;
+    $queryNew ="SELECT * FROM tbl_book WHERE book_type=1 and good_book_flg=1 and active=1 AND delete_logic_flg=0  and parent_id=".$parent_id;
     $dataNewBook = CommonDB::GetAll($queryNew,[]);
     ?>
 <div class="content-box" style="float: right;">

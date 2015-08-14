@@ -53,7 +53,7 @@ $comboData =$dataItem;
 
 
     <div class="row">
-        <div class="col-md-12" style="padding:0px 0px 0px 0px;display:inline;padding-top: 5px">
+        <div class="col-md-12" style="padding:0px 0px 0px 0px;display:inline;padding-top: 13px">
             <h4>
                 <?php
                 if(Common::getSession("parent_id")!="0")
@@ -67,9 +67,9 @@ $comboData =$dataItem;
                 ?> <span style="display:inline;font-style: italic" class="small">(Có <?php echo $arrDataPage['itemCount']; ?> cuốn sách)</span> </h4>
 
         </div>
-        <div class="clear"></div>
+        <div class="clear"></div><div class="clear1"></div>
     </div>
-    <?php if(count($comboData)==0):?>
+    <?php if(1==2):?>
 
         <div class="row mybox" style="padding:0px;padding-left:5px;height:200px;margin-top:20px">
             <div class="row" style="padding-top:20px">

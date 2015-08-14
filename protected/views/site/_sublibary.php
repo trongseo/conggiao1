@@ -570,7 +570,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="content-box" style="float: right;">
     <div class="book-container-box container-box-book-preview box clearfix">
         <div class="arrow-home" style="margin-left: 5px">
-            <h4>Sách mới đưa vào thư viện</h4>
+            <h4 >Sách mới đưa vào thư viện</h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
         <div class="clear"></div>
