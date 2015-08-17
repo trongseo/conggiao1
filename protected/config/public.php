@@ -10,6 +10,7 @@ return CMap::mergeArray(
                 'password' => DB_PASSWORD,
                 'charset' => 'utf8',
                 'schemaCachingDuration' => 60 * 60,
+                'enableParamLogging' => true,
             ),
             'log' => array(
                 'class' => 'CLogRouter',

@@ -94,7 +94,18 @@ var FROM_TIEUMUC='tieumuc';
         LoadContent(0,0);
     });
 function LoadContentSearch(daimuc,keysearch){
-   var  urlGet = '/Site/SubLibaryTieuMucSearch?daimuc='+daimuc+'&keysearch='+keysearch;
+    var  urlGet = '/Site/SubLibaryTieuMucSearch?daimuc='+daimuc+'&keysearch='+keysearch;
+    if(keysearch=="sachhaynendoc"){
+        urlGet = '/Site/SubLibaryTieuMucSearchFlg?daimuc='+daimuc+'&keysearch='+keysearch;
+    }
+	 if(keysearch=="sachsapduavaothuvien" ){
+        urlGet = '/Site/SubLibaryTieuMucSearchFlg?daimuc='+daimuc+'&keysearch='+keysearch;
+    }
+	 if(keysearch=="sachmoiduavaothuvien" ){
+        urlGet = '/Site/SubLibaryTieuMucSearchFlg?daimuc='+daimuc+'&keysearch='+keysearch;
+    }
+	
+  // var  urlGet = '/Site/SubLibaryTieuMucSearch?daimuc='+daimuc+'&keysearch='+keysearch;
     $.ajax({
         type:"POST",
         url:urlGet,
@@ -106,7 +117,7 @@ function LoadContentSearch(daimuc,keysearch){
 
 }
     function LoadContent(myid,mylevel){
-
+ $("#txtKeySearch").val('');
 
         if(mylevel==2){
             $.ajax({

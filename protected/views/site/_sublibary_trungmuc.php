@@ -548,6 +548,10 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
             <h4><?php echo $valueCate["name"]?></h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
+        <?php if(count($dataNewBook)>0): ?>
+            <div class="topright"><a href="javascript:clickMenu(<?php echo $parent_id; ?>);"> Xem hết <img src="/img/3_arrow.png"></a></div>
+        <?php endif ?>
+
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
@@ -627,6 +631,12 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         };
         readyFunc();
     })();
+
+    function clickMenu(myid){
+       var myidd= $("#"+myid );
+        $("#"+myid ).trigger( "click" );
+       // alert( $(myidd).attr( "title" ));
+    }
     $(document).ready(function(){
 
     });

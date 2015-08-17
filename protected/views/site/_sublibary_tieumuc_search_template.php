@@ -98,9 +98,24 @@
                     if(isPage==0){
                         gotopage=1;
                     }
+                   var keyword = $('#txtKeySearch').val();
+                    var myURl = '/Site/SubLibaryTieuMucSearch?from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow;
+                    if(keyword=="sachhaynendoc")
+                    {
+                        myURl = '/Site/SubLibaryTieuMucSearchFlg?from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow;
+                    }
+                    if(keyword=="sachmoiduavaothuvien")
+                    {
+                        myURl = '/Site/SubLibaryTieuMucSearchFlg?from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow;
+                    }
+                    if(keyword=="sachsapduavaothuvien")
+                    {
+                        myURl = '/Site/SubLibaryTieuMucSearchFlg?from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow;
+                    }
+
                     $.ajax({
                         type:"POST",
-                        url:'/Site/SubLibaryTieuMucSearch?from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
+                        url:myURl,
                         data:{},
                         success:function(result){
                             $("#divcontent").empty().append(result);

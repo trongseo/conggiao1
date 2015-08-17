@@ -572,6 +572,10 @@ $dataGoodBook = CommonDB::GetAll($queryGood,[]);
             <h4 >Sách mới đưa vào thư viện</h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
+        <?php if(count($dataNewBook)>0): ?>
+            <div class="topright"><a href="/thu-vien/<?php echo $cateId; ?>-sachmoiduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
+        <?php endif ?>
+
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
@@ -634,6 +638,10 @@ $dataGoodBook = CommonDB::GetAll($queryGood,[]);
             <h4>Sách sắp đưa vào thư viện</h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataPrepareBook) ?> quyển sách)</div>
+        <?php if(count($dataPrepareBook)>0): ?>
+            <div class="topright"><a href="/thu-vien/<?php echo $cateId; ?>-sachsapduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
+        <?php endif ?>
+
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
@@ -695,6 +703,9 @@ $dataGoodBook = CommonDB::GetAll($queryGood,[]);
             <h4>Sách hay nên đọc</h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataGoodBook) ?> quyển sách)</div>
+        <?php if(count($dataGoodBook)>0): ?>
+            <div class="topright"><a href="/thu-vien/<?php echo $cateId; ?>-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
+        <?php endif ?>
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">

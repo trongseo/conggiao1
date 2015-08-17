@@ -94,7 +94,12 @@ var FROM_TIEUMUC='tieumuc';
         LoadContent(0,0);
     });
 function LoadContentSearch(daimuc,keysearch){
+
+
    var  urlGet = '/Site/SubLibaryTieuMucSearch?daimuc='+daimuc+'&keysearch='+keysearch;
+    if(keysearch=="sachhaynendoc"){
+        urlGet = '/Site/SubLibaryTieuMucSearchFlg?daimuc='+daimuc+'&keysearch='+keysearch;
+    }
     $.ajax({
         type:"POST",
         url:urlGet,

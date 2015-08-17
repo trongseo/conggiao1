@@ -28,7 +28,7 @@
                             ?>  <ul class="cute">
                                 <?php foreach($comboData2 as $value2):?>
 
-                                    <li class="subitem1 sublittle"><a  title="<?php echo $value2["name"]?>" class="tieu" href="javascript:void(0);" myid="<?php echo $value2["id"]?>" >  <?php echo Common::truncate($value2["name"],34,'.')?> </a></li>
+                                    <li class="subitem1 sublittle"><a  title="<?php echo $value2["name"]?>" class="tieu" href="javascript:void(0);" id="<?php echo $value2["id"]?>" myid="<?php echo $value2["id"]?>" >  <?php echo Common::truncate($value2["name"],34,'.')?> </a></li>
 
 
                                 <?php endforeach?>

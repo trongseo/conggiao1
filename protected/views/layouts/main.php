@@ -39,6 +39,13 @@
         .select2-selection--single {
             height: 35px;
         }
+        .topright a{
+            float: right;
+            margin: 10px 2px -10px 1px;
+            font-style: italic;;
+            color: red !important;
+            font-weight: 400 !important;
+        }
     </style>
     <style>
         .readbooknew {

@@ -97,6 +97,101 @@ $this->curPage="home";
         $this->layout = "";
         $this->render('libary',array('arrSearch'=>$arrSearch));
     }
+    public function actionSubLibaryTieuMucSearchFlg() {
+
+//and parent_id in('.$subQuery.')
+
+
+
+        $parent_id=Common::getPara("daimuc");
+
+        $keysearch=Common::getPara("keysearch");
+
+
+//        $dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0",[]);
+//        $dataPrepareBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0",[]);
+//        $dataGoodBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0",[]);
+        if(Common::getPara("from")=="order"){
+            $parent_id = Common::getSession("parent_id");
+            $keysearch= Common::getSession("book_name");
+        }else{
+            Common::setSession("parent_id",$parent_id);
+            Common::setSession("book_name",$keysearch);
+        }
+
+        // from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
+        $gotopage = Common::getPara("gotopage");
+        $orderbyid = Common::getPara("orderbyid");
+        $perpageshow = Common::getPara("perpageshow");
+
+        $page = ($gotopage!="") ? $gotopage : 1;
+        $pageSize = ($perpageshow!="") ? $perpageshow : 1;
+        $arrView["gotopage"]=$gotopage;
+        $arrView["orderbyid"]=$orderbyid;
+        $arrView["perpageshow"]=$perpageshow;
+        $flgSachHay =1;
+        $queryMore ="";
+        $subQuery=" and parent_id in (
+            SELECT id FROM tbl_index
+WHERE parent_id in (SELECT id FROM tbl_index
+WHERE parent_id=:parent_id ) and type=2 )" ;
+        if($parent_id==0){
+            $subQuery='';
+        }
+        $queryMore=" ";
+        if($keysearch=="sachhaynendoc"){
+            $flgSachHay=1;
+            $queryMore=" and good_book_flg=1 ".$subQuery;
+        }
+        if($keysearch=="sachsapduavaothuvien"){
+            $flgSachHay=2;
+            $queryMore=" and book_type=0 ".$subQuery;
+        }
+        if($keysearch=="sachmoiduavaothuvien"){
+            $flgSachHay=2;
+            $queryMore=" and book_type=1 ".$subQuery;
+        }
+
+
+        $query1 = Yii::app()->db->createCommand() //this query contains all the data
+            ->select(array('*'))
+            ->from(array('tbl_book'))
+            ->where("delete_logic_flg =0 and  active=1  ".$queryMore)
+            ->limit($pageSize,  ($page-1) * $pageSize); // the trick is here!
+
+        if ($orderbyid==0){
+            $query1=   $query1->order('book_name ');
+        }else
+            if ($orderbyid==1){
+                $query1=  $query1->order('viewer_count ');
+            }
+
+        if($parent_id!=0){
+            $query1->bindParam(':parent_id',  $parent_id, PDO::PARAM_INT);
+        }
+//        $keyword = "%".$keysearch."%";
+//        $query1->bindParam(':book_name',  $keyword, PDO::PARAM_STR);
+
+        $dataItem= $query1->queryAll();
+
+        $item_count = Yii::app()->db->createCommand() // this query get the total number of items,
+            ->select(' count(id) as count ')
+            ->from(array('tbl_book'))
+            ->where(' delete_logic_flg =0 and active=1 '.$queryMore);
+
+        if($parent_id!=0){
+            $item_count->bindParam(':parent_id',  $parent_id,  PDO::PARAM_INT);
+        }
+//        $keyword = "%".$keysearch."%";
+//        $item_count->bindParam(':book_name',  $keyword, PDO::PARAM_STR);
+
+        $itemCount= $item_count->queryScalar();
+        $totalPage = ceil($itemCount / $pageSize);
+
+        $dataPage =array('totalPage'=>$totalPage,'pageSize'=>$pageSize,'itemCount'=>$itemCount,'page'=>$page);
+        $this->renderPartial('_sublibary_tieumuc_search',array('dataItem'=>$dataItem,'arrDataPage'=>$dataPage,'arrView'=>$arrView));
+    }
+
     public function actionSubLibaryTieuMucSearch() {
 
 //and parent_id in('.$subQuery.')

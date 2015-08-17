@@ -526,13 +526,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     width: 100%;
     margin-bottom: -20px;
 }
-.topright a{
-    float: right;
-    margin: 10px 2px -10px 1px;
-    font-style: italic;;
-    color: red !important;
-    font-weight: 400 !important;
-}
+
 .read-booknew {
     background: url('/images/ic_book.png') no-repeat scroll 0 0;
     padding-left: 30px;
@@ -556,7 +550,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
 
     <?php if(count($dataNewBook)>0): ?>
-        <div class="topright"><a href="/thu-vien">Xem hết <img src="/img/3_arrow.png"></a></div>
+        <div class="topright"><a href="/thu-vien/0-sachmoiduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
     <?php endif ?>
 <div class="clear"></div>
 <div class="Border-BottomH3"></div>
@@ -626,7 +620,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataPrepareBook) ?> quyển sách)</div>
         <?php if(count($dataPrepareBook)>0): ?>
-        <div class="topright"><a href="/thu-vien">Xem hết <img src="/img/3_arrow.png"></a></div>
+        <div class="topright"><a href="/thu-vien/0-sachsapduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
@@ -691,7 +685,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="arrow-slide-right">(Có <?php echo count($dataGoodBook) ?> quyển sách)</div>
 
         <?php if(count($dataGoodBook)>0): ?>
-            <div class="topright"><a href="/thu-vien">Xem hết <img src="/img/3_arrow.png"></a></div>
+            <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
 
 
