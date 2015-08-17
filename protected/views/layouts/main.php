@@ -28,6 +28,9 @@
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script type="text/javascript" src="/scroll/assets/73ff6cfc/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="/scroll/assets/73ff6cfc/main.min.js"></script>
+
     <style>
         .menu-search {
 
@@ -38,6 +41,17 @@
         }
     </style>
     <style>
+        .readbooknew {
+            background: url('/images/ic_book.png') no-repeat scroll 0 0;
+            padding-left: 30px;
+            cursor: pointer;
+            color: #B27D47;
+            clear: both;
+            margin-left: 20;
+            margin-top: 150;
+            position: absolute;
+        }
+
         .lefmenuw {
             width: 22.5%;
         }
@@ -388,7 +402,9 @@
             }
         })
     }
-
+    function openNewWindow(openid){
+        window.open('/chi-tiet/'+openid,'_blank');
+    }
 </script>
 
 </html>

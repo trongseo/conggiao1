@@ -1,53 +1,5 @@
 
-<div class="row">
 
-        <h4 style="margin-left: 20px;margin-top:13px;color: #5a2e0b"><?php
-            if($_REQUEST["myid"]!="0")
-            {
-                echo CommonDB::GetDataRow("tbl_index","id=".$_REQUEST["myid"]." and type=".$_REQUEST["mylevel"])["name"] ;
-            }else{
-                echo "Tất Cả" ;
-            }
-           $cateId= $_REQUEST["myid"];
-            $mylevel =$_REQUEST["mylevel"];
-
-            $subQuery=" and parent_id in (
-            SELECT id FROM tbl_index
-WHERE parent_id in (SELECT id FROM tbl_index
-WHERE parent_id=$cateId ) and type=2 )" ;
-            if($cateId==0){
-                $subQuery="";
-            }
-            if($mylevel==1){
-                $subQuery=" and parent_id in (
-                    SELECT id FROM tbl_index
-                        WHERE parent_id =$cateId  )" ;
-            }
-
-            ?></h4>
-
-
-    <div class="clear"></div>
-
-    <div class="clear1"></div>
-
-</div>
-<?php
-
-// 0:sắp phát hành; 1: mới phát hành; 2: là bình thuờng
-//SELECT * FROM tbl_book WHERE book_type=1 AND delete_logic_flg=0
-//        good_book_flg
-$queryNew ="SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 ".$subQuery;
-$queryPrepare ="SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0 ".$subQuery;
-$queryGood ="SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0 ".$subQuery;
-
-$dataNewBook = CommonDB::GetAll($queryNew,[]);
-$dataPrepareBook = CommonDB::GetAll($queryPrepare,[]);
-$dataGoodBook = CommonDB::GetAll($queryGood,[]);
-?>
-
-<script type="text/javascript" src="scroll/assets/73ff6cfc/jquery.slides.min.js"></script>
-<script type="text/javascript" src="scroll/assets/73ff6cfc/main.min.js"></script>
 
 
 <style>
@@ -220,7 +172,7 @@ div.container-box-book-preview .preview-box .author {
 }
 div.container-box-book-preview .preview-box div.slider {
     padding:0;
-    height:160px
+    height:170px
 }
 div.container-box-book-preview .preview-box div.slider ul li {
     width:545px
@@ -563,6 +515,53 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     color: #FCE4BE !important;  font-size: 14px;
 }
 </style>
+<div class="row">
+
+        <h4 style="margin-left: 20px;margin-top:13px;color: #5a2e0b"><?php
+            if($_REQUEST["myid"]!="0")
+            {
+                echo CommonDB::GetDataRow("tbl_index","id=".$_REQUEST["myid"]." and type=".$_REQUEST["mylevel"])["name"] ;
+            }else{
+                echo "Tất Cả" ;
+            }
+           $cateId= $_REQUEST["myid"];
+            $mylevel =$_REQUEST["mylevel"];
+
+            $subQuery=" and parent_id in (
+            SELECT id FROM tbl_index
+WHERE parent_id in (SELECT id FROM tbl_index
+WHERE parent_id=$cateId ) and type=2 )" ;
+            if($cateId==0){
+                $subQuery="";
+            }
+            if($mylevel==1){
+                $subQuery=" and parent_id in (
+                    SELECT id FROM tbl_index
+                        WHERE parent_id =$cateId  )" ;
+            }
+
+            ?></h4>
+
+
+    <div class="clear"></div>
+
+    <div class="clear1"></div>
+
+</div>
+<?php
+
+// 0:sắp phát hành; 1: mới phát hành; 2: là bình thuờng
+//SELECT * FROM tbl_book WHERE book_type=1 AND delete_logic_flg=0
+//        good_book_flg
+$queryNew ="SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 ".$subQuery;
+$queryPrepare ="SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0 ".$subQuery;
+$queryGood ="SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0 ".$subQuery;
+
+$dataNewBook = CommonDB::GetAll($queryNew,[]);
+$dataPrepareBook = CommonDB::GetAll($queryPrepare,[]);
+$dataGoodBook = CommonDB::GetAll($queryGood,[]);
+?>
+
 
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
 
@@ -576,7 +575,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
+            <div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview" id="sliderNewYorkTimesPreview1">
                 <ul>
                     <?php foreach($dataNewBook as $value):?>
                         <li>
@@ -588,6 +587,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                                     </div>
 
                                 </a>
+                            </div><div class="readbooknew" onclick="openNewWindow('<?php echo $value["id"]?>')">
+                                Đọc
                             </div>
                             <div class="preview-text">
                                 <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
@@ -601,6 +602,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php if(count($dataNewBook)>0): ?>
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
@@ -620,6 +622,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php endif; ?>
+
     </div>
 </div>
 
@@ -633,7 +637,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
+            <div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview" id="sliderNewYorkTimesPreview2">
                 <ul>
                     <?php foreach($dataPrepareBook as $value):?>
                         <li>
@@ -645,6 +649,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                                     </div>
 
                                 </a>
+                            </div><div class="readbooknew" onclick="openNewWindow('<?php echo $value["id"]?>')">
+                                Đọc
                             </div>
                             <div class="preview-text">
                                 <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
@@ -658,6 +664,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php if(count($dataPrepareBook)>0): ?>
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
@@ -676,7 +683,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                     <?php endforeach?>
                 </ul>
             </div>
-        </div>
+        </div> <?php endif; ?>
     </div>
 </div>
 
@@ -691,7 +698,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
+            <div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview" id="sliderNewYorkTimesPreview3">
                 <ul>
                     <?php foreach($dataGoodBook as $value):?>
                         <li>
@@ -703,6 +710,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                                     </div>
 
                                 </a>
+                            </div><div class="readbooknew" onclick="openNewWindow('<?php echo $value["id"]?>')">
+                                Đọc
                             </div>
                             <div class="preview-text">
                                 <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
@@ -716,6 +725,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php if(count($dataGoodBook)>0): ?>
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
@@ -735,6 +745,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php endif; ?>
     </div>
 </div>
 

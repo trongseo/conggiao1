@@ -82,6 +82,7 @@ $this->curPage="home";
     public function actionLibary() {
         $this->curPage="thuvien";
         $c="";//$c = TblConfig::model()->find();
+
         $this->layout = "";
         $this->render('libary',array('c'=>$c));
     }
@@ -97,6 +98,7 @@ $this->curPage="home";
         $this->render('libary',array('arrSearch'=>$arrSearch));
     }
     public function actionSubLibaryTieuMucSearch() {
+
 //and parent_id in('.$subQuery.')
 $subQuery=" and parent_id in (
             SELECT id FROM tbl_index
@@ -107,6 +109,10 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $parent_id=Common::getPara("daimuc");
 
         $keysearch=Common::getPara("keysearch");
+        if($keysearch=="sachhaynendoc"){
+            $clsview = new ClsViewAllBook();
+
+        }
         if(Common::getPara("from")=="order"){
             $parent_id = Common::getSession("parent_id");
             $keysearch= Common::getSession("book_name");
@@ -171,6 +177,8 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $this->curPage="thuvien";
         $cateId= $_REQUEST["myid"];
         $mylevel =$_REQUEST["mylevel"];
+        Common::setSession("parent_id","");
+        Common::setSession("book_name","");
         if($mylevel==1){
             $this->renderPartial('_sublibary_trungmuc');
         }else{
@@ -181,6 +189,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
 
     public function actionSubLibaryTieuMuc() {
 
+        Common::setSession("book_name","");
         $parent_id= (isset($_GET['myid']) ? $_GET['myid'] : "");
         if(Common::getPara("from")=="order"){
             $parent_id = Common::getSession("parent_id");

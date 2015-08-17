@@ -554,7 +554,10 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     <h4><b>Sách mới đưa vào Thư Viện</b></h4>
 </div>
 <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
-    <div class="topright"><a href="/thu-vien">Xem hết <img src="/img/3_arrow.png"></a></div>
+
+    <?php if(count($dataNewBook)>0): ?>
+        <div class="topright"><a href="/thu-vien">Xem hết <img src="/img/3_arrow.png"></a></div>
+    <?php endif ?>
 <div class="clear"></div>
 <div class="Border-BottomH3"></div>
 <div class="preview-box clearfix">
@@ -587,7 +590,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         </ul>
 </div>
 </div>
-
+    <?php if(count($dataNewBook)>0): ?>
 <div class="slider-box">
 <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
 <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
@@ -608,7 +611,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         </ul>
 </div>
 </div>
-
+    <?php endif; ?>
 
 </div>
 
@@ -622,6 +625,9 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
             <h4><b>Sách sắp đưa vào Thư Viện</b></h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataPrepareBook) ?> quyển sách)</div>
+        <?php if(count($dataPrepareBook)>0): ?>
+        <div class="topright"><a href="/thu-vien">Xem hết <img src="/img/3_arrow.png"></a></div>
+        <?php endif ?>
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
@@ -652,6 +658,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php if(count($dataPrepareBook)>0): ?>
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
@@ -670,7 +677,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                     <?php endforeach?>
                 </ul>
             </div>
-        </div>
+        </div><?php endif; ?>
     </div>
 </div>
 
@@ -682,7 +689,12 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
             <h4><b> Sách hay nên đọc</b></h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataGoodBook) ?> quyển sách)</div>
-        <div class="topright"><a href="/thu-vien">Xem hết <img src="/img/3_arrow.png"></a></div>
+
+        <?php if(count($dataGoodBook)>0): ?>
+            <div class="topright"><a href="/thu-vien">Xem hết <img src="/img/3_arrow.png"></a></div>
+        <?php endif ?>
+
+
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
@@ -713,6 +725,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php if(count($dataGoodBook)>0): ?>
+
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
@@ -732,6 +746,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php endif; ?>
     </div>
 </div>
 
@@ -1009,9 +1024,7 @@ Hai con người tưởng chừng như hoàn hảo ấy lại có một qu
     $(document).ready(function(){
 
     });
-   function openNewWindow(openid){
-       window.open('/chi-tiet/'+openid,'_blank');
-    }
+
 //    jQuery(function($) {
 //        jQuery('#bookTab').tabs({'cache':true,'select':function(event, ui){var $panel = $(ui.panel); if($panel.is(":empty")){$("#ajax-loading").removeClass("hidden");}},'load':function(){$("#ajax-loading").addClass("hidden"); $(".tooltip").hide(); $(".atooltip[title]").tooltip({position: ['center', 'right']});}});
 //        jQuery('#ebookTab').tabs({'cache':true,'select':function(event, ui){var $panel = $(ui.panel); if($panel.is(":empty")){$("#ajax-loading").removeClass("hidden");}},'load':function(){$("#ajax-loading").addClass("hidden"); $(".tooltip").hide(); $(".atooltip[title]").tooltip({position: ['center', 'right']});}});

@@ -3,6 +3,12 @@
 
 
 	$(document).ready(function() {
-            LoadInfo(0);
+        <?php if(isset(Yii::app()->session['id_user'])): ?>
+
+        LoadInfo(0);
+        <?php else: ?>
+        LoadInfo(1);
+        <?php endif; ?>
+
         });
 </script>

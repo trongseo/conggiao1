@@ -23,8 +23,7 @@ $TrungmucQuery="SELECT * FROM tbl_index WHERE  parent_id=$cateId AND TYPE=2";
 $dataCate = CommonDB::GetAll($TrungmucQuery,[]);
 ?>
 
-<script type="text/javascript" src="scroll/assets/73ff6cfc/jquery.slides.min.js"></script>
-<script type="text/javascript" src="scroll/assets/73ff6cfc/main.min.js"></script>
+
 
 
 <style>
@@ -197,7 +196,7 @@ div.container-box-book-preview .preview-box .author {
 }
 div.container-box-book-preview .preview-box div.slider {
     padding:0;
-    height:160px
+    height:170px
 }
 div.container-box-book-preview .preview-box div.slider ul li {
     width:545px
@@ -564,6 +563,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                                     </div>
 
                                 </a>
+                            </div><div class="readbooknew" onclick="openNewWindow('<?php echo $value["id"]?>')">
+                                Đọc
                             </div>
                             <div class="preview-text">
                                 <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
@@ -577,6 +578,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php if(count($dataNewBook)>0): ?>
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
@@ -596,6 +598,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+        <?php endif; ?>
     </div>
 </div>
     <div class="clear1"></div>
