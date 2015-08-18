@@ -127,10 +127,10 @@
                 	<div class="form-group">
 	                	<div class="col-md-2">
 	                		<div class="row">
-		                		<img src="<?php echo Yii::app()->baseUrl?>/images/item.jpg" width="150px" height="200px">
+		                		<img src="<?php echo PATH_IMAGE.$arrBook["bookimage_link"] ?>" width="150px" height="200px">
 		                	</div>
                             <?php if(isset(Yii::app()->session['id_user'])): ?>
-                                <div class="logo-login">
+                                <div class="download">
                                     <a class="register" href="<?php echo PATH_DOWNLOAD.'/'.$arrBook['download_file_link']; ?>">
                                         Lấy về miễn phí
                                     </a>

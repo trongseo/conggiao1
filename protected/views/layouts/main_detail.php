@@ -83,6 +83,14 @@
                 top: 6px;
                 padding-left: 30px;
             }
+            .download {
+                height: 36px;
+                border: 1px solid #be7338;
+                border-radius: 4px;
+                font-weight: bold;
+                color: #be7338;
+                padding: 8px 10px 1px 10px;margin-top:10px;margin-left:-10px;
+            }
             .logo-login .register {
                 /* background: url('../images/ic_register.png') left center no-repeat #ecd1b5; */
                 float: left;

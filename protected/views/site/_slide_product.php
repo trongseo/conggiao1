@@ -537,6 +537,12 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     margin-top: 150;
     position: absolute;
 }
+.hrtext{
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+    border-top: 1px solid #D8BE9E;
+}
 </style>
 
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
@@ -558,28 +564,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
     <ul>
         <?php foreach($dataNewBook as $value):?>
-        <li>
-            <div id="img-block">
-                <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>"  class="preview-img">
-                    <div class="main-imgintro">
-                        <img alt="<?php echo $value["book_name"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
-
-                    </div>
-
-                </a>
-            </div>
-            <div class="read-booknew" onclick="openNewWindow('<?php echo $value["id"]?>')" >
-                Đọc
-            </div>
-
-            <div class="preview-text">
-                <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
-                    <?php echo $value["introduction"]?>
-                </span>
-            </div>
-            <span class="dots">...</span>
-
-        </li>
+        <li><?php require "_slide_product_item_template.php" ?></li>
         <?php endforeach?>
         </ul>
 </div>
@@ -629,23 +614,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 <ul>
                     <?php foreach($dataPrepareBook as $value):?>
                         <li>
-                            <div id="img-block">
-                                <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>"  class="preview-img">
-                                    <div class="main-imgintro">
-                                        <img alt="<?php echo $value["book_name"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
-
-                                    </div>
-
-                                </a>
-                            </div><div class="read-booknew" onclick="openNewWindow('<?php echo $value["id"]?>')" >
-                                Đọc
-                            </div>
-                            <div class="preview-text">
-                                <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
-                    <?php echo $value["introduction"]?>
-                </span>
-                            </div>
-                            <span class="dots">...</span>
+                        <li><?php require "_slide_product_item_template.php" ?></li>
 
                         </li>
                     <?php endforeach?>
@@ -695,26 +664,10 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
             <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
                 <ul>
                     <?php foreach($dataGoodBook as $value):?>
-                        <li>
-                            <div id="img-block">
-                                <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>"  class="preview-img">
-                                    <div class="main-imgintro">
-                                        <img alt="<?php echo $value["book_name"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
 
-                                    </div>
+                        <li><?php require "_slide_product_item_template.php" ?></li>
 
-                                </a>
-                            </div> <div class="read-booknew" onclick="openNewWindow('<?php echo $value["id"]?>')" >
-                                Đọc
-                            </div>
-                            <div class="preview-text">
-                                <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
-                    <?php echo $value["introduction"]?>
-                </span>
-                            </div>
-                            <span class="dots">...</span>
 
-                        </li>
                     <?php endforeach?>
                 </ul>
             </div>

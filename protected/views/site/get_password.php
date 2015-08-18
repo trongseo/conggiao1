@@ -1,7 +1,7 @@
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/quen-mat-khau">
 <div class="row">
     <div class="arrow">
-        <h4>QUÊN MẬT KHẨU</h4>
+        <h4>Quên mật khẩu</h4>
     </div>
     <div class="arrow-right"></div>
     <div class="clear" style="padding-top:2px"></div>

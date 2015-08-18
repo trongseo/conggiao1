@@ -159,63 +159,7 @@
         $("#registration-form").ajaxForm(options);
     });
 
-</script>        </div>
-</div>
-<div class="clear1"></div>
-<div class="col-md-12">
-    <div class="col-md-12 footer-wp">
-        <div class="row">
-            <div class="col-md-4 form-group">
-                <h4>Thông tin</h4>
-
-                <a href="/dieu-khoan-su-dung">
-                    <div class="items items-1">
-                        Điều khoản sử dụng
-                    </div>
-                </a>
-                <a href="/lien-he">
-                    <div class="items items-2">
-                        Liên hệ
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 form-group">
-                <h4>Phần mềm đọc sách</h4>
-                <a href="/ung-dung-cho-pc">
-                    <div class="items items-7">
-                        Ứng dụng cho PC
-                    </div>
-                </a>
-                <a href="/ung-dung-cho-ios">
-                    <div class="items items-3">
-                        Ứng dụng cho IOS
-                    </div>
-                </a>
-                <a href="/ung-dung-cho-android">
-                    <div class="items items-4">
-                        Ừng dụng cho Android
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-4 form-group">
-                <h4>Hỗ trợ</h4>
-                <a href="/huong-dan">
-                    <div class="items items-5">
-                        Hướng dẫn
-                    </div>
-                </a>
-                <a href="/cau-hoi-thuong-gap">
-                    <div class="items items-6">
-                        Những câu hỏi thường gặp
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="clear"></div>
-</div>
-</body>
+</script>
 <script type="text/JavaScript">
 
     function validateURL(url) {

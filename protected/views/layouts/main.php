@@ -46,6 +46,7 @@
             color: red !important;
             font-weight: 400 !important;
         }
+
     </style>
     <style>
         .readbooknew {

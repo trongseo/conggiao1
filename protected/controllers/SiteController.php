@@ -473,7 +473,10 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
     public function actionAboutUs() {
        $check = array('aaa'=>123,'bb'=>array('dd','kkk')); $check2 = TblConfig::model()->find();
         $this->curPage="gioithieu";
-        $this->render('about',array('page1'=>$check,'page'=>$check2));
+        $queryG ="SELECT * FROM `tbl_introduce`
+WHERE active =1 ORDER BY show_order";
+        $dataIntro = CommonDB::GetAll($queryG,[]);
+        $this->render('about',array('page1'=>$check,'comboData1'=>$dataIntro));
     }
     public function actionContact() {
         $type = 0;
@@ -656,11 +659,22 @@ VALUES (
 
     public function actionGuide(){
         //huong-dan
-        $this->render('guide');
+        $queryG ="SELECT * FROM `tbl_help`
+WHERE active =1 ORDER BY show_order";
+        $dataIntro = CommonDB::GetAll($queryG,[]);
+       // $this->render('about',array('page1'=>$check,'comboData1'=>$dataIntro));
+
+        $this->render('guide',array('comboData1'=>$dataIntro));
     }
     public function actionQuestion(){
         //cau-hoi-thuong-gap
-        $this->render('question');
+
+        $queryG ="SELECT question as title,answer as content,id FROM `tbl_question`
+WHERE active =1 ORDER BY show_order";
+        $dataIntro = CommonDB::GetAll($queryG,[]);
+
+        $this->render('question',array('comboData1'=>$dataIntro));
+
     }
 
 function random($length) {
