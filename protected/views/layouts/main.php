@@ -32,6 +32,12 @@
     <script type="text/javascript" src="/scroll/assets/73ff6cfc/main.min.js"></script>
 
     <style>
+        .hrtext {
+            margin-top: 0;
+            margin-bottom: 0;
+            border: 0;
+            border-top: 1px solid #D8BE9E;
+        }
         .menu-search {
 
             height: 37px;
