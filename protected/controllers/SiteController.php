@@ -560,6 +560,10 @@ VALUES (
             $this->renderPartial('_comment',array('dataPage'=>$dataPage));
         }
         if($id == 3){
+          $queryU=" UPDATE `tbl_book`
+            SET reader_count = reader_count+1
+            WHERE id=".$idbook;
+            CommonDB::runSQL($queryU,[]);
             $this->renderPartial('_book');
         }
     }

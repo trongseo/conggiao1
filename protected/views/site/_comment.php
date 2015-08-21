@@ -19,7 +19,7 @@
         <?php endforeach?>
 
         <br/>
-    <table class="auto-style1" style="width: 100%;background-color: #a6e1ec;padding-right: 5px;padding-left: 5px">
+    <table class="auto-style1" style="width: 80%;background-color: #F1DDC2;padding-right: 5px;padding-left: 5px">
         <tr>
             <td class="auto-style2" rowspan="2" style=" width: 114px;text-align: center;vertical-align: middle"><img src="/images/logo.png"></td>
             <td><?php echo Common::getSession('display_name') ?></td>

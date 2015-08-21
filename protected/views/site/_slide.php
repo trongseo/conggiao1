@@ -12,18 +12,32 @@
                     </div>
                 </div>
                 <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1130px; height: 300px; overflow: hidden;">
-                    <div>
-                        <img u="image" src="img/slide/01.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="img/slide/02.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="img/slide/03.jpg" />
-                    </div>
-                    <div>
-                        <img u="image" src="img/slide/04.jpg" />
-                    </div>
+                    <?php
+
+                       $datatbl_slide = CommonDB::GetAll("SELECT  * FROM `tbl_slide` WHERE active=1 ORDER BY show_order",[]);
+
+                    ?>
+                    <?php foreach($datatbl_slide as $value):?>
+
+                        <div>
+                            <img u="image" src="<?php echo PATH_IMAGE_slideImage.$value["image_name"] ?>" />
+                        </div>
+
+
+                    <?php endforeach?>
+
+<!--                    <div>-->
+<!--                        <img u="image" src="img/slide/01.jpg" />-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <img u="image" src="img/slide/02.jpg" />-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <img u="image" src="img/slide/03.jpg" />-->
+<!--                    </div>-->
+<!--                    <div>-->
+<!--                        <img u="image" src="img/slide/04.jpg" />-->
+<!--                    </div>-->
                 </div>
                 <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
                     <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>

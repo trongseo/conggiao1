@@ -28,6 +28,9 @@ define ("ORDER_BY_KEY", serialize (array ("0","1")));
 define ("WEB_URL", "http://googleg9.com:8111");
 define ("PATH_DOWNLOAD", "http://googleg9.com:8111/");
 define ("PATH_IMAGE", "http://googleg9.com:8222/uploads/bookImage/");
+define ("PATH_IMAGE_REF", "http://googleg9.com:8222/uploads/referenceImage/");
+define ("PATH_IMAGE_bookFile", "http://googleg9.com:8222/uploads/bookFile/");
+define ("PATH_IMAGE_slideImage", "http://googleg9.com:8222/uploads/slideImage/");
 
 //session const
 define ("ID_BOOK", "idbook");

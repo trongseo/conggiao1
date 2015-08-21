@@ -176,9 +176,9 @@
                     <div alt="2" class="btn_tab">
                         Đánh giá & Bình luận
                     </div>
-<!--                    <div alt="3" class="btn_tab">-->
-<!--                        Sách liên quan-->
-<!--                    </div>-->
+                    <div alt="3" class="btn_tab">
+                        Sách liên quan
+                    </div>
                     <div class="logo-login">
                         <?php if(isset(Yii::app()->session['id_user'])): ?>
 
