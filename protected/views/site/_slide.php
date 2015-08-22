@@ -2,7 +2,7 @@
     <div class="slider-home-container">
         <div class="col-md-8 slide-left-container">
             <div id="slider1_container" style="display: none; position: relative; margin: 0 auto;
-								top: 0px; left: 0px; width: 675px; height: 253px; overflow: hidden;">
+								top: 0px; left: 0px; width: 674px; height: 253px; overflow: hidden;">
                 <div u="loading" style="position: absolute; top: 0px; left: 0px;">
                     <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
 										top: 0px; left: 0px; width: 100%; height: 100%;">
@@ -14,30 +14,30 @@
                 <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1130px; height: 300px; overflow: hidden;">
                     <?php
 
-                       $datatbl_slide = CommonDB::GetAll("SELECT  * FROM `tbl_slide` WHERE active=1 ORDER BY show_order",[]);
+                    $datatbl_slide = CommonDB::GetAll("SELECT  * FROM `tbl_slide` WHERE active=1 ORDER BY show_order",[]);
 
                     ?>
                     <?php foreach($datatbl_slide as $value):?>
 
                         <div>
-                            <img u="image" src="<?php echo PATH_IMAGE_slideImage.$value["image_name"] ?>" />
+                            <img u="image" src="<?php echo PATH_IMAGE_slideImage. $value["image_name"] ?>" />
                         </div>
 
 
                     <?php endforeach?>
-
-<!--                    <div>-->
-<!--                        <img u="image" src="img/slide/01.jpg" />-->
-<!--                    </div>-->
-<!--                    <div>-->
-<!--                        <img u="image" src="img/slide/02.jpg" />-->
-<!--                    </div>-->
-<!--                    <div>-->
-<!--                        <img u="image" src="img/slide/03.jpg" />-->
-<!--                    </div>-->
-<!--                    <div>-->
-<!--                        <img u="image" src="img/slide/04.jpg" />-->
-<!--                    </div>-->
+                    <!--                    <img u="image" src="img/slide/01.jpg" />-->
+                    <!--                    <div>-->
+                    <!--                        <img u="image" src="img/slide/01.jpg" />-->
+                    <!--                    </div>-->
+                    <!--                    <div>-->
+                    <!--                        <img u="image" src="img/slide/02.jpg" />-->
+                    <!--                    </div>-->
+                    <!--                    <div>-->
+                    <!--                        <img u="image" src="img/slide/03.jpg" />-->
+                    <!--                    </div>-->
+                    <!--                    <div>-->
+                    <!--                        <img u="image" src="img/slide/04.jpg" />-->
+                    <!--                    </div>-->
                 </div>
                 <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
                     <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
@@ -92,7 +92,7 @@
                     function ScaleSlider() {
                         var bodyWidth = document.body.clientWidth - 30;
                         if (bodyWidth)
-                            jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 675));
+                            jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 674));
                         else
                             window.setTimeout(ScaleSlider, 30);
                     }
@@ -103,8 +103,8 @@
                 });
             </script>
         </div>
-        <div class="col-md-4 slide-right-container">
-            <img u="image" src="images/thuvien.jpg" style="width:328px;height:254px" />
+        <div class="col-md-4 " style="width:345px;align:left;padding-left:0px;margin-left:-4px">
+            <img u="image" src="images/thuvien.jpg" style="width: 336px;height:253px" />
             <div class="slide-right-content box" style="background-color: #DEE3F1;opacity:0.8;">
                 <a href="/thu-vien">
                     <span style="font-size:17px;font-weight: bold;color: #D5904D;">Nhấn</span>
@@ -126,7 +126,7 @@
     }
     .slider-home-container {
 
-        height: 276px;
+        height: 265px;
     }
 
     .slide-right-container {

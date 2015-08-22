@@ -31,7 +31,7 @@ fieldset, img {
 }
 .content-box {
     width:1010px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 
 }
 .floatRight {
@@ -42,20 +42,7 @@ div.container-box-book-preview {
     background:url('/images/bg_layer_1.jpg') repeat-x top #eceeef;
     background-color: #f1f1f1;
 }
-.box {
-    /*position:relative;*/
-    /*border:1px solid #9BA1A5;*/
-    /*-webkit-border-radius: 8px;*/
-    /*-moz-border-radius: 8px;*/
-    /*border-radius: 8px;*/
-    /*margin:0 0 8px 0;*/
-    /*padding: 5px 0;*/
-    padding: 9px;
-    background: url(../images/bg-slider.png);
-    border-radius: 5px;
-    box-shadow: 1px 1px 8px 1px #333;
 
-}
 .box .corner, .box .corner-featured, .box .corner-featured-typeWhite {
     position:absolute;
     width:8px;
@@ -334,7 +321,7 @@ div.slider-box div.slider {
     display:block;
     width:21px;
     height:21px;
-    background:url(http://www.ybook.vn/themes/newclassic/images/slider-arrow1.png) no-repeat
+    background:url(/img/slider-arrow1.png) no-repeat
 }
 .slider-button-left {
     left:8px;
@@ -530,18 +517,18 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 }
 
 .read-booknew {
-    background: url('/images/ic_book.png') no-repeat scroll 0 0;
+       background: url('/images/ic_book.png') no-repeat scroll 0 0;
     padding-left: 30px;
     cursor: pointer;
     color: #B27D47;
     clear: both;
-    margin-left: 20;
-    margin-top: 150;
+    margin-left: 24px;
+    margin-top: 155;
     position: absolute;
 }
 .hrtext{
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top:4;
+    margin-bottom: 4;
     border: 0;
     border-top: 1px solid #D8BE9E;
 }

@@ -33,14 +33,14 @@
 
     <style>
         .hrtext {
-            margin-top: 0;
-            margin-bottom: 0;
+            margin-top: 4;
+            margin-bottom: 4;
             border: 0;
             border-top: 1px solid #D8BE9E;
         }
         .menu-search {
 
-            height: 37px;
+            height: 35px;
         }
         .select2-selection--single {
             height: 35px;
@@ -48,9 +48,9 @@
         .topright a{
             float: right;
             margin: 10px 2px -10px 1px;
-            font-style: italic;;
-            color: red !important;
-            font-weight: 400 !important;
+            font-style: italic;
+            color: #C27B42 !important;
+            font-weight: 500 !important;
         }
 
     </style>
@@ -83,7 +83,7 @@
         .menu-left-top {
             background: url("/img/menu-left-bg.png") no-repeat scroll center bottom;
             width: 100%;
-            height: 30px;
+            height: 26px;
             color: #5a2e0b;
             margin-top: 15px;
             margin-left: -10px;
@@ -96,10 +96,10 @@
             height: 37px;
         }
         .menu-search input{
-            height: 35px;
+            height: 34px;
         }
         .menu {
-             height: 36px;
+             height: 35px;
          }
         .menu-left-top h5 {
             color: #51391d;
@@ -136,7 +136,7 @@
                 <a  href="<?php echo Yii::app()->baseUrl.'/' ?>"><img src="<?php echo Yii::app()->baseUrl.'/images/logo.png'?>" /></a>
                 <div style="float: left;position: relative;top:20px;padding-left: 20px;">
                     <span  style="font-size:34px;font-weight: bold;color: #D5904D;">Thư Viện</span>
-                    <span style="font-size:34px;font-weight: bold;color: rgb(91,44,9);">Công Giáo</span>
+                    <span style="font-size:34px;font-weight: bold;color: rgb(90,46,11);">Công Giáo</span>
                     <span style="font-size:34px;font-weight: bold;color: #D5904D;">Việt Nam</span>
                 </div>
             </div>
@@ -256,27 +256,27 @@
 <!--            Yii::app()->session['display_name'] = $arrInfo['display_name'];-->
             <div class="clear"></div>
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12" style="height:36px" >
             <div class="row">
                 <div class="col-md-4">
                     <div class="row">
-                        <a  href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu home" style="width: 13%;">
+                        <a  href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu home" style="width: 13%;border-left:0px">
                             <img src="<?php echo Yii::app()->baseUrl.'/images/ic_home.png'?>" />
                         </a>
 
 
 
                         <a  href="<?php echo Yii::app()->baseUrl.'/thu-vien'?>" class="menu thuvien" style="width: 29%;">
-                            Thư viện
+                            Thư Viện
                         </a>
 
 
                             <a    href="<?php echo Yii::app()->baseUrl.'/tu-sach'?>" class="menu tusach" style="width: 29%;">
-                                Tủ sách
+                                Tủ Sách
                             </a>
 
                         <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu gioithieu" style="width: 29%;">
-                            Giới thiệu
+                            Giới Thiệu
                         </a>
 
                     </div>
@@ -286,7 +286,7 @@
                         <input type="text" value="<?php echo $this->textSearch?>" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
                     </div>
                 </div>
-                <div class="col-md-3 menu-search">
+                <div class="col-md-3 menu-search" style="background:#fff;margin-right:0px;border-left: 1px #5A2D0C">
 
 
                     <div class="row">
@@ -309,7 +309,7 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-md-1 menu right" style="background-color: #5A2D0C">
+                <div class="col-md-1 menu right" style="background-color: #5A2D0C;width: 83px;margin-left: 0.9px;border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;">
                     <div class="row" id="divsearch" >
                         Tìm kiếm
                     </div>
@@ -324,7 +324,7 @@
             <?php echo $content?>
         </div>
     </div>
-    <div class="clear1"></div>
+   
     <div class="col-md-12">
         <div class="col-md-12 footer-wp">
             <div class="row">
@@ -378,7 +378,37 @@
     </div>
     <div class="clear"></div>
 </div>
+<style>
+    .slider-box {
+        position: relative;
+        overflow: hidden;
+        margin-top: 21px;
+        background-color: #D8BE9E;
+        border-radius: 10px;
 
+    }
+	div.slider-box div.slider {
+    padding: 0 40px;
+    height: 125px;
+}
+div.slider-box div.slider {
+   
+    background: rgb(216,190,158);
+  
+}
+.slider .slider-item {
+ 
+    margin-top: 12px;
+}
+    .tieu {
+
+        font-style: italic;
+    }
+    .slider .slider-item div {
+
+        background: #D8BE9E;
+    }
+</style>
 </body>
 <script>
     $(document).ready(function() {

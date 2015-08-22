@@ -12,7 +12,7 @@
         <?php foreach($comboData as $value):?>
             <?php
 
-            $comboData1 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=1 AND parent_id='.$value['id'].' ORDER BY NAME',[]);
+            $comboData1 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=1 AND parent_id='.$value['id'].' ORDER BY  INDEX_CODE',[]);
             ?>
             <li class="item<?php echo $value["id"]?>">
 
@@ -24,7 +24,7 @@
                             <a  title="<?php echo $value1["name"]?>" class="trung" href="javascript:void(0);" myid="<?php echo $value1["id"]?>" > <?php echo Common::truncate($value1["name"],30,'.');?>  <i class="fa fa-plus-square"></i></a>
 
                             <?php
-                            $comboData2 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=2 AND parent_id='.$value1['id'].' ORDER BY NAME',[]);
+                            $comboData2 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=2 AND parent_id='.$value1['id'].'   ORDER BY  INDEX_CODE',[]);
                             ?>  <ul class="cute">
                                 <?php foreach($comboData2 as $value2):?>
 
@@ -47,7 +47,7 @@
 
 <script>
     //divcontentmain
-    var MAX_WIDTHMENU =800;
+    var MAX_WIDTHMENU =800;var MINUS_MENU =17;
     var IFS_F=1;
     $(document).ready(function() {
         sayHi();
@@ -58,9 +58,9 @@
             var leftMenu = $('.menu1').height();
             if(IFS_F==1)leftMenu=MAX_WIDTHMENU;IFS_F=0;
             if(meIt> leftMenu){
-                $('.lefmenuw').height(meIt);
+                $('.lefmenuw').height(meIt-MINUS_MENU-3);
             }else{
-                $('.lefmenuw').height(leftMenu+50);
+                $('.lefmenuw').height(leftMenu+50-MINUS_MENU);
             }
             console.log($('.menu1').height());
         }

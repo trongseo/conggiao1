@@ -18,7 +18,7 @@ fieldset, img {
 }
 .content-box {
     width:825px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 
 }
 .floatRight {
@@ -29,20 +29,7 @@ div.container-box-book-preview {
     background:url('/images/bg_layer_1.jpg') repeat-x top #eceeef;
     background-color: #f1f1f1;
 }
-.box {
-    /*position:relative;*/
-    /*border:1px solid #9BA1A5;*/
-    /*-webkit-border-radius: 8px;*/
-    /*-moz-border-radius: 8px;*/
-    /*border-radius: 8px;*/
-    /*margin:0 0 8px 0;*/
-    /*padding: 5px 0;*/
-    padding: 9px;
-    background: url(../images/bg-slider.png);
-    border-radius: 5px;
-    box-shadow: 1px 1px 8px 1px #333;
 
-}
 .box .corner, .box .corner-featured, .box .corner-featured-typeWhite {
     position:absolute;
     width:8px;
@@ -281,15 +268,11 @@ div.container-box-book-preview .preview-box .preview-img {
     padding:0 29px;
     overflow:hidden
 }
-.slider-box {
-    position:relative;
-    overflow:hidden;
-    margin-top:21px;
-}
+
 div.slider-box div.slider {
     padding:0 40px;
     background:url(http://www.ybook.vn/themes/newclassic/images/slider-box-bg.png);
-    height:125px
+    height:125px;
 }
 /*div.slider-box div.slider .slider-item a.book-picture-shadow-ff-sf{*/
 /*background:url(../images/slider-item-sm-new.png) no-repeat left bottom;*/
@@ -315,7 +298,7 @@ div.slider-box div.slider {
     display:block;
     width:21px;
     height:21px;
-    background:url(http://www.ybook.vn/themes/newclassic/images/slider-arrow1.png) no-repeat
+    background:url(/img/slider-arrow1.png) no-repeat
 }
 .slider-button-left {
     left:8px;
@@ -514,6 +497,10 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 #divsearch{
     color: #FCE4BE !important;  font-size: 14px;
 }
+.slider .slider-item div {
+
+      background: #D8BE9E;
+  }
 </style>
 <div class="row">
 
@@ -522,7 +509,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
             {
                 echo CommonDB::GetDataRow("tbl_index","id=".$_REQUEST["myid"]." and type=".$_REQUEST["mylevel"])["name"] ;
             }else{
-                echo "Tất Cả" ;
+                echo "CHÀO MỪNG BẠN ĐẾN THƯ VIỆN CÔNG GIÁO VIỆT NAM" ;
             }
            $cateId= $_REQUEST["myid"];
             $mylevel =$_REQUEST["mylevel"];

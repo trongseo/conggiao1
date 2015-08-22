@@ -331,7 +331,7 @@ div.slider-box div.slider {
     display:block;
     width:21px;
     height:21px;
-    background:url(http://www.ybook.vn/themes/newclassic/images/slider-arrow1.png) no-repeat
+    background:url(/img/slider-arrow1.png) no-repeat
 }
 .slider-button-left {
     left:8px;

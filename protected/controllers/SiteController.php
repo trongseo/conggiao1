@@ -10,7 +10,7 @@ class SiteController extends CController {
         parent::init();
         $main_type = 0;
         $this->layout = "main";
-        $this->comboData = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY NAME',[]);
+        $this->comboData = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE',[]);
     }
     public function actions() {
         return array(

@@ -3,8 +3,8 @@
     require('leftmenu.php');
     ?>
 
-    <div class="col-md-10" id="divcontent">
-      <img src="images/welcome.png"/>
+    <div class="col-md-10" id="divcontent" style="padding-top:28px" width="770">
+      <img src="images/welcome.png" width="770"/>
     </div>
 </div>
 <script>
