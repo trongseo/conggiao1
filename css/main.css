@@ -670,10 +670,14 @@ background: url('../images/bg.png');
  color: #fff;
 }
 .head-content{
-height:83px;
+height:117px;
 }
 .box-slide{
 
+}
+.onlybox{
+    border-radius: 5px;
+    box-shadow: 1px 1px 12px 1px #B1956D;
 }
 .menu-top{
 

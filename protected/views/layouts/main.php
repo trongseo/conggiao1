@@ -130,7 +130,8 @@
 <body>
 <div class="container-wp">
     <div class="col-md-12">
-        <div class="col-md-12 container-content head-content">
+
+        <div class="col-md-12 container-content head-content onlybox" style="border-radius:0px">
 		
             <div class="logo">
                 <a  href="<?php echo Yii::app()->baseUrl.'/' ?>"><img src="<?php echo Yii::app()->baseUrl.'/images/logo.png'?>" /></a>
@@ -255,71 +256,74 @@
 <!--            Yii::app()->session['email'] = $arrInfo['email'];-->
 <!--            Yii::app()->session['display_name'] = $arrInfo['display_name'];-->
             <div class="clear"></div>
-        </div>
-        <div class="col-md-12" style="height:36px" >
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="row">
-                        <a  href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu home" style="width: 13%;border-left:0px">
-                            <img src="<?php echo Yii::app()->baseUrl.'/images/ic_home.png'?>" />
-                        </a>
+
+            <div class="col-md-12" style="height:36px;padding:0px" >
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <a  href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu home" style="width: 13%;border-left:0px">
+                                <img src="<?php echo Yii::app()->baseUrl.'/images/ic_home.png'?>" />
+                            </a>
 
 
 
-                        <a  href="<?php echo Yii::app()->baseUrl.'/thu-vien'?>" class="menu thuvien" style="width: 29%;">
-                            Thư Viện
-                        </a>
+                            <a  href="<?php echo Yii::app()->baseUrl.'/thu-vien'?>" class="menu thuvien" style="width: 29%;">
+                                Thư Viện
+                            </a>
 
 
                             <a    href="<?php echo Yii::app()->baseUrl.'/tu-sach'?>" class="menu tusach" style="width: 29%;">
                                 Tủ Sách
                             </a>
 
-                        <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu gioithieu" style="width: 29%;">
-                            Giới Thiệu
-                        </a>
+                            <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu gioithieu" style="width: 29%;">
+                                Giới Thiệu
+                            </a>
 
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 menu-search">
-                    <div class="row searchbox">
-                        <input type="text" value="<?php echo $this->textSearch?>" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
+                    <div class="col-md-4 menu-search">
+                        <div class="row searchbox">
+                            <input type="text" value="<?php echo $this->textSearch?>" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-3 menu-search" style="background:#fff;margin-right:0px;border-left: 1px #5A2D0C">
+                    <div class="col-md-3 menu-search" style="background:#fff;margin-right:0px;border-left: 1px #5A2D0C">
 
 
-                    <div class="row">
-                        <select id="fabric">
-                            <option value="0">Xem tất cả sách</option>
-                            <?php  $comboData=$this->comboData;
+                        <div class="row">
+                            <select id="fabric">
+                                <option value="0">Xem tất cả sách</option>
+                                <?php  $comboData=$this->comboData;
 
-									
-                            ?>
 
-                            <?php foreach($comboData as $value):?>
-                                <?php
-								$selecttedd="";
-									if($this->comboSelect==$value["id"]){
-										$selecttedd="selected";
-									}
                                 ?>
-                                <option value="<?php echo $value["id"]?>" <?php echo $selecttedd?> ><?php echo $value["name"]?></option>
-                            <?php endforeach?>
-                        </select>
+
+                                <?php foreach($comboData as $value):?>
+                                    <?php
+                                    $selecttedd="";
+                                    if($this->comboSelect==$value["id"]){
+                                        $selecttedd="selected";
+                                    }
+                                    ?>
+                                    <option value="<?php echo $value["id"]?>" <?php echo $selecttedd?> ><?php echo $value["name"]?></option>
+                                <?php endforeach?>
+                            </select>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-1 menu right" style="background-color: #5A2D0C;width: 83px;margin-left: 0.9px;border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;">
-                    <div class="row" id="divsearch" >
-                        Tìm kiếm
+                    <div class="col-md-1 menu right" style="background-color: #5A2D0C;width: 83px;margin-left: 0.9px;border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;">
+                        <div class="row" id="divsearch" >
+                            Tìm kiếm
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
         <div class="col-md-12" >
             <div class="row" id="slide-warp"></div>
         </div>
-
+        <div class="clear"></div>
         <div class="col-md-12" id="divcontentmain">
             <?php echo $content?>
         </div>
