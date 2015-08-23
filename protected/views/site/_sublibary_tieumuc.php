@@ -1,21 +1,26 @@
 <style>
     .combopage{
-        height: 30px;
+            height: 30px;
+    border: 1px solid #be682f;
     }
     .btnPre{
-        border-radius: 10px 0px 0 10px;
-        height: 30px;
-        width: 30px;
-        border-color: rgb(211, 155, 103);
+       border-radius: 10px 0px 0 10px;
+    height: 33px;
+    width: 30px;
+    border: 1px solid #be682f;
+    margin-top: -1px;
+    background-color: #F8E2C6;
     }
     .btnNext{
         border-radius: 0px 10px 10px 0px;
-        height: 30px;
-        width: 30px;
-        border-color: rgb(211, 155, 103);
+         height: 33px;
+    width: 30px;
+    border: 1px solid #be682f;
+    margin-top: -1px;
+    background-color: #F8E2C6;
     }
     .borderpage{
-        border-radius: 10px 10px 10px 10px;
+        border-radius: 5px;
 
         border:1px solid #be682f;
         height: 37px;padding-top: 2px;
@@ -40,6 +45,9 @@
         margin-left: auto;
         margin-right: auto;
     }
+	#comboPage{
+		height:34px;border:0px;margin-top:-2px;background-color:rgb(248,227,198);
+	}
 </style>
 <?php
 
@@ -53,7 +61,7 @@ $comboData =$dataItem;
 
 
     <div class="row">
-        <div class="col-md-12" style="padding:0px 0px 0px 0px;display:inline;padding-top: 13px">
+        <div class="col-md-12" style="padding:0px 0px 0px 0px;display:inline;padding-top: 23px">
             <h4>
                 <?php
                 if(Common::getSession("parent_id")!="0")
@@ -64,7 +72,7 @@ $comboData =$dataItem;
                 }
                 $comboData =$dataItem;
 
-                ?> <span style="display:inline;font-style: italic" class="small">(Có <?php echo $arrDataPage['itemCount']; ?> cuốn sách)</span> </h4>
+                ?> <span style="display:inline;font-style: italic;;color:#5a2e0b" class="small">(Có <?php echo $arrDataPage['itemCount']; ?> cuốn sách)</span> </h4>
 
         </div>
         <div class="clear"></div><div class="clear1"></div>
@@ -96,7 +104,7 @@ $comboData =$dataItem;
                     <?php $ORDER_BY = unserialize (ORDER_BY); ?>
 
 
-                    <div class="col-md-5 "  style="width:190px"> <div class=" form-inline" style="width:190px">Sắp xếp:
+                    <div class="col-md-5 "  style="width:190px"> <div class=" form-inline" style="width:190px">Sắp xếp
                             <select id="comboOrderBy" class="form-control combopage"  >
                                 <?php for($i = 0;$i<count($ORDER_BY);$i++):?>
                                     <?php
@@ -206,15 +214,15 @@ $comboData =$dataItem;
 
             </div>
         </div>
-        <div class="clear" style="height: 7px"></div>
+        <div class="clear" style="height: 14px"></div>
 
-        <div class="row box-login" style="padding:0px;padding-left:5px">
+        <div class="row box-login onlybox" style="padding:0px;padding-left:5px;padding-top:3px">
             <!--// `id`,`book_code`,`parent_id`,`,`book_name`,`introduction`,`bookimage_link`,`active`,`create_date`,`good_book_flg`,`book_type`,`content_link`,`viewer_count`,`reader_count`,`relate_book_id`,`download_flg`,`download_file_link`,`admin_id`,`delete_logic_flg`,`user_id_delete`,`date_delete`-->
             <?php foreach($comboData as $value):?>
                 <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;">
                     <div style="">
-                        <img class="boximg" style="width: 140px;height: 200px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
-                        <span style="font-size: 11px;font-weight: bold;line-height: 15px;"> <?php echo $value["book_name"]?></span>
+                        <img class="boximg" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
+                        <div style="font-size: 11px;font-weight: bold;line-height: 15px;padding-top: 5px;padding-bottom: 5px;"> <?php echo $value["book_name"]?></div>
 
                         <a target="_blank" href="<?php echo Yii::app()->baseUrl.'/chi-tiet'?>/<?php echo $value["id"]?>">
                             <div class="read-book">

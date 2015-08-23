@@ -137,7 +137,7 @@
         <?php foreach($comboData as $value):?>
             <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;">
                 <div style="">
-                    <img class="boximg" style="width: 140px;height: 200px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
+                    <img class="boximg" style="width: 140px;height: 175px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
                     <span style="font-size: 11px;font-weight: bold;line-height: 15px;"> <?php echo $value["book_name"]?></span>
 
                     <a target="_blank" href="<?php echo Yii::app()->baseUrl.'/chi-tiet'?>/<?php echo $value["id"]?>">
