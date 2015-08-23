@@ -310,7 +310,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-1 menu right" style="background-color: #5A2D0C;width: 83px;margin-left: 0.9px;border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;">
+                    <div class="col-md-1 menu right menusearch" style="width: 83px;margin-left: 0.9px;border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;">
                         <div class="row" id="divsearch" >
                             Tìm kiếm
                         </div>
