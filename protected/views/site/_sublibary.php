@@ -582,17 +582,12 @@ $dataGoodBook = CommonDB::GetAll($queryGood,[]);
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
                 <ul>
+                    <?php $ii=0;?>
                     <?php foreach($dataNewBook as $value):?>
-                        <li class="slider-item">
-                            <div id="img-block">
-                                <a class="book-picture-shadow" target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" >
-                                    <div class="imgintro">
-                                        <img alt="<?php echo $value["book_name"]?>" WIDTH="67" height="100" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
-                                    </div>
-
-                                </a>
-                            </div>
-                        </li>
+                        <?php if($ii==1): ?>
+                            <?php require "_sublibary_item_template_sub.php";?>
+                            <?php endif ?>
+                        <?php $ii=1;?>
                     <?php endforeach?>
                 </ul>
             </div>
@@ -632,17 +627,13 @@ $dataGoodBook = CommonDB::GetAll($queryGood,[]);
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
                 <ul>
-                    <?php foreach($dataPrepareBook as $value):?>
-                        <li class="slider-item">
-                            <div id="img-block">
-                                <a class="book-picture-shadow" target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" >
-                                    <div class="imgintro">
-                                        <img alt="<?php echo $value["book_name"]?>" WIDTH="67" height="100" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
-                                    </div>
 
-                                </a>
-                            </div>
-                        </li>
+                    <?php $ii=0;?>
+                    <?php foreach($dataPrepareBook as $value):?>
+                        <?php if($ii==1): ?>
+                            <?php require "_sublibary_item_template_sub.php";?>
+                        <?php endif ?>
+                        <?php $ii=1;?>
                     <?php endforeach?>
                 </ul>
             </div>
@@ -666,11 +657,13 @@ $dataGoodBook = CommonDB::GetAll($queryGood,[]);
         <div class="preview-box clearfix">
             <div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview" id="sliderNewYorkTimesPreview3">
                 <ul>
+                    <?php $ii=0;?>
                     <?php foreach($dataGoodBook as $value):?>
                         <li>
                             <?php require "_sublibary_item_template.php" ?>
 
                         </li>
+                        <?php $ii=1;?>
                     <?php endforeach?>
                 </ul>
             </div>
@@ -680,17 +673,12 @@ $dataGoodBook = CommonDB::GetAll($queryGood,[]);
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
                 <ul>
+                    <?php $ii=0;?>
                     <?php foreach($dataGoodBook as $value):?>
-                        <li class="slider-item">
-                            <div id="img-block">
-                                <a class="book-picture-shadow" target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" >
-                                    <div class="imgintro">
-                                        <img alt="<?php echo $value["book_name"]?>" WIDTH="67" height="100" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
-                                    </div>
-
-                                </a>
-                            </div>
-                        </li>
+                        <?php if($ii==1): ?>
+                            <?php require "_sublibary_item_template_sub.php";?>
+                        <?php endif ?>
+                        <?php $ii=1;?>
                     <?php endforeach?>
                 </ul>
             </div>
