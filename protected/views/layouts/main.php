@@ -330,7 +330,7 @@
     </div>
    
     <div class="col-md-12">
-        <div class="col-md-12 footer-wp">
+        <div class="col-md-12 footer-wp onlybox">
             <div class="row">
                 <div class="col-md-4 form-group">
                     <h4 class="headings1">Thông tin</h4>
