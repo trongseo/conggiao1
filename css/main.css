@@ -257,6 +257,7 @@ a{
 }
 .footer-wp .items-3{
     background: url('../images/ic_ios.png') no-repeat scroll 0 0;
+	    background-size: 17px 18px;
 }
 .footer-wp .items-3:hover,.footer-wp .active-3{
     background: url('../images/ic_ios_on.png') no-repeat scroll 0 0;
@@ -268,7 +269,7 @@ a{
     background: url('../images/ic_android_on.png') no-repeat scroll 0 0;
 }
 .footer-wp .items-5{
-    background: url('../images/ic_info.png') no-repeat scroll 0 0;
+    background: url('../images/ic_info.png') no-repeat scroll 0 0;background-size: 18px 18px;
 }
 .footer-wp .items-5:hover,.footer-wp .active-5{
     background: url('../images/ic_info_on.png') no-repeat scroll 0 0;

@@ -504,7 +504,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 </style>
 <div class="row">
 
-        <h4 style="margin-left: 20px;margin-top:13px;color: #5a2e0b"><?php
+        <h4 style="margin-left: 20px;margin-top:23px;color: #5a2e0b"><?php
             if($_REQUEST["myid"]!="0")
             {
                 echo CommonDB::GetDataRow("tbl_index","id=".$_REQUEST["myid"]." and type=".$_REQUEST["mylevel"])["name"] ;

@@ -72,7 +72,7 @@
 require('leftmenu.php');
 ?>
 
-    <div class="col-md-10" id="divcontent">
+    <div class="col-md-10" id="divcontent" style="width:782px">
 
     </div>
 </div>
