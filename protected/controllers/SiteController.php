@@ -88,6 +88,7 @@ $this->curPage="home";
     }
     public function actionLibarySearch($key_search) {
 
+        $this->curPage="menusearch";
         $arrSearch = explode('-',$key_search);
         $daimucId =$arrSearch[0];
         $keySearch =$arrSearch[1];

@@ -214,7 +214,7 @@ a{
 }
 .select2-container--default .select2-selection--single{
     border-radius: 0px !important;
-    height: 34px;
+    height: 33px;
     border-left: 1px solid #C48B56;
 }
 #select2-fabric-container{
