@@ -96,7 +96,7 @@
             height: 37px;
         }
         .menu-search input{
-            height: 34px;
+            height: 33px;
         }
         .menu {
              height: 35px;
