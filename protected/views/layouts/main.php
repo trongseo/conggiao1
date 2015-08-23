@@ -62,7 +62,7 @@
             color: #B27D47;
             clear: both;
             margin-left: 20;
-            margin-top: 150;
+            margin-top: 155;
             position: absolute;
         }
 
@@ -109,7 +109,7 @@
         }
 
         .borderright{
-            border-right:1px #be7338 solid;
+            border-right:1px #be7338 solid;margin-top:10px
         }
         .menu1 > li > a i {
             float: right;

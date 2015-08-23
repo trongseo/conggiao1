@@ -183,7 +183,7 @@ div.container-box-book-preview .preview-box .author {
 }
 div.container-box-book-preview .preview-box div.slider {
     padding:0;
-    height:170px
+    height:172px
 }
 div.container-box-book-preview .preview-box div.slider ul li {
     width:545px

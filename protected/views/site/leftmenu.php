@@ -47,7 +47,7 @@
 
 <script>
     //divcontentmain
-    var MAX_WIDTHMENU =800;var MINUS_MENU =17;
+    var MAX_WIDTHMENU =800;var MINUS_MENU =27;
     var IFS_F=1;
     $(document).ready(function() {
         sayHi();
