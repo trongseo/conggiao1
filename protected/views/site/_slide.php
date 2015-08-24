@@ -20,7 +20,8 @@
                     <?php foreach($datatbl_slide as $value):?>
 
                         <div>
-                            <img u="image" src="<?php echo PATH_IMAGE_slideImage. $value["image_name"] ?>" />
+
+                            <img u="image" src="1<?php echo PATH_IMAGE_slideImage. $value["image_name"] ?>" />
                         </div>
 
 
@@ -92,7 +93,7 @@
                     function ScaleSlider() {
                         var bodyWidth = document.body.clientWidth - 30;
                         if (bodyWidth)
-                            jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 674));
+                            jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 673));
                         else
                             window.setTimeout(ScaleSlider, 30);
                     }
@@ -125,7 +126,7 @@
         position: relative;
     }
     .slider-home-container {
-
+        background: url('');
         height: 265px;
     }
 

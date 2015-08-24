@@ -3,7 +3,7 @@
 // 0:sắp phát hành; 1: mới phát hành; 2: là bình thuờng
 //SELECT * FROM tbl_book WHERE book_type=1 AND delete_logic_flg=0
 //        good_book_flg
-$dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0",[]);
+$dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 ",[]);
 $dataPrepareBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0",[]);
 $dataGoodBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0",[]);
 $dataReference = CommonDB::GetAll("SELECT  * FROM `tbl_reference` WHERE active=1 ORDER BY show_order",[]);
@@ -570,6 +570,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
             <?php endif ?>
             <?php $ii=1;?>
         <?php endforeach?>
+
         </ul>
 </div>
 </div>
@@ -610,6 +611,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
                 <ul>
                     <?php $ii=0;?>
+
                     <?php foreach($dataPrepareBook as $value):?>
                         <?php if($ii==1): ?>
                             <?php require "_sublibary_item_template_sub.php";?>
