@@ -1,5 +1,146 @@
+<style>
+    .commentit{
+        background-color:#fff;padding-left:5px;padding-top:5px;
+        border-radius: 2px;margin-left: 15px;
+        /*box-shadow: 1px 1px 12px 1px #B1956D;*/
+    }
+    .headerc {
+        color: #5066B7;
+        font-weight: 600;
+    }
+    .mycomment{
+        color: #464040;
+    }
+    .commentit1{
+        background-color: #F1F1F1;
+        padding-left: 0px;
+        padding-top: 5px;
+        box-shadow: 1px 1px 12px 1px #B1956D;
+        /* border-radius: 11px; */
+        margin-left: 2px;
+        width: 922px;
+    }
+    #txtComment{
+        width: 832px; margin: 0px; height: 40px;
+    }
+    .btndangky{
+        background-color: #2D57CA;;font-size:12px;
+        color: #fff;float:right !important;font-weight:700;
+    }
+    .ocomment{
+        padding-right: 5px;
+        width: 866px;
+    }
+    .clsheight {height: 10px}
+</style>
+<form id="registration-form" method="post" onsubmit="return validateForm();"  action="/Site/LoadInfo">
+<div class="row container1" >
+<div class="row " >
+    <div class=" col-md-2" style="width:65px">
+        <img src="/img/logobook.png">
+
+    </div>
+    <div class=" col-md-10 commentit" style="">
+        <div class="row">
+            <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>
+               10/03/2015 </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 mycomment ocomment" >
+                Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
+                Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
+            </div>
+            </div>
+    </div>
+</div>
+    <div class="clear clsheight" ></div>
+    <div class="row " >
+        <div class=" col-md-2" style="width:65px">
+            <img src="/img/logobook.png">
+
+        </div>
+        <div class=" col-md-10 commentit" style="">
+            <div class="row">
+                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>
+                    10/03/2015 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mycomment ocomment" >
+                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
+                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear clsheight" ></div>
+    <div class="row " >
+        <div class=" col-md-2" style="width:65px">
+            <img src="/img/logobook.png">
+
+        </div>
+        <div class=" col-md-10 commentit" style="">
+            <div class="row">
+                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>
+                    10/03/2015 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mycomment ocomment" >
+                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
+                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear clsheight" ></div>
+    <div class="row " >
+        <div class=" col-md-2" style="width:65px">
+            <img src="/img/logobook.png">
+
+        </div>
+        <div class=" col-md-10 commentit" style="">
+            <div class="row">
+                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>
+                    10/03/2015 </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mycomment ocomment" >
+                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
+                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear clsheight" ></div>
+
+    <div class="row commentit1 " >
+        <div class=" col-md-2" style="width:65px">
+            <img src="/img/logobook.png">
+
+        </div>
+        <div class=" col-md-10 " style="width:832px">
+<!--            <div class="row">-->
+<!--                <div class="col-md-12"> <span class="headerc"> --><?php //echo Common::getSession('display_name') ?><!--:</span>-->
+<!--                    10/03/2015 </div>-->
+<!--            </div>-->
+            <div class="row">
+                <div class="col-md-12 mycomment" >
+                    <textarea  id="txtComment" name="txtComment"  ></textarea>
+                </div>
+            </div><div class="row">
+                <div class="col-md-12 mycomment" style="padding-top: 5px;padding-bottom: 5px;width:862px" >
+                    <button type="submit" class="btndangky" value="Bình luận"  id="btnsave" name="btnsave" >
+                        Bình luận
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+
+
 <div class="row">
-    <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/Site/LoadInfo">
+
         <?php $dataItem=$dataPage["dataItem"]; ?>
         <?php foreach($dataItem as $value):?>
 
@@ -19,22 +160,22 @@
         <?php endforeach?>
 
         <br/>
-    <table class="auto-style1" style="width: 80%;background-color: #F1DDC2;padding-right: 5px;padding-left: 5px">
-        <tr>
-            <td class="auto-style2" rowspan="2" style=" width: 114px;text-align: center;vertical-align: middle"><img src="/images/logo.png"></td>
-            <td><?php echo Common::getSession('display_name') ?></td>
-        </tr>
-        <tr>
-            <td style="padding-right:5px"><textarea id="txtComment" name="txtComment" style="width: 100%; margin-top: 0px; margin-bottom: 0px; height: 81px;"></textarea>
-            <br/>
-                <button type="submit" class="btn btn-green pull-right btn-epub" value="Đăng ký"  id="btnsave" name="btnsave"  >
-                   Bình luận
-                </button>
-            </td>
-        </tr>
+<!--    <table class="auto-style1" style="width: 80%;background-color: #F1DDC2;padding-right: 5px;padding-left: 5px">-->
+<!--        <tr>-->
+<!--            <td class="auto-style2" rowspan="2" style=" width: 114px;text-align: center;vertical-align: middle"><img src="/images/logo.png"></td>-->
+<!--            <td></td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td style="padding-right:5px"><textarea style="width: 100%; margin-top: 0px; margin-bottom: 0px; height: 81px;"></textarea>-->
+<!--            <br/>-->
+<!--                <button type="submit" class="btn btn-green pull-right btn-epub" value="Đăng ký"  >-->
+<!--                   Bình luận-->
+<!--                </button>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!---->
+<!--    </table>-->
 
-    </table>
-        </form>
 </div>
 
 

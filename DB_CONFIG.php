@@ -51,9 +51,9 @@ define ("USER_FULLNAME", "display_name");
 //define("DB_PASSWORD","123456");
 
 define("DB_HOST","localhost");
-define("DB_NAME","1thuvienconggiao");
-define("DB_USERNAME","root");
-define("DB_PASSWORD","123456");
+define("DB_NAME","thuvienconggiao");
+define("DB_USERNAME","thuvienconggiao");
+define("DB_PASSWORD","123456789");
 
 //define("DB_HOST","localhost");
 //define("DB_NAME","thuvienconggiao");

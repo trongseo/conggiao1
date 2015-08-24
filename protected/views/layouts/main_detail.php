@@ -32,14 +32,20 @@
                 text-align: center;
                 height: 50px;
                 /*margin-top: -15px;*/
-                background-color: #F1DDC2;
+                font-size:18px;
+
 
             }
             .contact-head1 {
                 max-width: 1040px;
                 margin: 0 auto;
 
-                background-color: #F1DDC2;
+
+
+            }
+            .container1 {
+                max-width: 1000px;
+                margin: 0 auto;
 
             }
             .btn_tab {
@@ -63,7 +69,7 @@
                 color: #5A2D0C ;
             }
             .logo {
-                margin-left: 130px;
+                margin-left: 5px;
                 float: left;
             }
             .logoleft {
@@ -74,7 +80,7 @@
             body {
                 line-height: 20px;
                 height: 100%;
-                background: #F1DDC2;
+                background: url(/img/bggg.jpg);
             }
             .logo-login {
                 /* width: 182px; */

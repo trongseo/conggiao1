@@ -1,22 +1,29 @@
 <style>
     .headerc{
-        color: #5A2D0C;font-weight:600;
+        color: #5F4122;font-weight:600;
     }
     .infofont{
-        color: orangered;
+        color: #BA7B47;
+    }
+
+    .h4here{
+        color: #5A2D0C;text-decoration: underline;
+    }
+    .contentit{
+        color: #885A2A;
     }
 </style>
-<div class="row container-wp">
+<div class="row container1">
 	<div class="main-login col-xs-12 col-sm-12 col-md-12" style="">
         <div class="row">
-            <div class="box-login" style="border-radius:none;">
-                <h4 style="text-decoration: underline;color: #5A2D0C;">
-                    Thông tin chi tiết
+            <div class="" style="border-radius:none;">
+                <h4 style="text-decoration: underline;" class="h4here">
+                   THÔNG TIN CHI TIẾT
                 </h4>
 
                 <div class="clear1"></div>
                 <div class="row infofont" style="padding-left:15px">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <div class="row">
                             <div class="col-md-12"> <span class="headerc"> Tác giả:</span>
                                 <?php echo  $arrBook['author']; ?> </div>
@@ -50,10 +57,10 @@
                             <div class="col-md-12"> <span class="headerc"> Người tặng:</span>  <?php echo  $arrBook['giver']; ?></div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12"></div>
+                            <div class="col-md-12"><span class="headerc"> Mã sách:</span>  <?php echo  $arrBook['book_code']; ?></div>
                         </div>
                         </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
 
                         <div class="row">
                             <div class="col-md-12">  <span class="headerc"> Số người xem:</span>
@@ -73,8 +80,8 @@
                 </div>
                 <div class="clear1"></div>
 
-                <h4 style="text-decoration: underline;padding:5px 0 0 10px">
-                    Nội dung sách
+                <h4 style="" class="h4here">
+                    NỘI DUNG SÁCH
                 </h4>
                 <div class="clear1"></div>
                 <div class="col-md-12">
@@ -96,7 +103,7 @@
 
 	                	</div>						
 	                	<div class="col-md-8" style="text-align:left;">
-	                		<div class="row">
+	                		<div class="row contentit" >
                                 <?php echo  $arrBook['introduction']; ?>
 		                	</div>
 	                	</div>
