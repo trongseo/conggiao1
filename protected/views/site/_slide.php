@@ -21,7 +21,9 @@
 
                         <div>
 
-                            <img u="image" src="1<?php echo PATH_IMAGE_slideImage. $value["image_name"] ?>" />
+                         <a href="<?php echo  $value["link_ref"] ?>" target="_blank">
+                             <img u="image" src="<?php echo PATH_IMAGE_slideImage. $value["image_name"] ?>" />
+                         </a>
                         </div>
 
 

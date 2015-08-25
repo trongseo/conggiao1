@@ -128,9 +128,18 @@
                 </div>
             </div><div class="row">
                 <div class="col-md-12 mycomment" style="padding-top: 5px;padding-bottom: 5px;width:862px" >
-                    <button type="submit" class="btndangky" value="Bình luận"  id="btnsave" name="btnsave" >
+				<?php if(isset(Yii::app()->session['id_user'])): ?>
+                        <button type="submit" class="btndangky" value="Bình luận"  id="btnsave" name="btnsave" >
                         Bình luận
                     </button>
+
+                    <?php else: ?>
+                        <div alt="0" class=""  >
+                         <a target="_blank" href="/dang-nhap" style="color: #C0703D">   Đăng nhập   </a>để bình luận
+                        </div>
+                    <?php endif; ?>
+					
+                    
                 </div>
             </div>
         </div>

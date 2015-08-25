@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DB_CONFIG.php" afterPath="$PROJECT_DIR$/DB_CONFIG.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_comment.php" afterPath="$PROJECT_DIR$/protected/views/site/_comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_info.php" afterPath="$PROJECT_DIR$/protected/views/site/_info.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_slide.php" afterPath="$PROJECT_DIR$/protected/views/site/_slide.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/db.log" afterPath="$PROJECT_DIR$/protected/runtime/db.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main_detail.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main_detail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeconggiao.iws" />
@@ -30,10 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="DB_CONFIG.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DB_CONFIG.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DB_CONFIG.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="38" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.7545126" vertical-offset="347" max-vertical-offset="901">
+            <state line="53" column="33" selection-start="1858" selection-end="1873" vertical-scroll-proportion="-12.807693" vertical-offset="347" max-vertical-offset="901">
               <folding />
             </state>
           </provider>
@@ -120,7 +118,7 @@
       <file leaf-file-name="_comment.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/_comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="104" selection-start="4736" selection-end="4736" vertical-scroll-proportion="-6.7843137" vertical-offset="1558" max-vertical-offset="4403">
+            <state line="138" column="30" selection-start="5205" selection-end="5205" vertical-scroll-proportion="-6.7843137" vertical-offset="1711" max-vertical-offset="4556">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="true" />
@@ -143,16 +141,16 @@
       <file leaf-file-name="main_detail.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main_detail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="23" selection-start="2381" selection-end="2391" vertical-scroll-proportion="-6.0392156" vertical-offset="457" max-vertical-offset="5032">
+            <state line="176" column="35" selection-start="7129" selection-end="7571" vertical-scroll-proportion="-9.372549" vertical-offset="2514" max-vertical-offset="5032">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_slide.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_slide.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/site/_slide.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="25" selection-start="10396" selection-end="10396" vertical-scroll-proportion="-4.7843137" vertical-offset="1915" max-vertical-offset="2431">
+            <state line="23" column="62" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.50775194" vertical-offset="112" max-vertical-offset="2465">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -190,12 +188,12 @@
         <option value="$PROJECT_DIR$/protected/views/site/_sublibary.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_sublibary_trungmuc.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/_slide.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_info.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main_detail.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_comment.php" />
         <option value="$PROJECT_DIR$/DB_CONFIG.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/_slide.php" />
       </list>
     </option>
   </component>
@@ -666,27 +664,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/_slide.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="25" selection-start="10396" selection-end="10396" vertical-scroll-proportion="-4.7843137" vertical-offset="1915" max-vertical-offset="2431">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main_detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="23" selection-start="2381" selection-end="2391" vertical-scroll-proportion="-6.0392156" vertical-offset="457" max-vertical-offset="5032">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/_comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="104" selection-start="4736" selection-end="4736" vertical-scroll-proportion="-6.7843137" vertical-offset="1558" max-vertical-offset="4403">
+        <state line="138" column="30" selection-start="5205" selection-end="5205" vertical-scroll-proportion="-6.7843137" vertical-offset="1711" max-vertical-offset="4556">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="true" />
@@ -707,8 +687,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DB_CONFIG.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="38" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.7545126" vertical-offset="347" max-vertical-offset="901">
+        <state line="53" column="33" selection-start="1858" selection-end="1873" vertical-scroll-proportion="-12.807693" vertical-offset="347" max-vertical-offset="901">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="176" column="35" selection-start="7129" selection-end="7571" vertical-scroll-proportion="-9.372549" vertical-offset="2514" max-vertical-offset="5032">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/_slide.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="62" selection-start="1276" selection-end="1276" vertical-scroll-proportion="0.50775194" vertical-offset="112" max-vertical-offset="2465">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
