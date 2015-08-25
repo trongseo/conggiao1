@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/site/_book11.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/icon-search.png" afterPath="$PROJECT_DIR$/img/icon-search.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_book.php" afterPath="$PROJECT_DIR$/protected/views/site/_book.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_readbook.php" afterPath="$PROJECT_DIR$/protected/views/site/_readbook.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_slide_product.php" afterPath="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_comment.php" afterPath="$PROJECT_DIR$/protected/views/site/_comment.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/db.log" afterPath="$PROJECT_DIR$/protected/runtime/db.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main_detail.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main_detail.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeconggiao.iws" />
@@ -120,10 +114,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_slide_product.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_comment.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/_comment.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="0" selection-start="2698" selection-end="5369" vertical-scroll-proportion="-2.0646951" vertical-offset="2103" max-vertical-offset="4607">
+              <folding>
+                <element signature="tag#div#0;tag#div#0;tag#form#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_slide_product.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="693" column="0" selection-start="19981" selection-end="19981" vertical-scroll-proportion="-0.121996306" vertical-offset="11847" max-vertical-offset="13617">
+            <state line="715" column="34" selection-start="21293" selection-end="21293" vertical-scroll-proportion="-11.846154" vertical-offset="11847" max-vertical-offset="13617">
               <folding />
             </state>
           </provider>
@@ -155,7 +160,6 @@
         <option value="$PROJECT_DIR$/protected/views/site/_sublibary_trungmuc.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_info.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/_comment.php" />
         <option value="$PROJECT_DIR$/DB_CONFIG.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_slide.php" />
         <option value="$PROJECT_DIR$/protected/views/layouts/main_detail.php" />
@@ -163,6 +167,7 @@
         <option value="$PROJECT_DIR$/protected/views/site/_book.php" />
         <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/_comment.php" />
       </list>
     </option>
   </component>
@@ -564,27 +569,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/_comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="138" column="30" selection-start="5205" selection-end="5205" vertical-scroll-proportion="-6.7843137" vertical-offset="1711" max-vertical-offset="4556">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="tag#div#6;tag#div#0;tag#form#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#6;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#8;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#8;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#8;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DB_CONFIG.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="33" selection-start="1858" selection-end="1873" vertical-scroll-proportion="-12.807693" vertical-offset="347" max-vertical-offset="901">
@@ -683,8 +667,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/_slide_product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="693" column="0" selection-start="19981" selection-end="19981" vertical-scroll-proportion="-0.121996306" vertical-offset="11847" max-vertical-offset="13617">
+        <state line="715" column="34" selection-start="21293" selection-end="21293" vertical-scroll-proportion="-11.846154" vertical-offset="11847" max-vertical-offset="13617">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/_comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2698" selection-end="5369" vertical-scroll-proportion="-2.0646951" vertical-offset="2103" max-vertical-offset="4607">
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#form#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

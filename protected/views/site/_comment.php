@@ -35,82 +35,100 @@
 </style>
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/Site/LoadInfo">
 <div class="row container1" >
-<div class="row " >
-    <div class=" col-md-2" style="width:65px">
-        <img src="/img/logobook.png">
 
-    </div>
-    <div class=" col-md-10 commentit" style="">
-        <div class="row">
-            <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>
-               10/03/2015 </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 mycomment ocomment" >
-                Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
-                Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
-            </div>
-            </div>
-    </div>
-</div>
-    <div class="clear clsheight" ></div>
-    <div class="row " >
-        <div class=" col-md-2" style="width:65px">
-            <img src="/img/logobook.png">
+    <?php $dataItem=$dataPage["dataItem"]; ?>
+    <?php foreach($dataItem as $value):?>
 
-        </div>
-        <div class=" col-md-10 commentit" style="">
-            <div class="row">
-                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>
-                    10/03/2015 </div>
+<!--        <table style="width: 100%;padding-right: 5px;padding-left: 5px">-->
+<!--            <tbody><tr>-->
+<!--                <td class="auto-style2" rowspan="2" style=" width: 114px;background-color: #fff;text-align: center;vertical-align: middle"><img src="/images/logo.png"></td>-->
+<!--                <td  rowspan="2" style=" width: 14px;">&nbsp;</td>-->
+<!--                <td style=" background-color: #fff;">  --><?php //echo $value["display_name"]?><!--(--><?php //echo Common::formatDateShowDDMMYYYY($value['comment_date']) ?><!--)</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td style="padding-right:5px;background-color: #fff;">  --><?php //echo nl2br($value["content"])?>
+<!--                </td>-->
+<!--            </tr>-->
+<!---->
+<!--            </tbody></table>-->
+        <div class="row " >
+            <div class=" col-md-2" style="width:65px">
+                <img src="/img/logobook.png">
+
             </div>
-            <div class="row">
-                <div class="col-md-12 mycomment ocomment" >
-                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
-                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
+            <div class=" col-md-10 commentit" style="">
+                <div class="row">
+                    <div class="col-md-12"> <span class="headerc"> <?php echo $value["display_name"]?>:</span>
+                        <?php echo Common::formatDateShowDDMMYYYY($value['comment_date']) ?> </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mycomment ocomment" >
+                        <?php echo nl2br($value["content"])?>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="clear clsheight" ></div>
-    <div class="row " >
-        <div class=" col-md-2" style="width:65px">
-            <img src="/img/logobook.png">
+        <div class="clear clsheight" ></div>
+    <?php endforeach?>
 
-        </div>
-        <div class=" col-md-10 commentit" style="">
-            <div class="row">
-                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>
-                    10/03/2015 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mycomment ocomment" >
-                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
-                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="clear clsheight" ></div>
-    <div class="row " >
-        <div class=" col-md-2" style="width:65px">
-            <img src="/img/logobook.png">
 
-        </div>
-        <div class=" col-md-10 commentit" style="">
-            <div class="row">
-                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>
-                    10/03/2015 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 mycomment ocomment" >
-                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
-                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="clear clsheight" ></div>
+<!--    <div class="row " >-->
+<!--        <div class=" col-md-2" style="width:65px">-->
+<!--            <img src="/img/logobook.png">-->
+<!---->
+<!--        </div>-->
+<!--        <div class=" col-md-10 commentit" style="">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>-->
+<!--                    10/03/2015 </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12 mycomment ocomment" >-->
+<!--                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
+<!--                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="clear clsheight" ></div>-->
+<!--    <div class="row " >-->
+<!--        <div class=" col-md-2" style="width:65px">-->
+<!--            <img src="/img/logobook.png">-->
+<!---->
+<!--        </div>-->
+<!--        <div class=" col-md-10 commentit" style="">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>-->
+<!--                    10/03/2015 </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12 mycomment ocomment" >-->
+<!--                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
+<!--                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="clear clsheight" ></div>-->
+<!--    <div class="row " >-->
+<!--        <div class=" col-md-2" style="width:65px">-->
+<!--            <img src="/img/logobook.png">-->
+<!---->
+<!--        </div>-->
+<!--        <div class=" col-md-10 commentit" style="">-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>-->
+<!--                    10/03/2015 </div>-->
+<!--            </div>-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12 mycomment ocomment" >-->
+<!--                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
+<!--                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="clear clsheight" ></div>-->
 
     <div class="row commentit1 " >
         <div class=" col-md-2" style="width:65px">
@@ -150,23 +168,7 @@
 
 <div class="row">
 
-        <?php $dataItem=$dataPage["dataItem"]; ?>
-        <?php foreach($dataItem as $value):?>
 
-            <table style="width: 100%;padding-right: 5px;padding-left: 5px">
-                <tbody><tr>
-                    <td class="auto-style2" rowspan="2" style=" width: 114px;background-color: #fff;text-align: center;vertical-align: middle"><img src="/images/logo.png"></td>
-                    <td  rowspan="2" style=" width: 14px;">&nbsp;</td>
-                    <td style=" background-color: #fff;">  <?php echo $value["display_name"]?>(<?php echo Common::formatDateShowDDMMYYYY($value['comment_date']) ?>)</td>
-                </tr>
-                <tr>
-                    <td style="padding-right:5px;background-color: #fff;">  <?php echo nl2br($value["content"])?>
-                    </td>
-                </tr>
-
-                </tbody></table>
-            <br/>
-        <?php endforeach?>
 
         <br/>
 <!--    <table class="auto-style1" style="width: 80%;background-color: #F1DDC2;padding-right: 5px;padding-left: 5px">-->
