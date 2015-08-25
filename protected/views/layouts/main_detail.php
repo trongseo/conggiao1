@@ -164,16 +164,16 @@
                         <a href="<?php echo Yii::app()->baseUrl.'/' ?>">
                             <img class="logoleft"  src="/img/logobook.png" /></a>
                     </div>
-
+                    <div alt="0" class="btn_tab btn_tab_active" >
+                        Đọc sách
+                    </div>
                     <?php if(isset(Yii::app()->session['id_user'])): ?>
-                        <div alt="0" class="btn_tab btn_tab_active" >
-                            Đọc sách
-                        </div>
+
 
                     <?php else: ?>
-                        <div alt="0" class="btn_tab btn_tab_active"  data-toggle="modal" data-target="#myModal">
-                            Đọc sách
-                        </div>
+<!--                        <div alt="0" class="btn_tab btn_tab_active"  data-toggle="modal" data-target="#myModal">-->
+<!--                            Đọc sách-->
+<!--                        </div>-->
                     <?php endif; ?>
 
                         <div alt="1" class="btn_tab">

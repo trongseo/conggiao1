@@ -10,7 +10,7 @@ $queryS="SELECT * FROM tbl_book WHERE delete_logic_flg=0 AND id IN(
     SELECT book_id AS relate_book_id FROM `tbl_relate_book` WHERE relate_book_id=$idBook )
     ORDER BY book_name
     LIMIT 30 ";
-
+$queryS="SELECT * FROM tbl_book  LIMIT 10 ";
 $dataRelateBook = CommonDB::GetAll($queryS,[]);
 
 ?>
@@ -493,7 +493,7 @@ div.container-box-book-preview .slider .slider-item img.watermark {
 }
 
 div.container-box-book-preview .slider-box .corner {
-    background:url(http://www.ybook.vn/themes/newclassic/images/slider-box-bg-corner.png) no-repeat scroll 0 0 transparent;
+    background:url() no-repeat scroll 0 0 transparent;
     height:100%;
     width:3px
 }
@@ -524,174 +524,36 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     width: 100%;
     margin-bottom: -20px;
 }
+
+.mlayout
+{
+    text-align: center;
+}
+.ccentre
+{
+    text-align: left;
+    width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 </style>
+<div class="row ccentre" style="">
+    <!--// `id`,`book_code`,`parent_id`,`,`book_name`,`introduction`,`bookimage_link`,`active`,`create_date`,`good_book_flg`,`book_type`,`content_link`,`viewer_count`,`reader_count`,`relate_book_id`,`download_flg`,`download_file_link`,`admin_id`,`delete_logic_flg`,`user_id_delete`,`date_delete`-->
+    <?php foreach($dataRelateBook as $value):?>
+        <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;">
+            <div style="">
+                <img class="boximg" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
+                <div style="font-size: 11px;font-weight: bold;line-height: 15px;padding-top: 5px;padding-bottom: 5px;"> <?php echo $value["book_name"]?></div>
 
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
-<script>
-    jssor_slider1_starter = function (containerId,childId) {
-        var options = {
-            $AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-            $AutoPlaySteps: 4,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-            $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-            $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-
-            $ArrowKeyNavigation: false,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-            $SlideDuration: 160,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-            $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-            $SlideWidth: 150,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-            //$SlideHeight: 150,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-            $SlideSpacing: 3, 					                //[Optional] Space between each slide in pixels, default value is 0
-            $DisplayPieces: 4,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-            $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-            $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-            $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-            $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-
-            $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
-                $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
-                $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
-                $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
-                $SpacingX: 0,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
-                $SpacingY: 0,                                   //[Optional] Vertical space between each item in pixel, default value is 0
-                $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
-            },
-
-            $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
-                $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-                $AutoCenter: 2,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-                $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
-            }
-        };
-
-        var jssor_slider1 = new $JssorSlider$(containerId, options);
-        function ScaleSlider() {
-            var bodyWidth = document.body.clientWidth - 20;
-            if (bodyWidth)
-                jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 600));
-            else
-                window.setTimeout(ScaleSlider, 30);
-        }
-		var options1 = {
-			$AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
-			$AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
-			$AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
-			$PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
-
-			$ArrowKeyNavigation: false,                          //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
-			$SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
-			$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-			//$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-			//$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
-			$SlideSpacing: 0,                                   //[Optional] Space between each slide in pixels, default value is 0
-			$DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
-			$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
-			$UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
-			$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
-			$DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-			$StartIndex : -1,
-			$DisableDrag:false,
-			$BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
-				$Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
-				$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
-				$AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
-				$Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
-				$Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
-				$SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
-				$SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
-				$Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
-			},
-
-			$ArrowNavigatorOptions: {
-				$Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
-				$ChanceToShow: 2                                //[Required] 0 Never, 1 Mouse Over, 2 Always
-			}
-		};
-        ScaleSlider();
-        $Jssor$.$AddEvent(window, "load", ScaleSlider);
-
-        $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
-        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-		
-		var child_jssor_slider1 = new $JssorSlider$(childId, options1);
-		function ScaleSlider1() {
-			var parentWidth = child_jssor_slider1.$Elmt.parentNode.clientWidth;
-			if (parentWidth)
-				child_jssor_slider1.$ScaleWidth(Math.min(parentWidth, 390));
-			else
-				window.setTimeout(ScaleSlider1, 30);
-		}
-		ScaleSlider1();
-		$(window).bind("load", ScaleSlider1);
-		$(window).bind("resize", ScaleSlider1);
-		$(window).bind("orientationchange", ScaleSlider1);
-		jssor_slider1.$On($JssorSlider$.$EVT_PARK, function(slideIndex, fromIndex){
-			child_jssor_slider1.$PlayTo(slideIndex - 1);
-		});
-    };
-</script>
-<div class="container-wp row boxproduct">
-    <div class="content-box" style="float: right;">
-        <div class="book-container-box container-box-book-preview box clearfix">
-            <div class="arrow-home" style="margin-left: 5px">
-                <h4>Sách liên quan</h4>
-            </div>
-            <div class="arrow-slide-right">(Có <?php echo count($dataRelateBook) ?> quyển sách)</div>
-            <div class="clear"></div>
-            <div class="Border-BottomH3"></div>
-            <div class="preview-box clearfix">
-                <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
-                    <ul>
-                        <?php foreach($dataRelateBook as $value):?>
-                            <li>
-                                <div id="img-block">
-                                    <a href="<?php echo $value["id"]?>" class="preview-img">
-                                        <div class="main-imgintro">
-                                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
-
-                                        </div>
-
-                                    </a>
-                                </div>
-                                <div class="preview-text">
-                                    <span class="book-title"><?php echo $value["book_name"]?></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
-                    <?php echo $value["introduction"]?>
-                </span>
-                                </div>
-                                <span class="dots">...</span>
-
-                            </li>
-                        <?php endforeach?>
-                    </ul>
-                </div>
-            </div>
-            <div class="slider-box">
-                <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
-                <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
-                    <ul>
-                        <?php foreach($dataRelateBook as $value):?>
-                            <li class="slider-item">
-                                <div id="img-block">
-                                    <a class="book-picture-shadow" href="goi-sach-in/6595/nhung-y-tuong-kinh-doanh-tuyet-hay.html">
-                                        <div class="imgintro">
-                                            <img alt="<?php echo $value["book_name"]?>" src="scroll/uploads/books/img-6595-1429253696.jpg" class="img-hover-action book-css3-shadow" />
-                                        </div>
-
-                                    </a>
-                                </div>
-                            </li>
-                        <?php endforeach?>
-                    </ul>
-                </div>
+                <a target="_blank" href="<?php echo Yii::app()->baseUrl.'/chi-tiet'?>/<?php echo $value["id"]?>">
+                    <div class="read-book">
+                        Đọc
+                    </div>
+                </a>
             </div>
         </div>
-    </div>
-</div>
 
-<div class="clear1"></div>
-<script>
-	jssor_slider1_starter('slider2_container','child_slider2_container');
-	
-</script>
+    <?php endforeach?>
+</div>

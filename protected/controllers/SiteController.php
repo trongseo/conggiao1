@@ -530,12 +530,18 @@ VALUES (:name,
         $id = $_POST['id'];
        $idbook = Common::getPara('ID_BOOK');
         Common::setSession('idbook',$idbook);
+
         $arrBook = CommonDB::GetDataRow('tbl_book','delete_logic_flg=0 AND active=1 AND id='.$idbook);
         if($id == 0){
+
+
             $userId =Common::getSession(USER_ID);
             $deleteQuery =" delete from tbl_tusach where book_id=$idbook  and user_id=$userId ";
-            CommonDB::runSQL($deleteQuery,[]);
 
+            if(Common::getSession(USER_ID)!=""){
+
+                CommonDB::runSQL($deleteQuery,[]);
+            }
             $query ="INSERT INTO `tbl_tusach`
             (
              `book_id`,
@@ -548,9 +554,17 @@ VALUES (
             $hsTable["book_id"]= $idbook;
             $hsTable["user_id"]= $userId;
             $hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
-            CommonDB::runSQL($query,$hsTable);
+            if(Common::getSession(USER_ID)!=""){
+                $queryU1=" UPDATE `tbl_book`
+            SET viewer_count = viewer_count+1
+            WHERE id=".$idbook;
+                CommonDB::runSQL($queryU1,[]);
+                CommonDB::runSQL($query,$hsTable);
+            }
+
             $this->renderPartial('_readbook');
         }
+
         $_SESSION["pdf"] = $arrBook['download_file_link'];
         if($id == 1){
 
@@ -561,10 +575,7 @@ VALUES (
             $this->renderPartial('_comment',array('dataPage'=>$dataPage));
         }
         if($id == 3){
-          $queryU=" UPDATE `tbl_book`
-            SET reader_count = reader_count+1
-            WHERE id=".$idbook;
-            CommonDB::runSQL($queryU,[]);
+
             $this->renderPartial('_book');
         }
     }
@@ -611,7 +622,10 @@ VALUES (
         :create_date); ";
         $hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
         CommonDB::runSQL($query,$hsTable);
-
+        $queryU=" UPDATE `tbl_book`
+            SET reader_count = reader_count+1
+            WHERE id=".$idbook;
+        CommonDB::runSQL($queryU,[]);
         echo "1";
         Yii::app()->end();
     }

@@ -1,16 +1,19 @@
-﻿<?php
+<?php
 
 // 0:sắp phát hành; 1: mới phát hành; 2: là bình thuờng
 //SELECT * FROM tbl_book WHERE book_type=1 AND delete_logic_flg=0
 //        good_book_flg
-$dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 ",[]);
-$dataPrepareBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0",[]);
-$dataGoodBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0",[]);
-$dataReference = CommonDB::GetAll("SELECT  * FROM `tbl_reference` WHERE active=1 ORDER BY show_order",[]);
+$idBook = Common::getSession(ID_BOOK);
+$queryS="SELECT * FROM tbl_book WHERE delete_logic_flg=0 AND id IN(
+    SELECT relate_book_id FROM `tbl_relate_book` WHERE book_id=$idBook
+  UNION
+    SELECT book_id AS relate_book_id FROM `tbl_relate_book` WHERE relate_book_id=$idBook )
+    ORDER BY book_name
+    LIMIT 30 ";
+
+$dataRelateBook = CommonDB::GetAll($queryS,[]);
 
 ?>
-
-
 <script type="text/javascript" src="scroll/assets/73ff6cfc/jquery.slides.min.js"></script>
 <script type="text/javascript" src="scroll/assets/73ff6cfc/main.min.js"></script>
 
@@ -31,7 +34,7 @@ fieldset, img {
 }
 .content-box {
     width:1010px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 
 }
 .floatRight {
@@ -42,7 +45,20 @@ div.container-box-book-preview {
     background:url('/images/bg_layer_1.jpg') repeat-x top #eceeef;
     background-color: #f1f1f1;
 }
+.box {
+    /*position:relative;*/
+    /*border:1px solid #9BA1A5;*/
+    /*-webkit-border-radius: 8px;*/
+    /*-moz-border-radius: 8px;*/
+    /*border-radius: 8px;*/
+    /*margin:0 0 8px 0;*/
+    /*padding: 5px 0;*/
+    padding: 9px;
+    background: url(../images/bg-slider.png);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px 1px #333;
 
+}
 .box .corner, .box .corner-featured, .box .corner-featured-typeWhite {
     position:absolute;
     width:8px;
@@ -172,7 +188,7 @@ div.container-box-book-preview .preview-box .author {
 }
 div.container-box-book-preview .preview-box div.slider {
     padding:0;
-    height:190px
+    height:160px
 }
 div.container-box-book-preview .preview-box div.slider ul li {
     width:545px
@@ -201,7 +217,7 @@ div.container-box-book-preview .preview-box div.slider ul li {
 }
 .slider .slider-item div {
     position:relative;
-    /*background:#fff*/
+    background:#fff
 }
 .slider .slider-item .link {
     line-height:20px;
@@ -291,12 +307,6 @@ div.slider-box div.slider {
     background:url(http://www.ybook.vn/themes/newclassic/images/slider-box-bg.png);
     height:125px
 }
-div.slider-box div.slider {
-    padding: 0 40px;
-    background: rgb(216,190,158);
-    height: 125px;
-    padding-top: 10px;
-}
 /*div.slider-box div.slider .slider-item a.book-picture-shadow-ff-sf{*/
 /*background:url(../images/slider-item-sm-new.png) no-repeat left bottom;*/
 /*}*/
@@ -331,7 +341,7 @@ div.slider-box div.slider {
     z-index: 1;
 }
 .slider-button-right {
-    right:0px;
+    right:8px;
     top:50%;
     margin-top:-10px;
     background-position:right top
@@ -483,7 +493,7 @@ div.container-box-book-preview .slider .slider-item img.watermark {
 }
 
 div.container-box-book-preview .slider-box .corner {
-    background:url(http://www.ybook.vn/themes/newclassic/images/slider-box-bg-corner.png) no-repeat scroll 0 0 transparent;
+    background:url() no-repeat scroll 0 0 transparent;
     height:100%;
     width:3px
 }
@@ -508,232 +518,165 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     left: 34px !important;
     width: 600px !important;
 }
-
 .slider-shadow {
     background: transparent url("scroll/images/shadow.png") no-repeat scroll center bottom;
 
     width: 100%;
     margin-bottom: -20px;
 }
-
-.read-booknew {
-       background: url('/images/ic_book.png') no-repeat scroll 0 0;
-    padding-left: 30px;
-    cursor: pointer;
-    color: #B27D47;
-    clear: both;
-    margin-left: 24px;
-    margin-top: 155;
-    position: absolute;
-}
-.hrtext{
-    margin-top:4;
-    margin-bottom: 4;
-    border: 0;
-    border-top: 1px solid #D8BE9E;
-}
 </style>
 
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
+<script>
+    jssor_slider1_starter = function (containerId,childId) {
+        var options = {
+            $AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+            $AutoPlaySteps: 4,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+            $AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+            $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
 
+            $ArrowKeyNavigation: false,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+            $SlideDuration: 160,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+            $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+            $SlideWidth: 150,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+            //$SlideHeight: 150,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+            $SlideSpacing: 3, 					                //[Optional] Space between each slide in pixels, default value is 0
+            $DisplayPieces: 4,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+            $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+            $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+            $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+            $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
 
-<div class="content-box" style="float: right;">
-<div class="book-container-box container-box-book-preview box clearfix">
-<div class="arrow-home" style="margin-left: 5px">
-    <h4><b>Sách mới đưa vào Thư Viện</b></h4>
-</div>
-<div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
+            $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                $AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                $SpacingX: 0,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                $SpacingY: 0,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+            },
 
-    <?php if(count($dataNewBook)>0): ?>
-        <div class="topright"><a href="/thu-vien/0-sachmoiduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
-    <?php endif ?>
-<div class="clear"></div>
-<div class="Border-BottomH3"></div>
-<div class="preview-box clearfix">
-<div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
-    <ul>
-        <?php foreach($dataNewBook as $value):?>
-        <li><?php require "_slide_product_item_template.php" ?></li>
-        <?php endforeach?>
-        </ul>
-</div>
-</div>
-    <?php if(count($dataNewBook)>0): ?>
-<div class="slider-box">
-<a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
-<div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
-    <ul>
-        <?php $ii=0;?>
-        <?php foreach($dataNewBook as $value):?>
-            <?php if($ii==1): ?>
-                <?php require "_sublibary_item_template_sub.php";?>
-            <?php endif ?>
-            <?php $ii=1;?>
-        <?php endforeach?>
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                $AutoCenter: 2,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+            }
+        };
 
-        </ul>
-</div>
-</div>
-    <?php endif; ?>
+        var jssor_slider1 = new $JssorSlider$(containerId, options);
+        function ScaleSlider() {
+            var bodyWidth = document.body.clientWidth - 20;
+            if (bodyWidth)
+                jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 600));
+            else
+                window.setTimeout(ScaleSlider, 30);
+        }
+		var options1 = {
+			$AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+			$AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+			$AutoPlayInterval: 4000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+			$PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
 
-</div>
+			$ArrowKeyNavigation: false,                          //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+			$SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+			$MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+			//$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+			//$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+			$SlideSpacing: 0,                                   //[Optional] Space between each slide in pixels, default value is 0
+			$DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+			$ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+			$UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+			$PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+			$DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+			$StartIndex : -1,
+			$DisableDrag:false,
+			$BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+				$Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+				$ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+				$AutoCenter: 0,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+				$Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+				$Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+				$SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+				$SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+				$Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+			},
 
-</div>
+			$ArrowNavigatorOptions: {
+				$Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+				$ChanceToShow: 2                                //[Required] 0 Never, 1 Mouse Over, 2 Always
+			}
+		};
+        ScaleSlider();
+        $Jssor$.$AddEvent(window, "load", ScaleSlider);
 
-
-
-<div class="content-box" style="float: right;">
-    <div class="book-container-box container-box-book-preview box clearfix">
-        <div class="arrow-home" style="margin-left: 5px">
-            <h4><b>Sách sắp đưa vào Thư Viện</b></h4>
-        </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataPrepareBook) ?> quyển sách)</div>
-        <?php if(count($dataPrepareBook)>0): ?>
-        <div class="topright"><a href="/thu-vien/0-sachsapduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
-        <?php endif ?>
-        <div class="clear"></div>
-        <div class="Border-BottomH3"></div>
-        <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
-                <ul>
-                    <?php foreach($dataPrepareBook as $value):?>
-                        <li>
-                        <li><?php require "_slide_product_item_template.php" ?></li>
-
-                        </li>
-                    <?php endforeach?>
-                </ul>
+        $Jssor$.$AddEvent(window, "resize", $Jssor$.$WindowResizeFilter(window, ScaleSlider));
+        $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+		
+		var child_jssor_slider1 = new $JssorSlider$(childId, options1);
+		function ScaleSlider1() {
+			var parentWidth = child_jssor_slider1.$Elmt.parentNode.clientWidth;
+			if (parentWidth)
+				child_jssor_slider1.$ScaleWidth(Math.min(parentWidth, 390));
+			else
+				window.setTimeout(ScaleSlider1, 30);
+		}
+		ScaleSlider1();
+		$(window).bind("load", ScaleSlider1);
+		$(window).bind("resize", ScaleSlider1);
+		$(window).bind("orientationchange", ScaleSlider1);
+		jssor_slider1.$On($JssorSlider$.$EVT_PARK, function(slideIndex, fromIndex){
+			child_jssor_slider1.$PlayTo(slideIndex - 1);
+		});
+    };
+</script>
+<div class="container-wp row boxproduct">
+    <div class="content-box" style="float: right;">
+        <div class="book-container-box container-box-book-preview box clearfix">
+            <div class="arrow-home" style="margin-left: 5px">
+                <h4>Sách liên quan</h4>
             </div>
-        </div>
-        <?php if(count($dataPrepareBook)>0): ?>
-        <div class="slider-box">
-            <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
-            <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
-                <ul>
-                    <?php $ii=0;?>
+            <div class="arrow-slide-right">(Có <?php echo count($dataRelateBook) ?> quyển sách)</div>
+            <div class="clear"></div>
+            <div class="Border-BottomH3"></div>
+            <div class="preview-box clearfix">
+                <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
+                    <ul>
+                        <?php foreach($dataRelateBook as $value):?>
+                            <li>
+                                <div id="img-block">
+                                    <a href="<?php echo $value["id"]?>" class="preview-img">
+                                        <div class="main-imgintro">
+                                            <img alt="Cung bậc tình yêu" src="scroll/uploads/books/img-6599-1429254522.jpg" class="img-hover-action book-css3-shadow" />
 
-                    <?php foreach($dataPrepareBook as $value):?>
-                        <?php if($ii==1): ?>
-                            <?php require "_sublibary_item_template_sub.php";?>
-                        <?php endif ?>
-                        <?php $ii=1;?>
-                    <?php endforeach?>
-                </ul>
-            </div>
-        </div><?php endif; ?>
-    </div>
-</div>
+                                        </div>
 
-
-
-<div class="content-box" style="float: right;">
-    <div class="book-container-box container-box-book-preview box clearfix">
-        <div class="arrow-home" style="margin-left: 5px">
-            <h4><b> Sách hay nên đọc</b></h4>
-        </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataGoodBook) ?> quyển sách)</div>
-
-        <?php if(count($dataGoodBook)>0): ?>
-            <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
-        <?php endif ?>
-
-
-        <div class="clear"></div>
-        <div class="Border-BottomH3"></div>
-        <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
-                <ul>
-                    <?php foreach($dataGoodBook as $value):?>
-
-                        <li><?php require "_slide_product_item_template.php" ?></li>
-
-
-                    <?php endforeach?>
-                </ul>
-            </div>
-        </div>
-        <?php if(count($dataGoodBook)>0): ?>
-
-        <div class="slider-box">
-            <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
-            <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
-                <ul>
-                    <?php $ii=0;?>
-                    <?php foreach($dataGoodBook as $value):?>
-                        <?php if($ii==1): ?>
-                            <?php require "_sublibary_item_template_sub.php";?>
-                        <?php endif ?>
-                        <?php $ii=1;?>
-                    <?php endforeach?>
-                </ul>
-            </div>
-        </div>
-        <?php endif; ?>
-    </div>
-</div>
-
-
-<div class="content-box" style="float: right;">
-    <div class="book-container-box container-box-book-preview box clearfix">
-        <div class="arrow-home" style="margin-left: 5px">
-            <h4><b> Tham khảo</b></h4>
-        </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataReference) ?> quyển sách)</div>
-
-        <?php if(count($dataGoodBook)>0): ?>
-<!--            <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>-->
-        <?php endif ?>
-
-
-        <div class="clear"></div>
-        <div class="Border-BottomH3"></div>
-        <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
-                <ul>
-                    <?php foreach($dataReference as $value):?>
-
-
-                        <li>
-                            <div id="img-block">
-                                <a target="_blank" href="<?php echo $value["link_ref"] ?>"  class="preview-img">
-                                    <div class="main-imgintro">
-                                        <img alt="<?php echo $value["description"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE_REF.$value["image_name"] ?>" class="img-hover-action book-css3-shadow" />
-
-                                    </div>
-
-                                </a>
-                            </div>
-                            <div class="read-booknew" onclick="openNewWindow('<?php echo $value["id"]?>')" >
-                                Đọc
-                            </div>
-                            <div class="preview-text">
-                                <span class="book-title">
-                                    <a target="_blank" href="<?php echo $value["link_ref"] ?>" ><?php echo $value["title"] ?></a></span>
-<!--                                <span class="author">--><?php //echo $value["author"]?><!--</span> <span class="preview">-->
-                  <hr class="hrtext"/>
-                                    <?php echo $value["description"]?>
+                                    </a>
+                                </div>
+                                <div class="preview-text">
+                                    <span class="book-title"><?php echo $value["book_name"]?></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
+                    <?php echo $value["introduction"]?>
                 </span>
-                            </div>
-                            <span class="dots">...</span>
-                        </li>
+                                </div>
+                                <span class="dots">...</span>
 
-
-                    <?php endforeach?>
-                </ul>
+                            </li>
+                        <?php endforeach?>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <?php if(count($dataReference)>0): ?>
-
             <div class="slider-box">
                 <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
                 <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
                     <ul>
-                        <?php foreach($dataReference as $value):?>
+                        <?php foreach($dataRelateBook as $value):?>
                             <li class="slider-item">
                                 <div id="img-block">
-                                    <a class="book-picture-shadow" target="_blank" href="<?php echo $value["link_ref"] ?>" >
+                                    <a class="book-picture-shadow" href="goi-sach-in/6595/nhung-y-tuong-kinh-doanh-tuyet-hay.html">
                                         <div class="imgintro">
-                                            <img  WIDTH="67" height="100" src="<?php echo PATH_IMAGE_REF.$value["image_name"] ?>" class="img-hover-action book-css3-shadow" />
+                                            <img alt="<?php echo $value["book_name"]?>" src="scroll/uploads/books/img-6595-1429253696.jpg" class="img-hover-action book-css3-shadow" />
                                         </div>
 
                                     </a>
@@ -743,54 +686,12 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                     </ul>
                 </div>
             </div>
-        <?php endif; ?>
+        </div>
     </div>
 </div>
 
-
-
-<script type="text/javascript">
-    /*<![CDATA[*/
-    (function() {
-        var readyFunc = function() {
-            if (window.ready) {
-                window.ready();
-            }
-            else
-                setTimeout(readyFunc, 10);
-        };
-        readyFunc();
-    })();
-    (function() {
-        var readyFunc = function() {
-            if (window.ready) {
-                window.ready();
-            }
-            else
-                setTimeout(readyFunc, 10);
-        };
-        readyFunc();
-    })();
-    $(document).ready(function(){
-
-    });
-
-//    jQuery(function($) {
-//        jQuery('#bookTab').tabs({'cache':true,'select':function(event, ui){var $panel = $(ui.panel); if($panel.is(":empty")){$("#ajax-loading").removeClass("hidden");}},'load':function(){$("#ajax-loading").addClass("hidden"); $(".tooltip").hide(); $(".atooltip[title]").tooltip({position: ['center', 'right']});}});
-//        jQuery('#ebookTab').tabs({'cache':true,'select':function(event, ui){var $panel = $(ui.panel); if($panel.is(":empty")){$("#ajax-loading").removeClass("hidden");}},'load':function(){$("#ajax-loading").addClass("hidden"); $(".tooltip").hide(); $(".atooltip[title]").tooltip({position: ['center', 'right']});}});
-//
-//        $("#menu li .deadline, #menu li .deadline-span").hover(
-//            function() {
-//                var temp1 = $(this).parent().find("a");
-//                temp1.addClass("menu-recuitment-hover");
-//            },
-//            function () {
-//                var temp2 = $(this).parent().find("a");
-//                temp2.removeClass("menu-recuitment-hover");
-//            }
-//        );
-//
-//
-//    });
-    /*]]>*/
+<div class="clear1"></div>
+<script>
+	jssor_slider1_starter('slider2_container','child_slider2_container');
+	
 </script>
