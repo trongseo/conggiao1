@@ -39,7 +39,12 @@
             <?php foreach($comboData1 as $value1):?>
 
 
-                    <button alt="tab_<?php echo $value1["id"]?>" class=" btn_tab <?php echo $noShow ?>" type="button"><?php echo $value1["title"]?></button>
+                    <button alt="tab_<?php echo $value1["id"]?>" class=" btn_tab <?php echo $noShow ?>" type="button">
+
+                        <?php
+                        if( $value1["id"]==3 ) echo "Giới thiệu";
+                        if( $value1["id"]==4 ) echo "Danh sách nhà tài trợ";
+                        ?></button>
 
                 <?php $noShow="";
                 ?>

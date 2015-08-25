@@ -475,7 +475,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
        $check = array('aaa'=>123,'bb'=>array('dd','kkk')); $check2 = TblConfig::model()->find();
         $this->curPage="gioithieu";
         $queryG ="SELECT * FROM `tbl_introduce`
-WHERE active =1 ORDER BY show_order";
+WHERE active =1 and id in(3,4)ORDER BY show_order";
         $dataIntro = CommonDB::GetAll($queryG,[]);
         $this->render('about',array('page1'=>$check,'comboData1'=>$dataIntro));
     }
