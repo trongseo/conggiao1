@@ -22,15 +22,15 @@ define("ADMIN_EMAIL","info@kinhtanphuc.com");
 define("SMTP_USERNAME","info@kinhtanphuc.com");
 define("SMTP_PASSWORD","123456");
 define("SMTP_INCLUDED",1);
-define ("ITEM_PER_PAGE", serialize (array (1,20,50)));
+define ("ITEM_PER_PAGE", serialize (array (10,20,50)));
 define ("ORDER_BY", serialize (array ("Tiều đề A-Z","Lượt xem")));
 define ("ORDER_BY_KEY", serialize (array ("0","1")));
 define ("WEB_URL", "http://googleg9.com:8111");
 define ("PATH_DOWNLOAD", "http://googleg9.com:8111/");
-define ("PATH_IMAGE", "http://googleg9.com:8222/uploads/bookImage/");
-define ("PATH_IMAGE_REF", "http://googleg9.com:8222/uploads/referenceImage/");
-define ("PATH_IMAGE_bookFile", "http://googleg9.com:8222/uploads/bookFile/");
-define ("PATH_IMAGE_slideImage", "http://googleg9.com:8222/uploads/slideImage/");
+define ("PATH_IMAGE", "http://googleg9.com:8111/admintvcg/uploads/bookImage/");
+define ("PATH_IMAGE_REF", "http://googleg9.com:8111/admintvcg/uploads/referenceImage/");
+define ("PATH_IMAGE_bookFile", "http://googleg9.com:8111/admintvcg/uploads/bookFile/");
+define ("PATH_IMAGE_slideImage", "http://googleg9.com:8111/admintvcg/uploads/slideImage/");
 
 //session const
 define ("ID_BOOK", "idbook");

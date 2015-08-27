@@ -225,7 +225,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $perpageshow = Common::getPara("perpageshow");
 
         $page = ($gotopage!="") ? $gotopage : 1;
-        $pageSize = ($perpageshow!="") ? $perpageshow : 1;
+        $pageSize = ($perpageshow!="") ? $perpageshow : 10;
         $arrView["gotopage"]=$gotopage;
         $arrView["orderbyid"]=$orderbyid;
         $arrView["perpageshow"]=$perpageshow;
@@ -298,7 +298,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $perpageshow = Common::getPara("perpageshow");
 
         $page = ($gotopage!="") ? $gotopage : 1;
-        $pageSize = ($perpageshow!="") ? $perpageshow : 3;
+        $pageSize = ($perpageshow!="") ? $perpageshow : 10;
         $arrView["gotopage"]=$gotopage;
         $arrView["orderbyid"]=$orderbyid;
         $arrView["perpageshow"]=$perpageshow;
@@ -561,11 +561,20 @@ VALUES (
                 CommonDB::runSQL($queryU1,[]);
                 CommonDB::runSQL($query,$hsTable);
             }
+            if(Common::getSession(USER_ID)==""){
+
+                $_SESSION["pdf"]='Loi.pdf';
+            }
 
             $this->renderPartial('_readbook');
         }
+        if(Common::getSession(USER_ID)==""){
 
-        $_SESSION["pdf"] = $arrBook['download_file_link'];
+            $_SESSION["pdf"]='Loi.pdf';
+        }else{
+            $_SESSION["pdf"] = $arrBook['download_file_link'];
+        }
+
         if($id == 1){
 
             $this->renderPartial('_info',array('arrBook'=>$arrBook));
