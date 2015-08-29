@@ -1,7 +1,12 @@
+<style>
+.btn-epub {
+    width: 95px;
+}
+</style>
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/dang-nhap">
 <div class="row">
-    <div class="arrow">
-        <h4><b>Đăng nhập</b></h4>
+    <div class="arrow colorconggiao">
+        <h4>Đăng nhập</h4>
     </div>
     <div class="arrow-right"></div>
     <div class="clear" style="padding-top:2px"  ></div>
@@ -9,21 +14,20 @@
     <div class="clear1"></div>
     <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
         <div class="row">
-            <div class="box-login boxborder">
-                <p>
-                    <span style="color:#D5A16F;"><i>Chào mừng bạn đến với</i> </span>
+            <div class="box-login boxborder onlybox">
+                <p style="padding-left:15px">
+                    <span  class="textcolor1" ><i>Chào mừng bạn đến với</i> </span>
                     <span style="color: #D5904D;font-weight: bold;">Thư Viện</span>
-                    <span style="color:#5A2E0B;font-weight: bold;">Công Giáo</span>
-                    <span style="color: #D5904D;font-weight: bold;">Việt Nam</span>
+                    <span style="font-weight: bold;" class="colorconggiao">Công Giáo</span>
+                    <span style="font-weight: bold;" class="textcolor1" >Việt Nam</span>
                     <br/>
                 </p>
                 <div class="clear1"></div>
                 <fieldset>
                     <div class="col-md-12" style=""></div>
-                    <div class="clear1"></div>
+                    <div class=""></div>
                     <div class="col-md-12 col-sm-12 col-xs-12">
-<!--                        <span style="float: left;"><h4 >Đăng nhập</h4></span> <span style="float: right;">(* Thông tin bắt buộc nhập)</span>
-                        <div class="clear1"></div>-->
+
                         <div class="form-group form-actions">
                             <span class="input-icon">
                                 <input type="text" class="form-control" id="email" name="email" placeholder="* Địa chỉ email">
@@ -35,12 +39,12 @@
                             </span>
                         </div>
                         <div class="form-group form-actions">
-                            <span style="float: left;"><a href="/quen-mat-khau" class="linUnder">Quên mật khẩu</a></span>
-                            <span style="float: right;"><b>* Thông tin bắt buộc nhập </b></span>
+                            <span style="float: left;"><a href="/quen-mat-khau" class="linUnder colorconggiao">Quên mật khẩu</a></span>
+                            <span style="float: right;">* Thông tin bắt buộc nhập </span>
                         </div>
-                        <div class="clear1"></div>
+                        
                         <div class="form-group form-actions">
-                            <div class="col-xs-12 col-md-8" style="text-align: right;">
+                            <div class="col-xs-12 col-md-8" style="text-align: center;margin-top:15px">
                                 <div class="row">
                                     <button type="submit" class="btn btn-green btn-epub" id="btn_login" onclick="actionLogin();">
                                         Đăng nhập
@@ -76,9 +80,11 @@
             </div>
         </div>
     </div>
-</div>
+
+	 <div class="clear1"></div>
+	</div>
 </form>
-<script src="http://malsup.github.com/jquery.form.js"></script>
+
 
 <script type="text/JavaScript">
 

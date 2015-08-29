@@ -2,9 +2,31 @@
 <link rel="stylesheet" type="text/css" href="/js/datetime/lib/jquery.timepicker.css" />
 <script type="text/javascript" src="/js/datetime/lib/bootstrap-datepicker.js"></script>
 <link rel="stylesheet" type="text/css" href="/js/datetime/lib/bootstrap-datepicker.css" />
+<style>
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: -16px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 124px;
+}
+</style>
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/dang-ky">
 <div class="row">
-    <div class="arrow">
+  <div class="arrow colorconggiao">
         <h4>Đăng ký</h4>
     </div>
     <div class="arrow-right"></div>
@@ -12,14 +34,14 @@
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>
     <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-        <div class="box-login boxborder">
+        <div class="box-login onlybox boxborder colorconggiao" style="">
             <p>
-                <span style="color:#D5A16F;">Chào mừng bạn đến với </span>
+                <span  class="textcolor1">Chào mừng bạn đến với </span>
                 <span style="color: #D5904D;font-weight: bold;">Thư Viện</span>
-                <span style="color: #492E14;font-weight: bold;">Công Giáo</span>
+                <span style="font-weight: bold;" class="colorconggiao">Công Giáo</span>
                 <span style="color: #D5904D;font-weight: bold;">Việt Nam</span>
-                <br/>
-                Vui lòng điền thông tin dưới đây để tạo tài khoản. Nếu bạn đã có tài khoản, <a href="<?php echo Yii::app()->baseUrl.'/dang-nhap'?>">Đăng nhập</a>
+                <br>
+                Vui lòng điền thông tin dưới đây để tạo tài khoản. Nếu bạn đã có tài khoản, <a href="/dang-nhap" style="color: #D5904D;text-decoration:underline">Đăng nhập</a>
             </p>
             <div class="clear1"></div>
             <fieldset>
@@ -36,7 +58,7 @@
                 </div>
                 <div class="form-group form-actions">
                     <span class="input-icon">
-                        <input type="password" class="form-control password" id="password" name="password" placeholder="* Mật khẩu">
+                        <input type="password" class="form-control password" id="password" name="password" placeholder="* Mật khẩu(Tối thiểu 6 ký tự)">
                     </span>
                 </div>
                 <div class="form-group form-actions">
@@ -45,43 +67,43 @@
                     </span>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-2 control-label" for="form-field-1">
-                        <div class="row" style="margin-top:5px">
+                    <label class="col-md-2 control-label colorconggiao" for="form-field-1">
+                        <div class="row" style="margin-top: 9px;">
                             Ngày sinh *
                         </div>
                     </label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" id="birthday" name="birthday" placeholder="">
+                        <input type="text" class="form-control" id="birthday" name="birthday" style="width:140px" placeholder="">
                     </div>
                     <div class="clear"></div>
                 </div>
                 <div class="form-group">
-                    <label class="col-md-2 control-label" for="form-field-1">
-                        <div class="row" style="margin-top:5px">
+                    <label class="col-md-2 control-label colorconggiao" for="form-field-1">
+                        <div class="row" style="margin-top:1px">
                             Giới tính *
                         </div>
                     </label>
 
-                    <div class="radio-pading col-md-2 radio-inline ">
-                        <label><input type="radio" value="0"  name="optradio">Nam</label>
+                    <div class="radio-pading col-md-2 radio-inline colorconggiao ">
+                        <label><input type="radio" value="0" name="optradio">Nam</label>
                     </div>
-                    <div class="col-md-2  radio-inline">
-                        <label><input type="radio" value="1" checked name="optradio">Nữ</label>
+                    <div class="col-md-2  radio-inline colorconggiao">
+                        <label><input type="radio" value="1" checked="" name="optradio">Nữ</label>
                     </div>
                     <div class="clear"></div>
                 </div>
-               <div class="form-group" >
-					
-					<label style="border-top: 1px solid #EDBE99; text-align: left; color:#AE7418" class="col-sm-12 control-label" for="form-field-1">* Thông tin bắt buộc nhập.</label>
+                <div class="form-group">
 
-                   <label style="width: 500px;color:#AE7418" class="col-sm-12 control-label" for="form-field-1">Bằng cách nhấp vào nút Đăng ký, bạn sẽ đồng ý với các
-                       <a class="linUnder" target="_blank" href="/dieu-khoan-su-dung"><i>điều khoản sử dụng</i></a>
-                       của chúng tôi </label>
-                   <button type="submit" class="btn btn-green pull-right btn-epub" value="Đăng ký"  id="btnsave" name="btnsave"  >
-                       Đăng ký
-                   </button>
-               </div>
-			   <div class="form-actions">
+                    <label style="padding-top:11px;font-weight: normal;border-top: 1px solid #EDBE99; text-align: left; " class="col-sm-12 control-label colorconggiao" for="form-field-1">* Thông tin bắt buộc nhập.</label>
+
+                    <label style="font-weight: normal;width: 473px;" class="col-sm-12 control-label textcolor1" for="form-field-1">Bằng cách nhấp vào nút Đăng ký, bạn sẽ đồng ý với các
+                        <a class="linUnder colorconggiao " target="_blank" href="/dieu-khoan-su-dung"><i>điều khoản sử dụng</i></a>
+                       <span class='textcolor1'> của chúng tôi </span> </label>
+                    <button type="submit" class="btn btn-green pull-right btn-epub" value="Đăng ký" id="btnsave" name="btnsave">
+                        Đăng ký
+                    </button>
+                </div>
+                <div class="form-actions">
 
                 </div>
             </fieldset>
@@ -89,8 +111,8 @@
     </div>
 </div>
 </form>
-
-<script src="http://malsup.github.com/jquery.form.js"></script>
+<div class="clear1"></div>
+<!--<script src="http://malsup.github.com/jquery.form.js"></script>-->
 
 <script type="text/JavaScript">
 

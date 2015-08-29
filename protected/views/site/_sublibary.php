@@ -501,10 +501,13 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 
       background: #D8BE9E;
   }
+  .row h4{
+margin-top: 0px;
+}
 </style>
 <div class="row">
 
-        <h4 style="margin-left: 20px;margin-top:23px;color: #5a2e0b"><?php
+        <h4 style="margin-left: 20px;margin-top:13px;color: #5a2e0b"><?php
             if($_REQUEST["myid"]!="0")
             {
                 echo CommonDB::GetDataRow("tbl_index","id=".$_REQUEST["myid"]." and type=".$_REQUEST["mylevel"])["name"] ;
@@ -532,7 +535,7 @@ WHERE parent_id=$cateId ) and type=2 )" ;
 
     <div class="clear"></div>
 
-    <div class="clear1"></div>
+    <div class="clear1"style="height:12px"></div>
 
 </div>
 <?php

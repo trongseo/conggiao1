@@ -28,19 +28,22 @@ a{
     background: url('../images/ic_book.png') no-repeat scroll 0 0;
     padding-left: 30px;
     cursor: pointer;
-    color: #B27D47;
+  color: #B27D47;
+   
 }
 .read-book:hover{
     background: url('../images/ic_book_on.png') no-repeat scroll 0 0;
     color: #000;
 }
 .arrow{
-    float: left;
-    /*border: 1px solid #D39C64;*/
+     float: left;
+    /* border: 1px solid #D39C64; */
     border-right: none;
     padding: 9px 6px 7px;
     background: #F6E1C4;
-    border-radius: 10px 0 0 0 ;
+    border-radius: 10px 0 0 0;
+    margin-top: 10px;
+    height: 32px;
 }
 .arrow h4{
     color:#643916;
@@ -66,10 +69,11 @@ a{
     font-style: italic;
 }
 .arrow-right {
-    border-top:18px solid transparent;
-    border-bottom:18px solid transparent;
-    border-left:18px solid #F6E1C4;
+      border-top: 17px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 18px solid #F6E1C4;
     float: left;
+    margin-top: 10px;
 }
 .line-shadow{
 	background: url("../images/line_shadow.png") no-repeat bottom center;
@@ -341,7 +345,7 @@ table{
 }
 .clear1{
     clear: both;
-    height: 10px;
+    height: 16px;
 }
 .left-white{
     border-left:1px solid #FFF;
@@ -746,3 +750,46 @@ height:117px;
 	top: 69%;
 	width: 161px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

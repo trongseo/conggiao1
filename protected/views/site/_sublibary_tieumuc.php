@@ -48,6 +48,9 @@
 	#comboPage{
 		height:34px;border:0px;margin-top:-2px;background-color:rgb(248,227,198);
 	}
+	  .row h4{
+margin-top: 13px;
+}
 </style>
 <?php
 
@@ -61,7 +64,7 @@ $comboData =$dataItem;
 
 
     <div class="row">
-        <div class="col-md-12" style="padding:0px 0px 0px 0px;display:inline;padding-top: 23px">
+        <div class="col-md-12" style="padding:0px 0px 0px 0px;display:inline;padding-top: 0px">
             <h4>
                 <?php
                 if(Common::getSession("parent_id")!="0")
@@ -75,7 +78,7 @@ $comboData =$dataItem;
                 ?> <span style="display:inline;font-style: italic;;color:#5a2e0b" class="small">(Có <?php echo $arrDataPage['itemCount']; ?> cuốn sách)</span> </h4>
 
         </div>
-        <div class="clear"></div><div class="clear1"></div>
+        <div class="clear"></div><div class="clear1" style="height:11px"></div>
     </div>
     <?php if(1==2):?>
 
@@ -222,7 +225,7 @@ $comboData =$dataItem;
                 <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;">
                     <div style="">
                         <img class="boximg" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
-                        <div style="font-size: 11px;font-weight: bold;line-height: 15px;padding-top: 5px;padding-bottom: 5px;"> <?php echo $value["book_name"]?></div>
+                        <div style="font-size: 11px;font-weight: bold;line-height: 15px;padding-top: 5px;padding-bottom: 5px;margin-left:2px"> <?php echo $value["book_name"]?></div>
 
                         <a target="_blank" href="<?php echo Yii::app()->baseUrl.'/chi-tiet'?>/<?php echo $value["id"]?>">
                             <div class="read-book">

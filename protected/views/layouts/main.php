@@ -52,7 +52,14 @@
             color: #C27B42 !important;
             font-weight: 500 !important;
         }
+.colorconggiao{
+     color:#492E14;
 
+ }
+        .textcolor1{
+
+            color:#D5A16F;
+        }
     </style>
     <style>
         .readbooknew {
@@ -109,7 +116,7 @@
         }
 
         .borderright{
-            border-right:1px #be7338 solid;margin-top:10px
+            border-right:1px #be7338 solid;margin-top:0px;
         }
         .menu1 > li > a i {
             float: right;

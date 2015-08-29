@@ -58,9 +58,9 @@
             var leftMenu = $('.menu1').height();
             if(IFS_F==1)leftMenu=MAX_WIDTHMENU;IFS_F=0;
             if(meIt> leftMenu){
-                $('.lefmenuw').height(meIt-MINUS_MENU-3);
+                $('.lefmenuw').height(meIt-MINUS_MENU-3+30);
             }else{
-                $('.lefmenuw').height(leftMenu+50-MINUS_MENU);
+                $('.lefmenuw').height(leftMenu+80-MINUS_MENU);//50
             }
             console.log($('.menu1').height());
         }

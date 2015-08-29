@@ -1,7 +1,7 @@
 
 <div class="row">
 
-    <h4 style="margin-left: 20px;margin-top:23px;color: #5a2e0b">
+    <h4 style="margin-left: 20px;margin-top:12px;color: #5a2e0b">
        <?php
            $cateId= $_REQUEST["myid"];
             $mylevel =$_REQUEST["mylevel"];
@@ -12,7 +12,7 @@
 
         <div class="clear"></div>
 
-        <div class="clear1"></div>
+        <div class="clear1" style="height:13px"></div>
 
 </div>
 <?php
