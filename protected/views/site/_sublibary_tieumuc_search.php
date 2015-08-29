@@ -67,20 +67,20 @@
         border:1px solid #be682f;
         height: 37px;padding-top: 2px;
     }
-    .keyword{
-
-        font-style: italic;
-        color: #000000 !important;
-        font-weight: 400 !important;
-        padding-top: 8px;
-        padding-bottom: 4px;
-        padding-left:0px;
+.keyword {
+    font-style: italic;
+    color: #000000 !important;
+    font-weight: 400 !important;
+    padding-top: 14px;
+    padding-bottom: 11px;
+    padding-left: 0px;
+}  padding-left:0px;
     }
     .mybox {
         background: #FAE5C8 none repeat scroll 0 0;
         border-radius: 5px;
         padding: 15px;
-        box-shadow: 1px 1px 8px 1px #333;
+       
     }
     .center-block {
         display: block;
@@ -106,8 +106,8 @@ $comboData =$dataItem;
         <div class="clear"></div>
     </div>
     <?php if(count($comboData)==0):?>
-
-        <div class="row mybox" style="padding:0px;padding-left:5px;height:200px;margin-top:20px">
+<div class="clear" style="padding-top:25px"></div>
+        <div class="row mybox onlybox" style="padding:0px;padding-left:5px;height:200px;margin-top:20px">
             <div class="row" style="padding-top:20px">
                 <div class="span4"></div>
                 <div class="span4"><img class="center-block" style="width:40px;" src="/img/sad.jpg"></div>

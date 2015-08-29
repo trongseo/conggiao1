@@ -130,12 +130,12 @@
 
         </div>
     </div>
-    <div class="clear" style="height: 7px"></div>
+    <div class="clear" style="height: 13px"></div>
 
-    <div class="row box-login" style="padding:0px;padding-left:5px">
+    <div class="row box-login onlybox" style="padding:0px;padding:5px">
         <!--// `id`,`book_code`,`parent_id`,`,`book_name`,`introduction`,`bookimage_link`,`active`,`create_date`,`good_book_flg`,`book_type`,`content_link`,`viewer_count`,`reader_count`,`relate_book_id`,`download_flg`,`download_file_link`,`admin_id`,`delete_logic_flg`,`user_id_delete`,`date_delete`-->
         <?php foreach($comboData as $value):?>
-            <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;">
+            <div style="float:left;width: 140px;height: 150px; margin:5px 5px 80px 5px;">
                 <div style="">
                     <img class="boximg" style="width: 140px;height: 175px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
                     <span style="font-size: 11px;font-weight: bold;line-height: 15px;"> <?php echo $value["book_name"]?></span>
@@ -151,7 +151,7 @@
         <?php endforeach?>
     </div>
 
-    <div class="col-md-12" style="height: 80px;">
+    <div class="col-md-12" style="height: 80px;display:none;">
 
 <!--        <img   style="width: 100%" u="image" src="--><?php //echo Yii::app()->baseUrl?><!--/img/tieu-muc-title-bottom.png" />-->
     </div>

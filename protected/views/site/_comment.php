@@ -12,13 +12,16 @@
         color: #464040;
     }
     .commentit1{
-        background-color: #F1F1F1;
+        background-color:#F3D7B3;
         padding-left: 0px;
         padding-top: 5px;
-        box-shadow: 1px 1px 12px 1px #B1956D;
-        /* border-radius: 11px; */
+        /* box-shadow: 1px 1px 12px 1px #B1956D; */
+        border-radius: 2px;
         margin-left: 2px;
         width: 922px;
+        border-color: #BE7339;
+        border-style: solid;
+        border-width: 1px;
     }
     #txtComment{
         width: 832px; margin: 0px; height: 40px;

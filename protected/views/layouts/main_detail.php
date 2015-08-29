@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="shortcut icon" href="<?php echo Yii::app()->baseUrl?>/images/layout/favicon.ico"  />
+        <link rel="shortcut icon" href="/img/favicon.ico"  />
         <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/bootstrap.css" type="text/css"/>
         <link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.0/css/select2.min.css" rel="stylesheet" />
         <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/main.css" type="text/css"/>
@@ -101,10 +101,34 @@
                 /* background: url('../images/ic_register.png') left center no-repeat #ecd1b5; */
                 float: left;
             }
+            .colorconggiao{
+                color:#492E14;
+
+            }
+            .textcolor1{
+
+                color:#D5A16F;
+            }
         </style>
     </head>
     <body>
-
+    <div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color:#D5A16F;color: white ">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body…</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <!-- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-sm">
@@ -192,7 +216,7 @@
                             <img src="<?php echo Yii::app()->baseUrl.'/images/bookstore.png'?>" /> Thêm vào tủ sách
                         </a>
                         <?php else: ?>
-                            <a class="register" href="javascript:void(0)"  data-toggle="modal" data-target="#myModal">
+                            <a class="register" href="javascript:AddBookToMeNo()"  >
                                 <img src="<?php echo Yii::app()->baseUrl.'/images/bookstore.png'?>" /> Thêm vào tủ sách
                             </a>
                         <?php endif; ?>
@@ -209,7 +233,7 @@
                 <div class="col-md-12">
                     <div class="row" id="slide-warp"></div>
                 </div>
-                <div class="clear1"></div>
+                <div class="clear1" style="height: 7px"></div>
                 <div class="col-md-12" id="content-wp">
                     <?php echo $content?>
                 </div>
@@ -221,6 +245,8 @@
             <div class="clear"></div>
         </div>
     </body>
+    <link href="/js/dialog/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
+    <script src="/js/dialog/bootstrap-dialog.min.js"></script>
     <script>
 	var ID_BOOK='<?php echo $this->ID_BOOK; ?>';
         $(document).ready(function() {
@@ -268,9 +294,13 @@
             url:'<?php echo Yii::app()->baseUrl ?>/Site/AddBook?ID_BOOK='+ID_BOOK,
             data:{},
             success:function(result){
-               alert('Đã thêm vào tủ sách của bạn thành công!');
+               //alert('Đã thêm vào tủ sách của bạn thành công!');
+                BootstrapDialog.alert('Đã thêm vào tủ sách của bạn thành công!');
             }
         })
+    }
+    function AddBookToMeNo(){
+        BootstrapDialog.alert('Vui lòng đăng nhập để sử dụng chức năng này!');
     }
         function LoadInfo(id){
 
