@@ -1,14 +1,17 @@
 <?php
 
 ?>
-<div class="row box-login">
-    <div class="arrow">
+<div class="row">
+    <div class="arrow colorconggiao">
         <h4>Liên hệ</h4>
     </div>
     <div class="arrow-right"></div>
-    <div class="clear"></div>
+    <div class="clear" style="padding-top:2px"></div>
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>
+
+    <div class="col-md-12 box-login onlybox">
+
 	<div class="col-md-6 contact-left">
 	
 	<div class="form-group">
@@ -17,14 +20,14 @@
 
         <p style="font-size: 16px;padding-left:15px">
 
-            <span style="color: #D5904D;font-weight: bold;">Thư Viện</span>
-            <span style="color: #492E14;font-weight: bold;">Công Giáo</span>
-            <span style="color: #D5904D;font-weight: bold;">Việt Nam</span>
+            <span style=";font-weight: bold;" class="textcolor1">THƯ VIỆN</span>
+            <span style="font-weight: bold;"  class="colorconggiao">CÔNG GIÁO</span>
+            <span style="font-weight: bold;"  class="textcolor1">VIỆT NAM</span>
 
         </p>
 
 		<div class="col-sm-12">
-			 <img class="boximg" style="100%" u="image" src="<?php echo Yii::app()->baseUrl?>/img/lienhe.png" />
+			 <img class="boximgxxxxxxxx" style="100%" u="image" src="<?php echo Yii::app()->baseUrl?>/img/lienhe.png" />
 		</div>
 		<div class="col-sm-12">
 			 
@@ -32,21 +35,21 @@
 	</div>
 
 	<div class="form-group">
-		<label class="col-sm-3 control-label" style="text-align:left;width: 45px" for="form-field-1">Email:</label>
+		<label class="col-sm-3 control-label" style="text-align:left;width: 45px" for="form-field-1"></label>
 		<div class="col-sm-9" style="text-align:left">
-			thuvienconggiaovietnam@gmail.com
+
 		</div>
 	</div>
 
 
 </div>
-<div class="col-xs-18 col-sm-12 col-md-6 p-item" style="border-left:1px solid #5A2D0C">
+<div class="col-xs-18 col-sm-12 col-md-6" style="border-left:1px solid #BE7339;height:440px">
     <form id="form_contact"  onsubmit="return isSend();"  class="form-horizontal" method="POST" action="<?php echo Yii::app()->baseUrl.'/contact';?>" role="form" enctype="multipart/form-data">
         <div class="form-group">           
-            <label class="col-sm-12 control-label" style="text-align:center;padding:20px;" for="form-field-1">
+            <div class="col-sm-12 control-label textcolor1" style="text-align:center;padding-top: 0px" for="form-field-1">
 				Quý khách vui lòng điền đầy đủ thông tin dưới đây</br>
 				Chúng tôi sẽ phản hồi cho Quý khách trong thời gian sớm nhất.
-			</label>
+			</div>
             <div class="clear"></div>
         </div> 
 		<div class="form-group">
@@ -59,7 +62,7 @@
         <div class="form-group">
             
             <div class="col-sm-12">
-                <input id="phone" name="phone" value="" class="form-control" type="text" placeholder="* Số điện thoại">
+                <input id="phone" name="phone" value="" class="form-control" type="text" placeholder=" Số điện thoại">
             </div>
             <div class="clear"></div>
         </div>
@@ -70,7 +73,7 @@
             </div>
             <div class="clear"></div>
         </div>
-        <div class="form-group">           
+        <div class="form-group" style="display: none">
             <div class="col-sm-12">
                 <input id="address" name="address" value="" class="form-control" type="text" placeholder="* Địa chỉ">
             </div>
@@ -86,7 +89,7 @@
         <div class="form-group">
             
             <div class="col-sm-12">
-                <textarea name="content" id="content" class="autosize form-control" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 69px;" placeholder="* Nội dung"></textarea>
+                <textarea name="content" id="content" class="autosize form-control" style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 109px;" placeholder="* Nội dung"></textarea>
             </div>
             <div class="clear"></div>
         </div>
@@ -105,22 +108,34 @@
 <!--            <div class="clear"></div>-->
 <!--        </div>-->
        <div class="form-group" >
-			<label  class="col-sm-1 control-label" for="form-field-1"></label>
-            <label style="border-top:1px solid #BE7339; text-align: left; color:#AE7418" class="col-sm-11 control-label" for="form-field-1">* Thông tin bắt buộc nhập.</label>
-            
-            
-        </div>
+           <div style=" width:459px; margin-left: 15px;margin-right: -0px;border-top:1px solid #BE7339; text-align: left; color:#AE7418" class="col-sm-11 control-label textcolor1" for="form-field-1"></div>
+           <div style=" width:459px; margin-left: 0px;margin-right: -0px; text-align: left; color:#AE7418" class="col-sm-11 control-label textcolor1" for="form-field-1">* Thông tin bắt buộc nhập.</div>
+
+           <div class="" >
+
+               <label class="col-sm-4 control-label" for="form-field-1">  </label>
+               <div class="col-sm-8" style="    margin-top: -19px;">
+
+                   <button style="width: 100px" type="submit" class="btn btn-green pull-right btn-epub" value="Đăng ký" id="btnsave" name="btnsave">
+                       Gửi
+                   </button>
+
+<!--                   <input class="btn btn-red" type="submit" value="Gửi" style="float:right;background-color: #be7339;color: #fff;width: 100px;">-->
+               </div>
+               <div class="clear"></div>
+           </div>
+
+       </div>
 	   <div class="form-group">
 	   
-            <label class="col-sm-4 control-label" for="form-field-1">  </label>
-            <div class="col-sm-8">
-                <input class="btn btn-red" type="submit" value="Gửi" style="float:right;background-color: #be7339;color: #fff;width: 100px;">
-            </div>
-            <div class="clear"></div>
+
         </div>
     </div>
- </div>
 
+
+    </div>
+ </div>
+<div class="clear1"></div>
 <script>
     jQuery(document).ready(function() {
         //LoadCapcha();
@@ -183,21 +198,21 @@
             $("#name").focus();
             return false;
         }
-        if(phone == ""){
-            $('#phone').bt('Vui lòng nhập điện thoại',{
-                trigger: 'none',
-                clickAnywhereToClose : false,
-                positions: ['top'],
-                fill: 'rgba(33, 33, 33, .8)',
-                spikeLength: 10,
-                spikeGirth: 10,
-
-                cssStyles: {color: '#FFF', fontSize: '11px',textAlign:'justify',width:'auto'}
-            });
-            $("#phone").btOn();
-            $("#phone").focus();
-            return false;
-        }
+//        if(phone == ""){
+//            $('#phone').bt('Vui lòng nhập điện thoại',{
+//                trigger: 'none',
+//                clickAnywhereToClose : false,
+//                positions: ['top'],
+//                fill: 'rgba(33, 33, 33, .8)',
+//                spikeLength: 10,
+//                spikeGirth: 10,
+//
+//                cssStyles: {color: '#FFF', fontSize: '11px',textAlign:'justify',width:'auto'}
+//            });
+//            $("#phone").btOn();
+//            $("#phone").focus();
+//            return false;
+//        }
         if(email == ""){
             $('#email').bt('Vui lòng nhập email',{
                 trigger: 'none',

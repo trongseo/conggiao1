@@ -1,9 +1,11 @@
- <div class="arrow">
-        <h4>Hướng dẫn</h4>
-    </div>
-    <div class="arrow-right"></div>
- <div class="clear" style="padding-top:2px"></div>
-    <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
+<div class="row">
+<div class="arrow colorconggiao">
+    <h4>Hướng dẫn
+    </h4>
+</div>
+<div class="arrow-right"></div>
+<div class="clear" style="padding-top:2px"></div>
+<div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>
     <div class="main-login col-md-12 ">
 	<div class=" row box-login">
@@ -25,6 +27,7 @@
       </div>
     </div>
   </div>
+
     <?php endforeach?>
 
 
@@ -33,6 +36,8 @@
 </div>
 </div>
 </div>
+</div>
+<div class="clear1"></div>
 <script>
 $('.collapse').collapse();
 </script>

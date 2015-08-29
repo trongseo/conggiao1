@@ -4,16 +4,16 @@
 <link rel="stylesheet" type="text/css" href="/js/datetime/lib/bootstrap-datepicker.css" />
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/update-password">
 <div class="row">
-    <div class="arrow">
-        <h4><b> Đổi mật khẩu</b></h4>
+    <div class="arrow colorconggiao">
+        <h4>Đổi mật khẩu</h4>
     </div>
     <div class="arrow-right"></div>
     <div class="clear" style="padding-top:2px"></div>
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>
     <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-        <div class="box-login">
-            <p>
+        <div class="box-login onlybox">
+            <p style="text-align:center" class="colorconggiao">
 
                 Vui lòng điền thông tin dưới đây để thay đổi mật khẩu
             </p>
@@ -39,12 +39,12 @@
                 </div>
                <div class="form-group" >
 					
-					<label style="border-top: 1px solid #EDBE99; text-align: left; color:#AE7418;font-weight: 500" class="col-sm-12 control-label" for="form-field-1">* Thông tin bắt buộc nhập.</label>
+					<label style="border-top: 1px solid #EDBE99; text-align: left; color:#AE7418;font-weight: 500" class="col-sm-12 control-label colorconggiao" for="form-field-1">* Thông tin bắt buộc nhập.</label>
 
 
 
                </div>
-                <div class="col-xs-12 col-sm-12 col-md-12" style="text-align:center">
+                <div class="col-xs-12 col-sm-12 col-md-12" style="text-align:right;margin-top:-5px;margin-right:0px;padding-right:0px">
                     <button type="submit" class="btn btn-green  btn-epub" value="Đăng ký"  id="btnsave" name="btnsave"  >
                         Đổi mật khẩu
                     </button></div>
@@ -55,6 +55,7 @@
         </div>
     </div>
 </div>
+    <div class="clear1"></div>
 </form>
 
 
