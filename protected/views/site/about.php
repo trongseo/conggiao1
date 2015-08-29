@@ -28,11 +28,16 @@
         background: #5A2D0C;
 
     }
+	.clswidth{
+		   margin-right: 6px;
+    margin-left: -15px;
+    width: 1010px;
+	}
 </style>
 <div class="clear1"></div>
-<div class="main-login col-xs-12 col-sm-12 col-md-12">
+<div class="main-login col-xs-12 col-sm-12 col-md-12 clswidth " style="">
     <div class="row">
-        <div class="box-login">
+        <div class="box-login onlybox">
             <div class="col-md-12 contact-head">
                 <?php $noShow="click_active";
                 ?>
@@ -63,7 +68,7 @@
 
         </div>
     </div>
-</div>
+</div><div class="clear1"></div>
 <script>
     $(document).ready(function() {
         $(".btn_tab").click(function() {

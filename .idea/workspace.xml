@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_sublibary.php" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_sublibary_trungmuc.php" afterPath="$PROJECT_DIR$/protected/views/site/_sublibary_trungmuc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/db.log" afterPath="$PROJECT_DIR$/protected/runtime/db.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/leftmenu.php" afterPath="$PROJECT_DIR$/protected/views/site/leftmenu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/libary.php" afterPath="$PROJECT_DIR$/protected/views/site/libary.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/login.php" afterPath="$PROJECT_DIR$/protected/views/site/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/register.php" afterPath="$PROJECT_DIR$/protected/views/site/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/tu_sach_no_login.php" afterPath="$PROJECT_DIR$/protected/views/site/tu_sach_no_login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/welcome.php" afterPath="$PROJECT_DIR$/protected/views/site/welcome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/about.php" afterPath="$PROJECT_DIR$/protected/views/site/about.php" />
     </list>
     <ignored path="codeconggiao.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +28,7 @@
       <file leaf-file-name="_sublibary_tieumuc.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="3" selection-start="11" selection-end="1137" vertical-scroll-proportion="-0.65384614" vertical-offset="51" max-vertical-offset="4403">
+            <state line="5" column="3" selection-start="11" selection-end="1137" vertical-scroll-proportion="-0.65384614" vertical-offset="68" max-vertical-offset="4403">
               <folding />
             </state>
           </provider>
@@ -58,7 +46,7 @@
       <file leaf-file-name="welcome.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/site/welcome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="31" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.7252174" vertical-offset="195" max-vertical-offset="1309">
+            <state line="36" column="31" selection-start="1012" selection-end="1012" vertical-scroll-proportion="1.1300813" vertical-offset="195" max-vertical-offset="1309">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -457,10 +445,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32854864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854864" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -572,7 +560,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="11" selection-end="1137" vertical-scroll-proportion="-0.65384614" vertical-offset="51" max-vertical-offset="4403">
+        <state line="5" column="3" selection-start="11" selection-end="1137" vertical-scroll-proportion="-0.65384614" vertical-offset="68" max-vertical-offset="4403">
           <folding />
         </state>
       </provider>
@@ -612,7 +600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/welcome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="31" selection-start="1012" selection-end="1012" vertical-scroll-proportion="0.7252174" vertical-offset="195" max-vertical-offset="1309">
+        <state line="36" column="31" selection-start="1012" selection-end="1012" vertical-scroll-proportion="1.1300813" vertical-offset="195" max-vertical-offset="1309">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
