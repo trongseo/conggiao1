@@ -129,6 +129,7 @@ return array(
                 'thu-vien-dai-muc'=>'Site/LibaryHight',
                 'thu-vien-trung-muc'=>'Site/LibaryNormal',
                 'thu-vien-tieu-muc'=>'Site/LibarySlow',
+                'dieu-khoan-su-dung'=>'Site/DieuKhoanSuDung',
                 'lien-he'=>'Site/Contact',
                 'chi-tiet/<id:>'=>'Site/Detail/id/<id>',
                 'dang-nhap'=>'Site/Login',

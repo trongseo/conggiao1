@@ -694,6 +694,17 @@ WHERE active =1 ORDER BY show_order";
 
         $this->render('guide',array('comboData1'=>$dataIntro));
     }
+
+    public function actionDieuKhoanSuDung(){
+        //huong-dan
+        $queryG ="SELECT * FROM `tbl_help`
+WHERE active =1 ORDER BY show_order";
+        $dataIntro = CommonDB::GetAll($queryG,[]);
+        // $this->render('about',array('page1'=>$check,'comboData1'=>$dataIntro));
+
+        $this->render('dieukhoansudung',array('comboData1'=>$dataIntro));
+    }
+
     public function actionQuestion(){
         //cau-hoi-thuong-gap
 

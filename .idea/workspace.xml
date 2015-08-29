@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/account.php" afterPath="$PROJECT_DIR$/protected/views/site/account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/change_password.php" afterPath="$PROJECT_DIR$/protected/views/site/change_password.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/contact.php" afterPath="$PROJECT_DIR$/protected/views/site/contact.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/views/site/dieukhoansudung.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/runtime/cache/279e8752e05c7969bab7c127687a35a8.bin" afterPath="$PROJECT_DIR$/protected/runtime/cache/279e8752e05c7969bab7c127687a35a8.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/error.php" afterPath="$PROJECT_DIR$/protected/views/site/error.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/guide.php" afterPath="$PROJECT_DIR$/protected/views/site/guide.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/question.php" afterPath="$PROJECT_DIR$/protected/views/site/question.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeconggiao.iws" />
@@ -44,15 +44,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="guide.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="guide.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/guide.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="44" selection-start="476" selection-end="476" vertical-scroll-proportion="0.6207865" vertical-offset="0" max-vertical-offset="816">
+            <state line="10" column="40" selection-start="354" selection-end="354" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="816">
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dieukhoansudung.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/dieukhoansudung.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="9" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="816">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/site/error.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="32" selection-start="815" selection-end="815" vertical-scroll-proportion="0.76404494" vertical-offset="0" max-vertical-offset="374">
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="131" column="59" selection-start="6254" selection-end="6269" vertical-scroll-proportion="-4.3137255" vertical-offset="1956" max-vertical-offset="2652">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="704" column="38" selection-start="26653" selection-end="26653" vertical-scroll-proportion="-5.1568627" vertical-offset="11705" max-vertical-offset="12563">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,10 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/views/site/_slide_product.php" />
-        <option value="$PROJECT_DIR$/protected/views/site/about.php" />
-        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/DB_CONFIG.php" />
         <option value="$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc_search.php" />
         <option value="$PROJECT_DIR$/protected/views/site/register.php" />
         <option value="$PROJECT_DIR$/protected/views/site/welcome.php" />
@@ -91,6 +127,10 @@
         <option value="$PROJECT_DIR$/protected/views/site/change_password.php" />
         <option value="$PROJECT_DIR$/protected/views/site/question.php" />
         <option value="$PROJECT_DIR$/protected/views/site/guide.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/dieukhoansudung.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/protected/views/site/error.php" />
       </list>
     </option>
   </component>
@@ -336,6 +376,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeconggiao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="codeconggiao" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -455,43 +513,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="3" selection-start="11" selection-end="1137" vertical-scroll-proportion="-0.65384614" vertical-offset="68" max-vertical-offset="4403">
-          <folding>
-            <marker date="1440836946094" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1440836946094" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1440836946094" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/_sublibary_tieumuc_search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="5" selection-start="2251" selection-end="2251" vertical-scroll-proportion="-20.307692" vertical-offset="1019" max-vertical-offset="2448">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="28" selection-start="3983" selection-end="3983" vertical-scroll-proportion="-1.6078432" vertical-offset="1346" max-vertical-offset="4148">
-          <folding>
-            <element signature="n#style#0;n#span#2;n#p#0;n#div#0;n#div#5;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#0;n#div#5;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#6;n#fieldset#0;n#div#0;n#div#5;n#div#0;n#form#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#label#1;n#div#6;n#fieldset#0;n#div#0;n#div#5;n#div#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="198" column="22" selection-start="4044" selection-end="4044" vertical-scroll-proportion="0.3327787" vertical-offset="3166" max-vertical-offset="3859">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/welcome.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="31" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-16.038462" vertical-offset="195" max-vertical-offset="1309">
@@ -619,11 +640,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/guide.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="44" selection-start="476" selection-end="476" vertical-scroll-proportion="0.6207865" vertical-offset="0" max-vertical-offset="816">
+        <state line="10" column="40" selection-start="354" selection-end="354" vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="816">
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="59" selection-start="6254" selection-end="6269" vertical-scroll-proportion="-4.3137255" vertical-offset="1956" max-vertical-offset="2652">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="704" column="38" selection-start="26653" selection-end="26653" vertical-scroll-proportion="-5.1568627" vertical-offset="11705" max-vertical-offset="12563">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/dieukhoansudung.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="9" selection-start="88" selection-end="88" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/error.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="32" selection-start="815" selection-end="815" vertical-scroll-proportion="0.76404494" vertical-offset="0" max-vertical-offset="374">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

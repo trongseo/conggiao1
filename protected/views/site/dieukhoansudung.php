@@ -1,6 +1,6 @@
 <div class="row">
 <div class="arrow colorconggiao">
-    <h4>Hướng dẫn
+    <h4>Điều khoản sử dụng
     </h4>
 </div>
 <div class="arrow-right"></div>
