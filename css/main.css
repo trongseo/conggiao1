@@ -201,7 +201,7 @@ a{
     background: url(../img/icon-search.png) no-repeat #fff;
     border-top: 1px solid #C48B56;
     border-bottom: 1px solid #C48B56;
-	height: 39px;
+	height: 39px;background-position: -3.98px -4px;
 }
 .menu-search input{
     padding: 8px 10px 9px 10px;
@@ -406,19 +406,19 @@ table{
 }
 
 .jssora21l {
-    background-position: -3px -33px;
+    background-position: -3px -7px;
 }
 
 .jssora21r {
-    background-position: -63px -33px;
+    background-position: -63px -7px;
 }
 
 .jssora21l:hover {
-    background-position: -123px -33px;
+    background-position: -123px -7px;
 }
 
 .jssora21r:hover {
-    background-position: -183px -33px;
+    background-position: -183px -7px;
 }
 
 .jssora21ldn {

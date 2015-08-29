@@ -45,9 +45,9 @@
                 <div u="navigator" class="jssorb21" style="position: absolute; bottom: 26px; left: 6px;">
                     <div u="prototype" style="POSITION: absolute; WIDTH: 19px; HEIGHT: 19px; text-align:center; line-height:19px; color:White; font-size:12px;"></div>
                 </div>
-									<span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px; top: 123px; left: 8px;">
+									<span u="arrowleft" class="jssora21l" style="width: 55px; height: 55px;  left: 8px;">
 									</span>
-									<span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; top: 123px; right: 8px">
+									<span u="arrowright" class="jssora21r" style="width: 55px; height: 55px; right: 8px">
 									</span>
             </div>
             <script>

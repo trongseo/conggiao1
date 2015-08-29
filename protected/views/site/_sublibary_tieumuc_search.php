@@ -1,21 +1,68 @@
 <style>
+    /*.combopage{*/
+        /*height: 30px;*/
+    /*}*/
+    /*.btnPre{*/
+        /*border-radius: 10px 0px 0 10px;*/
+        /*height: 30px;*/
+        /*width: 30px;*/
+        /*border-color: rgb(211, 155, 103);*/
+    /*}*/
+    /*.btnNext{*/
+        /*border-radius: 0px 10px 10px 0px;*/
+        /*height: 30px;*/
+        /*width: 30px;*/
+        /*border-color: rgb(211, 155, 103);*/
+    /*}*/
+    /*.borderpage{*/
+        /*border-radius: 10px 10px 10px 10px;*/
+
+        /*border:1px solid #be682f;*/
+        /*height: 37px;padding-top: 2px;*/
+    /*}*/
+    /*.keyword{*/
+
+        /*font-style: italic;*/
+        /*color: #000000 !important;*/
+        /*font-weight: 400 !important;*/
+        /*padding-top: 8px;*/
+        /*padding-bottom: 4px;*/
+        /*padding-left:0px;*/
+    /*}*/
+    /*.mybox {*/
+        /*background: #FAE5C8 none repeat scroll 0 0;*/
+        /*border-radius: 5px;*/
+        /*padding: 15px;*/
+        /*box-shadow: 1px 1px 8px 1px #333;*/
+    /*}*/
+    /*.center-block {*/
+        /*display: block;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    /*}*/
+
     .combopage{
         height: 30px;
+        border: 1px solid #be682f;
     }
     .btnPre{
         border-radius: 10px 0px 0 10px;
-        height: 30px;
+        height: 33px;
         width: 30px;
-        border-color: rgb(211, 155, 103);
+        border: 1px solid #be682f;
+        margin-top: -1px;
+        background-color: #F8E2C6;
     }
     .btnNext{
         border-radius: 0px 10px 10px 0px;
-        height: 30px;
+        height: 33px;
         width: 30px;
-        border-color: rgb(211, 155, 103);
+        border: 1px solid #be682f;
+        margin-top: -1px;
+        background-color: #F8E2C6;
     }
     .borderpage{
-        border-radius: 10px 10px 10px 10px;
+        border-radius: 5px;
 
         border:1px solid #be682f;
         height: 37px;padding-top: 2px;
@@ -39,6 +86,9 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    #comboPage{
+        height:34px;border:0px;margin-top:-2px;background-color:rgb(248,227,198);
     }
 </style>
 <?php

@@ -261,7 +261,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="row">
-                            <a  href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu home" style="width: 13%;border-left:0px">
+                            <a  href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu home" style="width: 13%;margin-left:-1px;border-left:0">
                                 <img src="<?php echo Yii::app()->baseUrl.'/images/ic_home.png'?>" />
                             </a>
 
@@ -282,7 +282,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-4 menu-search">
+                    <div class="col-md-4 menu-search" style="margin-left:-1px">
                         <div class="row searchbox">
                             <input type="text" value="<?php echo $this->textSearch?>" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
                         </div>
@@ -310,10 +310,13 @@
                             </select>
                         </div>
                     </div>
-                    <div class="col-md-1 menu right menusearch" style="width: 83px;margin-left: 0.9px;border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;">
-                        <div class="row" id="divsearch" >
+                    <div class="" style="border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;height:35px;padding-top:1px;margin-left: 1.9px;margin-right: -1px;border-left: 0px #C48B56 solid;">
+                        <div class="col-md-1 menu right menusearch" style="margin-bottom:2px;height: 31px;width: 85px;margin-left: 1.9px;margin-right: -2px;border-left: 0px #F3CB90 solid;" >
+                           
+                       
+					   <div class="row" id="divsearch" >
                             Tìm kiếm
-                        </div>
+                        </div> </div>
                     </div>
                 </div>
             </div>
