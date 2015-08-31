@@ -1,4 +1,8 @@
-﻿    <?php foreach($dataColor as $value):?>
+﻿    r-click chon git bash
+	git pull origin master
+	
+	---
+	<?php foreach($dataColor as $value):?>
                             <option value="<?php echo $value["color_id"] ?>" ><?php echo $value["color_name"] ?></option>
                             <?php endforeach?>
 3966306561   fptcode
@@ -17,7 +21,7 @@ pass wordpress bucminhquadi
 admingia/loadallprice&san_pham_guid
 -------------------
 - set san pham front==>ok
- 
+ ss
    
   - upload hinh dai dien cho mau sac
 
