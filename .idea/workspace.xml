@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Note_yii.txt" afterPath="$PROJECT_DIR$/Note_yii.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/account.php" afterPath="$PROJECT_DIR$/protected/views/site/account.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/dieukhoansudung.php" afterPath="$PROJECT_DIR$/protected/views/site/dieukhoansudung.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/register.php" afterPath="$PROJECT_DIR$/protected/views/site/register.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeconggiao.iws" />
@@ -104,7 +101,7 @@
       <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="673" column="30" selection-start="25546" selection-end="25553" vertical-scroll-proportion="-4.1568627" vertical-offset="11229" max-vertical-offset="12563">
+            <state line="673" column="30" selection-start="25543" selection-end="25550" vertical-scroll-proportion="-4.1568627" vertical-offset="11229" max-vertical-offset="12563">
               <folding />
             </state>
           </provider>
@@ -673,7 +670,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="673" column="30" selection-start="25546" selection-end="25553" vertical-scroll-proportion="-4.1568627" vertical-offset="11229" max-vertical-offset="12563">
+        <state line="673" column="30" selection-start="25543" selection-end="25550" vertical-scroll-proportion="-4.1568627" vertical-offset="11229" max-vertical-offset="12563">
           <folding />
         </state>
       </provider>
