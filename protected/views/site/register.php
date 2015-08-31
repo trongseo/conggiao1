@@ -58,7 +58,7 @@
                 </div>
                 <div class="form-group form-actions">
                     <span class="input-icon">
-                        <input type="password" class="form-control password" id="password" name="password" placeholder="* Mật khẩu(Tối thiểu 6 ký tự)">
+                        <input type="password" class="form-control password" id="password" name="password" placeholder="* Mật khẩu (Tối thiểu 6 ký tự)">
                     </span>
                 </div>
                 <div class="form-group form-actions">
@@ -73,7 +73,7 @@
                         </div>
                     </label>
                     <div class="col-md-8">
-                        <input type="text" class="form-control" id="birthday" name="birthday" style="width:140px" placeholder="">
+                        <input type="text" placeholder="28/02/1983" class="form-control" id="birthday" name="birthday" style="width:140px" placeholder="">
                     </div>
                     <div class="clear"></div>
                 </div>

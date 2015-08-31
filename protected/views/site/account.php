@@ -69,7 +69,7 @@
                 <div class="form-group">
 					<label class="col-md-4 control-label textcolor1" for="form-field-1"> Ngày sinh  </label>
 					<div class="col-md-8">
-						<input type="text" class="form-control" id="birthday" name="birthday" value="<?php echo Common::converYYYYMMDDtoDaymonyyyyPara($dataUser["birthday"] ) ?>" placeholder="">
+						<input type="text" class="form-control"  id="birthday" name="birthday" value="<?php echo Common::converYYYYMMDDtoDaymonyyyyPara($dataUser["birthday"] ) ?>" placeholder="">
 					</div>
 
 				</div>

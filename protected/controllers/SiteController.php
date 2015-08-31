@@ -697,8 +697,8 @@ WHERE active =1 ORDER BY show_order";
 
     public function actionDieuKhoanSuDung(){
         //huong-dan
-        $queryG ="SELECT * FROM `tbl_help`
-WHERE active =1 ORDER BY show_order";
+        $queryG ="SELECT * FROM `tbl_introduce`
+WHERE active =1 and id=5 ORDER BY show_order";
         $dataIntro = CommonDB::GetAll($queryG,[]);
         // $this->render('about',array('page1'=>$check,'comboData1'=>$dataIntro));
 

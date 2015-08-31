@@ -132,6 +132,57 @@
             border-left: 1px solid #aaa;
             border-right: 1px solid #aaa;
         }
+		
+		
+		.container-wp {
+    width: 1040px !important;
+    margin: auto;
+}
+
+.container-wp::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.footer-wp{
+    width: 1010px !important;
+	
+    margin: auto;
+}
+.footer-wp .row{
+    width: 1010px !important;
+	
+    margin: auto;
+}
+
+.footer-wp .row .form-group{
+    width: 333.65px !important;
+	 display: inline-block;
+    margin: auto;
+	
+}
+.menumenu .col-md-4{
+	 display: inline-block;
+}
+.menumenu .col-md-3{
+	
+}
+        .menumenu .searchbox{
+            display: inline-block;
+        }
+        .menumenu .col-md-1{
+            display: inline-block;
+        }
+        .menumenu .TopSearch{
+float:left;
+width:84px;
+        }
+        #divsearch{
+            display: inline-block;
+        }
+        .menumenu .col-md-4 .menu-search{
+            width: 336px !important;
+        }
     </style>
 </head>
 <body>
@@ -264,26 +315,27 @@
 <!--            Yii::app()->session['display_name'] = $arrInfo['display_name'];-->
             <div class="clear"></div>
 
-            <div class="col-md-12" style="height:36px;padding:0px" >
-                <div class="row">
+            <div class="col-md-12 menumenu" style="height:36px;padding:0px" >
+                <div class="row menumenu">
+				
                     <div class="col-md-4">
                         <div class="row">
-                            <a  href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu home" style="width: 13%;margin-left:-1px;border-left:0">
+                            <a  href="<?php echo Yii::app()->baseUrl.'/'?>" class="menu home" style="width: 43.6px;margin-left:-1px;border-left:0">
                                 <img src="<?php echo Yii::app()->baseUrl.'/images/ic_home.png'?>" />
                             </a>
 
 
 
-                            <a  href="<?php echo Yii::app()->baseUrl.'/thu-vien'?>" class="menu thuvien" style="width: 29%;">
+                            <a  href="<?php echo Yii::app()->baseUrl.'/thu-vien'?>" class="menu thuvien" style="width: 96px;">
                                 Thư Viện
                             </a>
 
 
-                            <a    href="<?php echo Yii::app()->baseUrl.'/tu-sach'?>" class="menu tusach" style="width: 29%;">
+                            <a    href="<?php echo Yii::app()->baseUrl.'/tu-sach'?>" class="menu tusach" style="width: 96px;">
                                 Tủ Sách
                             </a>
 
-                            <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu gioithieu" style="width: 29%;">
+                            <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu gioithieu" style="width: 99px;">
                                 Giới Thiệu
                             </a>
 
@@ -317,7 +369,7 @@
                             </select>
                         </div>
                     </div>
-                    <div class="" style="border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;height:35px;padding-top:1px;margin-left: 1.9px;margin-right: -1px;border-left: 0px #C48B56 solid;">
+                    <div class="TopSearch" style="border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;height:35px;padding-top:1px;margin-left: 1.9px;margin-right: -1px;border-left: 0px #C48B56 solid;">
                         <div class="col-md-1 menu right menusearch" style="margin-bottom:2px;height: 31px;width: 85px;margin-left: 1.9px;margin-right: -2px;border-left: 0px #F3CB90 solid;" >
                            
                        
@@ -429,6 +481,9 @@ div.slider-box div.slider {
 		var curPage ='<?php echo $this->curPage; ?>';
         if(curPage!='')
 		 $("."+curPage).addClass('activeMenu');
+	 if((curPage=="gioithieu") ||(curPage=="thuvien") ||(curPage=="home") ) {
+		 $(".gioithieu").width("79px");
+	 }
         $("#fabric").select2();
 
         $( "#divsearch" ).click(function() {

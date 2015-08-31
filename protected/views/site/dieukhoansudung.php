@@ -12,21 +12,7 @@
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
     <?php foreach($comboData1 as $value1):?>
-
-  <div class="guide-icon ">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title ">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?php echo $value1["id"]?>" aria-expanded="true" aria-controls="collapseOne">
-            <?php echo $value1["title"]?>
-        </a>
-      </h4>
-    </div>
-    <div id="collapse<?php echo $value1["id"]?>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body" style="border-top:0;padding: 0;padding-left: 35px;">
-          <?php echo $value1["content"]?>
-      </div>
-    </div>
-  </div>
+        <?php echo $value1["content"]?>
 
     <?php endforeach?>
 
