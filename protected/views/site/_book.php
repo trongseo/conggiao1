@@ -9,8 +9,8 @@ $queryS="SELECT * FROM tbl_book WHERE delete_logic_flg=0 AND id IN(
   UNION
     SELECT book_id AS relate_book_id FROM `tbl_relate_book` WHERE relate_book_id=$idBook )
     ORDER BY book_name
-    LIMIT 30 ";
-$queryS="SELECT * FROM tbl_book  LIMIT 10 ";
+     ";
+//$queryS="SELECT * FROM tbl_book  LIMIT 10 ";
 $dataRelateBook = CommonDB::GetAll($queryS,[]);
 
 ?>

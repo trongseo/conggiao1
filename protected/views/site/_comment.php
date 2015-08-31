@@ -36,10 +36,12 @@
     }
     .clsheight {height: 10px}
 </style>
+<?php $dataItem=$dataPage["dataItem"]; ?>
+
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/Site/LoadInfo">
 <div class="row container1" >
+  <div class="colorconggiao"> <?php  echo count($dataItem); ?> đánh giá cho sách <b> <?php  echo $_SESSION['arrBook']['book_name']; ?> </b></div>
 
-    <?php $dataItem=$dataPage["dataItem"]; ?>
     <?php foreach($dataItem as $value):?>
 
 <!--        <table style="width: 100%;padding-right: 5px;padding-left: 5px">-->
@@ -149,8 +151,12 @@
                 </div>
             </div><div class="row">
                 <div class="col-md-12 mycomment" style="padding-top: 5px;padding-bottom: 5px;width:862px" >
+
+                        <div style="float:left" class=" textcolor1 " id="divaftercomment"></div>
+
+
 				<?php if(isset(Yii::app()->session['id_user'])): ?>
-                        <button type="submit" class="btndangky" value="Bình luận"  id="btnsave" name="btnsave" >
+                        <button type="submit" class="btn btn-green btn-epub" style="float: right"  value="Bình luận"  id="btnsave" name="btnsave" >
                         Bình luận
                     </button>
 
@@ -268,7 +274,8 @@
             success: function()
             {
                 $('#txtComment').val('');
-                alert("Cám ơn bạn đã gửi bình luận!Bình luận sẽ được hiển thị sau khi quản lý duyệt.");
+                //alert("Cám ơn bạn đã gửi bình luận!Bình luận sẽ được hiển thị sau khi quản lý duyệt.");
+                $('#divaftercomment').html('Cám ơn bạn đã gửi bình luận!Bình luận sẽ được hiển thị sau khi quản lý duyệt.');
                 //window.location='/dang-nhap'; ;
             },
             complete: function(response)

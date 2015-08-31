@@ -532,6 +532,7 @@ VALUES (:name,
         Common::setSession('idbook',$idbook);
 
         $arrBook = CommonDB::GetDataRow('tbl_book','delete_logic_flg=0 AND active=1 AND id='.$idbook);
+        Common::setSession('arrBook',$arrBook);
         if($id == 0){
 
 

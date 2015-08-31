@@ -480,9 +480,9 @@ div.slider-box div.slider {
     $(document).ready(function() {
 		var curPage ='<?php echo $this->curPage; ?>';
         if(curPage!='')
-		 $("."+curPage).addClass('activeMenu');
+		 $("."+curPage).addClass('activeMenu'); $(".gioithieu").width("79px");
 	 if((curPage=="gioithieu") ||(curPage=="thuvien") ||(curPage=="home") ) {
-		 $(".gioithieu").width("79px");
+		
 	 }
         $("#fabric").select2();
 
