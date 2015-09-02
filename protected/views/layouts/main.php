@@ -482,7 +482,7 @@ div.slider-box div.slider {
         if(curPage!='')
 		 $("."+curPage).addClass('activeMenu'); 
 	 //$(".gioithieu").width("99px");
-	if($(".container-wp").height()>400 ){
+	if($(".container-wp").height()>580 ){
 		$(".gioithieu").width("79px");
 	}else{
 		$(".gioithieu").width("78px");
