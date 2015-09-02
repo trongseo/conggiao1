@@ -126,7 +126,7 @@ $this->curPage="home";
         $perpageshow = Common::getPara("perpageshow");
 
         $page = ($gotopage!="") ? $gotopage : 1;
-        $pageSize = ($perpageshow!="") ? $perpageshow : 1;
+        $pageSize = ($perpageshow!="") ? $perpageshow : 10;
         $arrView["gotopage"]=$gotopage;
         $arrView["orderbyid"]=$orderbyid;
         $arrView["perpageshow"]=$perpageshow;
@@ -666,6 +666,27 @@ VALUES (
             $hsTable["birthday"]=Common::converDDMMYYToYYYYMMDDPara(Common::getPara("birthday"));
             $hsTable["sex"]= Common::getPara("sex");
             CommonDB::runSQL($queryIn,$hsTable);
+            ///
+            if(   isset($_FILES["uploaded_image"]["name"]) && ($_FILES["uploaded_image"]["name"]!="") ) {
+                $strResult = Common::checkImageFile("uploaded_image");
+                if($strResult !=""){
+                    echo $strResult;Yii::app()->end();exit();
+                }
+                unset($hsTable);
+                $guid_id_insert = Common::guid();
+                $image = new SimpleImage();
+                $image->load($_FILES['uploaded_image']['tmp_name']);
+                $imageName =$guid_id_insert.date('m_d_Y_hisa').'.jpg';
+                $imageNameicon_="icon_".$imageName;
+                $image->save(PATH_userimage.$imageName);
+                $image->resizeToWidth(133);
+                $image->save(PATH_userimage.$imageNameicon_);
+                $queryIn="update   tbl_users  set user_image=:user_image
+                where id=".Common::getSession(USER_ID);
+                $hsTable["user_image"]=$imageName;
+                CommonDB::runSQL($queryIn,$hsTable);
+            }
+            ///
             echo "1";
             Yii::app()->end();
         }

@@ -40,7 +40,7 @@
 
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/Site/LoadInfo">
 <div class="row container1" >
-  <div class="colorconggiao"> <?php  echo count($dataItem); ?> đánh giá cho sách <b> <?php  echo $_SESSION['arrBook']['book_name']; ?> </b></div>
+  <div class="colorconggiao"> <?php  echo count($dataItem); ?> bình luận cho sách <b> <?php  echo $_SESSION['arrBook']['book_name']; ?> </b></div>
 
     <?php foreach($dataItem as $value):?>
 

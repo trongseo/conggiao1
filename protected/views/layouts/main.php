@@ -335,7 +335,7 @@ width:84px;
                                 Tủ Sách
                             </a>
 
-                            <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu gioithieu" style="width: 99px;">
+                            <a href="<?php echo Yii::app()->baseUrl.'/gioi-thieu'?>" class="menu gioithieu" style="width: 99px;" >
                                 Giới Thiệu
                             </a>
 
@@ -480,9 +480,15 @@ div.slider-box div.slider {
     $(document).ready(function() {
 		var curPage ='<?php echo $this->curPage; ?>';
         if(curPage!='')
-		 $("."+curPage).addClass('activeMenu'); $(".gioithieu").width("79px");
-	 if((curPage=="gioithieu") ||(curPage=="thuvien") ||(curPage=="home") ) {
-		
+		 $("."+curPage).addClass('activeMenu'); 
+	 //$(".gioithieu").width("99px");
+	if($(".container-wp").height()>400 ){
+		$(".gioithieu").width("79px");
+	}else{
+		$(".gioithieu").width("78px");
+	}
+	 if((curPage=="thuvien") ||(curPage=="home") ) {
+		$(".gioithieu").width("79px");
 	 }
         $("#fabric").select2();
 

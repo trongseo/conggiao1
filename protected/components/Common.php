@@ -7,6 +7,25 @@ class Common {
 
         return CommonDB::guid();
     }
+    public static function  checkImageFile($ctrName){
+        $max_file_size = 1024*2000; // 200kb
+        // Check filesize
+        if($_FILES[$ctrName]['size'] > $max_file_size){
+            return "Lỗi upload > 1024*2000";
+        }
+
+        // Check for errors
+        if($_FILES[$ctrName]['error'] > 0){
+            return "Lỗi upload.> 2MB";
+        }
+
+        if(!getimagesize($_FILES[$ctrName]['tmp_name'])){
+            return "Lỗi upload (không tìm thấy)";
+        }
+
+        return "";
+
+    }
     public static function getPara($key){
 
         return  trim(isset($_REQUEST[$key])?$_REQUEST[$key]:"") ;

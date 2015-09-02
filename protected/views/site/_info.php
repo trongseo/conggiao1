@@ -104,7 +104,7 @@
 
 	                	</div>						
 	                	<div class="col-md-8" style="text-align:left;">
-	                		<div class="row textcolor1 " >
+	                		<div class="row  " >
                                 <?php echo  $arrBook['introduction']; ?>
 		                	</div>
 	                	</div>

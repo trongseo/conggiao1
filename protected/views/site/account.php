@@ -27,7 +27,7 @@
         padding-top: 5px;
     }
 </style>
-<form id="registration-form" method="post" onsubmit="return validateForm();"  action="/thong-tin-tai-khoan">
+<form id="registration-form" method="post" onsubmit="return validateForm();" enctype="multipart/form-data"  action="/thong-tin-tai-khoan">
 
 <div class="row">
     <div class="arrow colorconggiao">
@@ -44,7 +44,10 @@
 		<div class=" row box-login onlybox" >
             <div class=" row">
           <div class="col-md-4" style="text-align:center">
-			<img class="" width="80%" src="<?php echo Yii::app()->baseUrl?>/img/thongtintaikhoanimg.png" />
+			<img class="" width="150" src="<?php echo PATH_userimage.$dataUser["user_image"] ?> " />
+              <img alt="Chọn hình đại diện" width="50" name="exFile"id="exFile" style=" cursor: pointer;"  src="/img/ic_camera.png" />
+              <input type="file" size="60" style="display: none" name="uploaded_image" id="uploaded_image">
+              <img alt="" width="50" name="uploaded_image1" id="uploaded_image1"  src="" />
 		 </div>
 		<div class="col-md-8">
 			
@@ -168,6 +171,10 @@
 
         return true;
     }
+
+    $(document).on('click', '#exFile', function () {
+        $('#uploaded_image').click();//  $( "#target" ).click();
+    });
     $(document).ready(function()
     {
         $('#display_name').focus();
@@ -194,7 +201,32 @@
         };
         $("#registration-form").ajaxForm(options);
     });
+    var src = document.getElementById("uploaded_image");
+    var target = document.getElementById("uploaded_image1");
+    showImage(src,target);
+    function showImage(src,target) {
+        var fr=new FileReader();
+        // when image is loaded, set the src of the image where you want to display it
+        fr.onload = function(e) { target.src = this.result; };
+        src.addEventListener("change",function() {
+            var f = src.files[0];
 
+            //here I CHECK if the FILE SIZE is bigger than 8 MB (numbers below are in bytes)
+            if (f.size > 2000000 || f.fileSize > 2000000)
+            {
+                //show an alert to the user
+                alert("Vui lòng upload File nhỏ hơn < 2 MB)")
+
+                //reset file upload control
+                target.src = null;
+            }else{
+                // fill fr with image data
+                fr.readAsDataURL(src.files[0]);
+            }
+
+
+        });
+    }
 </script>
 <script type="text/JavaScript">
 
