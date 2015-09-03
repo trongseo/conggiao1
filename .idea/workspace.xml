@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8101f668-ca38-470f-b8b5-1c088e50f642" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/JsCommon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DB_CONFIG.php" afterPath="$PROJECT_DIR$/DB_CONFIG.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/controllers/SiteController.php" afterPath="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/_comment.php" afterPath="$PROJECT_DIR$/protected/views/site/_comment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/change_password.php" afterPath="$PROJECT_DIR$/protected/views/site/change_password.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/get_password.php" afterPath="$PROJECT_DIR$/protected/views/site/get_password.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/layouts/main.php" afterPath="$PROJECT_DIR$/protected/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/tu_sach.php" afterPath="$PROJECT_DIR$/protected/views/site/tu_sach.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/views/site/tu_sach_no_login.php" afterPath="$PROJECT_DIR$/protected/views/site/tu_sach_no_login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="codeconggiao.iws" />
@@ -43,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="main.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="32" selection-start="1814" selection-end="1814" vertical-scroll-proportion="-2.0" vertical-offset="357" max-vertical-offset="9316">
+            <state line="359" column="119" selection-start="14071" selection-end="14071" vertical-scroll-proportion="0.33225808" vertical-offset="6000" max-vertical-offset="9316">
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -112,10 +104,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SiteController.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SiteController.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="655" column="30" selection-start="24820" selection-end="24820" vertical-scroll-proportion="0.60645163" vertical-offset="10947" max-vertical-offset="12937">
+            <state line="655" column="30" selection-start="24820" selection-end="24820" vertical-scroll-proportion="-3.6862745" vertical-offset="10947" max-vertical-offset="12937">
               <folding />
             </state>
           </provider>
@@ -174,9 +166,9 @@
         <option value="$PROJECT_DIR$/protected/views/site/tu_sach_no_login.php" />
         <option value="$PROJECT_DIR$/DB_CONFIG.php" />
         <option value="$PROJECT_DIR$/protected/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/js/JsCommon.js" />
         <option value="$PROJECT_DIR$/protected/views/site/change_password.php" />
+        <option value="$PROJECT_DIR$/protected/views/layouts/main.php" />
       </list>
     </option>
   </component>
@@ -758,19 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="32" selection-start="1814" selection-end="1814" vertical-scroll-proportion="-2.0" vertical-offset="357" max-vertical-offset="9316">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#3;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/site/tu_sach_no_login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="84" selection-start="698" selection-end="698" vertical-scroll-proportion="-6.8076925" vertical-offset="95" max-vertical-offset="544">
@@ -810,8 +789,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="655" column="30" selection-start="24820" selection-end="24820" vertical-scroll-proportion="0.60645163" vertical-offset="10947" max-vertical-offset="12937">
+        <state line="655" column="30" selection-start="24820" selection-end="24820" vertical-scroll-proportion="-3.6862745" vertical-offset="10947" max-vertical-offset="12937">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="359" column="119" selection-start="14071" selection-end="14071" vertical-scroll-proportion="0.33225808" vertical-offset="6000" max-vertical-offset="9316">
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#3;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

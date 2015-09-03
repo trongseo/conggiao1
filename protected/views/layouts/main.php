@@ -357,7 +357,7 @@ width:84px;
                                 $key="";
                             }
                             ?>
-                            <input type="text" value="<?php echo $key ?>" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
+                            <input type="text" value="<?php echo $key ?>" id="txtKeySearch" placeholder="Nhập từ khóa: têm sách, mã sách, tác giả" />
                         </div>
                     </div>
                     <div class="col-md-3 menu-search" style="background:#fff;margin-right:0px;border-left: 1px #5A2D0C">
