@@ -35,12 +35,15 @@
         width: 866px;
     }
     .clsheight {height: 10px}
+	.clsbl{
+		margin-bottom:5px;
+	}
 </style>
 <?php $dataItem=$dataPage["dataItem"]; ?>
 
 <form id="registration-form" method="post" onsubmit="return validateForm();"  action="/Site/LoadInfo">
 <div class="row container1" >
-  <div class="colorconggiao"> <?php  echo count($dataItem); ?> bình luận cho sách <b> <?php  echo $_SESSION['arrBook']['book_name']; ?> </b></div>
+  <div class="colorconggiao clsbl"> <?php  echo count($dataItem); ?> bình luận cho sách <b> <?php  echo $_SESSION['arrBook']['book_name']; ?> </b></div>
 
     <?php foreach($dataItem as $value):?>
 

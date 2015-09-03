@@ -620,9 +620,19 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 	  <script>
 
     function DeleteRead(booid){
-        var confr = confirm("Bạn có chắc là muốn xóa ra khỏi tủ sách?");
-        if(confr){
-                $.ajax({
+        BootstrapDialog.confirm({
+            title: 'WARNING',
+            message: 'Bạn có chắc là muốn xóa ra khỏi tủ sách?',
+            type: BootstrapDialog.TYPE_WARNING, // <-- Default value is BootstrapDialog.TYPE_PRIMARY
+            closable: true, // <-- Default value is false
+            draggable: true, // <-- Default value is false
+            btnCancelLabel: 'Cancel', // <-- Default value is 'Cancel',
+            btnOKLabel: 'OK!', // <-- Default value is 'OK',
+            btnOKClass: 'btn-warning', // <-- If you didn't specify it, dialog type will be used,
+            callback: function(result) {
+                // result will be true if button was click, while it will be false if users close the dialog directly.
+                if(result) {
+                    $.ajax({
                     type:"POST",
                     url:'/Site/RemoveBook?ID_BOOK='+booid,
                     data:{},
@@ -632,7 +642,28 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                        // alert('Đã bỏ ra tủ sách của bạn thành công!');
                     }
                 });
-
+                }else {
+                    //alert('Nope.');
+                }
             }
+        });
+		 /*BootstrapDialog.confirm('Bạn có chắc là muốn xóa ra khỏi tủ sách?', function(result){
+            if(result) {
+                  $.ajax({
+                    type:"POST",
+                    url:'/Site/RemoveBook?ID_BOOK='+booid,
+                    data:{},
+                    success:function(result){
+                        var keyV = '.rev'+booid;
+                        $(keyV).remove();
+                       // alert('Đã bỏ ra tủ sách của bạn thành công!');
+                    }
+                });
+            }else {
+                
+            }
+        });
+		*/
+        
     }
 </script>

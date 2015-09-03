@@ -126,7 +126,7 @@ $this->curPage="home";
         $perpageshow = Common::getPara("perpageshow");
 
         $page = ($gotopage!="") ? $gotopage : 1;
-        $pageSize = ($perpageshow!="") ? $perpageshow : 10;
+        $pageSize = ($perpageshow!="") ? $perpageshow : ITEM_PER_PAGE_DEFAULT;
         $arrView["gotopage"]=$gotopage;
         $arrView["orderbyid"]=$orderbyid;
         $arrView["perpageshow"]=$perpageshow;
@@ -225,7 +225,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $perpageshow = Common::getPara("perpageshow");
 
         $page = ($gotopage!="") ? $gotopage : 1;
-        $pageSize = ($perpageshow!="") ? $perpageshow : 10;
+        $pageSize = ($perpageshow!="") ? $perpageshow : ITEM_PER_PAGE_DEFAULT;
         $arrView["gotopage"]=$gotopage;
         $arrView["orderbyid"]=$orderbyid;
         $arrView["perpageshow"]=$perpageshow;

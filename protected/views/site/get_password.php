@@ -17,7 +17,7 @@
                     <div class="clear1"></div>
                     <div class="col-md-12 col-sm-12 col-xs-12">
                         <p>
-                            <span style="color:#D5A16F;">1)Nhập địa chỉ email của bạn </span>
+                            <span style="color:#D5A16F;">1) Nhập địa chỉ email của bạn </span>
 
                             <br/>
                         </p><div class="clear1"></div>
@@ -26,8 +26,8 @@
                                 <input type="text" class="form-control" id="email" name="email" placeholder="* Địa chỉ email">
                             </span>
                         </div>
-                        <p>
-                            <span style="color:#D5A16F;">2)Sau khi nhấn nút "Lấy mật khẩu", bạn kiểm tra email để nhận mật khẩu </span>
+                        <p><div class="clear1"></div>
+                            <span style="color:#D5A16F;">2) Sau khi nhấn nút "Lấy mật khẩu", bạn kiểm tra email để nhận mật khẩu </span>
 
                             <br/>
                         </p><div class="clear1"></div>

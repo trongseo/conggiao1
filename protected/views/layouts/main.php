@@ -23,7 +23,9 @@
     <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl?>/css/admin/plugins/font-awesome/css/font-awesome.min.css">
     <script src="/js/jquery.form.js"></script>
-
+    <link href="/js/dialog/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
+    <script src="/js/dialog/bootstrap-dialog.min.js"></script>
+    <script src="/js/JsCommon.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -343,7 +345,19 @@ width:84px;
                     </div>
                     <div class="col-md-4 menu-search" style="margin-left:-1px">
                         <div class="row searchbox">
-                            <input type="text" value="<?php echo $this->textSearch?>" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
+                            <?php
+                            $key =$this->textSearch;
+                            if($this->textSearch=="sachmoiduavaothuvien"){
+                                $key="";
+                            }else
+                            if($this->textSearch=="sachhaynendoc"){
+                                $key="";
+                            }
+                            if($this->textSearch=="sachsapduavaothuvien"){
+                                $key="";
+                            }
+                            ?>
+                            <input type="text" value="<?php echo $key ?>" id="txtKeySearch" placeholder="Nhập từ khóa tìm kiếm" />
                         </div>
                     </div>
                     <div class="col-md-3 menu-search" style="background:#fff;margin-right:0px;border-left: 1px #5A2D0C">
@@ -417,7 +431,7 @@ width:84px;
                     </a>
                     <a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-ios'?>">
                         <div class="items items-3">
-                            Ứng dụng cho IOS
+                            Ứng dụng cho iOS
                         </div>
                     </a>
                     <a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-android'?>">

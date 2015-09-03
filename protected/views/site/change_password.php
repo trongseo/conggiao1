@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="/js/datetime/lib/jquery.timepicker.css" />
 <script type="text/javascript" src="/js/datetime/lib/bootstrap-datepicker.js"></script>
 <link rel="stylesheet" type="text/css" href="/js/datetime/lib/bootstrap-datepicker.css" />
-<form id="registration-form" method="post" onsubmit="return validateForm();"  action="/update-password">
+<form id="registration-form" method="post" onsubmit="return isSend();"  action="/update-password">
 <div class="row">
     <div class="arrow colorconggiao">
         <h4>Đổi mật khẩu</h4>
@@ -62,6 +62,34 @@
 
 <script type="text/JavaScript">
 
+
+
+function isSend(){
+
+    var password = $("#password").val();
+    var repassword = $("#re-password").val();
+    $("#oldpassword").btOff();
+    $("#password").btOff();
+    $("#re-password").btOff();
+    if(ClassMyValidate.checkEmptyItem('oldpassword','Mật khẩu cũ')==false){
+        return false;
+
+    }
+    if(ClassMyValidate.checkEmptyItem('password','Mật khẩu')==false){
+        return false;
+    }
+
+    if(ClassMyValidate.checkEmptyItem('re-password','Nhập lại Mật khẩu')==false){
+        return false;
+    }
+    if(ClassMyValidate.checkSamePassN('password','re-password')==false){
+        return false;
+    }
+
+   return true;
+
+}
+
     function validateURL(url) {
         var reurl = /^(http[s]?:\/\/){0,1}(www\.){0,1}[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,5}[\.]{0,1}/;
         return re.test(url);
@@ -72,7 +100,7 @@
         var title1 = $("#"+objid1).val();
         var reVal=true;
         if (title!=title1) {
-            alert("Vui lòng nhập nội dung mật khẩu mới giống nhau !");
+          ClassMyValidate.MyAlert("Vui lòng nhập nội dung mật khẩu mới giống nhau !");
             $("#"+objid).focus();
             reVal=false;
 
@@ -130,7 +158,8 @@
             },
             success: function()
             {
-                alert("Đã cập nhật mật khẩu mới thành công!");
+                ClassMyValidate.MyAlert("Đã cập nhật mật khẩu mới thành công!");
+                //alert("Đã cập nhật mật khẩu mới thành công!");
                 $('#oldpassword').focus();
             },
             complete: function(response)
