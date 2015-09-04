@@ -36,7 +36,7 @@
     }
     .clsheight {height: 10px}
 	.clsbl{
-		margin-bottom:5px;
+		margin-bottom:9px;
 	}
 </style>
 <?php $dataItem=$dataPage["dataItem"]; ?>

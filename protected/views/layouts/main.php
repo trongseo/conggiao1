@@ -384,7 +384,7 @@ width:84px;
                         </div>
                     </div>
                     <div class="TopSearch" style="border-bottom: 1px #C48B56 solid;border-top: 1px #C48B56 solid;height:35px;padding-top:1px;margin-left: 1.9px;margin-right: -1px;border-left: 0px #C48B56 solid;">
-                        <div class="col-md-1 menu right menusearch" style="margin-bottom:2px;height: 31px;width: 85px;margin-left: 1.9px;margin-right: -2px;border-left: 0px #F3CB90 solid;" >
+                        <div class="col-md-1 menu right menusearch" style="margin-bottom:2px;height: 31px;width: 83px;margin-left: 1.9px;margin-right: -1px;border-left: 0px #F3CB90 solid;" >
                            
                        
 					   <div class="row" id="divsearch" >
@@ -429,12 +429,12 @@ width:84px;
                             Ứng dụng cho PC
                         </div>
                     </a>
-                    <a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-ios'?>">
+                    <a href="<?php echo Yii::app()->baseUrl.'/huong-dan-app'?>">
                         <div class="items items-3">
                             Ứng dụng cho iOS
                         </div>
                     </a>
-                    <a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-android'?>">
+                    <a href="<?php echo Yii::app()->baseUrl.'/huong-dan-app'?>">
                         <div class="items items-4">
                             Ừng dụng cho Android
                         </div>
@@ -442,7 +442,7 @@ width:84px;
                 </div>
                 <div class="col-md-4 form-group">
                     <h4 class="headings1">Hỗ trợ</h4>
-                    <a href="<?php echo Yii::app()->baseUrl.'/huong-dan'?>">
+                    <a href="<?php echo Yii::app()->baseUrl.'/huong-dan-app'?>">
                         <div class="items items-5">
                             Hướng dẫn
                         </div>

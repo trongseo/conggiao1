@@ -107,7 +107,7 @@ $comboData =$dataItem;
     </div>
     <?php if(count($comboData)==0):?>
 <div class="clear" style="padding-top:25px"></div>
-        <div class="row mybox onlybox" style="padding:0px;padding-left:5px;height:200px;margin-top:20px">
+        <div class="row box-login mybox onlybox" style="padding:0px;padding-left:5px;height:200px;margin-top:20px">
             <div class="row" style="padding-top:20px">
                 <div class="span4"></div>
                 <div class="span4"><img class="center-block" style="width:40px;" src="/img/sad.jpg"></div>

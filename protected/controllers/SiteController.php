@@ -716,7 +716,15 @@ WHERE active =1 ORDER BY show_order";
 
         $this->render('guide',array('comboData1'=>$dataIntro));
     }
+    public function actionAppHelp(){
+        //huong-dan
+        $queryG ="SELECT * FROM `tbl_introduce` where id in(6,7,8)
+ order by id";
+        $dataIntro = CommonDB::GetAll($queryG,[]);
+        // $this->render('about',array('page1'=>$check,'comboData1'=>$dataIntro));
 
+        $this->render('app_help',array('comboData1'=>$dataIntro));
+    }
     public function actionDieuKhoanSuDung(){
         //huong-dan
         $queryG ="SELECT * FROM `tbl_introduce`

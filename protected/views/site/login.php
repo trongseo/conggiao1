@@ -121,17 +121,17 @@
     function validateForm()
     {
 
-       var resO =  checkEmpty("email","[Email]");
+       var resO =  ClassMyValidate.checkEmptyItem("email","[Email]");
         if(resO==false){
             return false;
         }
-        var email = $("#email").val();
-        if ((/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) { } else {
-            alert("Email chưa chính xác!");
-            $("#email").focus();
+        resO =ClassMyValidate.checkValidEmail("email","[Email]");
+        if(resO==false){
             return false;
         }
-        resO =  checkEmpty("password","[Mật khẩu]");
+
+
+        resO =  ClassMyValidate.checkEmptyItem("password","[Mật khẩu]");
         if(resO==false){
             return false;
         }
@@ -154,7 +154,7 @@
                if(responseText=="1"){
                    window.location='/welcome';
                }else{
-                   alert(responseText); $('#email').focus();
+                   alertMore(responseText); $('#email').focus();
 
                }
 

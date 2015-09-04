@@ -38,6 +38,7 @@ var ClassMyValidate = {
             $("#"+objid).focus();
             return false;
         }
+        $("#"+objid).btOff();
         return true;
     },
     checkSamePassN: function ( objid, objid1) {
@@ -84,6 +85,7 @@ var ClassMyValidate = {
             $("#"+objid).focus();
             return false;
         }
+        $("#"+objid).btOff();
         return isvalid;
     },
     ShowError: function (objid,message) {

@@ -66,7 +66,7 @@
                 </div>
                 <div class="form-group ">
                     <label class="col-md-4 control-label textcolor1" for="form-field-1">Mật khẩu </label>
-                    <label class="col-md-8 control-label textcolor1" for="form-field-1"><a style="text-decoration: underline;" class="textcolor1" target="_blank" href="/update-password">Click vào đây để đổi mật khẩu </a></label>
+                    <label class="col-md-8 control-label textcolor1" for="form-field-1"><a style="text-decoration: underline;" class="textcolor1"  href="/update-password">Click vào đây để đổi mật khẩu </a></label>
 
                 </div>
                 <div class="form-group">

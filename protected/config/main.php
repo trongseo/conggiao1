@@ -123,6 +123,7 @@ return array(
                 'thong-tin-tai-khoan'=>'Site/AccountInfo',
 				'tu-sach'=>'Site/TuSach',
                 'huong-dan'=>'Site/Guide',
+                'huong-dan-app'=>'Site/AppHelp',
                 'cau-hoi-thuong-gap'=>'Site/Question',
                 'thu-vien'=>'Site/Libary',
                 'thu-vien/<key_search:>'=>'Site/LibarySearch/key_search/<key_search>',
