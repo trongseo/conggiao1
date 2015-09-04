@@ -97,7 +97,7 @@
                     <label style="padding-top:11px;font-weight: normal;border-top: 1px solid #EDBE99; text-align: left; " class="col-sm-12 control-label colorconggiao" for="form-field-1">* Thông tin bắt buộc nhập.</label>
 
                     <label style="font-weight: normal;width: 473px;" class="col-sm-12 control-label textcolor1" for="form-field-1">Bằng cách nhấp vào nút Đăng ký, bạn sẽ đồng ý với các
-                        <a class="linUnder colorconggiao " target="_blank" href="/dieu-khoan-su-dung"><i>điều khoản sử dụng</i></a>
+                        <a class="linUnder colorconggiao " href="/dieu-khoan-su-dung"><i>điều khoản sử dụng</i></a>
                        <span class='textcolor1'> của chúng tôi </span> </label>
                     <button type="submit" class="btn btn-green pull-right btn-epub" value="Đăng ký" id="btnsave" name="btnsave">
                         Đăng ký
@@ -156,8 +156,10 @@
             $.get("/dang-ky?ischeck=1&email="+$(this).val() +"&guid_id=", function (data, status) {
                 if(data=="0"){
                     MA_SP_valid=false;
+                    //ClassMyValidate.ShowError('email',"Email đã tồn tại.Vui lòng nhập Email khác!");
                 }else{
                     MA_SP_valid=true;
+                    $("#email").btOff();
                 }
 
             });
@@ -170,44 +172,81 @@
     });
     function validateForm()
     {
-        // Validate Title
-        var resO =  checkEmpty("display_name","[Tên hiển thị]");
-        if(resO==false){
+
+        $("#display_name").btOff();
+        $("#email").btOff();
+        $("#password").btOff();
+        $("#re-password").btOff();
+        $("#birthday").btOff();
+
+        if(ClassMyValidate.checkEmptyItem("display_name","[Tên hiển thị]")==false){
+            return false;
+
+        }
+
+        if(ClassMyValidate.checkEmptyItem("email","[Email]")==false){
             return false;
         }
-        resO =  checkEmpty("birthday","[Ngày sinh]");
-        if(resO==false){
+        if(ClassMyValidate.checkValidEmail("email","[Email]")==false){
             return false;
         }
-        resO =  checkEmpty("email","[Email]");
-        if(resO==false){
+        if(ClassMyValidate.checkEmptyItem("password","[Mật khẩu]")==false){
             return false;
         }
-        var email = $("#email").val();
-        if ((/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) { } else {
-            alert("Email chưa chính xác!");
-            $("#email").focus();
+        if(ClassMyValidate.checkEmptyItem("re-password","[Nhập lại mật khẩu]")==false){
             return false;
         }
-        resO =  checkEmpty("password","[Mật khẩu]");
-        if(resO==false){
+        if(ClassMyValidate.checkSamePassN('password','re-password')==false){
             return false;
         }
-        resO =  checkEmpty("re-password","[Nhập lại mật khẩu]");
-        if(resO==false){
-            return false;
-        }
-        resO =  checkSamePass("password","re-password");
-        if(resO==false){
+        if(ClassMyValidate.checkEmptyItem("birthday","[Ngày sinh]")==false){
             return false;
         }
         if(MA_SP_valid==false){
-            alert("Email đã tồn tại.Vui lòng nhập Email khác!");
-            $('#email').focus();
+            ClassMyValidate.ShowError("email","Email đã tồn tại.Vui lòng nhập Email khác!");
             return false;
         }
 
         return true;
+
+//        // Validate Title
+//        var resO =  checkEmpty("display_name","[Tên hiển thị]");
+//        if(resO==false){
+//            return false;
+//        }
+//        resO =  checkEmpty("birthday","[Ngày sinh]");
+//        if(resO==false){
+//            return false;
+//        }
+//        resO =  checkEmpty("email","[Email]");
+//        if(resO==false){
+//            return false;
+//        }
+//        var email = $("#email").val();
+//        if ((/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) { } else {
+//            alert("Email chưa chính xác!");
+//            $("#email").focus();
+//            return false;
+//        }
+//        resO =  checkEmpty("password","[Mật khẩu]");
+//        if(resO==false){
+//            return false;
+//        }
+//        resO =  checkEmpty("re-password","[Nhập lại mật khẩu]");
+//        if(resO==false){
+//            return false;
+//        }
+//        resO =  checkSamePass("password","re-password");
+//        if(resO==false){
+//            return false;
+//        }
+//        if(MA_SP_valid==false){
+//            alert("Email đã tồn tại.Vui lòng nhập Email khác!");
+//            $('#email').focus();
+//            return false;
+//        }
+//
+//        return true;
     }
     $(document).ready(function()
     {
@@ -222,7 +261,7 @@
             },
             success: function()
             {
-                alert("Đã đăng ký thành công.Vui lòng đăng nhập để dùng!");
+                alertMore("Đã đăng ký thành công.Vui lòng đăng nhập để dùng!");
                 window.location='/dang-nhap';
             },
             complete: function(response)
