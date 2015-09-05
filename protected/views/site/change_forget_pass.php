@@ -3,13 +3,15 @@
     <input type="hidden" value="<?php echo $code_active ?>" id="code_active" name="code_active" />
 <div class="row">
     <div class="arrow">
-        <h4>Tạo tài khoản</h4>
+        <h4>Đổi mật khẩu</h4>
     </div>
     <div class="arrow-right"></div>
-    <div class="clear"></div>
+    <div class="clear" style="padding-top:2px"></div>
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>
-    <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+
+    <div class="clear1"></div>
+    <div class="main-login col-xs-12 col-sm-12 col-md-8 col-md-offset-2 onlybox">
         <div class="box-login">
             <p>
 
@@ -45,7 +47,7 @@
     </div>
 </div>
 </form>
-
+<div class="clear1"></div>
 <script src="http://malsup.github.com/jquery.form.js"></script>
 
 <script type="text/JavaScript">
@@ -60,7 +62,7 @@
         var title1 = $("#"+objid1).val();
         var reVal=true;
         if (title!=title1) {
-            alert("Vui lòng nhập nội dung mật khẩu giống nhau !");
+            alertMore("Vui lòng nhập nội dung mật khẩu giống nhau !");
             $("#"+objid).focus();
             reVal=false;
 
@@ -72,7 +74,7 @@
         var title = $("#"+objid).val();
         var reVal=true;
         if (title=="" || title==null) {
-            alert("Vui lòng nhập nội dung "+textval+" !");
+            alertMore("Vui lòng nhập nội dung "+textval+" !");
             $("#"+objid).focus();
             reVal=false;
 
@@ -98,16 +100,17 @@
         });
     function validateForm()
     {
+var resO;
 
-        resO =  checkEmpty("password","[Mật khẩu]");
+        resO =  ClassMyValidate.checkEmptyItem("password","[Mật khẩu]");
         if(resO==false){
             return false;
         }
-        resO =  checkEmpty("re-password","[Nhập lại mật khẩu]");
+        resO =  ClassMyValidate.checkEmptyItem("re-password","[Nhập lại mật khẩu]");
         if(resO==false){
             return false;
         }
-        resO =  checkSamePass("password","re-password");
+        resO =  ClassMyValidate.checkSamePassN("password","re-password");
         if(resO==false){
             return false;
         }
@@ -126,7 +129,7 @@
             },
             success: function()
             {
-                alert("Đã đổi mật khẩu mới thành công!Vui lòng đăng nhập.");
+                alertMore("Đã đổi mật khẩu mới thành công!Vui lòng đăng nhập.");
                 window.location='/dang-nhap';
             },
             complete: function(response)

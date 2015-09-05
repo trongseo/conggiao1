@@ -664,7 +664,7 @@ VALUES (
                 where id=".Common::getSession(USER_ID);
             $hsTable["display_name"]=Common::getPara("display_name");
             $hsTable["birthday"]=Common::converDDMMYYToYYYYMMDDPara(Common::getPara("birthday"));
-            $hsTable["sex"]= Common::getPara("sex");
+            $hsTable["sex"]= Common::getPara("optradio");
             CommonDB::runSQL($queryIn,$hsTable);
             ///
             if(   isset($_FILES["uploaded_image"]["name"]) && ($_FILES["uploaded_image"]["name"]!="") ) {

@@ -621,13 +621,13 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 
     function DeleteRead(booid){
         BootstrapDialog.confirm({
-            title: 'WARNING',
+            title: 'KHUYẾN CÁO',
             message: 'Bạn có chắc là muốn xóa ra khỏi tủ sách?',
             type: BootstrapDialog.TYPE_WARNING, // <-- Default value is BootstrapDialog.TYPE_PRIMARY
             closable: true, // <-- Default value is false
-            draggable: true, // <-- Default value is false
-            btnCancelLabel: 'Cancel', // <-- Default value is 'Cancel',
-            btnOKLabel: 'OK!', // <-- Default value is 'OK',
+            draggable: false, // <-- Default value is false
+            btnCancelLabel: 'Hủy', // <-- Default value is 'Cancel',
+            btnOKLabel: 'Đồng ý', // <-- Default value is 'OK',
             btnOKClass: 'btn-warning', // <-- If you didn't specify it, dialog type will be used,
             callback: function(result) {
                 // result will be true if button was click, while it will be false if users close the dialog directly.

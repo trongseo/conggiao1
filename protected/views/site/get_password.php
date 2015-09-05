@@ -87,7 +87,7 @@
         var title1 = $("#"+objid1).val();
         var reVal=true;
         if (title!=title1) {
-            alert("Vui lòng nhập nội dung mật khẩu giống nhau !");
+            alertMore("Vui lòng nhập nội dung mật khẩu giống nhau !");
             $("#"+objid).focus();
             reVal=false;
 
@@ -99,7 +99,7 @@
         var title = $("#"+objid).val();
         var reVal=true;
         if (title=="" || title==null) {
-            alert("Vui lòng nhập nội dung "+textval+" !");
+            alertMore("Vui lòng nhập nội dung "+textval+" !");
             $("#"+objid).focus();
             reVal=false;
 
@@ -110,20 +110,17 @@
     function validateForm()
     {
 
-       var resO =  checkEmpty("email","[Email]");
+       var resO =  ClassMyValidate.checkEmptyItem("email","[Email]");
         if(resO==false){
             return false;
         }
-        var email = $("#email").val();
-        if ((/(.+)@(.+){2,}\.(.+){2,}/.test(email)) || email=="" || email==null) { } else {
-            alert("Email chưa chính xác!");
-            $("#email").focus();
+         resO =  ClassMyValidate.checkValidEmail("email","[Email]");
+        if(resO==false){
             return false;
         }
 
         if(MA_SP_valid==false){
-            alert("Email này không tồn tại trong hệ thống!Vui lòng nhập lại.");
-            $('#email').focus();
+            ClassMyValidate.ShowError("email","Email này không tồn tại trong hệ thống!Vui lòng nhập lại.");
             return false;
         }
         return true;
@@ -134,7 +131,7 @@
 
         })
         .blur(function() {
-            $('#btn_login').attr('disabled','disabled');
+           // $('#btn_login').attr('disabled','disabled');
 
             $email1=$('#email').val()+"";
             if($email1!="")
@@ -144,7 +141,7 @@
                     }else{
                         MA_SP_valid=false;
                     }
-                    $('#btn_login').removeAttr('disabled');
+                   // $('#btn_login').removeAttr('disabled');
                 });
         });
     $(document).ready(function()
@@ -161,10 +158,10 @@
             success: function(responseText, statusText, xhr, $form)
             {
                if(responseText=="1"){
-                   alert("Vui lòng kiểm tra email để nhận mật khẩu!");
+                   alertMore("Vui lòng kiểm tra email để nhận mật khẩu!");
                    //window.location='/';
                }else{
-                   alert(responseText); $('#email').focus();
+                   alertMore(responseText); $('#email').focus();
                }
 
             },

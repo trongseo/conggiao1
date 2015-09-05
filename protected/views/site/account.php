@@ -44,10 +44,22 @@
 		<div class=" row box-login onlybox" >
             <div class=" row">
           <div class="col-md-4" style="text-align:center">
-			<img class="" width="150" src="<?php echo PATH_userimage.$dataUser["user_image"] ?> " />
+              <?php
+              $userI = PATH_userimage.$dataUser["user_image"];
+              if($dataUser["user_image"]==""){
+                  if($dataUser["sex"]==1){
+                      $userI = '/img/maleicon.png';
+                  }else{
+                      $userI = '/img/femaleicon.png';
+                  }
+
+
+              }
+              ?>
+			<img class="" width="150" name="c" id="uploaded_image1" src="<?php echo $userI ?> " />
               <img alt="Chọn hình đại diện" width="50" name="exFile"id="exFile" style=" cursor: pointer;"  src="/img/ic_camera.png" />
               <input type="file" size="60" style="display: none" name="uploaded_image" id="uploaded_image">
-              <img alt="" width="50" name="uploaded_image1" id="uploaded_image1"  src="" />
+
 		 </div>
 		<div class="col-md-8">
 			
@@ -203,6 +215,7 @@
     });
     var src = document.getElementById("uploaded_image");
     var target = document.getElementById("uploaded_image1");
+
     showImage(src,target);
     function showImage(src,target) {
         var fr=new FileReader();
