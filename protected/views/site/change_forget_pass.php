@@ -32,7 +32,7 @@
                 </div>
                <div class="form-group" >
 					
-					<label style="border-top: 1px solid #EDBE99; text-align: left; color:#AE7418" class="col-sm-12 control-label" for="form-field-1">* Thông tin bắt buộc nhập.</label>
+					<label style="padding-top:11px;font-weight: normal;border-top: 1px solid #EDBE99; text-align: left;" class="col-sm-12 control-label" for="form-field-1">* Thông tin bắt buộc nhập.</label>
 
 
                    <button type="submit" class="btn btn-green pull-right btn-epub" value="Đăng ký"  id="btnsave" name="btnsave"  >
@@ -48,7 +48,7 @@
 </div>
 </form>
 <div class="clear1"></div>
-<script src="http://malsup.github.com/jquery.form.js"></script>
+<!--<script src="http://malsup.github.com/jquery.form.js"></script>-->
 
 <script type="text/JavaScript">
 

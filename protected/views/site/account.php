@@ -95,10 +95,10 @@
                         $isCheckFe =  $dataUser["sex"]==1?"":"checked";
                         $isCheckMale =$dataUser["sex"]==1?"checked":"";
                         ?>
-					  <label  class="textcolor1"><input <?php echo $isCheckMale ?> type="radio" name="optradio" value="1">Nam</label>
+					  <label  class="textcolor1 "><input <?php echo $isCheckMale ?> type="radio" class="clsrad"  name="optradio" value="1">Nam</label>
 					</div>
 					<div class="col-md-2  radio-inline">
-					  <label class="textcolor1"><input <?php echo $isCheckFe ?> type="radio" name="optradio" value="0">Nữ</label>
+					  <label class="textcolor1"><input <?php echo $isCheckFe ?> type="radio" class="clsrad" name="optradio" value="0">Nữ</label>
 					</div>
 
 				</div>
@@ -184,6 +184,16 @@
         return true;
     }
 
+    $(document).on('click', '.clsrad', function () {
+       var hsdata='<?php echo $dataUser["user_image"] ?>';
+        if(hsdata!='') return;
+        $('#uploaded_image1').removeAttr('src');
+       if( $(this).val()=='1'){
+           $('#uploaded_image1').attr('src','/img/maleicon.png');
+       }else{
+           $('#uploaded_image1').attr('src','/img/femaleicon.png');
+       }
+    });
     $(document).on('click', '#exFile', function () {
         $('#uploaded_image').click();//  $( "#target" ).click();
     });
@@ -200,7 +210,7 @@
             },
             success: function()
             {
-                alert("Đã cập nhật thành công!");
+                alertMore("Đã cập nhật thành công!");
 
             },
             complete: function(response)
@@ -228,7 +238,7 @@
             if (f.size > 2000000 || f.fileSize > 2000000)
             {
                 //show an alert to the user
-                alert("Vui lòng upload File nhỏ hơn < 2 MB)")
+                alertMore("Vui lòng upload File nhỏ hơn < 2 MB)")
 
                 //reset file upload control
                 target.src = null;

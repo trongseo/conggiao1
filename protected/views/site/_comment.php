@@ -36,7 +36,7 @@
     }
     .clsheight {height: 10px}
 	.clsbl{
-		margin-bottom:9px;
+		margin-bottom:12px;
 	}
 </style>
 <?php $dataItem=$dataPage["dataItem"]; ?>
@@ -61,7 +61,19 @@
 <!--            </tbody></table>-->
         <div class="row " >
             <div class=" col-md-2" style="width:65px">
-                <img src="/img/logobook.png">
+                <?php
+                $userI = PATH_userimage.$value["user_image"];
+                if($value["user_image"]==""){
+                    if($value["sex"]==1){
+                        $userI = '/img/maleicon.png';
+                    }else{
+                        $userI = '/img/femaleicon.png';
+                    }
+
+
+                }
+                ?>
+                <img style="width: 50px;height:50px" src="<?php echo $userI ?>  ">
 
             </div>
             <div class=" col-md-10 commentit" style="">
@@ -80,67 +92,15 @@
     <?php endforeach?>
 
 
-<!--    <div class="row " >-->
-<!--        <div class=" col-md-2" style="width:65px">-->
-<!--            <img src="/img/logobook.png">-->
-<!---->
-<!--        </div>-->
-<!--        <div class=" col-md-10 commentit" style="">-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>-->
-<!--                    10/03/2015 </div>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-12 mycomment ocomment" >-->
-<!--                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
-<!--                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="clear clsheight" ></div>-->
-<!--    <div class="row " >-->
-<!--        <div class=" col-md-2" style="width:65px">-->
-<!--            <img src="/img/logobook.png">-->
-<!---->
-<!--        </div>-->
-<!--        <div class=" col-md-10 commentit" style="">-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>-->
-<!--                    10/03/2015 </div>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-12 mycomment ocomment" >-->
-<!--                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
-<!--                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="clear clsheight" ></div>-->
-<!--    <div class="row " >-->
-<!--        <div class=" col-md-2" style="width:65px">-->
-<!--            <img src="/img/logobook.png">-->
-<!---->
-<!--        </div>-->
-<!--        <div class=" col-md-10 commentit" style="">-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-12"> <span class="headerc"> Xuân bảo:</span>-->
-<!--                    10/03/2015 </div>-->
-<!--            </div>-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-12 mycomment ocomment" >-->
-<!--                    Nguyễn Chân  Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
-<!--                    Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân Nguyễn Chân-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="clear clsheight" ></div>-->
-
     <div class="row commentit1 " >
         <div class=" col-md-2" style="width:65px">
-            <img src="/img/logobook.png">
+            <?php
+            $userI1 = Common::getSession(USER_IMAGE_FULL);
+
+
+            ?>
+            <img style="width: 50px;height:50px" src="<?php echo $userI1 ?>">
+
 
         </div>
         <div class=" col-md-10 " style="width:832px">

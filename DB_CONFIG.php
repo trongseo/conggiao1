@@ -32,11 +32,12 @@ define ("PATH_IMAGE", "http://googleg9.com:8111/admintvcg/uploads/bookImage/");
 define ("PATH_IMAGE_REF", "http://googleg9.com:8111/admintvcg/uploads/referenceImage/");
 define ("PATH_IMAGE_bookFile", "http://googleg9.com:8111/admintvcg/uploads/bookFile/");
 define ("PATH_IMAGE_slideImage", "http://googleg9.com:8111/admintvcg/uploads/slideImage/");
-define ("PATH_userimage", "uploads/userimage/");
+define ("PATH_userimage", "/uploads/userimage/");
 //session const
 define ("ID_BOOK", "idbook");
 define ("USER_ID", "id_user");
 define ("USER_EMAIL", "email");
+define ("USER_IMAGE_FULL", "USER_IMAGE");
 define ("USER_FULLNAME", "display_name");
 
 

@@ -27,7 +27,7 @@ class ClsReadBook {
        $TABLE_WHERE=" AND tbl_users.`id`=tbl_comment.`user_id` and tbl_comment.active =1 and tbl_comment.book_id=".$bookId;
        $TABLE_ORDER_BY="tbl_comment.comment_date";
       //  SELECT tbl_comment.*,display_name FROM tbl_comment,tbl_users WHERE tbl_users.`id`=tbl_comment.`user_id`
-        $query=" SELECT  tbl_comment.*,display_name FROM ".$TABLE_GET." WHERE 1=1 ".$TABLE_WHERE ;
+        $query=" SELECT  tbl_comment.*,display_name,user_image,sex FROM ".$TABLE_GET." WHERE 1=1 ".$TABLE_WHERE ;
         $queryCommand = Yii::app()->db->createCommand($query);
         $queryCommand->limit($pageSize,  ($page-1) * $pageSize);
         if ($orderbyid==0){

@@ -398,6 +398,18 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
                 Yii::app()->session['id_user'] = $arrInfo['id'];
                 Yii::app()->session['email'] = $arrInfo['email'];
                 Yii::app()->session['display_name'] = $arrInfo['display_name'];
+                $userI = PATH_userimage.$arrInfo["user_image"];
+                if($arrInfo["user_image"]==""){
+                    if($arrInfo["sex"]==1){
+                        $userI = '/img/maleicon.png';
+
+                    }else{
+                        $userI = '/img/femaleicon.png';
+                    }
+
+                }
+                Common::setSession(USER_IMAGE_FULL,$userI);
+
                 echo "1";Yii::app()->end();
             }else{
                 echo "Đăng nhập không thành công!Vui lòng đăng nhập lại.";
@@ -666,6 +678,17 @@ VALUES (
             $hsTable["birthday"]=Common::converDDMMYYToYYYYMMDDPara(Common::getPara("birthday"));
             $hsTable["sex"]= Common::getPara("optradio");
             CommonDB::runSQL($queryIn,$hsTable);
+
+            $userI = '';
+                if($hsTable["sex"]==1){
+                    $userI = '/img/maleicon.png';
+
+                }else{
+                    $userI = '/img/femaleicon.png';
+                }
+            if( strpos( Common::getSession(USER_IMAGE_FULL),"icon.png")>1 )
+            Common::setSession(USER_IMAGE_FULL,$userI);
+
             ///
             if(   isset($_FILES["uploaded_image"]["name"]) && ($_FILES["uploaded_image"]["name"]!="") ) {
                 $strResult = Common::checkImageFile("uploaded_image");
@@ -685,6 +708,10 @@ VALUES (
                 where id=".Common::getSession(USER_ID);
                 $hsTable["user_image"]=$imageName;
                 CommonDB::runSQL($queryIn,$hsTable);
+
+                $userI = PATH_userimage.$imageName;
+                Common::setSession(USER_IMAGE_FULL,$userI);
+
             }
             ///
             echo "1";

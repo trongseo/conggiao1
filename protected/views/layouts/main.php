@@ -214,7 +214,14 @@ width:84px;
                             </ul>
                         </div>
 
-
+<script>
+    ///img/avarta.png
+    var mrbg='url(<?php echo Common::getSession(USER_IMAGE_FULL); ?>) left center no-repeat !important';
+    //$('.user-avatar').attr('background',mrbg);
+   // $('.user-avatar').css('background','#eee');
+    $('.user-avatar').css("background-image", "url(<?php echo Common::getSession(USER_IMAGE_FULL); ?>)");
+    $('.user-avatar').css("background-size", "50px 51px");
+</script>
 
 
 					<style>
@@ -241,7 +248,7 @@ width:84px;
                             float: right;
                         }
                         .logo-login .user-avatar{
-                            background: url('/img/avarta.png') left center no-repeat !important;
+                            background: url('/img/avarta.png') left center no-repeat ;
                             float: left;
                             width:150px;
                             height:50px;
@@ -357,7 +364,7 @@ width:84px;
                                 $key="";
                             }
                             ?>
-                            <input type="text" value="<?php echo $key ?>" id="txtKeySearch" placeholder="Nhập từ khóa: têm sách, mã sách, tác giả" />
+                            <input type="text" value="<?php echo $key ?>" id="txtKeySearch" placeholder="Nhập từ khóa: tên sách, mã sách, tác giả" />
                         </div>
                     </div>
                     <div class="col-md-3 menu-search" style="background:#fff;margin-right:0px;border-left: 1px #5A2D0C">
@@ -424,7 +431,7 @@ width:84px;
                 </div>
                 <div class="col-md-4 form-group">
                     <h4 class="headings1">Phần mềm đọc sách</h4>
-                    <a href="<?php echo Yii::app()->baseUrl.'/ung-dung-cho-pc'?>">
+                    <a href="<?php echo Yii::app()->baseUrl.'/huong-dan-app'?>">
                         <div class="items items-7">
                             Ứng dụng cho PC
                         </div>
@@ -442,7 +449,7 @@ width:84px;
                 </div>
                 <div class="col-md-4 form-group">
                     <h4 class="headings1">Hỗ trợ</h4>
-                    <a href="<?php echo Yii::app()->baseUrl.'/huong-dan-app'?>">
+                    <a href="<?php echo Yii::app()->baseUrl.'/huong-dan'?>">
                         <div class="items items-5">
                             Hướng dẫn
                         </div>
@@ -489,6 +496,9 @@ div.slider-box div.slider {
         background: #D8BE9E;
     }
 </style>
+
+
+
 </body>
 <script>
     $(document).ready(function() {
