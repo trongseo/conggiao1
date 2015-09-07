@@ -545,7 +545,7 @@ VALUES (:name,
         $idbookallArr = explode("_", $idbookall);
         $idbook = $idbookallArr[0];
         $idbook_part =1;
-        if(count($idbookallArr)>0){
+        if(count($idbookallArr)>1){
             $idbook_part = $idbookallArr[1];
         }
         Common::setSession('idbook',$idbook);
