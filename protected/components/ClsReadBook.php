@@ -7,9 +7,9 @@ class ClsReadBook {
      */
     public  function  LoadComment($bookId){
         if(Common::getPara("from")=="order"){
-            $bookId = Common::getSession("bookId");
+            $bookId = Common::getSession(IDDetailBook);
         }else{
-            Common::setSession("bookId",$bookId);
+            Common::setSession(IDDetailBook,$bookId);
         }
         $DEFAULT_GOTOPAGE=1;
         $DEFAULT_PER_PAGE_SHOW=100;
@@ -144,7 +144,8 @@ values (
             $hsTable['comment_date']=Common::getCurrentDateYYYYDDMM();
             $hsTable['content']=$txtComment;
             $hsTable['active']=0;
-            $hsTable['book_id']= Common::getSession('idbook');
+            //$hsTable['book_id']= Common::getSession('idbook');
+            $hsTable['book_id']= Common::getSession(IDDetailBook);
             $hsTable['admin_id_check']=0;
             $hsTable['is_check']=0;
             CommonDB::runSQL($queryUpdate,$hsTable);

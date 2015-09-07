@@ -535,21 +535,36 @@ VALUES (:name,
     }
 
     public function actionLoadInfo(){
-        //comment udpate
-      // $this->LoadInfoCommentUpdate();
+
         $readBook = new ClsReadBook();
         $readBook->InsertComment();
         $id = $_POST['id'];
-       $idbook = Common::getPara('ID_BOOK');
-        Common::setSession('idbook',$idbook);
+       $idbookall = Common::getPara('ID_BOOK');
 
-        $arrBook = CommonDB::GetDataRow('tbl_book','delete_logic_flg=0 AND active=1 AND id='.$idbook);
-        Common::setSession('arrBook',$arrBook);
+
+        $idbookallArr = explode("_", $idbookall);
+        $idbook = $idbookallArr[0];
+        $idbook_part =1;
+        if(count($idbookallArr)>0){
+            $idbook_part = $idbookallArr[1];
+        }
+        Common::setSession('idbook',$idbook);
+        Common::setSession('idbook_part',$idbook_part);
+              $IDDetailBook= CommonDB::getIDDetailBook($idbook,$idbook_part);
+         Common::setSession(IDDetailBook,$IDDetailBook);
+//        SELECT * FROM tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id
+//
+// WHERE a.ID=35 AND part=1 AND delete_logic_flg=0 AND active=1 ORDER BY part
+
+        $arrBook = CommonDB::GetDataRow(' tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id ',' a.delete_logic_flg=0 AND a.active=1 AND b.id='.$IDDetailBook);
+
+      //  Common::setSession('arrBook',$arrBook);
         if($id == 0){
 
 
             $userId =Common::getSession(USER_ID);
-            $deleteQuery =" delete from tbl_tusach where book_id=$idbook  and user_id=$userId ";
+
+            $deleteQuery =" delete from tbl_tusach where book_id=$IDDetailBook  and user_id=$userId ";
 
             if(Common::getSession(USER_ID)!=""){
 
@@ -564,7 +579,7 @@ VALUES (
         :book_id,
         :user_id,
         :create_date); ";
-            $hsTable["book_id"]= $idbook;
+            $hsTable["book_id"]= $IDDetailBook;
             $hsTable["user_id"]= $userId;
             $hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
             if(Common::getSession(USER_ID)!=""){
@@ -585,7 +600,7 @@ VALUES (
 
             $_SESSION["pdf"]='Loi.pdf';
         }else{
-            $_SESSION["pdf"] = $arrBook['download_file_link'];
+            $_SESSION["pdf"] = $arrBook['book_content'];
         }
 
         if($id == 1){
@@ -593,7 +608,7 @@ VALUES (
             $this->renderPartial('_info',array('arrBook'=>$arrBook));
         }
         if($id == 2){
-            $dataPage= $readBook->LoadComment($idbook);
+            $dataPage= $readBook->LoadComment($IDDetailBook);
             $this->renderPartial('_comment',array('dataPage'=>$dataPage));
         }
         if($id == 3){
@@ -612,7 +627,8 @@ VALUES (
 
     public function actionAddBook(){
 
-        $idbook = Common::getPara('ID_BOOK');
+        //'ID_BOOK'
+        $idbook = Common::getSession(IDDetailBook);
         $hsTable["book_id"]=$idbook;
         $hsTable["user_id"]= Common::getSession(USER_ID);
         $userId =Common::getSession(USER_ID);
@@ -701,9 +717,9 @@ VALUES (
                 $image->load($_FILES['uploaded_image']['tmp_name']);
                 $imageName =$guid_id_insert.date('m_d_Y_hisa').'.jpg';
                 $imageNameicon_="icon_".$imageName;
-                $image->save(PATH_userimage.$imageName);
+                $image->save(PATH_ROOTuserimage.$imageName);
                 $image->resizeToWidth(133);
-                $image->save(PATH_userimage.$imageNameicon_);
+                $image->save(PATH_ROOTuserimage.$imageNameicon_);
                 $queryIn="update   tbl_users  set user_image=:user_image
                 where id=".Common::getSession(USER_ID);
                 $hsTable["user_image"]=$imageName;

@@ -91,7 +91,32 @@ var FROM_TIEUMUC='tieumuc';
             FROM_TIEUMUC ='tim';
             LoadContentSearch(daiMuc,keySearch);
         }else
-        LoadContent(0,0);
+        {
+            var cates =  '<?php echo Common::getPara("cate"); ?>';
+            if(cates!=''){
+                console.log(cates);
+              var arCate=  cates.split("-");
+               if(arCate.length>0){
+                   $('.aitem'+arCate[0]).click(); console.log('.'+arCate[0]);
+               }
+                if(arCate.length>1){
+                    $('.aitem'+arCate[1]).click();
+                }
+                if(arCate.length>2){
+                    $('.aitem'+arCate[2]).click();
+                }
+                console.log(arCate[0]);
+               // $('#divcontent').hide();
+//                $('.aitem32').click();
+//                $('.aitem43').click();
+//                $('.aitem136').click();
+
+            }else
+            {
+                LoadContent(0,0);
+            }
+        }
+
     });
 function LoadContentSearch(daimuc,keysearch){
     var  urlGet = '/Site/SubLibaryTieuMucSearch?daimuc='+daimuc+'&keysearch='+keysearch;

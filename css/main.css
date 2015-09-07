@@ -222,7 +222,7 @@ a{
     border-left: 1px solid #C48B56;
 }
 #select2-fabric-container{
-    padding: 5px;
+    padding: 2px 6px 5px 5px;
 }
 .select2-selection__arrow{
     top: 6px !important;

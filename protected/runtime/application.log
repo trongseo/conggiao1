@@ -1,0 +1,57 @@
+2015/09/07 21:57:32 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (43)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (13)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/09/07 21:57:32 [trace] [system.db.CDbCommand] Querying SQL:  SELECT id FROM tbl_book_detail WHERE book_id=35 AND part=2
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (43)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (123)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (553)
+2015/09/07 21:57:32 [trace] [system.db.CDbCommand] Querying SQL: Select * from  tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id  where 1=1 AND  a.delete_logic_flg=0 AND a.active=1 AND b.id=4
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (77)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (559)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/09/07 21:57:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (43)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (13)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/09/07 21:57:33 [trace] [system.db.CDbCommand] Querying SQL:  SELECT id FROM tbl_book_detail WHERE book_id=35 AND part=2
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (43)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (123)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (553)
+2015/09/07 21:57:33 [trace] [system.db.CDbCommand] Querying SQL: Select * from  tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id  where 1=1 AND  a.delete_logic_flg=0 AND a.active=1 AND b.id=4
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (77)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (559)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/09/07 21:57:33 [trace] [system.db.CDbCommand] Querying SQL:  SELECT  tbl_comment.*,display_name,user_image,sex FROM  tbl_comment,tbl_users  WHERE 1=1  AND tbl_users.`id`=tbl_comment.`user_id` and tbl_comment.active =1 and tbl_comment.book_id=4
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\ClsReadBook.php (46)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (611)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/09/07 21:57:33 [trace] [system.db.CDbCommand] Querying SQL: SELECT COUNT(*) FROM  tbl_comment,tbl_users  WHERE 1=1  AND tbl_users.`id`=tbl_comment.`user_id` and tbl_comment.active =1 and tbl_comment.book_id=4
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\ClsReadBook.php (57)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (611)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/09/07 21:57:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (43)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (13)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/09/07 21:57:34 [trace] [system.db.CDbCommand] Querying SQL:  SELECT id FROM tbl_book_detail WHERE book_id=35 AND part=2
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (43)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (123)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (553)
+2015/09/07 21:57:34 [trace] [system.db.CDbCommand] Querying SQL: Select * from  tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id  where 1=1 AND  a.delete_logic_flg=0 AND a.active=1 AND b.id=4
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (77)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (559)
+in D:\project\111anhDuong\thuvien1\codeconggiao\index.php (17)
+2015/09/07 21:57:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT *,CONCAT(book_id,'_',part)  AS book_id FROM tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id
+    WHERE  1=1 AND a.delete_logic_flg=0 AND a.active=1 AND a.id=35
+
+     
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (43)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\views\site\_book.php (18)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (616)
+2015/09/07 21:57:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (43)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (13)
+2015/09/07 21:57:34 [trace] [system.db.CDbCommand] Querying SQL: SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\components\CommonDB.php (43)
+in D:\project\111anhDuong\thuvien1\codeconggiao\protected\controllers\SiteController.php (13)

@@ -163,9 +163,9 @@
 
                 <div class="nav nav-pills">
                     <a href="#" id="amenuid" data-toggle="dropdown" class="dropdown-toggle" style="padding:0px">
-                        <span style="font-size:17px;font-weight: bold;color: #D5904D;">Nhấn</span>
-                        <span style="font-size:14px;font-weight: bold;color: #5f2d08;">vào đây để vào</span>
-                        <span style="font-size:17px;font-weight: bold;color: #D5904D;">Thư viện</span>
+                        <span style="font-size:17px;font-weight: bold;" class="colorvietnam">Nhấn</span>
+                        <span style="font-size:14px;font-weight: bold;"  class="colorconggiao" >vào đây để vào</span>
+                        <span style="font-size:17px;font-weight: bold;" class="colorvietnam">Thư viện</span>
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu">
 

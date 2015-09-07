@@ -21,14 +21,14 @@
                     <?php foreach($comboData1 as $value1):?>
                         <li class="subitem1">
 
-                            <a  title="<?php echo $value1["name"]?>" class="trung" href="javascript:void(0);" myid="<?php echo $value1["id"]?>" > <?php echo Common::truncate($value1["name"],30,'.');?>  <i class="fa fa-plus-square"></i></a>
+                            <a  title="<?php echo $value1["name"]?>" class="trung aitem<?php echo $value1["id"]?>" href="javascript:void(0);" myid="<?php echo $value1["id"]?>" > <?php echo Common::truncate($value1["name"],30,'.');?>  <i class="fa fa-plus-square"></i></a>
 
                             <?php
                             $comboData2 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=2 AND parent_id='.$value1['id'].'   ORDER BY  INDEX_CODE',[]);
                             ?>  <ul class="cute">
                                 <?php foreach($comboData2 as $value2):?>
 
-                                    <li class="subitem1 sublittle"><a  title="<?php echo $value2["name"]?>" class="tieu" href="javascript:void(0);" id="<?php echo $value2["id"]?>" myid="<?php echo $value2["id"]?>" >  <?php echo Common::truncate($value2["name"],34,'.')?> </a></li>
+                                    <li class="subitem1 sublittle"><a  title="<?php echo $value2["name"]?>" class="tieu aitem<?php echo $value2["id"]?>" href="javascript:void(0);" id="<?php echo $value2["id"]?>" myid="<?php echo $value2["id"]?>" >  <?php echo Common::truncate($value2["name"],34,'.')?> </a></li>
 
 
                                 <?php endforeach?>
@@ -88,6 +88,8 @@
 <!--initiate accordion-->
 <script type="text/javascript">
     $(function() {
+
+
         /*<i class="fa fa-plus-square"></i>
          <i class="fa fa-minus-square"></i>*/
         var menu_ul = $('.menu1 > li > ul'),

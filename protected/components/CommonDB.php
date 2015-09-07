@@ -58,7 +58,7 @@ class CommonDB {
         $command = Yii::app()->db->createCommand($sql);
         CommonDB::setPara($command,$hashTable);
         $result = $command->queryAll();
-        var_dump($result[0]);exit();
+        //var_dump($result[0]);exit();
         return $result[0];
     }
     public static function GetDataRow($tableName,$whereNoAnd){
@@ -75,7 +75,7 @@ class CommonDB {
         $command = Yii::app()->db->createCommand($sql);
 
         $result = $command->queryAll();
-        //var_dump($result);
+      //  var_dump($result,$sql);
         return $result[0];
     }
     public static function GetDataRowKeyGuid($tableName,$key){
@@ -117,6 +117,10 @@ class CommonDB {
         foreach($hashTable as $key=>$value){
             $command->bindParam(":$key",$hashTable[$key], PDO::PARAM_STR);
         }
+    }
+    public  static  function getIDDetailBook($book_id,$part){
+        $query =" SELECT id FROM tbl_book_detail WHERE book_id=$book_id AND part=$part";
+        return CommonDB::GetAll($query,[])[0]["id"];
     }
     public static   function runSQL($sql,$hashTable){
         $command = Yii::app()->db->createCommand($sql);

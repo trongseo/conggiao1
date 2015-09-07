@@ -25,9 +25,9 @@
         <div class="col-md-12" >   <img src="/img/smile.png" /> </div>
         <p style="padding-left:15px;padding-top: 70px">
             <span class="textcolor1"><i>Chào mừng bạn đến với</i> </span>
-            <span style="color: #D5904D;font-weight: bold;">Thư Viện</span>
+            <span style="font-weight: bold;"  class="colorvietnam">Thư Viện</span>
             <span style="font-weight: bold;" class="colorconggiao">Công Giáo</span>
-            <span style="font-weight: bold;" class="textcolor1">Việt Nam</span>
+            <span style="font-weight: bold;" class="colorvietnam">Việt Nam</span>
             <br>
         <p class="hrcolor" >    </p>
         </p>

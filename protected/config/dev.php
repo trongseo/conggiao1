@@ -19,7 +19,7 @@ return CMap::mergeArray(
                         'class'=>'CFileLogRoute',
                         'levels'=>'trace,log',
                         'categories' => 'system.db.CDbCommand',
-                        'logFile' => 'db.log',
+//                        'logFile' => 'db.log',
 //                        'class' => 'CFileLogRoute',
 //                        'levels' => 'error, warning',
                         /*'class'=>'CProfileLogRoute',

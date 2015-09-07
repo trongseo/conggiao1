@@ -55,12 +55,15 @@
             font-weight: 500 !important;
         }
 .colorconggiao{
-     color:#492E14;
+     color:#5a2e0b;
 
  }
+ .colorvietnam{
+	  color:#be7338;
+ } 
         .textcolor1{
 
-            color:#D5A16F;
+            color:#be7338;
         }
     </style>
     <style>
@@ -98,8 +101,9 @@
             margin-left: -10px;
         }
         #divsearch {
-            color: #FCE4BE !important;
-            font-size: 14px;
+                color: #f7e1c2 !important;
+    font-size: 15px;
+    margin-top: -4px;
         }
         .home  {
             height: 37px;
@@ -196,9 +200,9 @@ width:84px;
             <div class="logo">
                 <a  href="<?php echo Yii::app()->baseUrl.'/' ?>"><img src="<?php echo Yii::app()->baseUrl.'/images/logo.png'?>" /></a>
                 <div style="float: left;position: relative;top:20px;padding-left: 20px;">
-                    <span  style="font-size:34px;font-weight: bold;color: #D5904D;">Thư Viện</span>
-                    <span style="font-size:34px;font-weight: bold;color: rgb(90,46,11);">Công Giáo</span>
-                    <span style="font-size:34px;font-weight: bold;color: #D5904D;">Việt Nam</span>
+                    <span  style="font-size:34px;font-weight: bold;" class="colorvietnam">Thư Viện</span>
+                    <span style="font-size:34px;font-weight: bold;" class="colorconggiao">Công Giáo</span>
+                    <span style="font-size:34px;font-weight: bold;" class="colorvietnam">Việt Nam</span>
                 </div>
             </div>
             <div class="logo-login" >
@@ -219,8 +223,8 @@ width:84px;
     var mrbg='url(<?php echo Common::getSession(USER_IMAGE_FULL); ?>) left center no-repeat !important';
     //$('.user-avatar').attr('background',mrbg);
    // $('.user-avatar').css('background','#eee');
-    $('.user-avatar').css("background-image", "url(<?php echo Common::getSession(USER_IMAGE_FULL); ?>)");
-    $('.user-avatar').css("background-size", "50px 51px");
+    $('.logo-login').css("background-image", "url(<?php echo Common::getSession(USER_IMAGE_FULL); ?>)");
+    $('.logo-login').css("background-size", "50px 51px");
 </script>
 
 
@@ -250,12 +254,15 @@ width:84px;
                         .logo-login .user-avatar{
                             background: url('/img/avarta.png') left center no-repeat ;
                             float: left;
-                            width:150px;
+                          /*  width:150px;*/
                             height:50px;
                             color:#5A2D0C;
                             border:1px solid transparent !important;
                             text-align:right;
                         }
+						 
+	
+	
                         .logo-login .user-info{
                             background: url('/img/ic_profile_16px.png') left center no-repeat !important;
                             color:#D5A16F;
@@ -306,6 +313,33 @@ width:84px;
                         .logo-login .active, .logo-login a:hover {
                             color:#C0703D;
                         }
+						
+						
+						
+						.logo-login {
+    /* width: 182px; */
+    float: right;
+    position: relative;
+    top: 23px;
+    background: url('/img/avarta.png') left center no-repeat;
+    /* margin-right: 57px; */
+}
+.dropdown {
+							position: relative;
+							padding-left: 42px;
+						}
+						.logo-login .user-avatar{
+						    background: url() left center no-repeat;
+							float: left;
+							/* width: 150px; */
+							height: 50px;
+							color: #5A2D0C;
+							border: 1px solid transparent !important;
+							text-align: right;
+							}
+							
+						
+						
 					</style>
                 <?php else: ?>
                     <a class="register" href="<?php echo Yii::app()->baseUrl.'/dang-ky'?>">
@@ -371,7 +405,7 @@ width:84px;
 
 
                         <div class="row">
-                            <select id="fabric">
+                            <select id="fabric" style="height:33px">
                                 <option value="0">Xem tất cả sách</option>
                                 <?php  $comboData=$this->comboData;
 
@@ -470,7 +504,7 @@ width:84px;
         position: relative;
         overflow: hidden;
         margin-top: 21px;
-        background-color: #D8BE9E;
+        background-color: rgb(216,190,160);
         border-radius: 10px;
 
     }

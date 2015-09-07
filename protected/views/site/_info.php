@@ -93,7 +93,7 @@
 		                	</div>
                             <?php if(isset(Yii::app()->session['id_user'])): ?>
                                 <div class="download">
-                                    <a class="register" href="<?php echo PATH_IMAGE_bookFile.'/'.$arrBook['download_file_link']; ?>">
+                                    <a class="register" href="<?php echo PATH_IMAGE_bookFile.'/'.$arrBook['book_content']; ?>">
                                         Lấy về miễn phí
                                     </a>
                                 </div>
