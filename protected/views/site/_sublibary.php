@@ -504,6 +504,10 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
   .row h4{
 margin-top: 0px;
 }
+.arrow-home h4 {
+    color: #5a2e0b;
+  
+}
 </style>
 <div class="row">
 

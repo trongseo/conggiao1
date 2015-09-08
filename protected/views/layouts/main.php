@@ -406,7 +406,7 @@ width:84px;
 
                         <div class="row">
                             <select id="fabric" style="height:33px">
-                                <option value="0">Xem tất cả sách</option>
+                                <option value="0">Tìm tất cả thể loại</option>
                                 <?php  $comboData=$this->comboData;
 
 

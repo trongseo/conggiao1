@@ -243,9 +243,10 @@ a{
     margin-top: 10px;
     cursor: pointer;
     padding-left: 25px;
+	 color:#5a2e0b;
 }
 .footer-wp .items:hover{
-    color:#fff;
+    color:#f7e1c2;
 }
 .footer-wp .items-1{
     background: url('../images/ic_term.png') no-repeat scroll 0 0;

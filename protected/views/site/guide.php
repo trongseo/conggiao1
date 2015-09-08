@@ -1,9 +1,9 @@
 <div class="row">
-<div class="arrow colorconggiao">
-    <h4>Hướng dẫn
-    </h4>
-</div>
-<div class="arrow-right"></div>
+
+
+	<?php $myTextPath="Hướng dẫn"; ?>
+    <?php  require "template_path.php"  ?>
+	
 <div class="clear" style="padding-top:2px"></div>
 <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
     <div class="clear1"></div>

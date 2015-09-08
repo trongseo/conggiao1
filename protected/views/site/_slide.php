@@ -100,6 +100,9 @@
         display: block;
         margin-top: 0; // remove the gap so it doesn't close
     }
+    .imageright{
+cursor: hand;
+    }
 </style>
 <div class="row">
     <div class="slider-home-container">
@@ -156,16 +159,20 @@
 
         </div>
         <div class="col-md-4 " style="width:345px;align:left;padding-left:0px;margin-left:-4px">
-            <img u="image" src="images/thuvien.jpg" style="width: 336px;height:253px" />
-            <div class="slide-right-content box" style="background-color: #DEE3F1;opacity:0.8;z-index: 1000">
+            <img u="image" src="images/thuvien.jpg" style="width: 336px;height:253px;" class="imageright" title="Vào thư viện" alt="Vào thư viện" />
+            <!--        <div class="slide-right-content box" style="background-color: #DEE3F1;opacity:0.8;z-index: 1000;border:1px solid #be7338">        -->
 
+            <div class="slide-right-content " style="height: 62px">
 
 
                 <div class="nav nav-pills">
+<!--                    <a href="#" id="amenuid" data-toggle="dropdown" class="dropdown-toggle" style="padding:0px">-->
+<!--                        <span style="font-size:17px;font-weight: bold;" class="colorvietnam">Nhấn</span>-->
+<!--                        <span style="font-size:14px;font-weight: bold;"  class="colorconggiao" >vào đây để vào</span>-->
+<!--                        <span style="font-size:17px;font-weight: bold;" class="colorvietnam">Thư viện</span>-->
+<!--                    </a>-->
                     <a href="#" id="amenuid" data-toggle="dropdown" class="dropdown-toggle" style="padding:0px">
-                        <span style="font-size:17px;font-weight: bold;" class="colorvietnam">Nhấn</span>
-                        <span style="font-size:14px;font-weight: bold;"  class="colorconggiao" >vào đây để vào</span>
-                        <span style="font-size:17px;font-weight: bold;" class="colorvietnam">Thư viện</span>
+                        <img src="/img/Capture2.png" style="margin-left:-2px">
                     </a>
                     <ul class="dropdown-menu multi-level dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu">
 
@@ -262,5 +269,8 @@
     });
     $(document).click(function () {
         $('.dropdown-menu-right').hide();
+    });
+    $('.imageright').click(function () {
+       window.location ='/thu-vien';
     });
 </script>

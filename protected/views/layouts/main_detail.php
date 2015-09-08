@@ -102,13 +102,16 @@
                 float: left;
             }
             .colorconggiao{
-                color:#492E14;
+                color:#5a2e0b;
 
             }
             .textcolor1{
-
-                color:#D5A16F;
+ color:#be7338;
+               
             }
+			.logo-login a{
+				 color:#5a2e0b;
+			}
         </style>
     </head>
     <body>

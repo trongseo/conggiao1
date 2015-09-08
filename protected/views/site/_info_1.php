@@ -31,16 +31,13 @@
                 <div class="row textcolor1 " style="padding-left:15px">
                     <div class="col-md-4">
                         <div class="row">
-                            <div class="col-md-12">  <span class="headerc colorconggiao"> Tên sách:</span> <?php echo  $arrBook['book_name']; ?></div>
-                        </div>
-                        <div class="row">
                             <div class="col-md-12"> <span class="headerc colorconggiao"> Tác giả:</span>
                                 <?php echo  $arrBook['author']; ?> </div>
                     </div>
                         <div class="row">
                             <div class="col-md-12">   <span class="headerc colorconggiao"> Người dịch:</span>  <?php echo  $arrBook['translator']; ?></div>
                         </div>
-
+                       
                     </div>
                     <div class="col-md-3">
                         <div class="row">
@@ -51,14 +48,11 @@
                             <div class="col-md-12"> <span class="headerc colorconggiao"> Số trang: </span> <?php echo  $arrBook['pages_num']; ?></div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">  <span class="headerc colorconggiao"> Nhà xuất bản:</span> <?php echo  $arrBook['publisher']; ?></div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-3">
-                        <div class="row">
                             <div class="col-md-12"> <span class="headerc colorconggiao"> Ngày phát hành:</span><?php echo Common::converYYYYMMDDtoDaymonyyyyPara($arrBook['issue_date']) ; ?></div>
                         </div>
+                    </div>
+                    <div class="col-md-3">
+
                         <div class="row">
                             <div class="col-md-12"> <span class="headerc colorconggiao">  Quyền sở hữu:</span>
                                 <?php echo  $arrBook['owner']; ?> </div>
@@ -66,12 +60,12 @@
                         <div class="row">
                             <div class="col-md-12"> <span class="headerc colorconggiao"> Người tặng:</span>  <?php echo  $arrBook['giver']; ?></div>
                         </div>
-
-                        </div>
-                    <div class="col-md-2">
                         <div class="row">
                             <div class="col-md-12"><span class="headerc colorconggiao"> Mã sách:</span>  <?php echo  $arrBook['book_code']; ?></div>
                         </div>
+                        </div>
+                    <div class="col-md-2">
+
                         <div class="row">
                             <div class="col-md-12">  <span class="headerc colorconggiao"> Số người xem:</span>
                                 <?php echo  $arrBook['viewer_count']; ?>  </div>

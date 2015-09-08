@@ -532,6 +532,10 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     border: 0;
     border-top: 1px solid #D8BE9E;
 }
+.arrow-home h4 {
+    color: #5a2e0b;
+  
+}
 </style>
 
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
