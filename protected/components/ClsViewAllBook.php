@@ -1,6 +1,32 @@
 <?php
 
 class ClsViewAllBook {
+
+    public static  function addtoBookCase($idbook){
+        $hsTable["book_id"]=$idbook;
+        $hsTable["user_id"]= Common::getSession(USER_ID);
+        $userId =Common::getSession(USER_ID);
+        $hsTable["create_date"]= Common::getCurrentDateYYYYDDMMNotime();
+        $deleteQuery =" delete from tbl_bookcase where book_id=$idbook and user_id=$userId ";
+       // var_dump($deleteQuery);
+        CommonDB::runSQL($deleteQuery,[]);
+        $query ="INSERT INTO `tbl_bookcase`
+                    (
+                     `book_id`,
+                     `user_id`,
+                     `create_date`)
+        VALUES (
+                :book_id,
+                :user_id,
+                :create_date); ";
+
+        //$hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
+        CommonDB::runSQL($query,$hsTable);
+        $queryU=" UPDATE `tbl_book`
+            SET reader_count = reader_count+1
+            WHERE id=".$idbook;
+        CommonDB::runSQL($queryU,[]);
+    }
     /**
      * LoadComment
      * @return array('dataItem'=>$dataItem,'totalPage'=>$totalPage,'pageSize'=>$pageSize,'itemCount'=>$itemCount,'page'=>$page)

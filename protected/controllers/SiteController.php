@@ -549,6 +549,7 @@ VALUES (:name,
             $idbook_part = $idbookallArr[1];
         }
         Common::setSession('idbook',$idbook);
+        Common::setSession(ID_BOOK,$idbook);
         Common::setSession('idbook_part',$idbook_part);
               $IDDetailBook= CommonDB::getIDDetailBook($idbook,$idbook_part);
          Common::setSession(IDDetailBook,$IDDetailBook);
@@ -565,8 +566,6 @@ VALUES (:name,
 
        Common::setSession('arrBook',$arrBook);
         if($id == 0){
-
-
             $userId =Common::getSession(USER_ID);
 
             $deleteQuery =" delete from tbl_tusach where book_id=$IDDetailBook  and user_id=$userId ";
@@ -622,7 +621,7 @@ VALUES (
         }
     }
     public function actionRemoveBook(){
-        $idbook = Common::getPara('ID_BOOK');
+        $idbook = Common::getPara(IDDetailBook);
         $userId =Common::getSession(USER_ID);
         $deleteQuery =" delete from tbl_bookcase where book_id=$idbook and user_id=$userId ";
         CommonDB::runSQL($deleteQuery,[]);
@@ -634,43 +633,55 @@ VALUES (
 
         //'ID_BOOK'
         $idbook = Common::getSession(IDDetailBook);
-        $hsTable["book_id"]=$idbook;
-        $hsTable["user_id"]= Common::getSession(USER_ID);
-        $userId =Common::getSession(USER_ID);
-        $hsTable["create_date"]= Common::getCurrentDateYYYYDDMMNotime();
-        $deleteQuery =" delete from tbl_bookcase where book_id=$idbook and user_id=$userId ";
-        CommonDB::runSQL($deleteQuery,[]);
-        $deleteQuery =" delete from tbl_tusach where book_id=$idbook  and user_id=$userId ";
-        CommonDB::runSQL($deleteQuery,[]);
+        if(Common::getPara("isAll")=="1"){
+            $main_book_id = Common::getSession(ID_BOOK);
+           $qrget=" SELECT id FROM `tbl_book_detail` WHERE book_id=$main_book_id";
+            $dataNewBook = CommonDB::GetAll($qrget,[]);
+           // var_dump($dataNewBook);
+            foreach($dataNewBook as $value){
+                $idbook =$value["id"];
+                ClsViewAllBook::addtoBookCase($idbook) ;
+            }
+        }else{
+            ClsViewAllBook::addtoBookCase($idbook) ;
+        }
+//        $hsTable["book_id"]=$idbook;
+//        $hsTable["user_id"]= Common::getSession(USER_ID);
+//        $userId =Common::getSession(USER_ID);
+//        $hsTable["create_date"]= Common::getCurrentDateYYYYDDMMNotime();
+////        $deleteQuery =" delete from tbl_bookcase where book_id=$idbook and user_id=$userId ";
+////        CommonDB::runSQL($deleteQuery,[]);
+//        $deleteQuery =" delete from tbl_tusach where book_id=$idbook  and user_id=$userId ";
+//        CommonDB::runSQL($deleteQuery,[]);
+//        $query ="INSERT INTO `tbl_tusach`
+//            (
+//             `book_id`,
+//             `user_id`,
+//             `date_read`)
+//VALUES (
+//        :book_id,
+//        :user_id,
+//        :create_date); ";
+//        $hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
+//        CommonDB::runSQL($query,$hsTable);
+//        $queryU=" UPDATE `tbl_book`
+//            SET reader_count = reader_count+1
+//            WHERE id=".$idbook;
+//        CommonDB::runSQL($queryU,[]);
+//        $query ="INSERT INTO `tbl_bookcase`
+//            (
+//             `book_id`,
+//             `user_id`,
+//             `create_date`)
+//VALUES (
+//        :book_id,
+//        :user_id,
+//        :create_date); ";
+//        CommonDB::runSQL($query,$hsTable);
 
-        $query ="INSERT INTO `tbl_bookcase`
-            (
-             `book_id`,
-             `user_id`,
-             `create_date`)
-VALUES (
-        :book_id,
-        :user_id,
-        :create_date); ";
-        CommonDB::runSQL($query,$hsTable);
 
-        $query ="INSERT INTO `tbl_tusach`
-            (
-             `book_id`,
-             `user_id`,
-             `date_read`)
-VALUES (
-        :book_id,
-        :user_id,
-        :create_date); ";
-        $hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
-        CommonDB::runSQL($query,$hsTable);
-        $queryU=" UPDATE `tbl_book`
-            SET reader_count = reader_count+1
-            WHERE id=".$idbook;
-        CommonDB::runSQL($queryU,[]);
-        echo "1";
-        Yii::app()->end();
+       // echo "1";
+      //  Yii::app()->end();
     }
     public function actionLoadItem(){
         $id = $_POST['id'];

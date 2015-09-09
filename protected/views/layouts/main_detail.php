@@ -118,6 +118,12 @@
                   border: 1px solid #fff;
                 }
             }
+            .dropdown-menu{
+                padding:    0px;
+                font-size: 16px;
+                font-weight: bolder;
+                margin-left: 59px;
+            }
         </style>
     </head>
     <body>
@@ -226,9 +232,9 @@
                                     <img src="/images/bookstore.png"> Thêm vào tủ sách   <span class="caret"></span>
                                 </a>
 
-                                <ul class="dropdown-menu" style="margin-top: 35px">
-                                    <li><a style="  border: 1px solid #b1b3b8;" href="javascript:AddBookToMe()">Sách này</a></li>
-                                    <li><a style="  border: 1px solid #b1b3b8;" href="#">Nguyên bộ</a></li>
+                                <ul class="dropdown-menu colorconggiao"  style="margin-top: 35px">
+                                    <li><a style="  border: 1px solid #b1b3b8;" href="javascript:AddBookToMe(0)">Sách này</a></li>
+                                    <li><a style="  border: 1px solid #b1b3b8;" href="javascript:AddBookToMe(1)">Nguyên bộ</a></li>
                                 </ul>
                             </div>
 <!--                        <a class="register" href="javascript:AddBookToMe()">-->
@@ -268,6 +274,8 @@
     <script src="/js/dialog/bootstrap-dialog.min.js"></script>
     <script>
 	var ID_BOOK='<?php echo $this->ID_BOOK; ?>';
+
+<!--    ID_BOOK='--><?php //echo  Common::getSession('idbook'); ?><!--';-->
         $(document).ready(function() {
             $("#fabric").select2();
             $(".btn_tab").click(function(){
@@ -307,10 +315,10 @@
                 }
             })
         }
-    function AddBookToMe(){
+    function AddBookToMe(isAll){
         $.ajax({
             type:"POST",
-            url:'<?php echo Yii::app()->baseUrl ?>/Site/AddBook?ID_BOOK='+ID_BOOK,
+            url:'<?php echo Yii::app()->baseUrl ?>/Site/AddBook?isAll='+isAll+'&ID_BOOK='+ID_BOOK,
             data:{},
             success:function(result){
                //alert('Đã thêm vào tủ sách của bạn thành công!');

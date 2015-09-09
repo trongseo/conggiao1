@@ -74,15 +74,15 @@ class ClsReadBook {
         $arrView["orderbyid"]=$orderbyid;
         $arrView["perpageshow"]=$perpageshow;
         ////////NO NEED CHANGE ############################################################
-//        SELECT b.*,b2.`date_read`
-// FROM `tbl_book` b ,`tbl_bookcase` b1,`tbl_tusach` b2
-// WHERE b.`id`=b1.`book_id` AND  b.`id`= b2.`book_id` AND b.delete_logic_flg =0 AND b.`active`=1 AND b1.`user_id`=19 AND b2.`user_id`=19
-//DATEDIFF(CURDATE(),date_read)
-        $COLUMN_GET="  b.*,DATEDIFF(CURDATE(),b2.`date_read`) as `date_read`   ";
-        $TABLE_GET=" `tbl_book` b ,`tbl_bookcase` b1,`tbl_tusach` b2 ";
+//        SELECT CONCAT(tbl_bookcase.`book_id`,'_', tbl_book_detail.part) AS book_id,CONCAT(book_name,' ',tbl_book_detail.part ),bookimage_link
+// FROM tbl_bookcase LEFT JOIN tbl_book_detail ON tbl_bookcase.`book_id` = tbl_book_detail.`id`
+// LEFT JOIN tbl_book ON tbl_book_detail.`book_id` = tbl_book.`id`
+//WHERE tbl_bookcase.`user_id`=19 AND tbl_book.delete_logic_flg =0 AND tbl_book.`active`=1
+        $COLUMN_GET="   CONCAT(tbl_book_detail.book_id,'_', tbl_book_detail.part) AS id,CONCAT(book_name,' ',tbl_book_detail.part ) as book_name,bookimage_link  ";
+        $TABLE_GET="  tbl_bookcase LEFT JOIN tbl_book_detail ON tbl_bookcase.`book_id` = tbl_book_detail.`id` LEFT JOIN tbl_book ON tbl_book_detail.`book_id` = tbl_book.`id` ";
         $userId = Common::getSession(USER_ID);
-        $TABLE_WHERE=" AND b.`id`=b1.`book_id` AND  b.`id`= b2.`book_id` AND b.delete_logic_flg =0 AND b.`active`=1 AND b1.`user_id`=$userId AND b2.`user_id`=$userId";
-        $TABLE_ORDER_BY=" b2.`date_read` desc";
+        $TABLE_WHERE=" AND tbl_bookcase.user_id=$userId AND tbl_book.delete_logic_flg =0 AND tbl_book.active=1 ";
+        $TABLE_ORDER_BY=" book_name desc";
         //  SELECT tbl_comment.*,display_name FROM tbl_comment,tbl_users WHERE tbl_users.`id`=tbl_comment.`user_id`
         $query=" SELECT  ".$COLUMN_GET." FROM ".$TABLE_GET." WHERE 1=1 ".$TABLE_WHERE ;
         $queryCommand = Yii::app()->db->createCommand($query);
