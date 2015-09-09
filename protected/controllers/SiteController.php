@@ -555,10 +555,15 @@ VALUES (:name,
 //        SELECT * FROM tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id
 //
 // WHERE a.ID=35 AND part=1 AND delete_logic_flg=0 AND active=1 ORDER BY part
+        $arrBook=[];
+        if($IDDetailBook==0){
+            $arrBook = CommonDB::GetDataRow(' tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id ',' a.delete_logic_flg=0 AND a.active=1 AND a.id='.$idbook);
+        }else{
+            $arrBook = CommonDB::GetDataRow(' tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id ',' a.delete_logic_flg=0 AND a.active=1 AND b.id='.$IDDetailBook);
+        }
 
-        $arrBook = CommonDB::GetDataRow(' tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id ',' a.delete_logic_flg=0 AND a.active=1 AND b.id='.$IDDetailBook);
 
-      //  Common::setSession('arrBook',$arrBook);
+       Common::setSession('arrBook',$arrBook);
         if($id == 0){
 
 

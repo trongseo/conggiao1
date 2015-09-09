@@ -232,6 +232,6 @@ function SendMail1($frommail,$tomail,$subject,$message,$fromfullname="Sindre Des
 
 //Test send mail
 //function SendMail($frommail,$tomail,$subject,$message,$fromfullname="Sindre Design")
-SendMail1("info@kinhtanphuc.com","trongtayninh@gmail.com","tieu de mail","Noi dung email");
-
+//SendMail1("info@kinhtanphuc.com","trongtayninh@gmail.com","tieu de mail","Noi dung email");
+phpinfo();
 ?>

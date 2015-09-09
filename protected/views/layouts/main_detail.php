@@ -112,6 +112,12 @@
 			.logo-login a{
 				 color:#5a2e0b;
 			}
+            @media (min-width: 979px) {
+               div.dropdown:hover > ul.dropdown-menu {
+                    display: block;
+                  border: 1px solid #fff;
+                }
+            }
         </style>
     </head>
     <body>
@@ -214,10 +220,20 @@
                     </div>
                     <div class="logo-login">
                         <?php if(isset(Yii::app()->session['id_user'])): ?>
+                            <div class="dropdown ">
 
-                        <a class="register" href="javascript:AddBookToMe()">
-                            <img src="<?php echo Yii::app()->baseUrl.'/images/bookstore.png'?>" /> Thêm vào tủ sách
-                        </a>
+                                <a class="register" href="javascript:void(0)" data-toggle="dropdown">
+                                    <img src="/images/bookstore.png"> Thêm vào tủ sách   <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" style="margin-top: 35px">
+                                    <li><a style="  border: 1px solid #b1b3b8;" href="javascript:AddBookToMe()">Sách này</a></li>
+                                    <li><a style="  border: 1px solid #b1b3b8;" href="#">Nguyên bộ</a></li>
+                                </ul>
+                            </div>
+<!--                        <a class="register" href="javascript:AddBookToMe()">-->
+<!--                            <img src="--><?php //echo Yii::app()->baseUrl.'/images/bookstore.png'?><!--" /> Thêm vào tủ sách-->
+<!--                        </a>-->
                         <?php else: ?>
                             <a class="register" href="javascript:AddBookToMeNo()"  >
                                 <img src="<?php echo Yii::app()->baseUrl.'/images/bookstore.png'?>" /> Thêm vào tủ sách

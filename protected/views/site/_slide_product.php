@@ -554,7 +554,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="clear"></div>
 <div class="Border-BottomH3"></div>
 <div class="preview-box clearfix">
-<div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
+<div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview" id="sliderNewYorkTimesPreview">
     <ul>
         <?php foreach($dataNewBook as $value):?>
         <li><?php require "_slide_product_item_template.php" ?></li>
@@ -598,8 +598,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
-                <ul>
+            <div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview testxxx" id="sliderNewYorkTimesPreview">
+                <ul style="min-width: 0px;">
                     <?php foreach($dataPrepareBook as $value):?>
                         <li>
                         <li><?php require "_slide_product_item_template.php" ?></li>
@@ -645,7 +645,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
+            <div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview" id="sliderNewYorkTimesPreview">
                 <ul>
                     <?php foreach($dataGoodBook as $value):?>
 
@@ -692,7 +692,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1" id="sliderNewYorkTimesPreview">
+            <div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview" id="sliderNewYorkTimesPreview">
                 <ul>
                     <?php foreach($dataReference as $value):?>
 
@@ -777,6 +777,12 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     })();
     $(document).ready(function(){
 
+        $( ".sliderNewYorkTimesPreview >ul" ).each(function( index ) {
+			     if( $(this).width()==0){
+					$(this).width(5260);
+							}
+           
+        });
     });
 
 //    jQuery(function($) {

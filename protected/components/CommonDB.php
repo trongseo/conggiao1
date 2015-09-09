@@ -120,7 +120,11 @@ class CommonDB {
     }
     public  static  function getIDDetailBook($book_id,$part){
         $query =" SELECT id FROM tbl_book_detail WHERE book_id=$book_id AND part=$part";
-        return CommonDB::GetAll($query,[])[0]["id"];
+        $reData = CommonDB::GetAll($query,[]);
+        if(count($reData)==0){
+            return 0;
+        }
+        return $reData[0]["id"];
     }
     public static   function runSQL($sql,$hashTable){
         $command = Yii::app()->db->createCommand($sql);
