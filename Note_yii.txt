@@ -1,6 +1,6 @@
 ﻿    r-click chon git bash
 	git pull origin master
-	
+	ok add
 	---
 	<?php foreach($dataColor as $value):?>
                             <option value="<?php echo $value["color_id"] ?>" ><?php echo $value["color_name"] ?></option>
