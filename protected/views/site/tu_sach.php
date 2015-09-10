@@ -552,7 +552,13 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     margin-left: auto;
     margin-right: auto;
 }
-
+.boximg {
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 3px #CAC6C6;
+    margin: 2px;
+}
 </style>
 <div class='row'>
 <div class="col-md-12">
@@ -574,11 +580,9 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="row">
    
 	
-	 <div class="arrow colorconggiao">
-        <h4>Tủ sách</h4>
-    </div>
-    <div class="arrow-right"></div>
-	
+
+    <?php $myTextPath="Tủ sách"; ?>
+    <?php  require "template_path.php"  ?>
 	
     <div class="clear" style="padding-top:2px"></div>
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>

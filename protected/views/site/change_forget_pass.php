@@ -2,10 +2,11 @@
     <input type="hidden" value="1" id="issubmit" name="issubmit" />
     <input type="hidden" value="<?php echo $code_active ?>" id="code_active" name="code_active" />
 <div class="row">
-    <div class="arrow">
-        <h4>Đổi mật khẩu</h4>
-    </div>
-    <div class="arrow-right"></div>
+
+
+    <?php $myTextPath="Đổi mật khẩu"; ?>
+    <?php  require "template_path.php"  ?>
+
     <div class="clear" style="padding-top:2px"></div>
     <div class="col-md-12" style="background-color: #B8763A;height: 1px;"></div>
 
