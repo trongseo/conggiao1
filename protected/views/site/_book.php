@@ -541,7 +541,13 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     margin-left: auto;
     margin-right: auto;
 }
-
+.boximg {
+    padding: 3px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 3px #CAC6C6;
+    margin: 2px;
+}
 </style>
 <div class="row ccentre" style="">
     <!--// `id`,`book_code`,`parent_id`,`,`book_name`,`introduction`,`bookimage_link`,`active`,`create_date`,`good_book_flg`,`book_type`,`content_link`,`viewer_count`,`reader_count`,`relate_book_id`,`download_flg`,`download_file_link`,`admin_id`,`delete_logic_flg`,`user_id_delete`,`date_delete`-->

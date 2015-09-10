@@ -621,7 +621,7 @@ VALUES (
         }
     }
     public function actionRemoveBook(){
-        $idbook = Common::getPara(IDDetailBook);
+        $idbook = Common::getPara('ID_BOOK');
         $userId =Common::getSession(USER_ID);
         $deleteQuery =" delete from tbl_bookcase where book_id=$idbook and user_id=$userId ";
         CommonDB::runSQL($deleteQuery,[]);

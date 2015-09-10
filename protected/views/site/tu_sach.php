@@ -593,7 +593,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     <div class="row ccentre " style="">
         <!--// `id`,`book_code`,`parent_id`,`,`book_name`,`introduction`,`bookimage_link`,`active`,`create_date`,`good_book_flg`,`book_type`,`content_link`,`viewer_count`,`reader_count`,`relate_book_id`,`download_flg`,`download_file_link`,`admin_id`,`delete_logic_flg`,`user_id_delete`,`date_delete`-->
         <?php foreach($dataRelateBook as $value):?>
-            <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;" class="rev<?php echo $value["id"]?>">
+            <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;" class="rev<?php echo $value["detailid"]?>">
                 <div style="">
                     <img class="boximg" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
                     <div style="font-size: 11px;font-weight: bold;line-height: 15px;padding-top: 5px;padding-bottom: 5px;"> <?php echo $value["book_name"]?></div>
@@ -603,7 +603,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                             Đọc
                         </div>
                     </a>
-    <a target="_blank" href="javascript:DeleteRead('<?php echo $value["id"]?>');">
+    <a target="_blank" href="javascript:DeleteRead('<?php echo $value["detailid"]?>');">
         <div class="deletebook">
             Xóa
         </div>

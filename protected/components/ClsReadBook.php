@@ -78,7 +78,7 @@ class ClsReadBook {
 // FROM tbl_bookcase LEFT JOIN tbl_book_detail ON tbl_bookcase.`book_id` = tbl_book_detail.`id`
 // LEFT JOIN tbl_book ON tbl_book_detail.`book_id` = tbl_book.`id`
 //WHERE tbl_bookcase.`user_id`=19 AND tbl_book.delete_logic_flg =0 AND tbl_book.`active`=1
-        $COLUMN_GET="   CONCAT(tbl_book_detail.book_id,'_', tbl_book_detail.part) AS id,CONCAT(book_name,' ',tbl_book_detail.part ) as book_name,bookimage_link  ";
+        $COLUMN_GET=" tbl_book_detail.id as detailid,  CONCAT(tbl_book_detail.book_id,'_', tbl_book_detail.part) AS id,CONCAT(book_name,' ',tbl_book_detail.part ) as book_name,bookimage_link  ";
         $TABLE_GET="  tbl_bookcase LEFT JOIN tbl_book_detail ON tbl_bookcase.`book_id` = tbl_book_detail.`id` LEFT JOIN tbl_book ON tbl_book_detail.`book_id` = tbl_book.`id` ";
         $userId = Common::getSession(USER_ID);
         $TABLE_WHERE=" AND tbl_bookcase.user_id=$userId AND tbl_book.delete_logic_flg =0 AND tbl_book.active=1 ";
