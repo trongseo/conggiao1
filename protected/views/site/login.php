@@ -48,7 +48,7 @@
                         <div class="form-group form-actions">
                             <div class="col-xs-12 col-md-8" style="text-align: center;margin-top:15px">
                                 <div class="row">
-                                    <button type="submit" class="btn btn-green btn-epub" id="btn_login" onclick="actionLogin();">
+                                    <button type="submit" class="btn btn-green btn-epub" id="btn_login" >
                                         Đăng nhập
                                     </button>
                                     <a class="btn btn-green btn-epub" href="<?php echo Yii::app()->baseUrl.'/dang-ky'?>">
