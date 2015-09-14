@@ -477,7 +477,7 @@ width:84px;
                     </a>
                     <a href="<?php echo Yii::app()->baseUrl.'/huong-dan-app'?>">
                         <div class="items items-4">
-                            Ừng dụng cho Android
+                            Ứng dụng cho Android
                         </div>
                     </a>
                 </div>
