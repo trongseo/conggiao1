@@ -757,7 +757,7 @@ VALUES (
     public function actionTuSach(){
         if(Common::getSession(USER_ID)==""){
             $this->curPage="tusach";
-            $this->render(array('dataPage'=>""), 'tu_sach_no_login');
+            $this->render('tu_sach_no_login',array('dataPage'=>""));
             return;
         }
 
