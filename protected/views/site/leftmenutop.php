@@ -1,13 +1,25 @@
-
-
         <?php  $comboData=$this->comboData;
+         $comboData1ss = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 ORDER BY  INDEX_CODE',[]);
+
+        function getDataArr($comboData1ss,$valType,$valParentId){
+            $resultsArray = array();
+            foreach($comboData1ss as $row){
+                if(($row['type'] == $valType )&&( $row['parent_id']==  $valParentId) ) {
+                    $resultsArray[] = $row;
+                }
+            }
+            return $resultsArray;
+        }
 
         ?>
 
         <?php foreach($comboData as $value):?>
             <?php
 
-            $comboData1 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=1 AND parent_id='.$value['id'].' ORDER BY  INDEX_CODE',[]);
+            //$comboData1 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=1 AND parent_id='.$value['id'].' ORDER BY  INDEX_CODE',[]);
+
+            $comboData1= getDataArr($comboData1ss,1,$value['id']);
+
             ?>
             <li class="item<?php echo $value["id"]?> dropdown-submenu">
 
@@ -19,7 +31,8 @@
                             <a  title="<?php echo $value1["name"]?>" class="trung1" href="/thu-vien/?cate=<?php echo $value["id"]?>-<?php echo $value1["id"]?>" myid="<?php echo $value["id"]?>-<?php echo $value1["id"]?>" > <?php echo Common::truncate($value1["name"],30,'.');?>  <i class="fa fa-plus-square"></i></a>
 
                             <?php
-                            $comboData2 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=2 AND parent_id='.$value1['id'].'   ORDER BY  INDEX_CODE',[]);
+                           // $comboData2 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=2 AND parent_id='.$value1['id'].'   ORDER BY  INDEX_CODE',[]);
+                            $comboData2= getDataArr($comboData1ss,2,$value1['id']);
                             ?>  <ul class="cute1 dropdown-menu">
                                 <?php foreach($comboData2 as $value2):?>
 
@@ -34,8 +47,4 @@
             </li>
 
         <?php endforeach?>
-
-
-
-
 
