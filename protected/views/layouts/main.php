@@ -192,6 +192,24 @@ width:84px;
     </style>
 </head>
 <body>
+<?php
+
+    $comboData1ss = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 ORDER BY  INDEX_CODE',[]);
+    Common::setSession('MENU_SS',$comboData1ss);
+    $comboData1ss = Common::getSession('MENU_SS');
+    function getDataArr($comboData1ss,$valType,$valParentId){
+        $resultsArray = array();
+        foreach($comboData1ss as $row){
+            if(($row['type'] == $valType )&&($valParentId== -1) ) {
+                $resultsArray[] = $row;
+            }else
+                if(($row['type'] == $valType )&&( $row['parent_id']==  $valParentId) ) {
+                    $resultsArray[] = $row;
+                }
+        }
+        return $resultsArray;
+    }
+ ?>
 <div class="container-wp">
     <div class="col-md-12">
 
@@ -407,8 +425,9 @@ width:84px;
                         <div class="row">
                             <select id="fabric" style="height:33px">
                                 <option value="0">Tìm tất cả thể loại</option>
-                                <?php  $comboData=$this->comboData;
-
+                                <?php
+                                //$comboData=$this->comboData;
+                                $comboData=getDataArr($comboData1ss,0,-1);
 
                                 ?>
 

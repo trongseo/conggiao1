@@ -6,12 +6,25 @@ class SiteController extends CController {
     public $textSearch = '';
     public $ID_BOOK="";
     public $curPage="";
+    public $isLoad="0";
     function init() {
         parent::init();
         $main_type = 0;
         $this->layout = "main";
-        $this->comboData = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE',[]);
-    }
+        if (!isset($_SESSION['CREATED'])) {
+            $_SESSION['CREATED'] = time();
+          //  $this->comboData = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE',[]);
+
+        } else if (time() - $_SESSION['CREATED'] > 160*100) {
+            $_SESSION['CREATED'] = time();  // update creation time
+           // $this->comboData = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE',[]);
+
+        }
+
+        if($this->isLoad=="0"){
+            $this->isLoad=="1";
+        }
+     }
     public function actions() {
         return array(
             'captcha' => array(

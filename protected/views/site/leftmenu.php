@@ -6,24 +6,28 @@
 <div style="width:100%;padding-right:16px;">
     <ul class="menu1">
         <?php  $comboData=$this->comboData;
-        $comboData1ss = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 ORDER BY  INDEX_CODE',[]);
+        $comboData1ss = Common::getSession('MENU_SS');
 
-        function getDataArr($comboData1ss,$valType,$valParentId){
+        function getDataArrA($comboData1ss,$valType,$valParentId){
             $resultsArray = array();
             foreach($comboData1ss as $row){
-                if(($row['type'] == $valType )&&( $row['parent_id']==  $valParentId) ) {
+                if(($row['type'] == $valType )&&($valParentId== -1) ) {
                     $resultsArray[] = $row;
-                }
+                }else
+                    if(($row['type'] == $valType )&&( $row['parent_id']==  $valParentId) ) {
+                        $resultsArray[] = $row;
+                    }
             }
             return $resultsArray;
         }
+        $comboData=getDataArrA($comboData1ss,0,-1);
         ?>
 
         <?php foreach($comboData as $value):?>
             <?php
 
            // $comboData1 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=1 AND parent_id='.$value['id'].' ORDER BY  INDEX_CODE',[]);
-            $comboData1= getDataArr($comboData1ss,1,$value['id']);
+            $comboData1= getDataArrA($comboData1ss,1,$value['id']);
             ?>
             <li class="item<?php echo $value["id"]?>">
 
@@ -36,7 +40,7 @@
 
                             <?php
                            // $comboData2 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=2 AND parent_id='.$value1['id'].'   ORDER BY  INDEX_CODE',[]);
-                            $comboData2= getDataArr($comboData1ss,2,$value1['id']);
+                            $comboData2= getDataArrA($comboData1ss,2,$value1['id']);
                             ?>  <ul class="cute ulitem<?php echo $value1["id"]?> ">
                                 <?php foreach($comboData2 as $value2):?>
 
