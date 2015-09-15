@@ -732,7 +732,9 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
                 <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
                     <ul>
+                        <?php $ii=0;?>
                         <?php foreach($dataReference as $value):?>
+                            <?php if($ii==1): ?>
                             <li class="slider-item">
                                 <div id="img-block">
                                     <a class="book-picture-shadow" target="_blank" href="<?php echo $value["link_ref"] ?>" >
@@ -743,6 +745,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                                     </a>
                                 </div>
                             </li>
+                            <?php endif ?>
+                            <?php $ii=1;?>
                         <?php endforeach?>
                     </ul>
                 </div>
