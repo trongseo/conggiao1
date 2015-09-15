@@ -143,7 +143,7 @@
         var title1 = $("#"+objid1).val();
         var reVal=true;
         if (title!=title1) {
-            alert("Vui lòng nhập nội dung mật khẩu giống nhau !");
+            alertMore("Vui lòng nhập nội dung mật khẩu giống nhau !");
             $("#"+objid).focus();
             reVal=false;
 
@@ -318,7 +318,7 @@
             },
             success: function()
             {
-                alert("Đã cập thành công.");
+                alertMore("Đã cập nhật thành công.");
             },
             complete: function(response)
             {
