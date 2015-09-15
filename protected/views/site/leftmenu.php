@@ -17,7 +17,7 @@
             <li class="item<?php echo $value["id"]?>">
 
                 <a class="aitem<?php echo $value["id"]?>" title="<?php echo $value["name"]?>" href="javascript:void(0);" myid="<?php echo $value["id"]?>"><?php echo Common::truncate($value["name"],36,'.') ;?> <i class="fa fa-plus-square"></i></a>
-                <ul class="cute">
+                <ul class="cute ulitem<?php echo $value["id"]?>" style="display: none">
                     <?php foreach($comboData1 as $value1):?>
                         <li class="subitem1">
 
@@ -25,7 +25,7 @@
 
                             <?php
                             $comboData2 = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=2 AND parent_id='.$value1['id'].'   ORDER BY  INDEX_CODE',[]);
-                            ?>  <ul class="cute">
+                            ?>  <ul class="cute ulitem<?php echo $value1["id"]?> ">
                                 <?php foreach($comboData2 as $value2):?>
 
                                     <li class="subitem1 sublittle"><a  title="<?php echo $value2["name"]?>" class="tieu aitem<?php echo $value2["id"]?>" href="javascript:void(0);" id="<?php echo $value2["id"]?>" myid="<?php echo $value2["id"]?>" >  <?php echo Common::truncate($value2["name"],34,'.')?> </a></li>

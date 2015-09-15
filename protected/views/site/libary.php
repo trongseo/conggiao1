@@ -97,13 +97,28 @@ var FROM_TIEUMUC='tieumuc';
                 console.log(cates);
               var arCate=  cates.split("-");
                if(arCate.length>0){
-                   $('.aitem'+arCate[0]).click(); console.log('.'+arCate[0]);
+                   if(arCate.length==1){
+                   $('.aitem'+arCate[0]).click();
+                   }else
+                   {
+                      $('.ulitem'+arCate[0] ).show();
+                       $('.aitem'+arCate[0]).find( "i" ).removeClass('fa-plus-square').addClass('fa-minus-square');
+                   }
                }
                 if(arCate.length>1){
-                    $('.aitem'+arCate[1]).click();
+                    if(arCate.length==2){
+                        $('.aitem'+arCate[1]).click();
+                    }else
+                    {
+                       //
+                      $('.ulitem'+arCate[1] ).show();
+                        $('.aitem'+arCate[2]).click();
+                       // $('.aitem'+arCate[1]).find( "i" ).removeClass('fa-plus-square').addClass('fa-minus-square');
+                    }
+
                 }
                 if(arCate.length>2){
-                    $('.aitem'+arCate[2]).click();
+                   // $('.aitem'+arCate[2]).click();
                 }
                 console.log(arCate[0]);
                // $('#divcontent').hide();
