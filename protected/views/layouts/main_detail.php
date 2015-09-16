@@ -22,6 +22,7 @@
         <script type="text/javascript" src="<?php echo Yii::app()->baseUrl?>/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl?>/css/admin/plugins/font-awesome/css/font-awesome.min.css">
         <script src="/js/jquery.form.js"></script>
+        <script src="/js/JsCommon.js"></script>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -316,11 +317,13 @@
             })
         }
     function AddBookToMe(isAll){
+        wailtLoad();
         $.ajax({
             type:"POST",
             url:'<?php echo Yii::app()->baseUrl ?>/Site/AddBook?isAll='+isAll+'&ID_BOOK='+ID_BOOK,
             data:{},
             success:function(result){
+                wailtLoadEnd();
                //alert('Đã thêm vào tủ sách của bạn thành công!');
                 BootstrapDialog.alert('Đã thêm vào tủ sách của bạn thành công!');
             }
@@ -330,7 +333,7 @@
         BootstrapDialog.alert('Vui lòng đăng nhập để sử dụng chức năng này!');
     }
         function LoadInfo(id){
-
+           wailtLoad();
            // var id = $(this).attr('alt');
            $obcc =  $( ".btn_tab[alt='"+id+"']" );
             $(".btn_tab").removeClass('btn_tab_active');
@@ -341,6 +344,8 @@
                 data:{id:id},
                 success:function(result){
                     $("#content-wp").empty().append(result);
+
+                    wailtLoadEnd();
                 }
             })
         }

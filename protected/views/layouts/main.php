@@ -571,7 +571,7 @@ div.slider-box div.slider {
 
         $( "#divsearch" ).click(function() {
             if($('#txtKeySearch').val().length==0){
-                alert("Vui lòng nhập nội dung cần tìm!");
+                alertMore("Vui lòng nhập nội dung cần tìm!");
                 return;
             }
             var daimucid = $('#fabric').val();
@@ -579,22 +579,27 @@ div.slider-box div.slider {
         });
     });
     function LoadSLide(){
+        wailtLoad();
         $.ajax({
             type:"POST",
             url:'<?php echo Yii::app()->baseUrl ?>/Site/LoadSLide',
             data:{},
             success:function(result){
                 $("#slide-warp").empty().append(result);
+                wailtLoadEnd();
             }
         })
     }
     function LoadSLideProduct(){
+        wailtLoad();
         $.ajax({
+
             type:"POST",
             url:'<?php echo Yii::app()->baseUrl ?>/Site/LoadSLideProduct',
             data:{},
             success:function(result){
                 $("#slide-product").empty().append(result);
+                wailtLoadEnd();
             }
         })
     }
