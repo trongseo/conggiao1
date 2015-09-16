@@ -118,6 +118,7 @@ function alertMore(yourMessage){
 /////
 var myApp;
 myApp = myApp || (function () {
+
         var pleaseWaitDiv = $('<div class="modal hide" id="pleaseWaitDialog" data-backdrop="static" data-keyboard="false"><div class="modal-header"><h1>Processing...</h1></div><div class="modal-body"><div class="progress progress-striped active"><div class="bar" style="width: 100%;"></div></div></div></div>');
         return {
             showPleaseWait: function() {
@@ -130,11 +131,14 @@ myApp = myApp || (function () {
         };
     })();
 ////
+
 function wailtLoad(){
+    $('body').append('<div  class="overlay" style="position:absolute;top:10;left:10;width:100%;height:100%;z-index:1000;color: #000;">Đang tải....... </div>');
     document.body.style.cursor='wait';
  //   myApp.showPleaseWait();
 }
 function wailtLoadEnd(){
+    $('.overlay').hide();
     document.body.style.cursor='default';
    // myApp.hidePleaseWait();
 }
