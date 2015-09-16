@@ -72,7 +72,25 @@
         border-left-color: #ccc;
         margin-top: 5px;
         margin-right: -10px;
+
     }
+    .dropdown-submenu>a.changed:after {
+        border-color: transparent;
+        border-right: 5px solid #999;
+        border-style: solid;
+        border-width: 5px 5px 5px 0;
+        content: " ";
+        display: block;
+        float: left;
+        height: 0;
+        margin-left: -15px;
+        margin-right: -10px;
+        margin-top: -15px;
+        width: 0;
+
+
+    }
+
 
     .dropdown-submenu:hover>a:after {
         border-left-color: #fff;
@@ -90,9 +108,15 @@
         border-radius: 6px 0 6px 6px;
     }
     .dropdown-submenu{position:relative;}
-    .dropdown-submenu>.dropdown-menu{top:0;left:-95%;min-width:280px;margin-top:-6px;margin-right:-1px;-webkit-border-radius:6px 6px 6px 6px;-moz-border-radius:6px 6px 6px 6px;border-radius:6px 6px 6px 6px;}
+    .dropdown-submenu>.dropdown-menu{
+        top:0;left:-100%;min-width:280px;
+        margin-top:-6px;margin-right:-1px;-webkit-border-radius:6px 6px 6px 6px;
+        -moz-border-radius:6px 6px 6px 6px;
+        border-radius:6px 6px 6px 6px;}
     .dropdown-submenu:hover>.dropdown-menu{display:block;}
-    .dropdown-submenu>a:after{display:block;content:" ";float:left;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 5px 5px 0;border-right-color:#999;margin-top:5px;margin-right:10px;}
+    .dropdown-submenu>a:after
+    {display:block;content:" ";float:left;width:0;height:0;border-color:transparent;border-style:solid;
+        border-width:5px 5px 5px 0;border-right-color:#999;margin-top:5px;margin-right:10px;}
     .dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
     .dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 6px 6px 6px;-moz-border-radius:6px 6px 6px 6px;border-radius:6px 6px 6px 6px;}
     .dropdown-menu-right {margin-left:0;min-width: 280px}
@@ -273,4 +297,29 @@ cursor: hand;
     $('.imageright').click(function () {
        window.location ='/thu-vien';
     });
+
+    function checkBrowser(){
+        c=navigator.userAgent.search("Chrome");
+        f=navigator.userAgent.search("Firefox");
+        m8=navigator.userAgent.search("MSIE 8.0");
+        m9=navigator.userAgent.search("MSIE 9.0");
+        if (c>-1){
+            brwsr = "Chrome";
+        }
+        else if(f>-1){
+            brwsr = "Firefox";
+        }else if (m9>-1){
+            brwsr ="MSIE 9.0";
+        }else if (m8>-1){
+            brwsr ="MSIE 8.0";
+        }
+        return brwsr;
+    }
+
+    if (checkBrowser()=="Firefox") {
+      //  alert('s');
+       // $('.dropdown-submenu > a::after').css('margin-top',-15+"px");
+
+        $('.dropdown-submenu>a').toggleClass('changed');
+    }
 </script>

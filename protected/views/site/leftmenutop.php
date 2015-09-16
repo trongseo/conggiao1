@@ -1,3 +1,14 @@
+      <style>
+          .fa{
+
+          }
+          .fa-plus-square{
+
+                }
+          .fa-plus-square:before {
+              content: "";
+          }
+      </style>
         <?php
        // $comboData1ss = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 ORDER BY  INDEX_CODE',[]);
         $comboData1ss = Common::getSession('MENU_SS');
@@ -26,7 +37,7 @@
             ?>
             <li class="item<?php echo $value["id"]?> dropdown-submenu">
 
-                <a class="aitem<?php echo $value["id"]?>" title="<?php echo $value["name"]?>" href="/thu-vien/?cate=<?php echo $value["id"]?>" myid="<?php echo $value["id"]?>"><?php echo Common::truncate($value["name"],36,'.') ;?> <i class="fa fa-plus-square"></i></a>
+                <a class="aitem<?php echo $value["id"]?> " title="<?php echo $value["name"]?>" href="/thu-vien/?cate=<?php echo $value["id"]?>" myid="<?php echo $value["id"]?>"><?php echo Common::truncate($value["name"],36,'.') ;?> <i class="fa fa-plus-square"></i></a>
                 <ul class="cute1 dropdown-menu">
                     <?php foreach($comboData1 as $value1):?>
                         <li class="subitem1 dropdown-submenu">
