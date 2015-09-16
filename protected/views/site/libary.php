@@ -146,17 +146,20 @@ function LoadContentSearch(daimuc,keysearch){
     }
 	
   // var  urlGet = '/Site/SubLibaryTieuMucSearch?daimuc='+daimuc+'&keysearch='+keysearch;
+    wailtLoad();
     $.ajax({
         type:"POST",
         url:urlGet,
         data:{},
         success:function(result){
             $("#divcontent").empty().append(result);
+            wailtLoadEnd();
         }
     });
 
 }
     function LoadContent(myid,mylevel){
+        wailtLoad();
  $("#txtKeySearch").val('');
 
         if(mylevel==2){
@@ -166,6 +169,7 @@ function LoadContentSearch(daimuc,keysearch){
                 data:{},
                 success:function(result){
                     $("#divcontent").empty().append(result);
+                    wailtLoadEnd();
                 }
             });
         }else //SubLibaryTieuMuc
@@ -174,7 +178,9 @@ function LoadContentSearch(daimuc,keysearch){
             url:'/Site/SubLibary?mylevel='+mylevel+'&myid='+myid,
             data:{},
             success:function(result){
+                wailtLoadEnd();
                 $("#divcontent").empty().append(result);
+
             }
         });
     }
