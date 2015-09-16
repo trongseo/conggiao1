@@ -18,8 +18,8 @@ $queryS="SELECT *,CONCAT(book_id,'_',part)  AS book_id FROM tbl_book a LEFT JOIN
 $dataRelateBook = CommonDB::GetAll($queryS,[]);
 
 ?>
-<script type="text/javascript" src="scroll/assets/73ff6cfc/jquery.slides.min.js"></script>
-<script type="text/javascript" src="scroll/assets/73ff6cfc/main.min.js"></script>
+<!--<script type="text/javascript" src="scroll/assets/73ff6cfc/jquery.slides.min.js"></script>-->
+<!--<script type="text/javascript" src="scroll/assets/73ff6cfc/main.min.js"></script>-->
 
 
 <style>
