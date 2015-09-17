@@ -263,6 +263,14 @@
                 <div class="col-md-12" id="content-wp">
                     <?php echo $content?>
                 </div>
+                <div class="col-md-12" id="contentbook" style="display: none">
+                <div class="row idreadbook" ><script>alert('ok');</script>
+                    <div style="padding-left: 140px;padding-top: 5px;width:100%; min-height: 100%; overflow: hidden;">
+                        <iframe src="/readpdf/web/pdfviewer.php" scrolling="no"
+                                seamless="seamless" width="90%" height="100%"></iframe>
+                    </div>
+                </div>
+                </div>
             </div>
             <div class="clear1"></div>
             <div class="col-md-12">
@@ -270,6 +278,9 @@
             </div>
             <div class="clear"></div>
         </div>
+
+<div id="bodyEnd" style="position:absolute;top:10;left:10;width:400px;"><div  class="overlay" style="position:absolute;top:10;left:10;width:100%;height:100%;z-index:1000;color: #000;">Đang tải....... </div></div>
+
     </body>
     <link href="/js/dialog/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
     <script src="/js/dialog/bootstrap-dialog.min.js"></script>
@@ -332,12 +343,25 @@
     function AddBookToMeNo(){
         BootstrapDialog.alert('Vui lòng đăng nhập để sử dụng chức năng này!');
     }
+    var BOOK_CONTENT_LOAD ='';
         function LoadInfo(id){
+
            wailtLoad();
            // var id = $(this).attr('alt');
            $obcc =  $( ".btn_tab[alt='"+id+"']" );
             $(".btn_tab").removeClass('btn_tab_active');
             $obcc.addClass('btn_tab_active');
+            if(id==0){
+
+
+                    $("#contentbook").show();
+                    $("#content-wp").empty().hide();
+                    wailtLoadEnd();
+                    return;
+
+            }
+            $("#contentbook").hide();
+            $("#content-wp").show();
             $.ajax({
                 type:"POST",
                 url:'<?php echo Yii::app()->baseUrl ?>/Site/LoadInfo?ID_BOOK='+ID_BOOK,
@@ -345,6 +369,9 @@
                 success:function(result){
                     $("#content-wp").empty().append(result);
 
+                    if(id==0){
+                        BOOK_CONTENT_LOAD=result;
+                    }
                     wailtLoadEnd();
                 }
             })

@@ -133,12 +133,14 @@ myApp = myApp || (function () {
 ////
 
 function wailtLoad(){
-    $('body').append('<div  class="overlay" style="position:absolute;top:10;left:10;width:100%;height:100%;z-index:1000;color: #000;">Đang tải....... </div>');
+   // $('body').append('<div  class="overlay" style="position:absolute;top:10;left:10;width:100%;height:100%;z-index:1000;color: #000;width:0px">Đang tải....... </div>');
+    $('#bodyEnd').show();
     document.body.style.cursor='wait';
  //   myApp.showPleaseWait();
 }
 function wailtLoadEnd(){
-    $('.overlay').hide();
+   // $('.overlay').hide();
+ $('#bodyEnd').hide();
     document.body.style.cursor='default';
    // myApp.hidePleaseWait();
 }

@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<?php session_start(); ?>
+<!DOCTYPE html>
 <!--
 Copyright 2012 Mozilla Foundation
 
@@ -93,7 +94,7 @@ See https://github.com/adobe-type-tools/cmap-resources
     <script src="password_prompt.js"></script>
     <script src="pdf_document_properties.js"></script>
 <!--#endif-->
-      <?php session_start(); ?>
+
 <!--#if !MINIFIED -->
     <script src="debugger.js"></script>
     <script src="viewer.js"></script>
