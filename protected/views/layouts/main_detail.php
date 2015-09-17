@@ -264,7 +264,7 @@
                     <?php echo $content?>
                 </div>
                 <div class="col-md-12" id="contentbook" style="display: none">
-                <div class="row idreadbook" ><script>alert('ok');</script>
+                <div class="row idreadbook" >
                     <div style="padding-left: 140px;padding-top: 5px;width:100%; min-height: 100%; overflow: hidden;">
                         <iframe src="/readpdf/web/pdfviewer.php" scrolling="no"
                                 seamless="seamless" width="90%" height="100%"></iframe>
@@ -351,15 +351,15 @@
            $obcc =  $( ".btn_tab[alt='"+id+"']" );
             $(".btn_tab").removeClass('btn_tab_active');
             $obcc.addClass('btn_tab_active');
-            if(id==0){
-
-
-                    $("#contentbook").show();
-                    $("#content-wp").empty().hide();
-                    wailtLoadEnd();
-                    return;
-
-            }
+//            if(id==0){
+//
+//
+//                    $("#contentbook").show();
+//                    $("#content-wp").empty().hide();
+//                    wailtLoadEnd();
+//                    return;
+//
+//            }
             $("#contentbook").hide();
             $("#content-wp").show();
             $.ajax({
