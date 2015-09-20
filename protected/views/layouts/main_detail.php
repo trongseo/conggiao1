@@ -266,7 +266,7 @@
                 <div class="col-md-12" id="contentbook" style="display: none">
                 <div class="row idreadbook" >
                     <div style="padding-left: 140px;padding-top: 5px;width:100%; min-height: 100%; overflow: hidden;">
-                        <iframe src="/readpdf/web/pdfviewer.php" scrolling="no"
+                        <iframe  id="ifbook" src="/readpdf/web/pdfviewer.php?rc=<?php echo rand(); ?>" scrolling="no"
                                 seamless="seamless" width="90%" height="100%"></iframe>
                     </div>
                 </div>
@@ -344,6 +344,7 @@
         BootstrapDialog.alert('Vui lòng đăng nhập để sử dụng chức năng này!');
     }
     var BOOK_CONTENT_LOAD ='';
+    var IS_FIRST_LOAD=0;
         function LoadInfo(id){
 
            wailtLoad();
@@ -352,11 +353,27 @@
             $(".btn_tab").removeClass('btn_tab_active');
             $obcc.addClass('btn_tab_active');
             if(id==0){
+                //truong hop moi vao chua co session cho doc sach
+                if(IS_FIRST_LOAD==0){
+                    $.ajax({
+                        type:"POST",
+                        url:'<?php echo Yii::app()->baseUrl ?>/Site/LoadInfo?ID_BOOK='+ID_BOOK,
+                        data:{id:id},
+                        success:function(result){
 
+                            $('#ifbook').attr("src", $('#ifbook').attr("src"));
+                            $("#contentbook").show();
+                            $("#content-wp").empty().hide();
+                            wailtLoadEnd();
+                        }
+                    });
+                }else{
 
-                    $("#contentbook").show();
-                    $("#content-wp").empty().hide();
                     wailtLoadEnd();
+                }
+
+                IS_FIRST_LOAD=1;
+
                     return;
 
             }
@@ -374,7 +391,7 @@
                     }
                     wailtLoadEnd();
                 }
-            })
+            });
         }
     </script>
 </html>
