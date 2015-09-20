@@ -368,7 +368,8 @@
                         }
                     });
                 }else{
-
+                    $("#contentbook").show();
+                    $("#content-wp").empty().hide();
                     wailtLoadEnd();
                 }
 
