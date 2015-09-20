@@ -351,15 +351,15 @@
            $obcc =  $( ".btn_tab[alt='"+id+"']" );
             $(".btn_tab").removeClass('btn_tab_active');
             $obcc.addClass('btn_tab_active');
-//            if(id==0){
-//
-//
-//                    $("#contentbook").show();
-//                    $("#content-wp").empty().hide();
-//                    wailtLoadEnd();
-//                    return;
-//
-//            }
+            if(id==0){
+
+
+                    $("#contentbook").show();
+                    $("#content-wp").empty().hide();
+                    wailtLoadEnd();
+                    return;
+
+            }
             $("#contentbook").hide();
             $("#content-wp").show();
             $.ajax({
