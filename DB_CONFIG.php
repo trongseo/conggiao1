@@ -19,6 +19,7 @@ define ("PATH_userimage", "/uploads/userimage/");
 define ("PATH_ROOTuserimage", $_SERVER['DOCUMENT_ROOT']."/uploads/userimage/");
 //session const
 define ("ID_BOOK", "idbook");
+define ("BOOK_MARK_PAGE", "book_mark_page");
 define ("USER_ID", "id_user");
 define ("USER_EMAIL", "email");
 define ("USER_IMAGE_FULL", "USER_IMAGE");

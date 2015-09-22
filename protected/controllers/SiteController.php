@@ -563,9 +563,25 @@ VALUES (:name,
         }
         Common::setSession('idbook',$idbook);
         Common::setSession(ID_BOOK,$idbook);
+        $userId =Common::getSession(USER_ID);
         Common::setSession('idbook_part',$idbook_part);
               $IDDetailBook= CommonDB::getIDDetailBook($idbook,$idbook_part);
          Common::setSession(IDDetailBook,$IDDetailBook);
+        Common::getBookmarpage($userId,$IDDetailBook);
+//        if($userId!=''){
+//            $arrtbl_bookmark = CommonDB::GetDataRow('tbl_bookmark ',' user_id='.$userId.'  AND book_id='.$IDDetailBook.'   ORDER BY book_mark_page DESC LIMIT 1 ');
+//            if ($arrtbl_bookmark=="") {
+//                $BOOK_MARK_PAGE=0;
+//            }else{
+//                $BOOK_MARK_PAGE =$arrtbl_bookmark['book_mark_page'];
+//            }
+//            Common::setSession(BOOK_MARK_PAGE,$BOOK_MARK_PAGE);
+//        }
+
+
+
+
+
 //        SELECT * FROM tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id
 //
 // WHERE a.ID=35 AND part=1 AND delete_logic_flg=0 AND active=1 ORDER BY part
@@ -579,7 +595,7 @@ VALUES (:name,
 
        Common::setSession('arrBook',$arrBook);
         if($id == 0){
-            $userId =Common::getSession(USER_ID);
+
 
             $deleteQuery =" delete from tbl_tusach where book_id=$IDDetailBook  and user_id=$userId ";
 
@@ -818,6 +834,26 @@ WHERE active =1 ORDER BY show_order";
         $this->render('question',array('comboData1'=>$dataIntro));
 
     }
+    public function actionBookMark(){
+
+                $query ="INSERT INTO `tbl_bookmark`
+            (
+             `book_id`,
+             `user_id`,
+             `book_mark_date`,book_mark_page)
+VALUES (
+        :book_id,
+        :user_id,
+        :book_mark_date,:book_mark_page); ";
+
+        $hsTable["book_mark_page"]= Common::getPara("book_mark_page");
+        $hsTable["book_id"]=Common::getSession(IDDetailBook);
+        $hsTable["user_id"]= Common::getSession(USER_ID);
+        CommonDB::runSQL("Delete from tbl_bookmark where user_id=:user_id and book_id=:book_id and book_mark_page=:book_mark_page ",$hsTable);
+        $hsTable["book_mark_date"]= Common::getCurrentDateYYYYDDMM();
+        CommonDB::runSQL($query,$hsTable);
+
+}
 
 function random($length) {
     $characters = "0123456789abcdefghijklmnopqrstuvwxyz";

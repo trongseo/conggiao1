@@ -266,6 +266,7 @@
                 <div class="col-md-12" id="contentbook" style="display: none">
                 <div class="row idreadbook" >
                     <div style="padding-left: 140px;padding-top: 5px;width:100%; min-height: 100%; overflow: hidden;">
+
                         <iframe  id="ifbook" src="/readpdf/web/pdfviewer.php?rc=<?php echo rand(); ?>" scrolling="no"
                                 seamless="seamless" width="90%" height="100%"></iframe>
                     </div>
@@ -343,6 +344,7 @@
     function AddBookToMeNo(){
         BootstrapDialog.alert('Vui lòng đăng nhập để sử dụng chức năng này!');
     }
+    localStorage.removeItem('database');
     var BOOK_CONTENT_LOAD ='';
     var IS_FIRST_LOAD=0;
         function LoadInfo(id){
@@ -394,5 +396,6 @@
                 }
             });
         }
+
     </script>
 </html>

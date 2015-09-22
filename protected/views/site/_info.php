@@ -24,7 +24,7 @@
         <div class="row">
             <div class="" style="border-radius:none;">
                 <h4 style="text-decoration: underline;" class="h4here">
-                   THÔNG TIN CHI TIẾT
+                   THÔNG TIN SÁCH
                 </h4>
 
                 <div class="clear1"></div>
@@ -91,7 +91,7 @@
                 <div class="clear1"></div>
 
                 <h4 style="" class="h4here">
-                    NỘI DUNG SÁCH
+                    GIỚI THIỆU SÁCH
                 </h4>
                 <div class="clear1"></div>
                 <div class="col-md-12">

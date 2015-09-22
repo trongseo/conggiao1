@@ -553,9 +553,14 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
+		<?php $navClass="hide hidden"; ?>
         <?php if(count($dataNewBook)>0): ?>
+			<?php if(count($dataNewBook)>3): ?>
+		<?php $navClass=""; ?>
+		<?php endif; ?>
         <div class="slider-box">
-            <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
+            <a class="slider-button slider-button-left <?php echo $navClass; ?>" id="sliderNewYorkTimes_bl"></a> 
+			<a class="slider-button slider-button-right <?php echo $navClass; ?>" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
                 <ul>
                     <?php $ii=0;?>
@@ -569,6 +574,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
             </div>
         </div>
         <?php endif; ?>
+	
     </div>
 </div>
     <div class="clear1"></div>

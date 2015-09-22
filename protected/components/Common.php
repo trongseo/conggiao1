@@ -7,6 +7,20 @@ class Common {
 
         return CommonDB::guid();
     }
+    public  static  function getBookmarpage($userId,$IDDetailBook){
+        $userId =Common::getSession(USER_ID);
+        Common::setSession(BOOK_MARK_PAGE,1);
+        if($userId!=''){
+            $arrtbl_bookmark = CommonDB::GetDataRow('tbl_bookmark ',' user_id='.$userId.'  AND book_id='.$IDDetailBook.'   ORDER BY book_mark_page DESC LIMIT 1 ');
+            if ($arrtbl_bookmark=="") {
+                $BOOK_MARK_PAGE=1;
+            }else{
+                $BOOK_MARK_PAGE =$arrtbl_bookmark['book_mark_page'];
+            }
+            Common::setSession(BOOK_MARK_PAGE,$BOOK_MARK_PAGE);
+        }
+
+    }
     public static function  checkImageFile($ctrName){
         $max_file_size = 1024*2000; // 200kb
         // Check filesize
@@ -36,7 +50,7 @@ class Common {
         return "";
     }
     public static function getCurrentDateYYYYDDMM(){
-        date_default_timezone_set('Asia/Bangkok');
+        date_default_timezone_set('Asia/Ho_Chi_Minh');
         return date('Y-m-d H:m:i');
     }
     public static function getCurrentDateYYYYDDMMNotime(){

@@ -76,6 +76,9 @@ class CommonDB {
 
         $result = $command->queryAll();
       //  var_dump($result,$sql);
+        if (count($result)==0) {
+            return "";
+        }
         return $result[0];
     }
     public static function GetDataRowKeyGuid($tableName,$key){

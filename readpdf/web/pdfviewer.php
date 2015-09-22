@@ -110,7 +110,19 @@ See https://github.com/adobe-type-tools/cmap-resources
 <!--#else-->
 <!--#include viewer-snippet-minified.html-->
 <!--#endif-->
+<style>
 
+    body {
+        height: 100%;
+        background-color: #BE7338 !important;
+        /*background-image: url(images/texture.png);*/
+    }
+    #toolbarContainer, .findbar, .secondaryToolbar {
+
+        background-color: #BE7338 !important;
+        /* background-image: url(images/texture.png),; */
+    }
+</style>
   </head>
 
   <body tabindex="1" class="loadingInProgress" onLoad="HandTool.toggle()">
@@ -203,13 +215,13 @@ See https://github.com/adobe-type-tools/cmap-resources
               <span data-l10n-id="page_rotate_ccw_label">Rotate Counterclockwise</span>
             </button>
 
-            <div class="horizontalToolbarSeparator"></div>
+            <div class="horizontalToolbarSeparator" style="display:none"  ></div>
 
            
 
-            <div class="horizontalToolbarSeparator"></div>
+            <div class="horizontalToolbarSeparator"  style="display:none" ></div>
 
-            <button id="documentProperties" class="secondaryToolbarButton documentProperties" title="Document Properties…" tabindex="61" data-l10n-id="document_properties">
+            <button  style="display:none" id="documentProperties" class="secondaryToolbarButton documentProperties" title="Document Properties…" tabindex="61" data-l10n-id="document_properties">
               <span data-l10n-id="document_properties_label">Document Properties…</span>
             </button>
           </div>
@@ -411,11 +423,35 @@ See https://github.com/adobe-type-tools/cmap-resources
 <!--#if !(FIREFOX || MOZCENTRAL)-->
 <!--#include viewer-snippet-mozPrintCallback-polyfill.html-->
 <!--#endif-->
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css"/>
+
+   <script src="/js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+    <link href="/js/dialog/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
+    <script src="/js/dialog/bootstrap-dialog.min.js"></script>
+
+ <script src="/js/JsCommon.js"></script>
+
 <script>
 var viewBookmark = document.getElementById('viewBookmark');
 viewBookmark.onclick=function(){
-alert(this.href);
+    var mUrl = window.location.href.replace('#','&');
+    var parMypage = $('#pageNumber').val();// getUrlParameterUrl(mUrl,'page');
+
+    wailtLoad();
+ $.ajax({
+                type:"POST",
+                url:'/Site/BookMark?book_mark_page='+parMypage+'&myid='+Math.random(),
+                data:{},
+                success:function(result){
+                  alertMore("Đã lưu đánh dấu trang!");
+                    wailtLoadEnd();
+                }
+            });
 };
+
+window.location='#page=<?php echo  $_SESSION['book_mark_page']; ?>';
 </script>
   </body>
 </html>
