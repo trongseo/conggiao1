@@ -13,18 +13,18 @@ class SiteController extends CController {
         $this->layout = "main";
         if (!isset($_SESSION['CREATED'])) {
             $_SESSION['CREATED'] = time();
-          //  $this->comboData = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE',[]);
+            //  $this->comboData = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE',[]);
 
         } else if (time() - $_SESSION['CREATED'] > 160*100) {
             $_SESSION['CREATED'] = time();  // update creation time
-           // $this->comboData = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE',[]);
+            // $this->comboData = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 AND TYPE=0 ORDER BY INDEX_CODE',[]);
 
         }
 
         if($this->isLoad=="0"){
             $this->isLoad=="1";
         }
-     }
+    }
     public function actions() {
         return array(
             'captcha' => array(
@@ -39,8 +39,8 @@ class SiteController extends CController {
 
     public function actionIndex() {
         //background: #5A2D0C;
-$this->curPage="home";
-         $this->render('index',array('c'=>''));
+        $this->curPage="home";
+        $this->render('index',array('c'=>''));
     }
 
     public function actionGetListFriend(){
@@ -168,7 +168,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
 
 
         $query1 = Yii::app()->db->createCommand() //this query contains all the data
-            ->select(array('*'))
+        ->select(array('*'))
             ->from(array('tbl_book'))
             ->where("delete_logic_flg =0 and  active=1  ".$queryMore)
             ->limit($pageSize,  ($page-1) * $pageSize); // the trick is here!
@@ -189,7 +189,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $dataItem= $query1->queryAll();
 
         $item_count = Yii::app()->db->createCommand() // this query get the total number of items,
-            ->select(' count(id) as count ')
+        ->select(' count(id) as count ')
             ->from(array('tbl_book'))
             ->where(' delete_logic_flg =0 and active=1 '.$queryMore);
 
@@ -209,7 +209,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
     public function actionSubLibaryTieuMucSearch() {
 
 //and parent_id in('.$subQuery.')
-$subQuery=" and parent_id in (
+        $subQuery=" and parent_id in (
             SELECT id FROM tbl_index
 WHERE parent_id in (SELECT id FROM tbl_index
 WHERE parent_id=:parent_id ) and type=2 )" ;
@@ -244,7 +244,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $arrView["perpageshow"]=$perpageshow;
 
         $query1 = Yii::app()->db->createCommand() //this query contains all the data
-            ->select(array('*'))
+        ->select(array('*'))
             ->from(array('tbl_book'))
             ->where("delete_logic_flg =0 and ( book_name like :book_name or author like :book_name or book_code like :book_name )".$subQuery)
             ->limit($pageSize,  ($page-1) * $pageSize); // the trick is here!
@@ -265,7 +265,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $dataItem= $query1->queryAll();
 
         $item_count = Yii::app()->db->createCommand() // this query get the total number of items,
-            ->select(' count(id) as count ')
+        ->select(' count(id) as count ')
             ->from(array('tbl_book'))
             ->where(' delete_logic_flg =0  and book_name like :book_name '.$subQuery);
 
@@ -305,7 +305,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         }else{
             Common::setSession("parent_id",$parent_id);
         }
-       // from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
+        // from=order&gotopage='+gotopage+'&orderbyid='+orderbyid+'&perpageshow='+perpageshow,
         $gotopage = Common::getPara("gotopage");
         $orderbyid = Common::getPara("orderbyid");
         $perpageshow = Common::getPara("perpageshow");
@@ -317,7 +317,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $arrView["perpageshow"]=$perpageshow;
 
         $query1 = Yii::app()->db->createCommand() //this query contains all the data
-            ->select(array('*'))
+        ->select(array('*'))
             ->from(array('tbl_book'))
             ->where('delete_logic_flg =0 and parent_id=:parent_id')
             ->limit($pageSize,  ($page-1) * $pageSize); // the trick is here!
@@ -331,12 +331,12 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $dataItem= $query1->queryAll();
 
         $item_count = Yii::app()->db->createCommand() // this query get the total number of items,
-            ->select(' count(id) as count ')
+        ->select(' count(id) as count ')
             ->from(array('tbl_book'))
             ->where(' delete_logic_flg =0  and parent_id=:parent_id');
 
         $item_count->bindParam(':parent_id',   $parent_id, PDO::PARAM_STR);
-       $itemCount= $item_count->queryScalar();
+        $itemCount= $item_count->queryScalar();
         $totalPage = ceil($itemCount / $pageSize);
 
         $dataPage =array('totalPage'=>$totalPage,'pageSize'=>$pageSize,'itemCount'=>$itemCount,'page'=>$page);
@@ -448,15 +448,16 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
             $dataTable = CommonDB::GetAll("Select * from tbl_users where email=:email",$hsTable);
             if(count($dataTable)>0){
                 $frommail=ADMIN_EMAIL;
-                 $guidactive =  Common::guid();
+                $guidactive =  Common::guid();
                 $queryUpdate = "Update tbl_users set code_active=:code_active where  email=:email";
                 $hsTable["code_active"]=$guidactive;
                 CommonDB::runSQL($queryUpdate,$hsTable);
-                $mail = new JPhpMailer;
+                Yii::import('application.extensions.phpmailer.JPhpmailer');
+                $mail = new JPhpmailer;
                 $linkActive = WEB_URL.'/lay-lai-mat-khau/'.$guidactive;
                 $contentLink="Vào đây để <a href='".$linkActive."' >Đổi mật khẩu mới</a>. hoặc ".$linkActive;
                 $mail->sendMailSmtp( $frommail,$email,"info", $email,"[Thu vien cong giao]Lay mat khau" , $contentLink);
-               // SendMail($frommail,$email,"[Thu vien cong giao]","Mat khau cua ban la:".$guidactive,$fromfullname="info");
+                // SendMail($frommail,$email,"[Thu vien cong giao]","Mat khau cua ban la:".$guidactive,$fromfullname="info");
                 echo "1";Yii::app()->end();
             }else{
                 echo "Email không tồn tại.";
@@ -468,7 +469,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $this->render('get_password',array('page'=>$check));
     }
     public function actionChangeForgetPass($code_active) {
-      $issubmit =  Common::getPara('issubmit');
+        $issubmit =  Common::getPara('issubmit');
         if($issubmit=="1"){
             $hsTable["code_active"]=Common::getPara("code_active");
             $dataTable = CommonDB::GetAll("Select * from tbl_users where code_active=:code_active",$hsTable);
@@ -497,7 +498,7 @@ WHERE parent_id=:parent_id ) and type=2 )" ;
         $this->render('welcome',array('page'=>$check));
     }
     public function actionAboutUs() {
-       $check = array('aaa'=>123,'bb'=>array('dd','kkk')); $check2 = TblConfig::model()->find();
+        $check = array('aaa'=>123,'bb'=>array('dd','kkk')); $check2 = TblConfig::model()->find();
         $this->curPage="gioithieu";
         $queryG ="SELECT * FROM `tbl_introduce`
 WHERE active =1 and id in(3,4)ORDER BY show_order";
@@ -552,7 +553,7 @@ VALUES (:name,
         $readBook = new ClsReadBook();
         $readBook->InsertComment();
         $id = $_POST['id'];
-       $idbookall = Common::getPara('ID_BOOK');
+        $idbookall = Common::getPara('ID_BOOK');
 
 
         $idbookallArr = explode("_", $idbookall);
@@ -565,8 +566,8 @@ VALUES (:name,
         Common::setSession(ID_BOOK,$idbook);
         $userId =Common::getSession(USER_ID);
         Common::setSession('idbook_part',$idbook_part);
-              $IDDetailBook= CommonDB::getIDDetailBook($idbook,$idbook_part);
-         Common::setSession(IDDetailBook,$IDDetailBook);
+        $IDDetailBook= CommonDB::getIDDetailBook($idbook,$idbook_part);
+        Common::setSession(IDDetailBook,$IDDetailBook);
         Common::getBookmarpage($userId,$IDDetailBook);
 //        if($userId!=''){
 //            $arrtbl_bookmark = CommonDB::GetDataRow('tbl_bookmark ',' user_id='.$userId.'  AND book_id='.$IDDetailBook.'   ORDER BY book_mark_page DESC LIMIT 1 ');
@@ -593,7 +594,7 @@ VALUES (:name,
         }
 
 
-       Common::setSession('arrBook',$arrBook);
+        Common::setSession('arrBook',$arrBook);
         if($id == 0){
 
 
@@ -664,9 +665,9 @@ VALUES (
         $idbook = Common::getSession(IDDetailBook);
         if(Common::getPara("isAll")=="1"){
             $main_book_id = Common::getSession(ID_BOOK);
-           $qrget=" SELECT id FROM `tbl_book_detail` WHERE book_id=$main_book_id";
+            $qrget=" SELECT id FROM `tbl_book_detail` WHERE book_id=$main_book_id";
             $dataNewBook = CommonDB::GetAll($qrget,[]);
-           // var_dump($dataNewBook);
+            // var_dump($dataNewBook);
             foreach($dataNewBook as $value){
                 $idbook =$value["id"];
                 ClsViewAllBook::addtoBookCase($idbook) ;
@@ -709,8 +710,8 @@ VALUES (
 //        CommonDB::runSQL($query,$hsTable);
 
 
-       // echo "1";
-      //  Yii::app()->end();
+        // echo "1";
+        //  Yii::app()->end();
     }
     public function actionLoadItem(){
         $id = $_POST['id'];
@@ -741,14 +742,14 @@ VALUES (
             CommonDB::runSQL($queryIn,$hsTable);
 
             $userI = '';
-                if($hsTable["sex"]==1){
-                    $userI = '/img/maleicon.png';
+            if($hsTable["sex"]==1){
+                $userI = '/img/maleicon.png';
 
-                }else{
-                    $userI = '/img/femaleicon.png';
-                }
+            }else{
+                $userI = '/img/femaleicon.png';
+            }
             if( strpos( Common::getSession(USER_IMAGE_FULL),"icon.png")>1 )
-            Common::setSession(USER_IMAGE_FULL,$userI);
+                Common::setSession(USER_IMAGE_FULL,$userI);
 
             ///
             if(   isset($_FILES["uploaded_image"]["name"]) && ($_FILES["uploaded_image"]["name"]!="") ) {
@@ -801,7 +802,7 @@ VALUES (
         $queryG ="SELECT * FROM `tbl_help`
 WHERE active =1 ORDER BY show_order";
         $dataIntro = CommonDB::GetAll($queryG,[]);
-       // $this->render('about',array('page1'=>$check,'comboData1'=>$dataIntro));
+        // $this->render('about',array('page1'=>$check,'comboData1'=>$dataIntro));
 
         $this->render('guide',array('comboData1'=>$dataIntro));
     }
@@ -836,7 +837,7 @@ WHERE active =1 ORDER BY show_order";
     }
     public function actionBookMark(){
 
-                $query ="INSERT INTO `tbl_bookmark`
+        $query ="INSERT INTO `tbl_bookmark`
             (
              `book_id`,
              `user_id`,
@@ -853,16 +854,16 @@ VALUES (
         $hsTable["book_mark_date"]= Common::getCurrentDateYYYYDDMM();
         CommonDB::runSQL($query,$hsTable);
 
-}
+    }
 
-function random($length) {
-    $characters = "0123456789abcdefghijklmnopqrstuvwxyz";
-    $string = "";
-    for ($x = 0; $x < $length; $x++):
-        $string .= $characters[mt_rand(0, strlen($characters))];
-    endfor;
-    return $string;
-}
+    function random($length) {
+        $characters = "0123456789abcdefghijklmnopqrstuvwxyz";
+        $string = "";
+        for ($x = 0; $x < $length; $x++):
+            $string .= $characters[mt_rand(0, strlen($characters))];
+        endfor;
+        return $string;
+    }
     public function actionError() {
 
         $this->pageTitle = "Lỗi truy cập";

@@ -114,13 +114,18 @@ See https://github.com/adobe-type-tools/cmap-resources
 
     body {
         height: 100%;
-        background-color: #BE7338 !important;
+        background-color: #F1DCC1 !important;
         /*background-image: url(images/texture.png);*/
     }
     #toolbarContainer, .findbar, .secondaryToolbar {
 
         background-color: #BE7338 !important;
         /* background-image: url(images/texture.png),; */
+    }
+    #thumbnailView {
+
+        width: 200px;
+       
     }
 </style>
   </head>
