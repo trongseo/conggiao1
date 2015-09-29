@@ -125,6 +125,9 @@
                 font-weight: bolder;
                 margin-left: 59px;
             }
+            .bookimagecls{
+                cursor:hand;
+            }
         </style>
     </head>
     <body>
@@ -204,7 +207,7 @@
                         <a href="<?php echo Yii::app()->baseUrl.'/' ?>">
                             <img class="logoleft"  src="/img/logobook.png" /></a>
                     </div>
-                    <div alt="0" class="btn_tab btn_tab_active" >
+                    <div alt="0" class="btn_tab btn_tab_active docsachcls" >
                         Đọc sách
                     </div>
                     <?php if(isset(Yii::app()->session['id_user'])): ?>
@@ -281,7 +284,16 @@
         </div>
 
 <div id="bodyEnd" style="position:absolute;top:10;left:10;width:400px;"><div  class="overlay" style="position:absolute;top:10;left:10;width:100%;height:100%;z-index:1000;color: #000;">Đang tải....... </div></div>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+        ga('create', 'UA-68203180-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
     </body>
     <link href="/js/dialog/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
     <script src="/js/dialog/bootstrap-dialog.min.js"></script>
@@ -289,6 +301,11 @@
 	var ID_BOOK='<?php echo $this->ID_BOOK; ?>';
 
 <!--    ID_BOOK='--><?php //echo  Common::getSession('idbook'); ?><!--';-->
+
+
+    $(document).on('click', '.bookimagecls', function(){
+        $(".docsachcls").click();
+    });
         $(document).ready(function() {
             $("#fabric").select2();
             $(".btn_tab").click(function(){

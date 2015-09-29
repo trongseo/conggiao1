@@ -127,6 +127,12 @@ See https://github.com/adobe-type-tools/cmap-resources
         width: 200px;
        
     }
+    #toolbarSidebar {
+        width: 200px;
+        height: 32px;
+        background-color: #BE7338 !important;
+        background-image: url('');
+    }
 </style>
   </head>
 

@@ -17,6 +17,7 @@ define ("PATH_IMAGE_bookFile", WEB_URL."/admintvcg/uploads/bookFile/");
 define ("PATH_IMAGE_slideImage", WEB_URL."/admintvcg/uploads/slideImage/");
 define ("PATH_userimage", "/uploads/userimage/");
 define ("PATH_ROOTuserimage", $_SERVER['DOCUMENT_ROOT']."/uploads/userimage/");
+define ("NUMBER_LIMIT_BOOK_SCROLL", 50);
 //session const
 define ("ID_BOOK", "idbook");
 define ("BOOK_MARK_PAGE", "book_mark_page");

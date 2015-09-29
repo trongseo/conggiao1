@@ -73,7 +73,7 @@
                             <div class="col-md-12"><span class="headerc colorconggiao"> Mã sách:</span>  <?php echo  $arrBook['book_code']; ?></div>
                         </div>
                         <div class="row">
-                            <div class="col-md-12">  <span class="headerc colorconggiao"> Số người xem:</span>
+                            <div class="col-md-12">  <span class="headerc colorconggiao"> Số lượt xem:</span>
                                 <?php echo  $arrBook['viewer_count']; ?>  </div>
                         </div>
                         <div class="row">
@@ -98,7 +98,7 @@
                 	<div class="form-group">
 	                	<div class="col-md-2">
 	                		<div class="row">
-		                		<img class="book-css3-shadow" src="<?php echo PATH_IMAGE.$arrBook["bookimage_link"] ?>" width="150px" height="200px">
+		                		<img  class=" bookimagecls book-css3-shadow" src="<?php echo PATH_IMAGE.$arrBook["bookimage_link"] ?>" width="150px" height="200px">
 		                	</div>
                             <?php if(isset(Yii::app()->session['id_user'])): ?>
                                 <div class="download">
