@@ -617,9 +617,9 @@ VALUES (
             $hsTable["user_id"]= $userId;
             $hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
             if(Common::getSession(USER_ID)!=""){
-                $queryU1=" UPDATE `tbl_book`
-            SET viewer_count = viewer_count+1
-            WHERE id=".$idbook;
+                $queryU1=" UPDATE `tbl_book_detail`
+            SET viewer_count_detail = viewer_count_detail+1
+            WHERE id=".$IDDetailBook;
                 CommonDB::runSQL($queryU1,[]);
                 CommonDB::runSQL($query,$hsTable);
             }

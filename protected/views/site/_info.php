@@ -74,7 +74,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12">  <span class="headerc colorconggiao"> Số lượt xem:</span>
-                                <?php echo  $arrBook['viewer_count']; ?>  </div>
+                                <?php echo  $arrBook['viewer_count_detail']; ?>  </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12"> <span class="headerc colorconggiao"> Số người đọc:</span>
