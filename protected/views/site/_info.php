@@ -78,7 +78,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-12"> <span class="headerc colorconggiao"> Số người đọc:</span>
-                                <?php echo  $arrBook['reader_count']; ?>
+                                <?php echo  $arrBook['reader_count_detail']; ?>
                             </div>
                         </div>
                         <div class="row">
@@ -100,7 +100,7 @@
 	                		<div class="row">
 		                		<img  class=" bookimagecls book-css3-shadow" src="<?php echo PATH_IMAGE.$arrBook["bookimage_link"] ?>" width="150px" height="200px">
 		                	</div>
-                            <?php if(isset(Yii::app()->session['id_user'])): ?>
+                            <?php if(isset(Yii::app()->session['id_user'])&&($arrBook['download_flg']==1)): ?>
                                 <div class="download">
                                     <a class="register" href="<?php echo PATH_IMAGE_bookFile.'/'.$arrBook['book_content']; ?>">
                                         Lấy về miễn phí

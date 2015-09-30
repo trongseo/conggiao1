@@ -22,8 +22,8 @@ class ClsViewAllBook {
 
         //$hsTable["create_date"]= Common::getCurrentDateYYYYDDMM();
         CommonDB::runSQL($query,$hsTable);
-        $queryU=" UPDATE `tbl_book`
-            SET reader_count = reader_count+1
+        $queryU=" UPDATE `tbl_book_detail`
+            SET reader_count_detail = reader_count_detail+1
             WHERE id=".$idbook;
         CommonDB::runSQL($queryU,[]);
     }
