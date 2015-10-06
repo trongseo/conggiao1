@@ -2,12 +2,18 @@
 
 // 0:sắp phát hành; 1: mới phát hành; 2: là bình thuờng
 //SELECT * FROM tbl_book WHERE book_type=1 AND delete_logic_flg=0
-//        good_book_flg
-$dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
+
+
+$dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL ,[]);
+
 $dataPrepareBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
 $dataGoodBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
 $dataReference = CommonDB::GetAll("SELECT  * FROM `tbl_reference` WHERE active=1 ORDER BY show_order",[]);
 
+$dataNewBook =Common::doubleData($dataNewBook,7);
+$dataPrepareBook =Common::doubleData($dataPrepareBook,7);
+$dataGoodBook =Common::doubleData($dataGoodBook,7);
+$dataReference =Common::doubleData($dataReference,7);
 ?>
 
 
@@ -567,14 +573,17 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
 <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
     <ul>
-        <?php $ii=0;?>
+        <?php $ii=0;$kyniem="";?>
         <?php foreach($dataNewBook as $value):?>
             <?php if($ii==1): ?>
                 <?php require "_sublibary_item_template_sub.php";?>
+            <?php elsif: ?>
+                <?php $kyniem=$value; ?>
             <?php endif ?>
             <?php $ii=1;?>
         <?php endforeach?>
-
+<!--        --><?php //$value=$kyniem; ?>
+<!--        --><?php //require "_sublibary_item_template_sub.php";?>
         </ul>
 </div>
 </div>
@@ -585,7 +594,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 </div>
 
 
-
+<?php //var_dump($kyniem) ?>
 <div class="content-box" style="float: right;">
     <div class="book-container-box container-box-book-preview box clearfix">
         <div class="arrow-home" style="margin-left: 5px">

@@ -21,6 +21,15 @@ class Common {
         }
 
     }
+    public static function  doubleData($myData,$minRow){
+        if(count($myData)<$minRow) return $myData;
+        $cucudata=$myData;
+        foreach($myData as $value)
+        {
+            $cucudata[]=$value;
+        }
+        return $cucudata;
+    }
     public static function  checkImageFile($ctrName){
         $max_file_size = 1024*2000; // 200kb
         // Check filesize
