@@ -28,6 +28,14 @@ class Common {
         {
             $cucudata[]=$value;
         }
+        foreach($myData as $value)
+        {
+            $cucudata[]=$value;
+        }
+        foreach($myData as $value)
+        {
+            $cucudata[]=$value;
+        }
         return $cucudata;
     }
     public static function  checkImageFile($ctrName){
