@@ -554,6 +554,10 @@ $queryGood ="SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delet
 $dataNewBook = CommonDB::GetAll($queryNew,[]);
 $dataPrepareBook = CommonDB::GetAll($queryPrepare,[]);
 $dataGoodBook = CommonDB::GetAll($queryGood,[]);
+
+$dataNewBook =Common::doubleData($dataNewBook,4);
+$dataPrepareBook =Common::doubleData($dataPrepareBook,4);
+$dataGoodBook =Common::doubleData($dataGoodBook,4);
 ?>
 
 
