@@ -5,5 +5,6 @@
                 <img alt="<?php echo $value["book_name"]?>" WIDTH="67" height="100" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
             </div>
         </a>
+
     </div>
 </li>

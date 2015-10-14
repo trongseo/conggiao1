@@ -1,17 +1,20 @@
 <div id="img-block">
-    <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>"  class="preview-img">
-        <div class="main-imgintro">
+    <div target="_blank" href="/chi-tiet/<?php echo $value["id"]?>"  class="preview-img ddddd">
+        <div class="mainimgintro">
             <img alt="<?php echo $value["book_name"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
 
         </div>
+        <div class="viewtext" >
+        <div class="read-booknew1" onclick="openNewWindow('<?php echo $value["id"]?>')" >
+            Đọc
+        </div>
+        </div>
+    </div>
 
-    </a>
-</div>
-<div class="read-booknew" onclick="openNewWindow('<?php echo $value["id"]?>')" >
-    Đọc
 </div>
 
-<div class="preview-text">
+
+<div class="preview-text ddddd" >
     <span class="book-title"> <a target="_blank" href="/chi-tiet/<?php echo $value["id"]?>" > <?php echo $value["book_name"]?></a></span> <span class="author"><?php echo $value["author"]?></span> <span class="preview">
                   <hr class="hrtext"/>
                     <?php echo $value["introduction"]?>

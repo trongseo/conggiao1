@@ -190,8 +190,45 @@ width:84px;
             width: 336px !important;
         }
     </style>
+    <style>
+        .viewtext {
+
+            z-index: 100;
+            position: absolute;
+            color: #B73A3A;
+            font-size: 14px;
+            font-weight: bold;
+            left: 0px;
+            top: 117px;
+             display: none;
+            background-color: #D7BD9E;
+            /* opacity: 0.9; */
+            width: 97px;
+            opacity: 0.9;
+            height: 27px;
+        }
+        .ddddd:hover  .viewtext{
+            display: block;
+        }
+        .mainimgintro:hover   .viewtext{
+            display: block;
+        }
+
+        .read-booknew1 {
+            background: url('/images/ic_book.png') no-repeat scroll 0 0;
+            padding-left: 29px;
+            cursor: pointer;
+            color: #311D05;
+            clear: both;
+            margin-left: 24px;
+            margin-top: 5px;
+            /* position: absolute; */
+        }
+
+    </style>
 </head>
 <body>
+
 <?php
 
     $comboData1ss = CommonDB::GetAll('SELECT * FROM tbl_index WHERE delete_logic_flg=0 ORDER BY  INDEX_CODE',[]);
@@ -552,13 +589,13 @@ div.slider-box div.slider {
 
 
 <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-68203180-1', 'auto');
-    ga('send', 'pageview');
+//    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+//
+//    ga('create', 'UA-68203180-1', 'auto');
+//    ga('send', 'pageview');
 
 </script>
 </body>
