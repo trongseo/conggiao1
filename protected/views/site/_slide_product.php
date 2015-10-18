@@ -10,6 +10,11 @@ $dataPrepareBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=0 an
 $dataGoodBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
 $dataReference = CommonDB::GetAll("SELECT  * FROM `tbl_reference` WHERE active=1 ORDER BY show_order",[]);
 
+$dataNewBookcount =count($dataNewBook);
+$dataPrepareBookcount =count($dataPrepareBook);
+$dataGoodBookcount =count($dataGoodBook);
+$dataReferencecount =count($dataReference);
+
 $dataNewBook =Common::doubleData($dataNewBook,7);
 $dataPrepareBook =Common::doubleData($dataPrepareBook,7);
 $dataGoodBook =Common::doubleData($dataGoodBook,7);
@@ -552,9 +557,9 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="arrow-home" style="margin-left: 5px">
     <h4><b>Sách mới đưa vào Thư Viện</b></h4>
 </div>
-<div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
+<div class="arrow-slide-right">(Có <?php echo ($dataNewBookcount) ?> quyển sách)</div>
 
-    <?php if(count($dataNewBook)>0): ?>
+    <?php if(($dataNewBookcount)>0): ?>
         <div class="topright"><a href="/thu-vien/0-sachmoiduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
     <?php endif ?>
 <div class="clear"></div>
@@ -568,7 +573,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         </ul>
 </div>
 </div>
-    <?php if(count($dataNewBook)>0): ?>
+    <?php if(($dataNewBookcount)>0): ?>
 <div class="slider-box">
 <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
 <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
@@ -600,8 +605,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="arrow-home" style="margin-left: 5px">
             <h4><b>Sách sắp đưa vào Thư Viện</b></h4>
         </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataPrepareBook) ?> quyển sách)</div>
-        <?php if(count($dataPrepareBook)>0): ?>
+        <div class="arrow-slide-right">(Có <?php echo ($dataPrepareBookcount) ?> quyển sách)</div>
+        <?php if(($dataPrepareBookcount)>0): ?>
         <div class="topright"><a href="/thu-vien/0-sachsapduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
         <div class="clear"></div>
@@ -618,7 +623,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
-        <?php if(count($dataPrepareBook)>0): ?>
+        <?php if(($dataPrepareBookcount)>0): ?>
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
@@ -644,9 +649,9 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="arrow-home" style="margin-left: 5px">
             <h4><b> Sách hay nên đọc</b></h4>
         </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataGoodBook) ?> quyển sách)</div>
+        <div class="arrow-slide-right">(Có <?php echo ($dataGoodBookcount) ?> quyển sách)</div>
 
-        <?php if(count($dataGoodBook)>0): ?>
+        <?php if(($dataGoodBookcount)>0): ?>
             <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
 
@@ -665,7 +670,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
-        <?php if(count($dataGoodBook)>0): ?>
+        <?php if(count($dataGoodBookcount)>0): ?>
 
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
@@ -691,9 +696,9 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="arrow-home" style="margin-left: 5px">
             <h4><b> Tham khảo</b></h4>
         </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataReference) ?> quyển sách)</div>
+        <div class="arrow-slide-right">(Có <?php echo ($dataReferencecount) ?> quyển sách)</div>
 
-        <?php if(count($dataGoodBook)>0): ?>
+        <?php if(count($dataGoodBookcount)>0): ?>
 <!--            <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>-->
         <?php endif ?>
 
@@ -735,7 +740,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
-        <?php if(count($dataReference)>0): ?>
+        <?php if(($dataReferencecount)>0): ?>
 
             <div class="slider-box">
                 <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
