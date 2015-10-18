@@ -548,20 +548,60 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     box-shadow: 0px 1px 3px 3px #CAC6C6;
     margin: 2px;
 }
+.showsearch:hover  .viewtextsearch{
+    display: block;
+    /*position: absolute;*/
+}
+.viewtextsearch{
+
+    z-index: 10;
+    color: #B73A3A;
+    font-size: 14px;
+    font-weight: bold;
+    left: 2px;
+    /* top: 177px; */
+    display: none;
+    background-color: #D7BD9E;
+    /* opacity: 0.9; */
+    width: 140px;
+    opacity: 0.9;
+    height: 32px;
+    position: relative;
+    margin-top: -34px;
+    padding-top: 1px;
+}
+.readbooknewsearch {
+    background: url('/images/ic_book.png') no-repeat scroll 0 0;
+    padding-left: 27px;
+    cursor: pointer;
+    color: #311D05;
+    clear: both;
+    margin-left: 39px;
+    margin-top: 5px;
+    /* position: absolute; */
+}
+
 </style>
 <div class="row ccentre" style="">
     <!--// `id`,`book_code`,`parent_id`,`,`book_name`,`introduction`,`bookimage_link`,`active`,`create_date`,`good_book_flg`,`book_type`,`content_link`,`viewer_count`,`reader_count`,`relate_book_id`,`download_flg`,`download_file_link`,`admin_id`,`delete_logic_flg`,`user_id_delete`,`date_delete`-->
     <?php foreach($dataRelateBook as $value):?>
         <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;">
-            <div style="">
-                <img class="boximg" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
-                <div style="font-size: 11px;font-weight: bold;line-height: 15px;padding-top: 5px;padding-bottom: 5px;"> <?php echo $value["book_name"]?>   <?php echo $value["part"]?> </div>
+            <div style="" class="showsearch">
+                <img class="boximg showsearch" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
+                <div style="font-size: 11px;font-weight: bold;line-height: 15px;padding-top: 5px;padding-bottom: 5px;">
+						<div class="viewtextsearch" >
+                            <div class="readbooknewsearch" onclick="openNewWindow('<?php echo $value["id"]?>')" >
+                                Đọc
+                            </div>
+                        </div>
+               <div style="height: 2px"> </div>
+				<?php echo $value["book_name"]?>   <?php echo $value["part"]?> </div>
 
-                <a target="_blank" href="<?php echo Yii::app()->baseUrl.'/chi-tiet'?>/<?php echo $value["book_id"]?>">
-                    <div class="read-book">
-                        Đọc
-                    </div>
-                </a>
+<!--                <a target="_blank" href="--><?php //echo Yii::app()->baseUrl.'/chi-tiet'?><!--/--><?php //echo $value["book_id"]?><!--">-->
+<!--                    <div class="read-book">-->
+<!--                        Đọcss-->
+<!--                    </div>-->
+<!--                </a>-->
             </div>
         </div>
 

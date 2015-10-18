@@ -555,6 +555,11 @@ $dataNewBook = CommonDB::GetAll($queryNew,[]);
 $dataPrepareBook = CommonDB::GetAll($queryPrepare,[]);
 $dataGoodBook = CommonDB::GetAll($queryGood,[]);
 
+$dataNewBookCount = count($dataNewBook);
+$dataPrepareBookCount = count($dataPrepareBook);
+$dataGoodBookCount = count($dataGoodBook);
+
+
 $dataNewBook =Common::doubleData($dataNewBook,4);
 $dataPrepareBook =Common::doubleData($dataPrepareBook,4);
 $dataGoodBook =Common::doubleData($dataGoodBook,4);
@@ -569,8 +574,8 @@ $dataGoodBook =Common::doubleData($dataGoodBook,4);
         <div class="arrow-home" style="margin-left: 5px">
             <h4 >Sách mới đưa vào thư viện</h4>
         </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataNewBook) ?> quyển sách)</div>
-        <?php if(count($dataNewBook)>0): ?>
+        <div class="arrow-slide-right">(Có <?php echo ($dataNewBookCount) ?> quyển sách)</div>
+        <?php if(($dataNewBookCount)>0): ?>
             <div class="topright"><a href="/thu-vien/<?php echo $cateId; ?>-sachmoiduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
 
@@ -588,7 +593,7 @@ $dataGoodBook =Common::doubleData($dataGoodBook,4);
                 </ul>
             </div>
         </div>
-        <?php if(count($dataNewBook)>0): ?>
+        <?php if($dataNewBookCount>0): ?>
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
@@ -614,8 +619,8 @@ $dataGoodBook =Common::doubleData($dataGoodBook,4);
         <div class="arrow-home" style="margin-left: 5px">
             <h4>Sách sắp đưa vào thư viện</h4>
         </div>
-        <div class="arrow-slide-right">(Có <?php echo count($dataPrepareBook) ?> quyển sách)</div>
-        <?php if(count($dataPrepareBook)>0): ?>
+        <div class="arrow-slide-right">(Có <?php echo ($dataPrepareBookCount) ?> quyển sách)</div>
+        <?php if(($dataPrepareBookCount)>0): ?>
             <div class="topright"><a href="/thu-vien/<?php echo $cateId; ?>-sachsapduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
 
@@ -633,7 +638,7 @@ $dataGoodBook =Common::doubleData($dataGoodBook,4);
                 </ul>
             </div>
         </div>
-        <?php if(count($dataPrepareBook)>0): ?>
+        <?php if(($dataPrepareBookCount)>0): ?>
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >
@@ -660,7 +665,7 @@ $dataGoodBook =Common::doubleData($dataGoodBook,4);
             <h4>Sách hay nên đọc</h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo count($dataGoodBook) ?> quyển sách)</div>
-        <?php if(count($dataGoodBook)>0): ?>
+        <?php if(($dataGoodBookCount)>0): ?>
             <div class="topright"><a href="/thu-vien/<?php echo $cateId; ?>-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
         <div class="clear"></div>
@@ -679,7 +684,7 @@ $dataGoodBook =Common::doubleData($dataGoodBook,4);
                 </ul>
             </div>
         </div>
-        <?php if(count($dataGoodBook)>0): ?>
+        <?php if(($dataGoodBookCount)>0): ?>
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
             <div class="slider clearfix  slider-hover-action slider-init slider-init-1 sliderNewYorkTimes" id="sliderNewYorkTimes" >

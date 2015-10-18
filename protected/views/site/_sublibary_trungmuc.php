@@ -525,8 +525,8 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 
 <?php foreach($dataCate as $valueCate):?>
     <?php
-    $parent_id = $valueCate['id'];
-    $queryNew ="SELECT * FROM tbl_book WHERE book_type=1 and good_book_flg=1 and active=1 AND delete_logic_flg=0  and parent_id=".$parent_id;
+    $parent_id = $valueCate['id'];//good_book_flg=1 and
+    $queryNew ="SELECT * FROM tbl_book WHERE book_type=1 and  active=1 AND delete_logic_flg=0  and parent_id=".$parent_id;
     $dataNewBook = CommonDB::GetAll($queryNew,[]);
     ?>
 <div class="content-box" style="float: right;">

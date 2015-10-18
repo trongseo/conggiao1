@@ -210,10 +210,42 @@ width:84px;
         .ddddd:hover  .viewtext{
             display: block;
         }
-        .mainimgintro:hover   .viewtext{
-            display: block;
-        }
+        /*.mainimgintro:hover   .viewtext{*/
+            /*display: block;*/
+        /*}*/
 
+        .showsearch:hover  .viewtextsearch{
+            display: block;
+            /*position: absolute;*/
+        }
+        .viewtextsearch{
+
+            z-index: 10;
+            color: #B73A3A;
+            font-size: 14px;
+            font-weight: bold;
+            left: 2px;
+            /* top: 177px; */
+             display: none;
+            background-color: #D7BD9E;
+            /* opacity: 0.9; */
+            width: 140px;
+            opacity: 0.9;
+            height: 32px;
+            position: relative;
+            margin-top: -34px;
+            padding-top: 1px;
+        }
+        .readbooknewsearch {
+            background: url('/images/ic_book.png') no-repeat scroll 0 0;
+            padding-left: 29px;
+            cursor: pointer;
+            color: #311D05;
+            clear: both;
+            margin-left: 39px;
+            margin-top: 5px;
+            /* position: absolute; */
+        }
         .read-booknew1 {
             background: url('/images/ic_book.png') no-repeat scroll 0 0;
             padding-left: 29px;

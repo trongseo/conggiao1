@@ -136,15 +136,24 @@
         <!--// `id`,`book_code`,`parent_id`,`,`book_name`,`introduction`,`bookimage_link`,`active`,`create_date`,`good_book_flg`,`book_type`,`content_link`,`viewer_count`,`reader_count`,`relate_book_id`,`download_flg`,`download_file_link`,`admin_id`,`delete_logic_flg`,`user_id_delete`,`date_delete`-->
         <?php foreach($comboData as $value):?>
             <div style="float:left;width: 140px;height: 150px; margin:5px 5px 80px 5px;">
-                <div style="">
-                    <img class="boximg" style="width: 140px;height: 175px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
-                    <span style="font-size: 11px;font-weight: bold;line-height: 15px;"> <?php echo $value["book_name"]?></span>
+                <div style="" class="preview-img showsearch">
 
-                    <a target="_blank" href="<?php echo Yii::app()->baseUrl.'/chi-tiet'?>/<?php echo $value["id"]?>">
-                        <div class="read-book">
+                    <img class="boximg" style="width: 140px;height: 175px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
+                    <div class="viewtextsearch" >
+                        <div class="readbooknewsearch" onclick="openNewWindow('<?php echo $value["id"]?>')" >
                             Đọc
                         </div>
-                    </a>
+                    </div>
+                    <div style="font-size: 11px;font-weight: bold;line-height: 15px;padding-top: 11px;">
+
+                        <?php echo $value["book_name"]?></div>
+
+<!--                    <a target="_blank" href="--><?php //echo Yii::app()->baseUrl.'/chi-tiet'?><!--/--><?php //echo $value["id"]?><!--">-->
+<!--                        <div class="read-book">-->
+<!--                            Đọc-->
+<!--                        </div>-->
+<!--                    </a>-->
+
                 </div>
             </div>
 

@@ -298,6 +298,9 @@
     <link href="/js/dialog/bootstrap-dialog.min.css" rel="stylesheet" type="text/css" />
     <script src="/js/dialog/bootstrap-dialog.min.js"></script>
     <script>
+        function openNewWindow(openid){
+            window.open('/chi-tiet/'+openid,'_blank');
+        }
 	var ID_BOOK='<?php echo $this->ID_BOOK; ?>';
 
 <!--    ID_BOOK='--><?php //echo  Common::getSession('idbook'); ?><!--';-->
