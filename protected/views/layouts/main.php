@@ -224,14 +224,14 @@ width:84px;
             color: #B73A3A;
             font-size: 14px;
             font-weight: bold;
-            left: 2px;
+            left: 6px;
             /* top: 177px; */
              display: none;
             background-color: #D7BD9E;
             /* opacity: 0.9; */
-            width: 140px;
+            width: 132px;
             opacity: 0.9;
-            height: 32px;
+            height: 28px;
             position: relative;
             margin-top: -34px;
             padding-top: 1px;
@@ -256,6 +256,13 @@ width:84px;
             margin-top: 5px;
             /* position: absolute; */
         }
+
+        .boximg{
+
+        }
+        #example-one a img, #example-one a   { border: none; overflow: hidden; float: left; }
+        /*.boximg:hover { margin: -1px; }*/
+        /*.boximg:hover    { border: 1px solid black; }*/
 
     </style>
 </head>

@@ -225,7 +225,7 @@ $comboData =$dataItem;
                 <div style="float:left;width: 140px;height: 150px; margin:5px 5px 80px 5px;">
                     <div style="" class="preview-img showsearch">
 
-                        <img class="boximg" style="width: 140px;height: 175px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
+                        <img onclick="openNewWindow('<?php echo $value["id"]?>')" class="boximg" style="width: 140px;height: 175px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
                         <div class="viewtextsearch" >
                             <div class="readbooknewsearch" onclick="openNewWindow('<?php echo $value["id"]?>')" >
                                 Đọc

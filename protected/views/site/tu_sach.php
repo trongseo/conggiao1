@@ -566,18 +566,19 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 }
 .viewtextsearch1{
 
+
     z-index: 10;
     color: #B73A3A;
     font-size: 14px;
     font-weight: bold;
-    left: 2px;
+    left: 5px;
     /* top: 177px; */
-    display: none;
+     display: none;
     background-color: #D7BD9E;
     /* opacity: 0.9; */
-    width: 140px;
+    width: 134px;
     opacity: 0.9;
-    height: 32px;
+    height: 30px;
     position: relative;
     margin-top: -34px;
     padding-top: 1px;
@@ -590,7 +591,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     clear: both;
      margin-left: 5px;
     margin-top: 5px;
-    width: 50px;
+    width: 48px;
     /* position: absolute; */
 }
 
@@ -631,7 +632,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <?php foreach($dataRelateBook as $value):?>
             <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;" class="rev<?php echo $value["detailid"]?>">
                 <div style="" class="showsearch1">
-                    <img class="boximg" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
+                    <img   onclick="openNewWindow('<?php echo $value["id"]?>')"  class="boximg" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
                     <div class="viewtextsearch1" >
                         <div style="display: inline;" class="readbooknewsearch1" onclick="openNewWindow('<?php echo $value["id"]?>')" >
                             Đọc
