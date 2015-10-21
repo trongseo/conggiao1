@@ -558,14 +558,14 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     color: #B73A3A;
     font-size: 14px;
     font-weight: bold;
-    left: 2px;
+    left: 5px;
     /* top: 177px; */
-    display: none;
+    /* display: none; */
     background-color: #D7BD9E;
     /* opacity: 0.9; */
-    width: 140px;
+    width: 134px;
     opacity: 0.9;
-    height: 32px;
+    height: 24px;
     position: relative;
     margin-top: -34px;
     padding-top: 1px;
@@ -594,7 +594,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                                 Đọc
                             </div>
                         </div>
-               <div style="height: 2px"> </div>
+               <div style="height: 8px"> </div>
 				<?php echo $value["book_name"]?>   <?php echo $value["part"]?> </div>
 
 <!--                <a target="_blank" href="--><?php //echo Yii::app()->baseUrl.'/chi-tiet'?><!--/--><?php //echo $value["book_id"]?><!--">-->
