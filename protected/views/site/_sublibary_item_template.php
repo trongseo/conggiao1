@@ -1,7 +1,7 @@
 <div id="img-block">
     <div target="_blank" href="/chi-tiet/<?php echo $value["id"]?>"  class="preview-img ddddd">
         <div class="mainimgintro">
-            <img alt="<?php echo $value["book_name"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
+            <img onclick="openNewWindow('<?php echo $value["id"]?>')" alt="<?php echo $value["book_name"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" class="img-hover-action book-css3-shadow" />
 
         </div>
         <div class="viewtext" >
