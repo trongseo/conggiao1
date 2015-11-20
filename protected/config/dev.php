@@ -3,6 +3,9 @@ return CMap::mergeArray(
     require(dirname(__FILE__) . '/main.php'),
     array(
         'components' => array(
+            'cache'=>array(
+                'class'=>'system.caching.CDbCache'
+            ),
             'db' => array(
                 'connectionString' => 'mysql:host='.DB_HOST.';dbname='.DB_NAME,
                 'emulatePrepare' => true,

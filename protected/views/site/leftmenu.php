@@ -20,7 +20,20 @@
             }
             return $resultsArray;
         }
-        $comboData=getDataArrA($comboData1ss,0,-1);
+       // $comboData=getDataArrA($comboData1ss,0,-1);
+        $id    = "comboData";
+        $time  = 3600; // in seconds
+
+
+        $comboData = Yii::app()->cache->get($id);
+        if (!$comboData){
+            $comboData=getDataArrA($comboData1ss,0,-1);
+            Yii::app()->cache->set($id, $comboData, $time);
+
+        }else{
+
+        }
+
         ?>
 
         <?php foreach($comboData as $value):?>

@@ -134,6 +134,8 @@ return array(
                 'lien-he'=>'Site/Contact',
                 'chi-tiet/<id:>'=>'Site/Detail/id/<id>',
                 'dang-nhap'=>'Site/Login',
+                'login'=>'Service/Login',
+                'cache'=>'Service/cache',
                 'dang-xuat'=>'Site/Logout',
 				'update-password'=>'Site/UpdatePassword',
                 'quen-mat-khau'=>'Site/GetPassword',
