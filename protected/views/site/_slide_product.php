@@ -4,11 +4,50 @@
 //SELECT * FROM tbl_book WHERE book_type=1 AND delete_logic_flg=0
 
 
-$dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL ,[]);
 
-$dataPrepareBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
-$dataGoodBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
-$dataReference = CommonDB::GetAll("SELECT  * FROM `tbl_reference` WHERE active=1 ORDER BY show_order",[]);
+
+
+
+
+
+$id111    = "dataNewBook";
+$time  = 3600; // in seconds
+$dataNewBook = Yii::app()->cache->get($id111);
+if (!$dataNewBook){
+    $dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL ,[]);
+    Yii::app()->cache->set($id111, $dataNewBook, $time);
+
+}
+
+$id222    = "dataPrepareBook";
+$time  = 3600; // in seconds
+$dataPrepareBook = Yii::app()->cache->get($id222);
+if (!$dataNewBook){
+    $dataPrepareBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
+    Yii::app()->cache->set($id222, $dataPrepareBook, $time);
+
+}
+
+$id333    = "dataGoodBook";
+$time  = 3600; // in seconds
+$dataGoodBook = Yii::app()->cache->get($id333);
+if (!$dataNewBook){
+    $dataGoodBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
+    Yii::app()->cache->set($id333, $dataGoodBook, $time);
+
+}
+
+
+$id444    = "dataReference";
+$time  = 3600; // in seconds
+$dataReference = Yii::app()->cache->get($id444);
+if (!$dataNewBook){
+    $dataReference = CommonDB::GetAll("SELECT  * FROM `tbl_reference` WHERE active=1 ORDER BY show_order",[]);
+    Yii::app()->cache->set($id444, $dataReference, $time);
+
+}
+
+
 
 $dataNewBookcount =count($dataNewBook);
 $dataPrepareBookcount =count($dataPrepareBook);

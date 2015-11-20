@@ -81,16 +81,14 @@ class ServiceController extends CController {
 
 
         $id    = "myValue";
-        $time  = 15; // in seconds
+        $time  = 1115; // in seconds
 
 
-        $val = Yii::app()->cache->get($id);
-        if (!$val){
+        $result = Yii::app()->cache->get($id);
+        if (!$result){
             $result = file_get_contents('http://localhost:8222/index.php', false, $context);
 
             Yii::app()->cache->set($id, $result, $time);
-
-        }else{
 
         }
 
