@@ -24,9 +24,9 @@ class ServiceController extends CController {
         //var_dump($email,$passwordmd);
         $hsTable["email"]= $email;
         $hsTable["password"]= $passwordmd;
-        $dataTable = CommonDB::GetAll("Select * from tbl_users where email=:email and password=:password",$hsTable);
+        $dataTable = CommonDB::GetAll("Select id from tbl_users WHERE active=1 and email=:email and password=:password",$hsTable);
         if(count($dataTable)>0){
-            echo 1;
+            echo $dataTable[0]['id'];
         }else{
             echo 0;
         }
@@ -34,6 +34,29 @@ class ServiceController extends CController {
         //header('Content-type: application/json');
 
         //echo json_encode($result);
+
+    }
+    public function  actionGetBook(){
+        //$userId=22;
+        $userId = Common::getPara('user_id');
+        $query="SELECT de.id AS id_detail,b.`book_code` AS ma_sach,b.book_name AS ten_sach, tinde.index_code AS ma_daimuc,
+CONCAT('http://thuvienconggiaovietnam.net/admintvcg/uploads/bookImage/',b.bookimage_link)  AS path_book_image,
+CONCAT('http://thuvienconggiaovietnam.net/admintvcg/uploads/bookFile/',de.book_content) AS path_down_pdf,
+de.book_id,part,b.id AS id_book, b.`parent_id`
+
+FROM `tbl_book_detail`  de
+ LEFT JOIN `tbl_book` b ON de.book_id =b.id
+ LEFT JOIN tbl_index tinde ON  b.`parent_id` = tinde.id
+WHERE   b.`delete_logic_flg`=0 and de.id IN (SELECT book_id FROM `tbl_bookcase`
+WHERE user_id=$userId
+)";
+        $id_list = Common::getPara('id_list');
+        if($id_list!=""){
+            $query.=" AND  de.id not IN($id_list) ";
+        }
+        header('Content-type: application/json');
+        $dataTable = CommonDB::GetAll($query,[]);
+         echo json_encode($dataTable);
 
     }
 
