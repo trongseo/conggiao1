@@ -36,17 +36,37 @@ class ServiceController extends CController {
         //echo json_encode($result);
 
     }
+
+    public function  actionGetDaiMuc(){
+        //$userId=22;
+
+        $query="SELECT id,NAME FROM tbl_index WHERE TYPE=0 AND delete_logic_flg=0 AND active=1 ORDER BY  id";
+
+        header('Content-type: application/json');
+        $dataTable = CommonDB::GetAll($query,[]);
+        echo json_encode($dataTable);
+
+    }
+
     public function  actionGetBook(){
         //$userId=22;
         $userId = Common::getPara('user_id');
-        $query="SELECT de.id AS id_detail,b.`book_code` AS ma_sach,b.book_name AS ten_sach, tinde.index_code AS ma_daimuc,
+        $query="SELECT de.id AS id_detail,b.`book_code` AS ma_sach,b.book_name AS ten_sach, tinde.level_top_id AS ma_daimuc,
 CONCAT('http://thuvienconggiaovietnam.net/admintvcg/uploads/bookImage/',b.bookimage_link)  AS path_book_image,
 CONCAT('http://thuvienconggiaovietnam.net/admintvcg/uploads/bookFile/',de.book_content) AS path_down_pdf,
 de.book_id,part,b.id AS id_book, b.`parent_id`
 
 FROM `tbl_book_detail`  de
  LEFT JOIN `tbl_book` b ON de.book_id =b.id
- LEFT JOIN tbl_index tinde ON  b.`parent_id` = tinde.id
+  INNER JOIN (
+SELECT b.id , a.l0id AS level_top_id FROM tbl_index b INNER JOIN
+
+(
+SELECT l1.id,l0.id AS  l0id FROM tbl_index l1  INNER JOIN (
+
+SELECT id FROM tbl_index WHERE TYPE=0 )  l0  ON l1.parent_id =l0.id
+
+ WHERE   TYPE<>0 ) a ON b.parent_id=a.id) tinde ON  b.`parent_id` = tinde.id
 WHERE   b.`delete_logic_flg`=0 and de.id IN (SELECT book_id FROM `tbl_bookcase`
 WHERE user_id=$userId
 )";
