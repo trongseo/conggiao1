@@ -37,7 +37,7 @@ class ServiceController extends CController {
 
     }
 
-    public function  actionGetDaiMuc(){
+    public function  actionGetMasterParent(){
         //$userId=22;
 
         $query="SELECT id,NAME FROM tbl_index WHERE TYPE=0 AND delete_logic_flg=0 AND active=1 ORDER BY  id";

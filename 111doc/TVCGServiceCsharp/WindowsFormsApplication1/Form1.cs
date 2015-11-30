@@ -59,7 +59,7 @@ namespace WindowsFormsApplication1
             dataGridView1.DataSource = dt;
         }
     }
-    private class MyWebClient : WebClient
+    public class MyWebClient : WebClient
     {
         protected override WebRequest GetWebRequest(Uri uri)
         {
