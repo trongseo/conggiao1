@@ -762,28 +762,9 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                     <?php foreach($dataReference as $value):?>
 
 
-                        <li>
-                            <div id="img-block">
-                                <a target="_blank" href="<?php echo $value["link_ref"] ?>"  class="preview-img">
-                                    <div class="main-imgintro">
-                                        <img alt="<?php echo $value["description"]?>" WIDTH="96" height="144" src="<?php echo PATH_IMAGE_REF.$value["image_name"] ?>" class="img-hover-action book-css3-shadow" />
+                        <li>   <li><?php require "_slide_product_item_template_refer.php" ?></li>
 
-                                    </div>
 
-                                </a>
-                            </div>
-                            <div class="read-booknew" onclick="openNewWindow('<?php echo $value["id"]?>')" >
-                                Đọc
-                            </div>
-                            <div class="preview-text">
-                                <span class="book-title">
-                                    <a target="_blank" href="<?php echo $value["link_ref"] ?>" ><?php echo $value["title"] ?></a></span>
-<!--                                <span class="author">--><?php //echo $value["author"]?><!--</span> <span class="preview">-->
-                  <hr class="hrtext"/>
-                                    <?php echo $value["description"]?>
-                </span>
-                            </div>
-                            <span class="dots">...</span>
                         </li>
 
 
