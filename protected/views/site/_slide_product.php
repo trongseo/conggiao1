@@ -13,6 +13,8 @@
 $id111    = "dataNewBook";
 $time  = 3600; // in seconds
 $dataNewBook = Yii::app()->cache->get($id111);
+$dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL ,[]);
+
 if (!$dataNewBook){
     $dataNewBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL ,[]);
     Yii::app()->cache->set($id111, $dataNewBook, $time);
@@ -22,7 +24,9 @@ if (!$dataNewBook){
 $id222    = "dataPrepareBook";
 $time  = 3600; // in seconds
 $dataPrepareBook = Yii::app()->cache->get($id222);
-if (!$dataNewBook){
+$dataPrepareBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
+
+if (!$dataPrepareBook){
     $dataPrepareBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE book_type=0 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
     Yii::app()->cache->set($id222, $dataPrepareBook, $time);
 
@@ -31,7 +35,9 @@ if (!$dataNewBook){
 $id333    = "dataGoodBook";
 $time  = 3600; // in seconds
 $dataGoodBook = Yii::app()->cache->get($id333);
-if (!$dataNewBook){
+$dataGoodBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
+
+if (!$dataGoodBook){
     $dataGoodBook = CommonDB::GetAll("SELECT * FROM tbl_book WHERE good_book_flg=1 and active=1 AND delete_logic_flg=0 limit ".NUMBER_LIMIT_BOOK_SCROLL,[]);
     Yii::app()->cache->set($id333, $dataGoodBook, $time);
 
@@ -41,7 +47,9 @@ if (!$dataNewBook){
 $id444    = "dataReference";
 $time  = 3600; // in seconds
 $dataReference = Yii::app()->cache->get($id444);
-if (!$dataNewBook){
+$dataReference = CommonDB::GetAll("SELECT  * FROM `tbl_reference` WHERE active=1 ORDER BY show_order",[]);
+
+if (!$dataReference){
     $dataReference = CommonDB::GetAll("SELECT  * FROM `tbl_reference` WHERE active=1 ORDER BY show_order",[]);
     Yii::app()->cache->set($id444, $dataReference, $time);
 
@@ -642,42 +650,46 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 <div class="content-box" style="float: right;">
     <div class="book-container-box container-box-book-preview box clearfix">
         <div class="arrow-home" style="margin-left: 5px">
-            <h4><b>Sách sắp đưa vào Thư Viện</b></h4>
+            <h4><b> Sách sắp đưa vào thư viện</b></h4>
         </div>
         <div class="arrow-slide-right">(Có <?php echo ($dataPrepareBookcount) ?> quyển sách)</div>
+
         <?php if(($dataPrepareBookcount)>0): ?>
-        <div class="topright"><a href="/thu-vien/0-sachsapduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
+            <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
+
+
         <div class="clear"></div>
         <div class="Border-BottomH3"></div>
         <div class="preview-box clearfix">
-            <div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview testxxx" id="sliderNewYorkTimesPreview">
-                <ul style="min-width: 0px;">
+            <div class="slider clearfix slider-init slider-init-1 sliderNewYorkTimesPreview" id="sliderNewYorkTimesPreview">
+                <ul>
                     <?php foreach($dataPrepareBook as $value):?>
-                        <li>
+
                         <li><?php require "_slide_product_item_template.php" ?></li>
 
-                        </li>
+
                     <?php endforeach?>
                 </ul>
             </div>
         </div>
-        <?php if(($dataPrepareBookcount)>0): ?>
-        <div class="slider-box">
-            <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
-            <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
-                <ul>
-                    <?php $ii=0;?>
+        <?php if($dataPrepareBookcount>0): ?>
 
-                    <?php foreach($dataPrepareBook as $value):?>
-                        <?php if($ii==1): ?>
-                            <?php require "_sublibary_item_template_sub.php";?>
-                        <?php endif ?>
-                        <?php $ii=1;?>
-                    <?php endforeach?>
-                </ul>
+            <div class="slider-box">
+                <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
+                <div class="slider clearfix  slider-hover-action slider-init slider-init-1" id="sliderNewYorkTimes" >
+                    <ul>
+                        <?php $ii=0;?>
+                        <?php foreach($dataPrepareBook as $value):?>
+                            <?php if($ii==1): ?>
+                                <?php require "_sublibary_item_template_sub.php";?>
+                            <?php endif ?>
+                            <?php $ii=1;?>
+                        <?php endforeach?>
+                    </ul>
+                </div>
             </div>
-        </div><?php endif; ?>
+        <?php endif; ?>
     </div>
 </div>
 
@@ -709,7 +721,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                 </ul>
             </div>
         </div>
-        <?php if(count($dataGoodBookcount)>0): ?>
+        <?php if(($dataGoodBookcount)>0): ?>
 
         <div class="slider-box">
             <a class="slider-button slider-button-left" id="sliderNewYorkTimes_bl"></a> <a class="slider-button slider-button-right" id="sliderNewYorkTimes_br"></a>
