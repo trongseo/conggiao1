@@ -783,7 +783,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                             <?php if($ii==1): ?>
                             <li class="slider-item">
                                 <div id="img-block">
-                                    <a class="book-picture-shadow" target="_blank" href="<?php echo $value["link_ref"] ?>" >
+                                    <a class="book-picture-shadow" onclick="openNewWindowURL('<?php echo $value["link_ref"]?>',<?php echo $value["flg_iframe"]?>,<?php echo $value["id"]?>)" >
                                         <div class="imgintro">
                                             <img  WIDTH="67" height="100" src="<?php echo PATH_IMAGE_REF.$value["image_name"] ?>" class="img-hover-action book-css3-shadow" />
                                         </div>
@@ -804,6 +804,15 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 
 
 <script type="text/javascript">
+    function openNewWindowURL(url1,flgIframe,idIframe){
+        if(flgIframe==1){
+            window.open('/site/iframe?id='+idIframe,'_blank');
+        }else{
+            window.open(url1,'_blank');
+        }
+
+    }
+
     /*<![CDATA[*/
     (function() {
         var readyFunc = function() {
