@@ -118,7 +118,9 @@ var ClassMyValidate = {
 };
 function alertMore(yourMessage){
     BootstrapDialog.alert(yourMessage);
+
 }
+BootstrapDialog.confirm('ddddd');
 /////
 var myApp;
 myApp = myApp || (function () {
