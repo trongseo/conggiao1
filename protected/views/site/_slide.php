@@ -141,7 +141,7 @@ cursor: hand;
 										top: 0px; left: 0px; width: 100%; height: 100%;">
                     </div>
                 </div>
-                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1130px; height: 300px; overflow: hidden;">
+                <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 673px; height: 253px; overflow: hidden;">
                     <?php
 
                     $datatbl_slide = CommonDB::GetAll("SELECT  * FROM `tbl_slide` WHERE active=1 ORDER BY show_order",[]);

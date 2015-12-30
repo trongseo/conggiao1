@@ -806,6 +806,16 @@ WHERE active =1 ORDER BY show_order";
 
         $this->render('guide',array('comboData1'=>$dataIntro));
     }
+    public function actionIframe(){
+$iframeID = Common::getPara("id");
+        $queryG ="SELECT * FROM `tbl_reference`
+WHERE active =1 and id=".$iframeID;
+        $dataIntro = CommonDB::GetAll($queryG,[]);
+        // $this->render('about',array('page1'=>$check,'comboData1'=>$dataIntro));
+        $HsRefer = CommonDB::GetDataRowKeyInt("tbl_reference",$iframeID);
+        $this->render('iframe',array('HsRefer'=>$HsRefer));
+
+    }
     public function actionAppHelp(){
         //huong-dan
         $queryG ="SELECT * FROM `tbl_introduce` where id in(6,7,8)
