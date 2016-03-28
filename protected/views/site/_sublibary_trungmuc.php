@@ -630,4 +630,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     //
     //    });
     /*]]>*/
+
+
+    
 </script>
