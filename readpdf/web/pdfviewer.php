@@ -182,6 +182,7 @@ See https://github.com/adobe-type-tools/cmap-resources
           <input type="checkbox" id="findMatchCase" class="toolbarField" tabindex="95">
           <label for="findMatchCase" class="toolbarLabel" data-l10n-id="find_match_case_label">Match case</label>
           <span id="findMsg" class="toolbarLabel"></span>
+		  Sách liên quan
         </div>  <!-- findbar -->
 
         <div id="secondaryToolbar" class="secondaryToolbar hidden doorHangerRight">
@@ -261,6 +262,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <label id="pageNumberLabel" class="toolbarLabel" for="pageNumber" data-l10n-id="page_label">Page: </label>
                 <input type="number" id="pageNumber" class="toolbarField pageNumber" value="1" size="4" min="1" tabindex="15">
                 <span id="numPages" class="toolbarLabel"></span>
+                  <label id="divsachlienquan" class="toolbarLabel" style="text-decoration: underline" for="pageNumber1" data-l10n-id="page_label1">Sách liên quan </label>
               </div>
               <div id="toolbarViewerRight">
                 <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Presentation Mode" tabindex="31" data-l10n-id="presentation_mode">
@@ -461,8 +463,31 @@ viewBookmark.onclick=function(){
                 }
             });
 };
+var divsachlienquan = document.getElementById('divsachlienquan');
+divsachlienquan.onclick=function(){
+    var mUrl = window.location.href.replace('#','&');
+    var ID_BOOK1 =parent.ID_BOOK;
+   // /Site/LoadInfo?ID_BOOK=36_1&id=3
+    wailtLoad();
+    $.ajax({
+        type:"POST",
+        url:'/Site/LoadInfoInRead?ID_BOOK='+ID_BOOK1+'&myid='+Math.random(),
+        data:{'id':3},
+        success:function(result){
+            //_bookpart.php
+            alertMore(result);
+            wailtLoadEnd();
+        }
+    });
+};
 
 window.location='#page=<?php echo  $_SESSION['book_mark_page']; ?>';
 </script>
+    <script>
+        function openNewWindow(openid){
+          window.open('/chi-tiet/'+openid,'_blank');
+           // window.location='/chi-tiet/'+openid;
+        }
+    </script>
   </body>
 </html>

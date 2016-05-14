@@ -120,7 +120,7 @@ function alertMore(yourMessage){
     BootstrapDialog.alert(yourMessage);
 
 }
-BootstrapDialog.confirm('ddddd');
+//BootstrapDialog.confirm('ddddd');
 /////
 var myApp;
 myApp = myApp || (function () {

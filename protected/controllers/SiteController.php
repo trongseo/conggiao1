@@ -547,7 +547,49 @@ VALUES (:name,
     public function actionLoadCapcha(){
         $this->renderPartial('_capcha');
     }
+    public function actionLoadInfoInRead(){
 
+        $readBook = new ClsReadBook();
+        $readBook->InsertComment();
+        $id = $_POST['id'];
+        $idbookall = Common::getPara('ID_BOOK');
+        $idbookallArr = explode("_", $idbookall);
+        $idbook = $idbookallArr[0];
+        $idbook_part =1;
+        if(count($idbookallArr)>1){
+            $idbook_part = $idbookallArr[1];
+        }
+        Common::setSession('idbook',$idbook);
+        Common::setSession(ID_BOOK,$idbook);
+        $userId =Common::getSession(USER_ID);
+        Common::setSession('idbook_part',$idbook_part);
+        $IDDetailBook= CommonDB::getIDDetailBook($idbook,$idbook_part);
+        Common::setSession(IDDetailBook,$IDDetailBook);
+        Common::getBookmarpage($userId,$IDDetailBook);
+
+        $arrBook=[];
+        if($IDDetailBook==0){
+            $arrBook = CommonDB::GetDataRow(' tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id ',' a.delete_logic_flg=0 AND a.active=1 AND a.id='.$idbook);
+        }else{
+            $arrBook = CommonDB::GetDataRow(' tbl_book a LEFT JOIN tbl_book_detail b ON a.id= b.book_id ',' a.delete_logic_flg=0 AND a.active=1 AND b.id='.$IDDetailBook);
+        }
+
+
+        Common::setSession('arrBook',$arrBook);
+
+        if(Common::getSession(USER_ID)==""){
+
+            $_SESSION["pdf"]='Loi.pdf';
+        }else{
+            $_SESSION["pdf"] = $arrBook['book_content'];
+        }
+
+
+        if($id == 3){
+
+            $this->renderPartial('_bookpart');
+        }
+    }
     public function actionLoadInfo(){
 
         $readBook = new ClsReadBook();
