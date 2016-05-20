@@ -485,8 +485,8 @@ window.location='#page=<?php echo  $_SESSION['book_mark_page']; ?>';
 </script>
     <script>
         function openNewWindow(openid){
-          window.open('/chi-tiet/'+openid,'_blank');
-           // window.location='/chi-tiet/'+openid;
+         // window.open('/chi-tiet/'+openid,'_blank');
+            parent.window.location='/chi-tiet/'+openid;
         }
     </script>
   </body>
