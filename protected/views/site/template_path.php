@@ -22,7 +22,7 @@
         height:36px;
         display:inline-block;
         float:left;
-        background:url('http://googleg9.com:8111/img/middle.png') repeat-x;
+        background:url('/img/middle.png') repeat-x;
         white-space: nowrap;
         padding-top: 9px;
 
@@ -30,8 +30,8 @@
 </style>
 
 <div id="slider_container " class="dvpath">
-    <div class="slider_thumbnails"> <img id="d3" src="http://googleg9.com:8111/img/left.png" border="0" /> </div>
+    <div class="slider_thumbnails"> <img id="d3" src="/img/left.png" border="0" /> </div>
     <div class="inll colorconggiao" >  <h4><?php echo $myTextPath; ?></h4> </div>
-    <div class="slider_thumbnails"> <img id="3" src="http://googleg9.com:8111/img/right.png" border="0" /> </div>
+    <div class="slider_thumbnails"> <img id="3" src="/img/right.png" border="0" /> </div>
 </div>
 
