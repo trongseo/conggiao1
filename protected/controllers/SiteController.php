@@ -637,7 +637,8 @@ VALUES (:name,
 
 
         Common::setSession('arrBook',$arrBook);
-        if($id == 0){
+//        if($id == 0){
+        if($id == 1){
 
 
             $deleteQuery =" delete from tbl_tusach where book_id=$IDDetailBook  and user_id=$userId ";
@@ -679,8 +680,8 @@ VALUES (
             $_SESSION["pdf"] = $arrBook['book_content'];
         }
 
-        if($id == 1){
-
+//        if($id == 1){
+        if($id == 0){
             $this->renderPartial('_info',array('arrBook'=>$arrBook));
         }
         if($id == 2){

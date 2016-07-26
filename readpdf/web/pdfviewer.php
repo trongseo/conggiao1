@@ -133,6 +133,9 @@ See https://github.com/adobe-type-tools/cmap-resources
         background-color: #BE7338 !important;
         background-image: url('');
     }
+    #divsachlienquan{
+        padding: 4px 216px 24px 370px;
+    }
 </style>
   </head>
 
@@ -262,7 +265,7 @@ See https://github.com/adobe-type-tools/cmap-resources
                 <label id="pageNumberLabel" class="toolbarLabel" for="pageNumber" data-l10n-id="page_label">Page: </label>
                 <input type="number" id="pageNumber" class="toolbarField pageNumber" value="1" size="4" min="1" tabindex="15">
                 <span id="numPages" class="toolbarLabel"></span>
-                  <label id="divsachlienquan" class="toolbarLabel" style="text-decoration: underline" for="pageNumber1" data-l10n-id="page_label1">Sách liên quan </label>
+                  <label id="divsachlienquan" class="toolbarLabel" style="text-decoration: underline" for="pageNumber1" data-l10n-id="page_label1">Phần tiếp theo </label>
               </div>
               <div id="toolbarViewerRight">
                 <button id="presentationMode" class="toolbarButton presentationMode hiddenLargeView" title="Switch to Presentation Mode" tabindex="31" data-l10n-id="presentation_mode">

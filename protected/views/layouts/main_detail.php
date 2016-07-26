@@ -1,5 +1,6 @@
 <?php
     $c = TblConfig::model()->find();
+
 ?>
   
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
@@ -207,8 +208,8 @@
                         <a href="<?php echo Yii::app()->baseUrl.'/' ?>">
                             <img class="logoleft"  src="/img/logobook.png" /></a>
                     </div>
-                    <div alt="0" class="btn_tab btn_tab_active docsachcls" >
-                        Đọc sách
+                    <div alt="0" class="btn_tab btn_tab_active " >
+<!--                        Đọc sách-->Thông tin sách
                     </div>
                     <?php if(isset(Yii::app()->session['id_user'])): ?>
 
@@ -219,8 +220,8 @@
 <!--                        </div>-->
                     <?php endif; ?>
 
-                        <div alt="1" class="btn_tab">
-                            Thông tin sách
+                        <div alt="1" class="btn_tab docsachcls">
+<!--                            Thông tin sách--> Đọc sách
                         </div>
                     <div alt="2" class="btn_tab">
                         Đánh giá & Bình luận
@@ -374,7 +375,8 @@
            $obcc =  $( ".btn_tab[alt='"+id+"']" );
             $(".btn_tab").removeClass('btn_tab_active');
             $obcc.addClass('btn_tab_active');
-            if(id==0){
+           // if(id==0){
+            if(id==1){
                 //truong hop moi vao chua co session cho doc sach
                 if(IS_FIRST_LOAD==0){
                     $.ajax({
@@ -389,6 +391,9 @@
                             wailtLoadEnd();
                         }
                     });
+					
+
+					
                 }else{
                     $("#contentbook").show();
                     $("#content-wp").empty().hide();
@@ -409,7 +414,8 @@
                 success:function(result){
                     $("#content-wp").empty().append(result);
 
-                    if(id==0){
+//                    if(id==0){
+                    if(id==1){
                         BOOK_CONTENT_LOAD=result;
                     }
                     wailtLoadEnd();

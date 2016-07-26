@@ -325,8 +325,8 @@
             },
             success: function()
             {
-                alert("Thông tin liên hệ đã gửi thành công!Chúng tôi sẽ trả lời trong thời gian sớm nhất!");
-                window.location='/';
+                alertMoreGo("Thông tin liên hệ đã gửi thành công! Chúng tôi sẽ trả lời trong thời gian sớm nhất!",'/');
+
             },
             complete: function(response)
             {

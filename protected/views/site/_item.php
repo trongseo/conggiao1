@@ -19,10 +19,10 @@
 
 
 <div onclick="LoadInfo(0);" class="item-book <?php echo $active0?>">
-	Đọc sách
+	Đọc sách11
 </div>
 <div onclick="LoadInfo(1);" class="item-book <?php echo $active1?>">
-	Thông tin sách
+	Thông tin sách22
 </div>
 <div onclick="LoadInfo(2);" class="item-book <?php echo $active2?>">
 	Đánh giá & Bình luận
