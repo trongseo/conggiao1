@@ -489,7 +489,7 @@ window.location='#page=<?php echo  $_SESSION['book_mark_page']; ?>';
     <script>
         function openNewWindow(openid){
          // window.open('/chi-tiet/'+openid,'_blank');
-            parent.window.location='/chi-tiet/'+openid;
+            parent.window.location='/chi-tiet/'+openid+'?idread=1';
         }
     </script>
   </body>

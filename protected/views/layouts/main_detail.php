@@ -300,7 +300,7 @@
     <script src="/js/dialog/bootstrap-dialog.min.js"></script>
     <script>
         function openNewWindow(openid){
-            window.open('/chi-tiet/'+openid,'_blank');
+            window.open('/chi-tiet/'+openid+'?idread=1','_blank');
         }
 	var ID_BOOK='<?php echo $this->ID_BOOK; ?>';
 
@@ -311,6 +311,10 @@
         $(".docsachcls").click();
     });
         $(document).ready(function() {
+          if(  getUrlParameter('idread')!==undefined){
+              readBookI(1);
+             // btn_tab docsachcls btn_tab_active
+          }
             $("#fabric").select2();
             $(".btn_tab").click(function(){
 //                $(".btn_tab").removeClass('btn_tab_active');
@@ -365,6 +369,23 @@
     function AddBookToMeNo(){
         BootstrapDialog.alert('Vui lòng đăng nhập để sử dụng chức năng này!');
     }
+        function readBookI(idread){
+            $(".btn_tab").removeClass('btn_tab_active');
+            $(".docsachcls").addClass('btn_tab_active');
+            wailtLoad();
+            $.ajax({
+                type:"POST",
+                url:'<?php echo Yii::app()->baseUrl ?>/Site/LoadInfo?ID_BOOK='+ID_BOOK,
+                data:{id:idread},
+                success:function(result){
+
+                    $('#ifbook').attr("src", $('#ifbook').attr("src"));
+                    $("#contentbook").show();
+                    $("#content-wp").empty().hide();
+                    wailtLoadEnd();
+                }
+            });
+        }
     localStorage.removeItem('database');
     var BOOK_CONTENT_LOAD ='';
     var IS_FIRST_LOAD=0;
