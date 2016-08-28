@@ -666,7 +666,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="arrow-slide-right">(Có <?php echo ($dataPrepareBookcount) ?> quyển sách)</div>
 
         <?php if(($dataPrepareBookcount)>0): ?>
-            <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
+            <div class="topright"><a href="/thu-vien/0-sachsapduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
 
 
@@ -711,7 +711,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="arrow-home" style="margin-left: 5px">
             <h4><b> Sách hay nên đọc</b></h4>
         </div>
-        <div class="arrow-slide-right">(Có <?php echo ($dataGoodBookcount) ?> quyển sách)</div>
+<!--        <div class="arrow-slide-right">(Có --><?php //echo ($dataGoodBookcount) ?><!-- quyển sách)</div>-->
 
         <?php if(($dataGoodBookcount)>0): ?>
             <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
