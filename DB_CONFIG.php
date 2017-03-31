@@ -9,7 +9,7 @@ define ("ITEM_PER_PAGE", serialize (array (50,100,150)));
 define ("ITEM_PER_PAGE_DEFAULT", 50);
 define ("ORDER_BY", serialize (array ("Tiều đề A-Z","Lượt xem")));
 define ("ORDER_BY_KEY", serialize (array ("0","1")));
-define ("WEB_URL", "http://thuvienconggiaovietnam.net");
+define ("WEB_URL", "http://googleg9.com:8111");
 define ("PATH_DOWNLOAD", WEB_URL."/");
 define ("PATH_IMAGE", WEB_URL."/admintvcg/uploads/bookImage/");
 define ("PATH_IMAGE_REF", WEB_URL."/admintvcg/uploads/referenceImage/");

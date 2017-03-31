@@ -230,25 +230,12 @@
 <!--xs (phones), sm (tablets), md (desktops), and lg (larger desktops)-->
 <div class="col-sm-12 padding-right">
 
-<!--    <div class="arrow-home" style="margin-left: 5px;display: inline-block">-->
-<!--        <h4>Sách mới đưa vào Thư Viện</h4>-->
-<!--    </div>-->
+
     <h2 class="mytitle text-left">Sách mới đưa vào Thư Viện</h2>
-<!--    <div class="topright"><a href="/thu-vien/32-sachsapduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>-->
-
     <div class="features_items"><!--features_items-->
-
-
         <?php for ($i = 1; $i <= 14; $i++): ?>
-
                 <?php require "index1Templete.php" ;?>
-
         <?php endfor?>
-
-
-
-
-
 
         </div>
 
@@ -317,14 +304,10 @@
     </div>
 </footer><!--/Footer-->
 
-
-
-
 <script>
     $(document).ready(function() {
         $('.navbar-toggle').click(function() {
             $( ".showchild" ).addClass( 'open' );
-            //alert($( ".showchild" ).html());
 
         });
     });
