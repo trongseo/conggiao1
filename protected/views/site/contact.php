@@ -198,21 +198,7 @@
             $("#name").focus();
             return false;
         }
-//        if(phone == ""){
-//            $('#phone').bt('Vui lòng nhập điện thoại',{
-//                trigger: 'none',
-//                clickAnywhereToClose : false,
-//                positions: ['top'],
-//                fill: 'rgba(33, 33, 33, .8)',
-//                spikeLength: 10,
-//                spikeGirth: 10,
-//
-//                cssStyles: {color: '#FFF', fontSize: '11px',textAlign:'justify',width:'auto'}
-//            });
-//            $("#phone").btOn();
-//            $("#phone").focus();
-//            return false;
-//        }
+
         if(email == ""){
             $('#email').bt('Vui lòng nhập email',{
                 trigger: 'none',
@@ -244,21 +230,21 @@
             return false;
         }
 
-        if(address == ""){
-            $('#address').bt('Vui lòng nhập địa chỉ',{
-                trigger: 'none',
-                clickAnywhereToClose : false,
-                positions: ['top'],
-                fill: 'rgba(33, 33, 33, .8)',
-                spikeLength: 10,
-                spikeGirth: 10,
-
-                cssStyles: {color: '#FFF', fontSize: '11px',textAlign:'justify',width:'auto'}
-            });
-            $("#address").btOn();
-            $("#address").focus();
-            return false;
-        }
+//        if(address == ""){
+//            $('#address').bt('Vui lòng nhập địa chỉ',{
+//                trigger: 'none',
+//                clickAnywhereToClose : false,
+//                positions: ['top'],
+//                fill: 'rgba(33, 33, 33, .8)',
+//                spikeLength: 10,
+//                spikeGirth: 10,
+//
+//                cssStyles: {color: '#FFF', fontSize: '11px',textAlign:'justify',width:'auto'}
+//            });
+//            $("#address").btOn();
+//            $("#address").focus();
+//            return false;
+//        }
         if(title == ""){
             $('#title').bt('Vui lòng nhập tiêu đề',{
                 trigger: 'none',
@@ -304,7 +290,7 @@
 //            $("#captcha").focus();
 //            return false;
 //        }
-        var ctc = $("#ctc").val();
+      //  var ctc = $("#ctc").val();
         //LoadCapcha();
 //        if(captcha != ctc){
 //            $('#captcha').bt('captcha không đúng',{
@@ -323,6 +309,8 @@
 //        }
        // $("#form_contact").submit();
 
+        return true;
+
     }
     $(document).ready(function()
     {
@@ -337,8 +325,8 @@
             },
             success: function()
             {
-                alert("Thông tin liên hệ đã gửi thành công!Chúng tôi sẽ trả lời trong thời gian sớm nhất!");
-                window.location='/';
+                alertMoreGo("Thông tin liên hệ đã gửi thành công! Chúng tôi sẽ trả lời trong thời gian sớm nhất!",'/');
+
             },
             complete: function(response)
             {

@@ -508,6 +508,16 @@ margin-top: 0px;
     color: #5a2e0b;
   
 }
+  #preview{
+        position:absolute;
+        border:3px solid #ccc;
+        background:#333;
+        padding:5px;
+        display:none;
+        z-index: 999;
+        color:#fff;
+        box-shadow: 4px 4px 3px rgba(103, 115, 130, 1);
+    }
 </style>
 <div class="row">
 
@@ -748,4 +758,35 @@ $dataGoodBook =Common::doubleData($dataGoodBook,4);
     //
     //    });
     /*]]>*/
+	
+	this.imagePreview = function(){
+        xOffset = -20;
+        yOffset = 40;
+
+        $(".divimage").hover(function(e){
+			
+                this.t = this.title;
+                this.title = "";
+                var c = (this.t != "") ? "<br/>" + this.t : "";
+                $("body").append("<p id='preview'><img src='"+$(this).attr('href') +"' alt='Image preview' style='width:200px;' />"+ c +"</p>");
+                $("#preview")
+                    .css("top",(e.pageY - xOffset) + "px")
+                    .css("left",(e.pageX + yOffset) + "px")
+                    .fadeIn("slow");
+            },
+            function(){
+                this.title = this.t;
+                $("#preview").remove();
+
+            });
+
+        $(".divimage").mousemove(function(e){
+            $("#preview")
+                .css("top",(e.pageY - xOffset) + "px")
+                .css("left",(e.pageX + yOffset) + "px");
+        });
+    };
+	 $(document).ready(function(){
+        imagePreview();
+    });
 </script>

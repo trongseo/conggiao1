@@ -7,7 +7,7 @@
 
         LoadInfo(0);
         <?php else: ?>
-        LoadInfo(1);
+            LoadInfo(0);// LoadInfo(1);
         <?php endif; ?>
 
         });

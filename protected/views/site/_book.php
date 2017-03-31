@@ -587,10 +587,10 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     <?php foreach($dataRelateBook as $value):?>
         <div style="float:left;width: 140px;height: 175px; margin:5px 5px 80px 5px;">
             <div style="" class="showsearch">
-                <img onclick="openNewWindow('<?php echo $value["id"]?>')"  class="boximg showsearch" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
+                <img onclick="openNewWindow('<?php echo $value["book_id"]?>')"  class="boximg showsearch" style="width: 140px;height: 180px;" u="image" src="<?php echo PATH_IMAGE.$value["bookimage_link"] ?>" />
                 <div style="font-size: 11px;font-weight: bold;line-height: 15px;padding-top: 5px;padding-bottom: 5px;">
 						<div class="viewtextsearch" >
-                            <div class="readbooknewsearch" onclick="openNewWindow('<?php echo $value["id"]?>')" >
+                            <div class="readbooknewsearch" onclick="openNewWindow('<?php echo $value["book_id"]?>')" >
                                 Đọc
                             </div>
                         </div>

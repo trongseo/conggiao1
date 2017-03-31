@@ -14,6 +14,19 @@ class ServiceController extends CController {
         $this->curPage="home";
         $this->render('index',array('c'=>''));
     }
+    public function  actionDeleteBook(){
+        //$userId=22;
+        $userId = Common::getPara('user_id');
+        //$book_code = Common::getPara('book_code');
+        $idbook = Common::getPara('id_detail');
+        $userId =Common::getSession(USER_ID);
+        $deleteQuery =" delete from tbl_bookcase where book_id=$idbook and user_id=$userId ";
+        CommonDB::runSQL($deleteQuery,[]);
+        //header('Content-type: application/json');
+
+        echo 1;
+
+    }
 
     public function actionLogin(){
         $password= Common::getPara("password");

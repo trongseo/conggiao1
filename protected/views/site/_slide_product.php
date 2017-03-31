@@ -594,6 +594,17 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
     color: #5a2e0b;
   
 }
+  #preview{
+        position:absolute;
+        border:3px solid #ccc;
+        background:#333;
+        padding:5px;
+        display:none;
+        z-index: 999;
+        color:#fff;
+        box-shadow: 4px 4px 3px rgba(103, 115, 130, 1);
+    }
+
 </style>
 
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" />
@@ -655,7 +666,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="arrow-slide-right">(Có <?php echo ($dataPrepareBookcount) ?> quyển sách)</div>
 
         <?php if(($dataPrepareBookcount)>0): ?>
-            <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
+            <div class="topright"><a href="/thu-vien/0-sachsapduavaothuvien">Xem hết <img src="/img/3_arrow.png"></a></div>
         <?php endif ?>
 
 
@@ -700,7 +711,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
         <div class="arrow-home" style="margin-left: 5px">
             <h4><b> Sách hay nên đọc</b></h4>
         </div>
-        <div class="arrow-slide-right">(Có <?php echo ($dataGoodBookcount) ?> quyển sách)</div>
+<!--        <div class="arrow-slide-right">(Có --><?php //echo ($dataGoodBookcount) ?><!-- quyển sách)</div>-->
 
         <?php if(($dataGoodBookcount)>0): ?>
             <div class="topright"><a href="/thu-vien/0-sachhaynendoc">Xem hết <img src="/img/3_arrow.png"></a></div>
@@ -784,7 +795,7 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
                             <li class="slider-item">
                                 <div id="img-block">
                                     <a class="book-picture-shadow" onclick="openNewWindowURL('<?php echo $value["link_ref"]?>',<?php echo $value["flg_iframe"]?>,<?php echo $value["id"]?>)" >
-                                        <div class="imgintro">
+                                        <div class="imgintro divimage" href="<?php echo PATH_IMAGE_REF.$value["image_name"] ?>">
                                             <img  WIDTH="67" height="100" src="<?php echo PATH_IMAGE_REF.$value["image_name"] ?>" class="img-hover-action book-css3-shadow" />
                                         </div>
 
@@ -862,4 +873,38 @@ div.container-box-book-preview .preview-box a.preview-img.book-picture-shadow {
 //
 //    });
     /*]]>*/
+	
+
+
+
+	  this.imagePreview = function(){
+        xOffset = -20;
+        yOffset = 40;
+
+        $(".divimage").hover(function(e){
+			
+                this.t = this.title;
+                this.title = "";
+                var c = (this.t != "") ? "<br/>" + this.t : "";
+                $("body").append("<p id='preview'><img src='"+$(this).attr('href') +"' alt='Image preview' style='width:200px;' />"+ c +"</p>");
+                $("#preview")
+                    .css("top",(e.pageY - xOffset) + "px")
+                    .css("left",(e.pageX + yOffset) + "px")
+                    .fadeIn("slow");
+            },
+            function(){
+                this.title = this.t;
+                $("#preview").remove();
+
+            });
+
+        $(".divimage").mousemove(function(e){
+            $("#preview")
+                .css("top",(e.pageY - xOffset) + "px")
+                .css("left",(e.pageX + yOffset) + "px");
+        });
+    };
+	 $(document).ready(function(){
+        imagePreview();
+    });
 </script>

@@ -27,7 +27,7 @@
 require_once dirname(__FILE__) . DIRECTORY_SEPARATOR . 'class.phpmailer.php';
 
 class JPhpmailer extends PHPMailer {
-
+//matkhau!@#123
     public function sendMailSmtp($from, $to, $namefrom, $nameto, $subject, $content, $type = 0, $addreplyto = '', $reply_name = '') {
         $this->IsSMTP();
 		$this->SMTPSecure = 'ssl'; 
